@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>contracts@ipreo.com</email>
+    <name>Contracts Queue</name>
+    <queueSobject>
+        <sobjectType>Contract__c</sobjectType>
+    </queueSobject>
+</Queue>

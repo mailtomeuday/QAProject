@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Client email scheduled for Apr 11</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Mobile Updates Apr16</name>
+    <style>none</style>
+    <subject>What&apos;s New With BD Mobile</subject>
+    <textOnly>Big things are happening with Ipreo BD Mobile, this is just one more step.
+We’ve worked with our clients to pin down their most-used content, and to make it easier than ever to access.  Now, everything you need is in the BD Mobile Profile Overviews.
+
+Looking Ahead
+This year we’ll be aligning our mobile application with the exciting new BD desktop enhancements. The whole team will see the same great information in a consistent format, making your workflow even easier.
+
+
+
+Copyright 2016 Ipreo. All rights reserved</textOnly>
+    <type>custom</type>
+</EmailTemplate>

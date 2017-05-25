@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>July Release Update - Partners</name>
+    <style>none</style>
+    <subject>Ipreo July Maintenance Update</subject>
+    <textOnly>Scheduled Maintenance
+Event Date &amp; Time: July 15 &amp; July 29 2016 / TIME 8 ET to 9 ET
+
+
+Dear Client,
+
+In preparation for the August launch of several exciting new BD features, please be advised that Ipreo will be performing system maintenance July 15 &amp; July 29 2016 at 8PM ET. There is no planned application downtime, however during this time users may experience sporadic failure of report generation.
+
+
+Following the release, there will be no client impact. However in early August the following will be made available to clients:
+
+
+New Reporting Interface
+
+· More intuitive, consistent design
+
+· Ability to quickly open, generate and download reports
+
+· “Favorite Reports” provide easy access to the reports that matter most to you
+
+
+Analytics Phase 1 - Analytics is a dynamic visualization tool which help users quickly perform powerful analysis of ownership and CRM data without multiple searches and downloads. With this release we will be making the first version of Analytics available for all clients, and will continue to introduce new views during the second half of the year.
+
+
+Investor &amp; Contact Profile Beta- In August we will be enabling the new Profiles beta for clients. This is an exciting first step towards redesigning and enhancing the full suite of Investor Profiles in BD.
+
+
+If you haven’t already seen it, please check out our recent video highlighting these new enhancements. We will be providing additional detail about the August release later this month. Please don’t hesitate to reach out with questions in the meantime.
+​
+Regards,
+Ipreo Account Management
+
+(800) 305-0819 Or (212) 849-5424 (Americas)
++44 20 7665 9822 (Europe)
++852 58082616 (Asia Pacific)
++81 3 4579 5698 (Japan)
+
+©2016 Ipreo. All rights reserved.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

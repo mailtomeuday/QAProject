@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ipreo_Standard_Internal</letterhead>
+    <name>Alert Standard Task Old v2</name>
+    <style>freeForm</style>
+    <subject>Alert:  {!Account.Name}: Deal Value ${!Task.Deal_Value__c}: {!Task.Who}: {!Task.Type} by {!Task.LastModifiedBy}</subject>
+    <textOnly>Related To: {!Task.What}
+
+Contact:  {!Task.Who}
+
+Owner:  {!Task.LastModifiedBy}
+
+Type:  {!Task.Type}
+
+Product Discussed/Reviewed/Demoed at Meeting:
+{!Task.Products__c}
+
+Account Health: {!Account.Account_Health__c}
+
+User Relationship: {!Task.User_Relationship__c}
+
+*Red=At Risk, Yellow=Unknown or Neutral, Green=Likely Ipreo Promoter
+
+Deal Value:  ${!Task.Deal_Value__c}
+
+Detailed Notes:
+{!Task.00Nj0000000g8Ki}
+
+Next Steps:
+{!Task.00Nj0000000g8Kl}
+
+Executive Summary:
+{!Task.Executive_Summary__c}
+
+Attendees (External and Internal): {!Event.Attendees_External_and_Internal__c}
+
+Status:  {!Task.Status}
+Priority:  {!Task.Priority}
+Due Date:  {!Task.ActivityDate}</textOnly>
+    <type>html</type>
+</EmailTemplate>

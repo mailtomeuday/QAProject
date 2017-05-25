@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Monthly fund info report to Japanese clients</description>
+    <encodingKey>Shift_JIS</encodingKey>
+    <name>ファンド情報 - Japan Only</name>
+    <style>none</style>
+    <subject>Ipreo - ファンド情報</subject>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>a</joinTable>
+        </blockInfo>
+        <columns>
+            <field>MEMBER_NAME</field>
+        </columns>
+        <columns>
+            <field>MEMBER_ROLE</field>
+        </columns>
+        <currency>USD</currency>
+        <filter>
+            <criteriaItems>
+                <column>Account.Vertical__c</column>
+                <operator>equals</operator>
+                <value>Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>MEMBER_ROLE</column>
+                <operator>equals</operator>
+                <value>Primary Account Manager</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Account with Account Teams block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>AccountTeam</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>CREATED_DATE</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>Account</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Account.Contacts$Name</field>
+        </columns>
+        <columns>
+            <field>Account.Contacts$Email</field>
+        </columns>
+        <columns>
+            <field>Account.Contacts.User_Assets__r$Product_Code__c</field>
+        </columns>
+        <columns>
+            <field>Account.Contacts.User_Assets__r$Product_Name__c</field>
+        </columns>
+        <columns>
+            <field>Account$Sponsored_Issuer_Status__c</field>
+        </columns>
+        <columns>
+            <field>Account.Contacts.User_Assets__r$Name</field>
+        </columns>
+        <currency>USD</currency>
+        <filter>
+            <criteriaItems>
+                <column>Account.Contacts.User_Assets__r$Active__c</column>
+                <operator>equals</operator>
+                <value>Active</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>Account$Vertical__c</column>
+                <operator>equals</operator>
+                <value>Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>Account.Contacts.User_Assets__r$Product_Name__c</column>
+                <operator>notEqual</operator>
+                <value>Targeting (retainer)</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Accounts, Contacts and User Asse block 2</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Accounts_Contacts_and_User_Assets__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>Account$CreatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>a</joinTable>
+    </blockInfo>
+    <description>Accounts with Account Teams and Contacts with Users Assets</description>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Accounts with Contacts and Users Assets</name>
+    <reportType>AccountTeam</reportType>
+    <showDetails>true</showDetails>
+</Report>

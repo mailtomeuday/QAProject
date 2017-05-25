@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>For Notification to Sales Ops when a Work Order with Requires UAT = Yes is Closed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Work Order Closed Notification To Sales Ops</name>
+    <style>none</style>
+    <subject>Work Order # {!Work_Order__c.Work_Order_Number__c} closed: {!Work_Order__c.Name}</subject>
+    <type>text</type>
+</EmailTemplate>

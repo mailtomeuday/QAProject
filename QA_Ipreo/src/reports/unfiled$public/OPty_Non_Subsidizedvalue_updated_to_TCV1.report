@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Non_Subsidized_Contracted_Value__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>TESTING FOR 171</description>
+    <filter>
+        <criteriaItems>
+            <column>OPPORTUNITY_ID</column>
+            <operator>equals</operator>
+            <value>006j000000OYgay,006j000000NDJW8,006j000000NJvD8,006j000000JwBOj,006j000000OYbTt,006j000000OadkS,006j000000NJfiw,006j000000JwBcE,006j000000JwBcG,006j000000JwBdd,006j000000NDfhY,006j000000JwAz0,006j000000ObuIx,006j000000NJmlU,006j000000JwAzm,006j000000JwB01,006j000000JwB07,006j000000Oc0ZU,006j000000JwBBe,006j000000NK069,006j000000JwB1J,006j000000JwB1K,006j000000NK04X,006j000000OaP4b,006j000000JwB2E,006j000000OabvX,006j000000NDIYd,006j000000OYgnY,006j000000Oa8VV,006j000000JwB56,006j000000NK08Z,006j000000JwB5w,006j000000PqHaF,006j000000JwB6v,006j000000OYJ1n,006j000000NJkuS,006j000000OZ4g9,006j000000JwB8p,006j000000NJgKC,006j000000JwBAm,006j000000OYROT,006j000000JwBB5,006j000000JwBCK,006j000000Oa34D,006j000000JwBCM,006j000000JwBCc,006j000000OY0JA,006j000000NJJ2d,006j000000OYcwO,006j000000JwBD7,006j000000JwBDO,006j000000JwBEK</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>OPty.Non-Subsidizedvalue updated to TCV1</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

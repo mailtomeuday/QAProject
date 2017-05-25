@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Test</name>
+    <style>none</style>
+    <subject>webinar test</subject>
+    <textOnly>An archive of the BD Corporate Webinar covering CRM best practices and Reporting is now available! Tune in to get up to speed on activity entry and report generation including how to log meetings into the Calendar and extract these interactions in a meaningful way through Track Actions and the Reports tab
+
+
+Dear Client,
+
+[BODY TEXT PLACEHOLDER] &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;
+
+Regards,
+Ipreo Account Management
+
+
+Access the Webinar now
+
+(800) 305-0819 Or (212) 849-5424 (Americas)
++44 20 7665 9822 (Europe)
++852 58082616 (Asia Pacific)
++81 3 4579 5698 (Japan)
+
+©2016 Ipreo. All rights reserved.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

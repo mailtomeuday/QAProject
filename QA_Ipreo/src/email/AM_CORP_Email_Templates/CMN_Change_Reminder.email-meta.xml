@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CMN Change- Reminder</name>
+    <style>none</style>
+    <subject>Reminder: Important Change To Your Support Email</subject>
+    <textOnly>Reminder: CallMeNow is changing
+
+In follow up to our recent email, we wanted to remind you that the general address CallMeNow@ipreo.com is being retired. Given the continued growth of our business we want to ensure that you always have quick access to our IR-focused Account Management team. Moving forward you can access your 24/7/365 support team at:
+
+CallMeNowIR@ipreo.com
+
+Thank you,
+
+Ipreo Account Management
+
++1.800.305.0819 or +1.212.849.5424 (US); +44.20.7665.9822 (EMEA); +852.5808.2616 (Asia Pacific); +81.3.5207.2912 (Japan)
+
+
+
+Please feel free to reach out to us if you have any questions</textOnly>
+    <type>custom</type>
+</EmailTemplate>

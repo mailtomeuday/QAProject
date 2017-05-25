@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <operator>contains</operator>
+            <value>colin tobias</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASK_TYPE</column>
+            <operator>notContain</operator>
+            <value>Call (Client - Incoming),Call (Client - Outgoing),Call (Client - Proactive),Call (Cold Call),Call (Incoming – AHRS),Call (Prospect),Client Testimonial,Client Touchpoint (Churn Reduction),Follow Up (non-KPI),Meeting (Client Conference),Meeting (Client Onsite Visit),Meeting (Onsite Visit Declined),Meeting (Sales),Meeting (Sales Demo Client),Meeting (Sales Demo Prospect),Opportunity Identified,Product Issue,Survey Follow-up,Training (Virtual),Workflow Interaction (Proactive),Account Intelligence,Cancel Received,Contract Sent,Migration Reference,Proposal Sent,Survey</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>DUE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <name>All Emails</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountActivity</reportType>
+    <roleHierarchyFilter>Corporate_AM_NA_Manager</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <endDate>2016-03-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-03-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DYK- Meeting Prep Report Workflow</name>
+    <style>none</style>
+    <subject>Ipreo- Did You Know?</subject>
+    <textOnly>Meeting Prep Report Generation
+
+The value of developing an efficient workflow to accomplish your day-to-day objectives cannot be understated. With Earnings behind us and conference season well on its way, taking a streamlined approach while putting together meeting preparation materials is more important than ever. Luckily, BD Corporate provides the tools to help make life easier while preparing for your interactions with the investment community.
+
+The key to this time-saving workflow is to proactively enter your upcoming meetings into the BD Corporate platform before they happen. Once these meetings have been entered into your account, your are just a few clicks away from producing management-ready, preformatted reports containing valuable intelligence on the investors you&apos;ll be meeting with.
+
+Click here to access a Quick Guide that details this streamlined workflow within BD Corporate. Please contact your dedicated Account Manager to receive a more personalized consultation on how you can employ this workflow to help accomplish your meeting prep reporting goals.
+
+
+Visit www.ipreoink.com for updates on current industry issues specifically relevant to corporate investor relations professionals.
+
+*Please note – CallMeNow@ipreo.com is now CallMeNowIR@ipreo.com*
+
+
+
+
+Evan Tabas
+​Account Manager
+​Evan.Tabas@ipreo.com​​​​​​​​​
+​212-849-5072​</textOnly>
+    <type>custom</type>
+</EmailTemplate>

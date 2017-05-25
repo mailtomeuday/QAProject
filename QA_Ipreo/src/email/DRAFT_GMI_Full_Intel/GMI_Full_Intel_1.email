@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p>Dear {!Contact.FirstName},</p><p>Please click here to access the report:&nbsp; <a href="https://na16.salesforce.com/sfc/p/j0000001q7gi/a/j0000000D4wA/83uHpw.uPEiWeFbm24enF0180r8ISV5JS1yf.3HGErI">Report</a></p><p>Sarah</p>]]></td>
+</tr>
+</table>

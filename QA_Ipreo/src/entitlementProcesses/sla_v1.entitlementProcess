@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <businessHours>24/7</businessHours>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>false</isVersionDefault>
+    <milestones>
+        <businessHours>24/7</businessHours>
+        <milestoneCriteriaFormula>CONTAINS(Text(Origin), &apos;Email2Case&apos;) &amp;&amp; NOT(IsClosedOnCreate)</milestoneCriteriaFormula>
+        <milestoneName>Case Ownership</milestoneName>
+        <minutesToComplete>10</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Send_Waring_Notification_to_queue</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>-2</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>24/7</businessHours>
+        <milestoneCriteriaFormula>NOT( IsClosedOnCreate )</milestoneCriteriaFormula>
+        <milestoneName>Case First Response Required</milestoneName>
+        <minutesToComplete>10</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>24/7</businessHours>
+        <milestoneCriteriaFormula>(LEFT(OwnerId, 3) == &apos;005&apos; || Owner:Queue.QueueName = &apos;FactSet Case Queue&apos;) &amp;&amp; NOT( IsClosedOnCreate )</milestoneCriteriaFormula>
+        <milestoneName>Case First Response Completed</milestoneName>
+        <minutesToComplete>10</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case_Send_First_Response_Not_Completed_Notification</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <name>SLA</name>
+    <versionMaster>552q00000004CUG</versionMaster>
+    <versionNumber>1</versionNumber>
+</EntitlementProcess>

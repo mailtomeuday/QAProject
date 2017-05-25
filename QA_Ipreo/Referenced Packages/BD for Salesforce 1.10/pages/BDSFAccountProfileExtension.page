@@ -1,0 +1,26 @@
+<apex:page standardController="Account" extensions="Ipreo_BDSF_1_10.BDAEMasterController" showHeader="false" sidebar="false">
+    <apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDSFUtility)}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'js/bdsfutil.js')}"/>
+    <script type="text/javascript">
+        var url = "/apex/BDSFLinkToBD?Type=Account&Id={!Account.Id}";
+    </script>
+    <apex:outputPanel rendered="{!IsPageValid}">
+        <apex:iframe id="bdaeFrameContainer" frameborder="false" height="600" width="100%" src="/apex/MasterPageEmbedded?target=Profile&IsCRMProfile=yes&entityType={!entityType}&profileId={!TEXT(Account.Ipreo_BDSF_1_10__BDWarehouseId__c)}" scrolling="true" />
+    </apex:outputPanel>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:outputPanel rendered="{!NOT(IsPageValid)}">
+                This CRM profile is not associated with BD profile. &nbsp;&nbsp;
+                <apex:commandButton value="Associate Now!" onclick="OpenWideDialog(url,'{!targetUrl}',true);return false;" rendered="{!AllowLinking}"/>
+            </apex:outputPanel>
+            <apex:outputPanel >
+                <apex:commandButton rendered="{!(IsPageValid && AllowLinking)}" value="Link with other BD Profile" onclick="OpenWideDialog(url,'{!targetUrl}',true);return false;" />
+                <apex:commandButton rendered="{!IsPageValid}" value="Refresh from BD" action="{!SynchronizeAccount}"/>   
+                <apex:outputText value="{!jsrefresh}" escape="false"/>
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+    <script type="text/javascript">
+        ProfileResize();
+    </script>
+</apex:page>

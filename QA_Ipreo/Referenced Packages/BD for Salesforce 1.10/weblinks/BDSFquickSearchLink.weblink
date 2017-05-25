@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>BDSF_Quick_Search</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>dsNS.initDSNS(&quot;{!URLFOR(&apos;/resource/110454/Ipreo_BDSF_1_10__BDAE_Integration&apos;, &apos;css/quicksearch.css&apos;)}&quot;);
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)};
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)};
+{!REQUIRESCRIPT(URLFOR(&apos;/resource/110454/Ipreo_BDSF_1_10__BDAE_Integration&apos;, &apos;js/jquery-2.1.1.min.js&apos;))};
+{!REQUIRESCRIPT(URLFOR(&apos;/resource/110454/Ipreo_BDSF_1_10__BDAE_Integration&apos;, &apos;js/quicksearchscript_new.js&apos;))};
+{!REQUIRESCRIPT(&quot;data:application/javascript;base64,d2luZG93LmFkZEV2ZW50TGlzdGVuZXIoIm1lc3NhZ2UiLCAgZnVuY3Rpb24oZSl7DQppZihlLm9yaWdpbi5pbmRleE9mKCJ2aXN1YWwuZm9yY2UuY29tIikgPCAwKXtyZXR1cm47fQ0KZGF0YSA9IEpTT04ucGFyc2UoZS5kYXRhKTsNCmlmKGRhdGFbJ2ZyYW1lSWQnXSl7DQpkb2N1bWVudC5nZXRFbGVtZW50QnlJZChkYXRhWydmcmFtZUlkJ10pLmhlaWdodD1kYXRhWydoZWlnaHQnXSsicHgiOw0KfWVsc2V7aWYoZGF0YVsnYWN0aW9uJ109PSdyZWZyZXNoJyl7DQpsb2NhdGlvbi5yZWxvYWQoKTsNCn19fSwgZmFsc2UpOw==&quot;)};</url>
+</CustomPageWebLink>

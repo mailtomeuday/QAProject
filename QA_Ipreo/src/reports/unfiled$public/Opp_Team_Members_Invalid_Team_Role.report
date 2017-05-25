@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Opportunity Team Members who have Team Role that is not a valid choice for Team Role in Salesforce</description>
+    <filter>
+        <criteriaItems>
+            <column>MEMBER_ROLE</column>
+            <operator>notEqual</operator>
+            <value>Primary Account Manager,Primary Corporate Director,Primary GMI Analyst,Primary Product Manager,Primary Analyst,Primary Sales Manager,Primary Sales Rep,Primary Sales Specialist,Secondary Account Manager,Secondary Corporate Director,Secondary GMI Analyst,Secondary Product Manager,Secondary Analyst,Secondary Sales Manager,Secondary Sales Rep,Secondary Sales Specialist,Team Lead GMI Analyst,Opportunity Owner,Specialist Account Manager,Technical Account Manager</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Opp Team Members Invalid Team Role</name>
+    <params>
+        <name>include</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

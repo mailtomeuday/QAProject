@@ -1,0 +1,14 @@
+*** CASE NOTIFICATION ***  
+
+The following case has been closed:
+
+Click on the link to access the case:  {!Case.Link}
+
+Case Number: {!Case.CaseNumber}
+Account: {!Case.Account}
+Opportunity: {!Case.Opportunity__c}
+
+Subject:  {!Case.Subject} 
+
+Description:
+{!Case.Description}

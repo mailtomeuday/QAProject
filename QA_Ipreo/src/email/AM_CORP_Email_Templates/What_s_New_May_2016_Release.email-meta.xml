@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>What&apos;s New- May 2016 Release</name>
+    <style>none</style>
+    <subject>Ipreo: What&apos;s New?</subject>
+    <textOnly>This past weekend we released another software upgrade in our continued effort to enhance your experience in BD Corporate. The release included several enhancements to BD Mail and the Goal Tracker - all based on client feedback!
+
+
+The Goal Tracker, which allows you to set quantitative goals against current or prospective shareholders, is now even more powerful with the following updates:
+
+· ‘Interact with’ selections made in the goal set up will now remain fixed – as of the date of Goal-creation – for the entire duration of a Goal, and will no longer be subject to change as institutions increase and decrease their positions
+
+· The Progress Details table now includes additional rows of data, and the Value and Value Change columns in the Progress Details have been swapped out for Shares and Share Change
+
+· The Goal Tracker UI has been given a minor face-lift to reflect the most recent aesthetics that have been employed in the other, newer areas of the application
+
+· BD Mail now supports the ability to track external URL links (websites). Just like file links, users can track which recipients have clicked on a URL link and how many times
+
+Click here to access a Quick Guide that will help familiarize you with the new changes to BD Mail and the Goal Tracker feature in BD Corporate. Please contact your dedicated Account Manager or email our 24/7 Support team at callmenowIR@ipreo.com with any questions or for assistance.
+
+
+We would also like to remind you that to ensure an optimal experience when accessing the latest BD features, we recommend that you use the following browsers: Internet Explorer 11 or above, Mozilla Firefox 40 or above, or Google Chrome 41 or above. Safari is not currently supported, and we will be retiring support for IE 8, 9, and 10 later this year.
+
+
+Lastly, the evolution of BD continues – we will be delivering exciting new features throughout the year, including the introduction of our new Analytics module, a modernized Reporting UI, and redesigned Investor Profiles later this year!
+
+
+Regards,
+Ipreo&apos;s Account Management Team
+
++1 (800) 305-0819 Or (212) 849-5424 (Americas)
++44 20 7665 9822 (Europe)
++852 58082616 (Asia Pacific)
++81 3 4579 5698 (Japan)
+
+©2016 Ipreo. All rights reserved.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

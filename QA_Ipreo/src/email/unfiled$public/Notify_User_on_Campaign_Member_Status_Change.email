@@ -1,0 +1,7 @@
+*** CAMPAIGN MEMBER STATUS CHANGE NOTIFICATION *** 
+
+Campaign Member (Contact):  {!Contact.FirstName} {!Contact.LastName}   
+Campaign Member Status:  {!CampaignMember.Status}    
+Campaign:  {!Campaign.Name}   
+
+Click here to navigate to Contact:  {!Contact.Link}

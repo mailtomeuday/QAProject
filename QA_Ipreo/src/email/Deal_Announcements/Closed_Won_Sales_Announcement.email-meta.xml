@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ipreo_Standard_Internal</letterhead>
+    <name>Closed Won Sales Announcement</name>
+    <style>freeForm</style>
+    <subject>Closed Won Sales Announcement:  {!Account.Name}</subject>
+    <textOnly>Account:  {!Opportunity.Account}
+Opportunity: {!Opportunity.Name}
+Opportunity Owner: {!Opportunity.OwnerFullName}
+Close Date: {!Opportunity.CloseDate}
+Vertical: {!Opportunity.Vertical__c}
+Revenue Type: {!Opportunity.Revenue_Type__c}
+Product(s): {!Opportunity.Product_Bundle__c}
+ACV: {!Opportunity.ACV__c}
+TCV: {!Opportunity.Amount}
+Renewal Increment: {!Opportunity.Renewal_Increment__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

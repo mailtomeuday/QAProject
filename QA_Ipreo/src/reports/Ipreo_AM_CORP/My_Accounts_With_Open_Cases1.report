@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Contact</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Status</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Subject</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Origin</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.Trial_Users__r$Name</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+        <criteriaItems>
+            <column>Account.Cases$Status</column>
+            <operator>equals</operator>
+            <value>New,In Progress,Client Review,On Hold</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Origin</column>
+            <operator>contains</operator>
+            <value>Email2Case (SalesRequests-IR),Email2Case (Corporate),Internal,Email2Case (FactSet)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Customer_Sent_Email_After_Case_Closed__c</column>
+            <operator>equals</operator>
+            <value>Yes</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>My Accounts With Open Cases</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Cases_and_Trial_Users__c</reportType>
+    <scope>accountteam</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Cases$CreatedDate</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

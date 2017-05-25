@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Heat Map GMG Sales</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom2: Fan</motif>
+    <page>GS_Heatmap_JU</page>
+</CustomTab>

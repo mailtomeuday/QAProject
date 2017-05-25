@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><TITLE>Velada</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=viewport content=width=device-width>
+<STYLE type=text/css>
+#logo img{outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; float: none !important; clear: both; display: inline-block !important;}
+#socialicons img{outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; float: none !important; clear: both; display: inline-block !important; border: none;}
+#graphic img{outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; float: none !important; clear: both; display: inline-block !important;}
+@media only screen and (max-width: 600px) {
+  #logo img {
+    width: 100% !important; height: auto !important;
+  }
+  table[class="body"] table.columns td {
+    width: auto !important;
+  }
+  table[class="body"] table.column td .list {
+    width: auto !important;
+  }
+  table[class="body"] img {
+    width: auto !important; height: auto !important;
+  }
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+  table[class="body"] .row {
+    width: 100% !important; display: block !important;
+  }
+  table[class="body"] .wrapper {
+    display: block !important; padding-right: 0 !important;
+  }
+  table[class="body"] .columns {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .column {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .wrapper.first .columns {
+    display: table !important;
+  }
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+  table[class="body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+  table[class="body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] td.offset-by-one {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-two {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-three {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-four {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-five {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-six {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-seven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eight {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-nine {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-ten {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+  table[class="body"] .right-text-pad {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .left-text-pad {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class="body"] .show-for-small {
+    display: inherit !important;
+  }
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+  }
+}
+</STYLE>
+</HEAD>
+<BODY style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 100% !important; BACKGROUND: #eeeeee; MIN-WIDTH: 100%; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: 100%; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-text-size-adjust: 100%">
+<TABLE class=body style="FONT-SIZE: 14px; HEIGHT: 100%; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 100%; VERTICAL-ALIGN: top; BACKGROUND: #eeeeee; BORDER-COLLAPSE: collapse; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SPACING: 0; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px" bgColor=#eeeeee>
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD class=center style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=center>
+<CENTER style="WIDTH: 100%; MIN-WIDTH: 580px">
+<TABLE class=container style="BORDER-TOP: #cacaca 1px solid; BORDER-RIGHT: #cacaca 1px solid; WIDTH: 580px; VERTICAL-ALIGN: top; BACKGROUND: #ffffff; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #cacaca 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; BORDER-SPACING: 0; BORDER-LEFT: #cacaca 1px solid; PADDING-RIGHT: 0px" bgColor=#ffffff>
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<TABLE class=row style="WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; POSITION: relative; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-SPACING: 0; DISPLAY: block; PADDING-RIGHT: 0px">
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD class="wrapper last" style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; POSITION: relative; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 10px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<TABLE class="twelve columns" style="WIDTH: 580px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; BORDER-SPACING: 0; DISPLAY: table !important; PADDING-RIGHT: 0px">
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD class="five sub-columns" style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 50%; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; MIN-WIDTH: 0px; FONT-WEIGHT: normal; PADDING-BOTTOM: 20px; TEXT-ALIGN: left; PADDING-TOP: 20px; PADDING-LEFT: 20px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<DIV id=logo class=mktEditable><IMG alt=Ipreo-Logo_sm.png src="http://info.ipreo.com/rs/230-SPZ-348/images/Ipreo-Logo_sm.png" width=130 height=38></DIV></TD>
+<TD class=expander style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; VISIBILITY: hidden; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BACKGROUND: #0079c1; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" bgColor=#0079c1 vAlign=top align=left>
+<TABLE class=row style="WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; POSITION: relative; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-SPACING: 0; DISPLAY: block; PADDING-RIGHT: 0px">
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD class="wrapper last" style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; POSITION: relative; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<TABLE class="twelve columns" style="WIDTH: 580px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; BORDER-SPACING: 0; PADDING-RIGHT: 0px">
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 22px; FONT-FAMILY: Arial, Helvetica, sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; COLOR: #fff; PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 20px; PADDING-LEFT: 20px; MARGIN: 0px; LINE-HEIGHT: 25px; PADDING-RIGHT: 20px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<DIV id=text1 class=mktEditable><SPAN style="FONT-SIZE: 24px; FONT-FAMILY: Meiryo">アイプリオは移転します!</SPAN></DIV></TD>
+<TD class=expander style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; VISIBILITY: hidden; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left></TD></TR>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; COLOR: #fff; PADDING-BOTTOM: 25px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 20px; MARGIN: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 20px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<DIV id=text2 class=mktEditable>
+<DIV style="TEXT-ALIGN: center"><SPAN style="FONT-SIZE: 14px; FONT-FAMILY: Meiryo">さて、このたび、弊社では日本における業務拡大に伴い、<BR>12月7日より下記へ移転し業務を行うことになりました。</SPAN></DIV></DIV></TD>
+<TD class=expander style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; VISIBILITY: hidden; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left></TD></TR>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 25px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=center>
+<TABLE style="VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; BORDER-SPACING: 0; PADDING-RIGHT: 0px" align=center>
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 16px; BORDER-TOP: #ffffff 1px solid; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; BORDER-RIGHT: #ffffff 1px solid; WIDTH: auto !important; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; BORDER-BOTTOM: #ffffff 1px solid; FONT-WEIGHT: normal; COLOR: #ededed; PADDING-BOTTOM: 10px; TEXT-ALIGN: left; PADDING-TOP: 10px; PADDING-LEFT: 15px; MARGIN: 0px; BORDER-LEFT: #ffffff 1px solid; DISPLAY: block; LINE-HEIGHT: 19px; PADDING-RIGHT: 15px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<DIV id=cta1 class=mktEditable><STRONG><SPAN style="FONT-FAMILY: meiryo"><A style="TEXT-DECORATION: none; COLOR: #fff" href="https://www.google.co.jp/maps/place/%E3%80%92101-0041+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E9%A0%88%E7%94%B0%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%96/@35.6952031,139.7684859,17z/data=!3m1!4b1!4m2!3m1!1s0x60188c02e35bb621:0x9583d43a97242027" target=_blank>移転先を表示</A></SPAN></STRONG></DIV></TD></TR></TBODY></TABLE></TD>
+<TD class=expander style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; VISIBILITY: hidden; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 25px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<TABLE class=row style="WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; POSITION: relative; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-SPACING: 0; DISPLAY: block; PADDING-RIGHT: 0px">
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD class=wrapper style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; POSITION: relative; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 10px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 20px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<TABLE class="five columns" style="WIDTH: 540px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; BORDER-SPACING: 0; PADDING-RIGHT: 0px">
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 25px; PADDING-LEFT: 30px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 30px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=center>
+<DIV id=graphic class=mktEditable>
+<DIV style="TEXT-ALIGN: left"><SPAN><SPAN><SPAN><SPAN><SPAN><SPAN style="FONT-SIZE: 14px"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: meiryo">お客様各位</SPAN><BR><BR><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: meiryo">平素よりアイプリオのサービスをご利用いただき、誠にありがとうございます。</SPAN><BR><BR><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: meiryo">さて、このたび、弊社では日本における業務拡大に伴い、12月7日より下記へ移転し業務を行うことになりました。つきましては、住所･電話番号が下記の通り変更となりますので、お手数ですがご登録の変更などよろしくお願い申し上げます。</SPAN><BR><BR></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>
+<TABLE style="HEIGHT: 257px" height=257 width=520>
+<TBODY>
+<TR>
+<TD style="VERTICAL-ALIGN: top">
+<DIV style="TEXT-ALIGN: left">
+<P style="MARGIN-BOTTOM: 0pt; unicode-bidi: embed; WORD-BREAK: normal; DIRECTION: ltr; TEXT-ALIGN: left; MARGIN-LEFT: 0in; MARGIN-TOP: 0pt; language: en-GB; punctuation-wrap: hanging"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: meiryo"><B><SPAN style="COLOR: #9bbb59">XXXX</SPAN></B><B><SPAN style="COLOR: #9bbb59">（部署・タイトル）</SPAN></B></SPAN></P>
+<P style="MARGIN-BOTTOM: 0pt; unicode-bidi: embed; WORD-BREAK: normal; DIRECTION: ltr; TEXT-ALIGN: left; MARGIN-LEFT: 0in; MARGIN-TOP: 0pt; language: en-GB; punctuation-wrap: hanging"><SPAN style="FONT-FAMILY: meiryo"><SPAN style="FONT-SIZE: 14px"><SPAN style="FONT-SIZE: 12px"><B><SPAN style="COLOR: #9bbb59">XXXX</SPAN></B><B><SPAN style="COLOR: #9bbb59">（名前)</SPAN></B></SPAN><BR></SPAN></SPAN></P><SPAN style="FONT-FAMILY: meiryo"><SPAN style="FONT-SIZE: 14px"><SPAN style="COLOR: #77933c"><SPAN style="FONT-SIZE: 11pt; VERTICAL-ALIGN: baseline; COLOR: black"></SPAN></SPAN><BR></SPAN></SPAN></DIV>
+<DIV style="TEXT-ALIGN: left">
+<P style="MARGIN-BOTTOM: 0pt; unicode-bidi: embed; WORD-BREAK: normal; DIRECTION: ltr; TEXT-ALIGN: left; MARGIN-LEFT: 0in; MARGIN-TOP: 0pt; language: en-GB; punctuation-wrap: hanging"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: meiryo"><SPAN style="COLOR: black">直通電話番号：</SPAN><B><SPAN style="COLOR: #9bbb59">03-XXXX-XXXX</SPAN></B></SPAN></P>
+<P style="MARGIN-BOTTOM: 0pt; unicode-bidi: embed; WORD-BREAK: normal; DIRECTION: ltr; TEXT-ALIGN: left; MARGIN-LEFT: 0in; MARGIN-TOP: 0pt; language: en-GB; punctuation-wrap: hanging"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: meiryo"><SPAN style="COLOR: black">チー</SPAN><SPAN style="COLOR: black">ム電話番号：</SPAN><B><SPAN style="COLOR: #9bbb59">03-XXXX-XXXX</SPAN></B></SPAN></P>
+<P style="MARGIN-BOTTOM: 0pt; unicode-bidi: embed; WORD-BREAK: normal; DIRECTION: ltr; TEXT-ALIGN: left; MARGIN-LEFT: 0in; MARGIN-TOP: 0pt; language: en-GB; punctuation-wrap: hanging"><SPAN style="FONT-SIZE: 12px; FONT-FAMILY: meiryo"><SPAN style="COLOR: black">メー</SPAN><SPAN style="COLOR: black">ルアドレス：</SPAN><B><SPAN style="COLOR: #9bbb59">XXXXX</SPAN></B><SPAN style="COLOR: black">（変更ありません）</SPAN></SPAN></P><SPAN style="FONT-SIZE: 14px"><SPAN style="FONT-FAMILY: meiryo"><B><SPAN style="COLOR: #77933c"><SPAN style="FONT-SIZE: 14px"><BR></SPAN></SPAN></B><SPAN style="FONT-SIZE: 12px">引き続き倍旧のご指導ご鞭撻を賜りますようお願い申し上げます。</SPAN></SPAN><BR></SPAN></DIV></TD>
+<TD style="WIDTH: 3px">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</TD>
+<TD>
+<P style="MARGIN-BOTTOM: 0pt; unicode-bidi: embed; WORD-BREAK: normal; DIRECTION: ltr; TEXT-ALIGN: left; MARGIN-LEFT: 0in; MARGIN-TOP: 0pt; language: en-GB; punctuation-wrap: hanging"><SPAN style="FONT-FAMILY: meiryo; COLOR: #0079c1"><STRONG><SPAN style="FONT-SIZE: 9pt">新住所</SPAN></STRONG></SPAN></P>
+<P style="MARGIN-BOTTOM: 0pt; unicode-bidi: embed; WORD-BREAK: normal; DIRECTION: ltr; TEXT-ALIGN: left; MARGIN-LEFT: 0in; MARGIN-TOP: 0pt; language: en-GB; punctuation-wrap: hanging"><SPAN style="FONT-FAMILY: meiryo"><SPAN style="FONT-SIZE: 9pt; COLOR: black">〒</SPAN><SPAN style="FONT-SIZE: 9pt; COLOR: black">101-0041</SPAN></SPAN></P>
+<P style="MARGIN-BOTTOM: 0pt; unicode-bidi: embed; WORD-BREAK: normal; DIRECTION: ltr; TEXT-ALIGN: left; MARGIN-LEFT: 0in; MARGIN-TOP: 0pt; language: en-GB; punctuation-wrap: hanging"><SPAN style="FONT-FAMILY: meiryo"><SPAN style="FONT-SIZE: 9pt; COLOR: black">東京</SPAN><SPAN style="FONT-SIZE: 9pt; COLOR: black">都千代田区神田須田町</SPAN><SPAN style="FONT-SIZE: 9pt; COLOR: black">1-16</SPAN></SPAN></P>
+<P style="MARGIN-BOTTOM: 0pt; unicode-bidi: embed; WORD-BREAK: normal; DIRECTION: ltr; TEXT-ALIGN: left; MARGIN-LEFT: 0in; MARGIN-TOP: 0pt; language: en-GB; punctuation-wrap: hanging"><SPAN style="FONT-FAMILY: meiryo"><SPAN style="FONT-SIZE: 9pt; COLOR: black">ヒューリック神田ビル　</SPAN><SPAN style="FONT-SIZE: 9pt; COLOR: black">3</SPAN><SPAN style="FONT-SIZE: 9pt; COLOR: black">階</SPAN></SPAN></P>
+<P style="MARGIN-BOTTOM: 0pt; unicode-bidi: embed; WORD-BREAK: normal; DIRECTION: ltr; TEXT-ALIGN: left; MARGIN-LEFT: 0in; MARGIN-TOP: 0pt; language: en-GB; punctuation-wrap: hanging"><IMG src="http://info.ipreo.com/rs/230-SPZ-348/images/google maps.png" width=250 height=184></P></TD></TR></TBODY></TABLE><SPAN style="FONT-SIZE: 14px"><SPAN style="FONT-FAMILY: meiryo; COLOR: black"><BR></SPAN></SPAN></DIV></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BACKGROUND: #e9e9e9; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" bgColor=#e9e9e9 vAlign=top align=left>
+<TABLE class=row style="WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; POSITION: relative; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-SPACING: 0; DISPLAY: block; PADDING-RIGHT: 0px">
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD class="wrapper last" style="FONT-SIZE: 14px; BORDER-TOP: #ff5959 1px solid; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; POSITION: relative; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<TABLE class="twelve columns" style="WIDTH: 580px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; BORDER-SPACING: 0; PADDING-RIGHT: 0px">
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; COLOR: #24292f; PADDING-BOTTOM: 20px; TEXT-ALIGN: center; PADDING-TOP: 20px; PADDING-LEFT: 20px; MARGIN: 0px; LINE-HEIGHT: 25px; PADDING-RIGHT: 20px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=center>
+<DIV id=text7 class=mktEditable><SPAN style="FONT-SIZE: 14px"><A href="http://www.ipreo.com" target=_blank>www.ipreo.com</A></SPAN></DIV></TD>
+<TD class=expander style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; VISIBILITY: hidden; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE class=container style="WIDTH: 580px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; BORDER-SPACING: 0; PADDING-RIGHT: 0px">
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<TABLE class=row style="WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; POSITION: relative; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-SPACING: 0; DISPLAY: table !important; PADDING-RIGHT: 0px">
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD class="wrapper last" style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; POSITION: relative; FONT-WEIGHT: normal; PADDING-BOTTOM: 10px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left>
+<TABLE class="twelve columns" style="WIDTH: 580px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; BORDER-SPACING: 0; PADDING-RIGHT: 0px" align=center>
+<TBODY>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD class=footer style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 25px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=center></TD>
+<TD class=expander style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; VISIBILITY: hidden; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left></TD></TR>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=center>
+<DIV id=contact-us class=mktEditable>©2015 Ipreo. All rights reserved.</DIV></TD>
+<TD class=expander style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; VISIBILITY: hidden; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left></TD></TR>
+<TR style="VERTICAL-ALIGN: top; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=left>
+<TD style="FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=center>
+<DIV id=text9 class=mktEditable></DIV></TD>
+<TD class=expander style="FONT-SIZE: 14px; FONT-FAMILY: 'Helvetica', 'Arial', sans-serif; WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-COLLAPSE: collapse !important; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 19px; PADDING-RIGHT: 0px; VISIBILITY: hidden; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto" vAlign=top align=left></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></CENTER></TD></TR></TBODY></TABLE></BODY></HTML>

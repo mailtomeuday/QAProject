@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+<title></title>
+
+<style type="text/css">
+ 
+        #outlook a { padding:0; }
+        body{ width:100% !important; -webkit-text; size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }     
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass {width:100%;} 
+        .backgroundTable {margin:0 auto; padding:0; width:100%;!important;} 
+        table td {border-collapse: collapse;}
+        .ExternalClass * {line-height: 115%;}         
+  
+        @media screen and (max-width: 630px) {
+ /* Display block allows us to stack elements */                      
+            *[class="mobile-column"] {display: block;} 
+
+            /* Some more stacking elements */
+            *[class="mob-column"] {float: none !important;width: 100% !important;}     
+
+            /* Hide stuff */
+            *[class="hide"] {display:none !important;}          
+
+            /* This sets elements to 100% width and fixes the height issues too, a god send */
+            *[class="100p"] {width:100% !important; height:auto !important;}                    
+
+            /* For the 2x2 stack */         
+            *[class="condensed"] {padding-bottom:40px !important; display: block;}
+
+            /* Centers content on mobile */
+            *[class="center"] {text-align:center !important; width:100% !important; height:auto !important;}            
+
+            /* 100percent width section with 20px padding */
+            *[class="100pad"] {width:100% !important; padding:20px;} 
+
+            /* 100percent width section with 20px padding left & right */
+            *[class="100padleftright"] {width:100% !important; padding:0 20px 0 20px;} 
+
+            /* 100percent width section with 20px padding top & bottom */
+            *[class="100padtopbottom"] {width:100% !important; padding:20px 0px 20px 0px;} 
+
+        }
+</style>
+</head>
+<body ><div ><div class="mktEditable" id="edit_text_1" >
+<table class="wrapper_table" width="650" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width: 900px; border-collapse: collapse !important; background: url('&quot;&quot;') 50% 0% no-repeat;">
+<tbody>
+<tr>
+<td class="content height5 blue_bg" height="25" width="650" style="border-collapse: collapse; background: #AB8433;" bgcolor="#AB8433"></td>
+</tr>
+</tbody>
+</table>
+<table class="wrapper_table" id="background1" style="max-width: 900px;" width="650" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody>
+<tr>
+<td class="content" width="650" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor="#DDDDDD">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+<tbody>
+<tr>
+<td class="padding" width="40" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=""></td>
+<td class="content_row" width="560" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor="">
+<table cellspacing="0" cellpadding="0" border="0" width="559" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;" height="655">
+<tbody>
+<tr>
+<td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor="">
+<table cellpadding="0" cellspacing="0" border="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+<tbody>
+<tr>
+<td class="col_md_2 mobile_margin_bottom_20" width="280" align="left" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor="">
+<table cellpadding="0" cellspacing="0" border="0" class="mobile_centered_table" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+<tbody>
+<tr>
+<td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor="">
+<table cellpadding="0" cellspacing="0" border="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+<tbody>
+<tr>
+<td class="red_bg" align="left" width="57" collapse="">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+<tbody>
+<tr>
+<td align="center" height="62" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" bgcolor="">
+<div><br /></div>
+<div><br /></div>
+<div><img src="http://info.ipreo.com/rs/230-SPZ-348/images/bny.png" alt="Ipreo i White large.png" height="44" width="130" constrain="true" imagepreview="false" /><br /></div>
+<div><a href="#" target="_blank" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; color: inherit;"><img width="27" height="19" border="3" alt="" style="-ms-interpolation-mode: bicubic; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; border: 0;" class="" /></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td align="left" width="10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=""></td>
+<td class="Calibri weight_800 dark_color uppercase" data-editable="" align="left" style="font-size: 24px; line-height: 24px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; font-weight: 800; font-family: 'Calibri', sans-serif; color: #3b3b3b;" bgcolor=""></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="col_md_2" width="280" align="right" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=""><br /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor="#DDDDDD">
+<table cellpadding="0" cellspacing="0" border="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;" width="556" height="563">
+<tbody>
+<tr>
+<td class="Calibri weight_700 white_color" data-editable="" align="left" style="font-size: 33px; line-height: 33px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; font-weight: bold; font-family: 'Calibri', sans-serif; color: #ffffff;" bgcolor="">
+<div>&nbsp;</div>
+<div style="text-align: center;"><span style="color: #4b4b4b; font-size: 34px; line-height: 38px;">Browser Support is being retired for<br /> Internet Explorer 8, 9 &amp; 10</span></div>
+</td>
+</tr>
+<tr>
+<td height="10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=""></td>
+</tr>
+<tr>
+<td class="Calibri weight_500 white_color uppercase; padding: 10px 20px;" data-editable="" align="left" style="font-size: 13px; line-height: 26px; -webkit-text-size-adjust: 100%; font-weight: 500; font-family: 'Calibri', sans-serif; color: #ffffff;" bgcolor="">
+<div style="text-align: center;"><span style="font-size: 18px; color: #333333;"><strong><br /> Why the Change?</strong><br />In&nbsp;January of this year, Microsoft stopped supporting Internet Explorer 8, 9 &amp; 10, some&nbsp;of their more popular older browsers.
+ This means that Microsoft will no longer release security updates for these browser versions, which could put a user&rsquo;s system at an increased risk of malware and cyber-attacks.<br /><br />Additionally, last year we launched a more simplified, intuitive, and powerful desktop solution.
+ In June 2016 and throughout the year, you will continue to see additional features added to DR Insight.
+ As we strive to enhance your experience, we&nbsp;are implementing new features using many of the latest web technologies, which are not compatible with older browsers.
+ </span></div>
+<div style="text-align: center;"><span style="font-size: 18px; color: #333333;"> <br /> <strong>What does this mean?</strong><br /></span></div>
+<div style="text-align: center;"><span style="font-size: 18px; color: #333333;"><strong><span style="color: #333333; font-family: Calibri, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 26px; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 
+0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #dddddd;"><span style="color: #333333; font-family: Calibri, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 26px; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; 
+word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #dddddd;">To ensure sufficient security as well as an optimal experience when accessing the latest DR Insight&nbsp;features, we recommend that you upgrade your browser.
+ DR Insight&nbsp;is optimized for:<br />&bull; Chrome 12 or above<br />&bull; Firefox 3.6 or above<br />&bull; Safari 5.0 &ndash; 8.0 and&nbsp;<br />&bull; Internet Explorer 11.&nbsp;<br /></span></span></strong></span></div>
+<div style="text-align: center;"><span style="font-size: 18px; color: #333333;"><strong><span style="color: #333333; font-family: Calibri, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 26px; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 
+0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #dddddd;"><span style="color: #333333; font-family: Calibri, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 26px; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; 
+word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #dddddd;"></span></span></strong></span><br /></div>
+<div style="text-align: center;"><span style="font-size: 18px; color: #333333;"><strong><span style="color: #333333; font-family: Calibri, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 26px; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 
+0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #dddddd;"><span style="color: #333333; font-family: Calibri, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 26px; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; 
+word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #dddddd;"><strong style="color: #333333; font-family: Calibri, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: 26px; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; 
+word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #dddddd;">Thank you for your understanding</strong></span></span></strong></span></div>
+<div style="text-align: center;"><span style="font-size: 18px; color: #333333;"><strong><span style="color: #333333; font-family: Calibri, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 26px; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 
+0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #dddddd;"><span style="color: #333333; font-family: Calibri, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 26px; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; 
+word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #dddddd;"><span style="color: #333333; font-family: Calibri, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; letter-spacing: normal; line-height: 26px; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; 
+widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #dddddd;">We apologize for any inconvenience this may cause you and want you to know that we are here to help make this transition easier.
+ Feel free to reach out to your <a href="mailto:DRInsightSupport@ipreo.com" target="_blank">Relationship Manager</a> for assistance with a browser upgrade.<br /></span></span></span></strong></span></div>
+</td>
+</tr>
+<tr>
+<td height="10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor="">
+<p><br /></p>
+<p><img src="http://info.ipreo.com/rs/230-SPZ-348/images/bny.png" width="118" height="40" constrain="true" imagepreview="false" align="right" /></p>
+</td>
+</tr>
+<tr>
+<td class="Calibri weight_500 white_color uppercase" data-editable="" align="center" style="font-size: 23px; line-height: 36px; -webkit-text-size-adjust: 100%; font-weight: bold; font-family: 'Calibri', sans-serif; color: #ffffff;" bgcolor=""></td>
+</tr>
+<tr>
+<td height="20" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=""><br /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=""><br /></td>
+</tr>
+<tr>
+<td height="10" class="height5" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=""></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="padding" width="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=""></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wrapper_table" width="650" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width: 900px; border-collapse: collapse !important; background: 50% 0% no-repeat;">
+</table>
+<table class="wrapper_table" width="650" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width: 900px; border-collapse: collapse !important; background: 50% 0% no-repeat;">
+<tbody>
+<tr style="text-align: center;">
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="wrapper_table" width="650" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width: 900px; border-collapse: collapse !important; background: 50% 0% no-repeat;">
+<tbody>
+<tr>
+<td class="content white_bg" width="650" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; background: #fff;">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+<tbody>
+<tr>
+<td class="padding" width="20" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><br /></td>
+<td class="content_row" width="600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+<table width="650" style="max-width: 900px; border-collapse: collapse !important; background: 50% 0% no-repeat;">
+<tbody>
+<tr>
+<td width="650" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; background: #fff;">
+<table width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse !important;">
+<tbody>
+<tr>
+<td width="20" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse;">
+<table width="640" style="max-width: 900px; border-collapse: collapse !important; background: 50% 0% no-repeat;">
+<tbody>
+<tr>
+<td width="640" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse;">
+<p><span style="font-size: 11px; font-family: 'trebuchet ms', geneva; color: #808080;">Please refer to <a href="http://www.adrbnymellon.com/DR_Disclaimer.htm" style="color: #808080;">http://www.adrbnymellon.com/DR_Disclaimer.htm</a>&nbsp;for certain disclosures pertaining to Depositary Receipts.</span></p>
+<p><strong><span style="font-size: 11px; font-family: 'trebuchet ms', geneva; color: #808080;">This information and data is provided for general informational purposes only; it is not to be used or relied upon for any purpose, including making investment decisions or for trading purposes.
+ BNY Mellon does not warrant or guarantee the accuracy, timeliness or completeness of this information of data and shall have no liability for investment or other decisions based hereon, including market value loss on the sale or purchase of securities or other instruments of obligations.
+ We do not undertake any obligation to update or amend this information or data.
+ We provide no advice nor recommendation or endorsement with respect to any company or securities.
+ Nothing herein shall be deemed to constitute an offer to sell or a solicitation of an offer to buy securities.
+ Depositary Receipts are not insured by the FDIC or any government agency, are not deposits or other obligations of, and are not guaranteed by BNYM Mellon, and are subject to investment risks.
+ &nbsp;</span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br /></td>
+<td class="padding" width="20" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><br /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wrapper_table" width="650" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width: 900px; border-collapse: collapse !important; background: 50% 0% no-repeat;">
+</table>
+<p><br /></p>
+<table class="wrapper_table" width="650" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width: 900px; border-collapse: collapse !important; background: 50% 0% no-repeat;">
+<tbody>
+<tr>
+<td class="content height25 white_bg" height="0" width="650" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; background: #FFF;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>

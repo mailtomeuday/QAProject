@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Mobile_Task</fullName>
+        <fields>Subject</fields>
+        <fields>Status</fields>
+        <fields>Type</fields>
+        <label>Mobile Task</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>CallDisposition</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDurationInSeconds</fullName>
+    </fields>
+    <fields>
+        <fullName>CallObject</fullName>
+    </fields>
+    <fields>
+        <fullName>CallType</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>IsRecurrence</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+                <highPriority>true</highPriority>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Normal</fullName>
+                <default>true</default>
+                <highPriority>false</highPriority>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <highPriority>false</highPriority>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecurrenceInterval</fullName>
+    </fields>
+    <fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>true</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <closed>true</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>No Subject</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Second value</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TaskSubtype</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Account Intelligence</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call (Client - Incoming)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call (Client - Outgoing)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call (Client - Proactive)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call (Cold Call)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call (Incoming - AHRS)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call (Not Connected)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call (Prospect)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call (Voicemail)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancel Received</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client Testimonial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client Touchpoint (Churn Reduction)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contract Sent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email (Client - Group/Blast)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email (Client - Incoming/Outgoing)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email (Client - Proactive)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email (Incoming - AHRS)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email (Prospect)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow Up (non-KPI)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migration Reference</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Opportunity Identified</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Issue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Proposal Sent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Survey Follow-up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Training (Virtual)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Violation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workflow Interaction (Proactive)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Please_Select_an_Alert_group</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Send_Alert__c, &apos;Yes&apos;)
+&amp;&amp; (ISBLANK( Alert_Coverage_Groups__c) &amp;&amp; ISBLANK(  Alert_Individual_Users__c ))</errorConditionFormula>
+        <errorDisplayField>Alert_Coverage_Groups__c</errorDisplayField>
+        <errorMessage>Please select an alert group</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Name_When_Type_Is_Not_Acct_Intellig</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(WhoId) &amp;&amp;  NOT(ISPICKVAL( Type , &quot;Account Intelligence&quot;)) &amp;&amp;  NOT(ISPICKVAL( Type , &quot;Email&quot;))
+&amp;&amp; NOT(Created_From_Plugin__c)</errorConditionFormula>
+        <errorDisplayField>WhoId</errorDisplayField>
+        <errorMessage>Name required when Type is not Account Intelligence</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Products</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Products__c ) &amp;&amp; NOT(ISPICKVAL(Type , &apos;Call (Not Connected)&apos;) || ISPICKVAL(Type , &apos;Call (Voicemail)&apos;)) &amp;&amp; NOT(ISPICKVAL(Type , &apos;Email&apos;)) &amp;&amp; NOT(ISBLANK( TEXT( Type ) ))
+&amp;&amp; NOT(Created_From_Plugin__c)</errorConditionFormula>
+        <errorDisplayField>Products__c</errorDisplayField>
+        <errorMessage>You must select at least one product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Related_To</fullName>
+        <active>true</active>
+        <description>Require &quot;Related To&quot; field for &quot;Proposal Sent&quot; and &quot;Contract Sent&quot; activity types.  The selected item must be an Opportunity</description>
+        <errorConditionFormula>(ISPICKVAL(Type, &quot;Proposal Sent&quot;) || ISPICKVAL(Type, &quot;Contract Sent&quot;)) 
+&amp;&amp; (ISBLANK(WhatId) || NOT(BEGINS(WhatId, &quot;006&quot;))) &amp;&amp; $Profile.Name != &quot;System Administrator&quot; &amp;&amp; $Profile.Name != &quot;Operations User&quot;</errorConditionFormula>
+        <errorDisplayField>WhatId</errorDisplayField>
+        <errorMessage>The &quot;Related To&quot; field is required AND must be an Opportunity for &quot;Proposal Sent&quot; and &quot;Contract Sent&quot; activity types.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Send_Alert</fullName>
+        <active>true</active>
+        <description>Require &quot;Send Alert&quot; = &quot;Yes&quot; for &quot;Proposal Sent&quot; and &quot;Contract Sent&quot; activity types</description>
+        <errorConditionFormula>(ISPICKVAL(Type, &quot;Proposal Sent&quot;) || ISPICKVAL(Type, &quot;Contract Sent&quot;)) 
+&amp;&amp; NOT(ISPICKVAL(Send_Alert__c, &quot;Yes&quot;)) &amp;&amp; $Profile.Name != &quot;System Administrator&quot; &amp;&amp; $Profile.Name != &quot;Operations User&quot;</errorConditionFormula>
+        <errorDisplayField>Send_Alert__c</errorDisplayField>
+        <errorMessage>The &quot;Send Alert&quot; value must be &quot;Yes&quot; for &quot;Proposal Sent&quot; and &quot;Contract Sent&quot; activity types.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_User_Relationship</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( TEXT(User_Relationship__c) ) &amp;&amp; NOT(ISPICKVAL(Type , &apos;Call (Not Connected)&apos;) || ISPICKVAL(Type , &apos;Call (Voicemail)&apos;)) &amp;&amp; NOT(ISPICKVAL(Type , &apos;Email&apos;))  &amp;&amp; NOT(ISBLANK( TEXT( Type ) )) &amp;&amp; NOT(Created_From_Plugin__c)</errorConditionFormula>
+        <errorDisplayField>User_Relationship__c</errorDisplayField>
+        <errorMessage>You must enter a value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Vertical</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( TEXT( Vertical__c ) ) &amp;&amp; NOT(ISPICKVAL(Type , &apos;Call (Not Connected)&apos;) || ISPICKVAL(Type , &apos;Call (Voicemail)&apos;)) &amp;&amp; NOT(ISPICKVAL(Type , &apos;Email&apos;)) &amp;&amp; NOT(ISBLANK( TEXT( Type ) ))
+&amp;&amp; NOT(Created_From_Plugin__c)</errorConditionFormula>
+        <errorDisplayField>Vertical__c</errorDisplayField>
+        <errorMessage>You must enter a value</errorMessage>
+    </validationRules>
+</CustomObject>

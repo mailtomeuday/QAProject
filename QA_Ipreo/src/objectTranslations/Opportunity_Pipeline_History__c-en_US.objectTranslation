@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Pipeline History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Pipeline Histories</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACV - New Business --></label>
+        <name>ACV_New_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACV - Renewals --></label>
+        <name>ACV_Renewals__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACV --></label>
+        <name>ACV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Opportunity Pipeline History Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Annual Transaction Fees --></label>
+        <name>Estimated_Annual_Transaction_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Date --></label>
+        <name>Historical_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net New Business --></label>
+        <name>Net_New_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Currency --></label>
+        <name>Opportunity_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Pipeline History Unique Key --></label>
+        <name>Opportunity_Pipeline_History_Unique_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Opportunity Pipeline History Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pass Through --></label>
+        <name>Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Year ACV --></label>
+        <name>Prior_Year_ACV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Year Pass Through --></label>
+        <name>Prior_Year_Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCV --></label>
+        <name>TCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Pipeline --></label>
+        <name>Total_Pipeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vertical --></label>
+        <name>Vertical__c</name>
+    </fields>
+    <fields>
+        <label><!-- 180 Day Pipeline --></label>
+        <name>X180_Day_Pipeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- 30 Day Pipeline --></label>
+        <name>X30_Day_Pipeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- 90 Day Pipeline --></label>
+        <name>X90_Day_Pipeline__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity Pipeline History Layout</layout>
+        <sections>
+            <label><!-- Appears in Pipeline Reports? --></label>
+            <section>Appears in Pipeline Reports?</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

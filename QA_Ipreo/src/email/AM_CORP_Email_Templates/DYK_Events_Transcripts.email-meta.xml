@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DYK- Events &amp; Transcripts- Brent</name>
+    <style>none</style>
+    <subject>Ipreo- Did You Know?</subject>
+    <textOnly>Events &amp; Transcripts
+
+
+As we approach earnings season, staying on top of peer’s earnings calls and industry events becomes all the more critical. Would you find it helpful to receive email alerts when the transcripts from these calls and events are published?
+
+Ipreo’s Events &amp; Transcripts platform can be added to your BD Corporate account.
+
+The calendar provides event dates, conference call details, contact information, and links to audio recordings of calls. The Email Alert functionality allows you to build a watch list of companies, and have the transcripts from their calls and events delivered directly to your inbox once published.
+
+Click here to access a Quick Guide that will help familiarize you with this feature in BD Corporate. Please contact your dedicated Account Manager to receive a more personalized consultation on using this feature to access timely, accurate industry events and company transcripts within BD Corporate!
+
+
+Brent Falcon
+Analyst, Account Management
+Brent.Falcon@ipreo.com
+919-615-4461
+
+
+
+
+For further information or training, please contact your dedicated Account Manager
+or 24/7 client support at: callmenowIR@ipreo.com or the telephone numbers below:
+
+US: 1-800-305-0819 | Europe: +44 (0) 20 7665 9820 | APAC: +852 58082616
+
+Copyright © 2016. Ipreo. All rights Reserved</textOnly>
+    <type>custom</type>
+</EmailTemplate>

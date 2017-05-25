@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BDC DYK- Underlying Fund Holders</name>
+    <style>none</style>
+    <subject>Ipreo- Did You Know?</subject>
+    <textOnly>Underlying Fund Holders Report
+
+
+Would you like to quickly download institutional holders along with underlying fund positions?
+
+Solution:
+
+You can easily generate this deliverable in Excel with a few clicks in Ownership within BD Corporate.
+
+Click here to access a Quick Guide that details this streamlined workflow within BD Corporate. Please contact your dedicated Account Manager to receive a more personalized consultation on how to analyze Institutional and Fund-level ownership in the BD Corporate Platform.
+
+
+
+Jorge Mere
+Account Manager
+Jorge.mere@ipreo.com
+
+212-849-3780
+
+
+For further information or training, please contact your dedicated Account Manager
+or 24/7 client support at: callmenowir@ipreo.com or the telephone numbers below:
+
+US: 1-800-305-0819 | Europe: +44 (0) 20 7665 9820 | APAC: +852 58082615
+
+Click hereto view a video that highlights our upcoming enhancements to the BD Corporate Platform!
+
+Copyright © 2016. Ipreo. All rights Reserved</textOnly>
+    <type>custom</type>
+</EmailTemplate>

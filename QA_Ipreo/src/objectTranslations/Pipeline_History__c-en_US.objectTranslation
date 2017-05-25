@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pipeline History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pipeline History</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACV --></label>
+        <name>ACV__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACpV --></label>
+        <name>ACpV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Month --></label>
+        <name>Closed_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Annual Transaction Fees --></label>
+        <name>Est_Annual_Transaction_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local ACV --></label>
+        <name>Local_ACV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local ACpV --></label>
+        <name>Local_ACpV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local TCV --></label>
+        <name>Local_TCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local TCpV --></label>
+        <name>Local_TCpV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net New Business --></label>
+        <name>Net_New_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Count --></label>
+        <name>Opportunity_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Currency --></label>
+        <name>Opportunity_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pass Through --></label>
+        <name>Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Year ACV --></label>
+        <name>Prior_Year_ACV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Year ACpV --></label>
+        <name>Prior_Year_ACpV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Year Pass Through --></label>
+        <name>Prior_Year_Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Bundle --></label>
+        <name>Product_Bundle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Est. Annual Transaction Fees --></label>
+        <name>Product_Est_Annual_Transaction_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Expense Cap --></label>
+        <name>Product_Expense_Cap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product NNB --></label>
+        <name>Product_NNB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Pass Through --></label>
+        <name>Product_Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Prior Year Pass Through --></label>
+        <name>Product_Prior_Year_Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Region --></label>
+        <name>Product_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Revenue Type --></label>
+        <name>Product_Revenue_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Status --></label>
+        <name>Product_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Transaction Type --></label>
+        <name>Product_Transaction_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Upfront Expense Fee --></label>
+        <name>Product_Upfront_Expense_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Vertical --></label>
+        <name>Product_Vertical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Execution Time --></label>
+        <name>Report_Execution_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Increase (%) --></label>
+        <name>Revenue_Increase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCV --></label>
+        <name>TCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCpV --></label>
+        <name>TCpV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vertical --></label>
+        <name>Vertical__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

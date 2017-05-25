@@ -1,0 +1,13 @@
+*** CASE PRIORITY NOTIFICATION ***  
+
+The following case has changed its priority:
+
+Click on the link to access the case:  {!Case.Link}
+
+Company:  {!Account.Name} 
+Contact Name:  {!Contact.Name} 
+Case #:  {!Case.CaseNumber} 
+Case Priority:  {!Case.Priority}
+Subject:  {!Case.Subject} 
+Description:
+{!Case.Description}

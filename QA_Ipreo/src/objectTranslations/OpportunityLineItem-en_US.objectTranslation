@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>General Comments</value>
+        </caseValues>
+        <name>line_description_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>TCpV</value>
+        </caseValues>
+        <name>sales_price_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <help><!-- Annual Contracted Product Value - the Product level breakout for Annual Contracted Value (ACV). --></help>
+        <label><!-- ACpV --></label>
+        <name>ACpV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Opportunity Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- For products where part of the amount paid by the customer is &quot;passed through&quot; to a third party, such as Factset Workstation, this is the portion of the ACpV (current year amount) that is passed through and not kept by Ipreo. --></help>
+        <label><!-- Annual Pass Through --></label>
+        <name>Annual_Pass_Through__c</name>
+    </fields>
+    <fields>
+        <help><!-- For customers purchasing products that are being subsidized by the NYSE, this allows selective application of the subsidy to specific products.  Defaults to &apos;no&apos;.  Select &apos;yes&apos; in order to apply subsidy to the Opportunity Product. --></help>
+        <label><!-- Apply NYSE Subsidy? --></label>
+        <name>Apply_NYSE_Subsidy__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Opportunity Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Backlog Days --></label>
+        <name>Backlog_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backlog --></label>
+        <name>Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backup Opportunity Product Id --></label>
+        <name>Backup_Opportunity_Product_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Required if product is Lost/Cancelled/Downtick --></help>
+        <label><!-- Lost/Cancelled/Downtick Comment --></label>
+        <name>Cancel_Comment__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Products that are &quot;Won&quot;, the Competitor or Incumbent from which we took the customer&apos;s business.  For  Products that are &quot;Lost&quot; or are &quot;Cancelled&quot;, the Competitor or Incumbent to which we lost the customer&apos;s business. --></help>
+        <label><!-- Competitor/Incumbent --></label>
+        <name>Competitor_Incumbent__c</name>
+        <picklistValues>
+            <masterLabel>Analec</masterLabel>
+            <translation><!-- Analec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ansarada</masterLabel>
+            <translation><!-- Ansarada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asbet</masterLabel>
+            <translation><!-- Asbet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloomberg</masterLabel>
+            <translation><!-- Bloomberg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BlueMatrix</masterLabel>
+            <translation><!-- BlueMatrix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boudica</masterLabel>
+            <translation><!-- Boudica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEB</masterLabel>
+            <translation><!-- CEB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CapIQ</masterLabel>
+            <translation><!-- CapIQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Citrix</masterLabel>
+            <translation><!-- Citrix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cmi2i</masterLabel>
+            <translation><!-- Cmi2i --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Computershare</masterLabel>
+            <translation><!-- Computershare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DF King</masterLabel>
+            <translation><!-- DF King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deal RoadShow</masterLabel>
+            <translation><!-- Deal RoadShow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealogic</masterLabel>
+            <translation><!-- Dealogic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DebtX</masterLabel>
+            <translation><!-- DebtX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynamics</masterLabel>
+            <translation><!-- Dynamics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Adjustment</masterLabel>
+            <translation><!-- Finance Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Firmex</masterLabel>
+            <translation><!-- Firmex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPO</masterLabel>
+            <translation><!-- IPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR Japan</masterLabel>
+            <translation><!-- IR Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intralinks</masterLabel>
+            <translation><!-- Intralinks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Networks</masterLabel>
+            <translation><!-- Investor Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J-IRIS</masterLabel>
+            <translation><!-- J-IRIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JSS</masterLabel>
+            <translation><!-- JSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MZ Ilios</masterLabel>
+            <translation><!-- MZ Ilios --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markit®</masterLabel>
+            <translation><!-- Markit® --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merrill Corporation</masterLabel>
+            <translation><!-- Merrill Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modular Finance</masterLabel>
+            <translation><!-- Modular Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Napa</masterLabel>
+            <translation><!-- Napa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nasdaq</masterLabel>
+            <translation><!-- Nasdaq --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NetRoadShow</masterLabel>
+            <translation><!-- NetRoadShow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NextJ</masterLabel>
+            <translation><!-- NextJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orient Capital</masterLabel>
+            <translation><!-- Orient Capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oxford Intelligence Partners</masterLabel>
+            <translation><!-- Oxford Intelligence Partners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PitchBook</masterLabel>
+            <translation><!-- PitchBook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preqin</masterLabel>
+            <translation><!-- Preqin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q4</masterLabel>
+            <translation><!-- Q4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RD:IR</masterLabel>
+            <translation><!-- RD:IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RR Donnelley - Venue</masterLabel>
+            <translation><!-- RR Donnelley - Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rivel</masterLabel>
+            <translation><!-- Rivel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singletrack</masterLabel>
+            <translation><!-- Singletrack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SyndTrak</masterLabel>
+            <translation><!-- SyndTrak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taylor Rafferty</masterLabel>
+            <translation><!-- Taylor Rafferty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thomson Reuters</masterLabel>
+            <translation><!-- Thomson Reuters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier1</masterLabel>
+            <translation><!-- Tier1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iLevel</masterLabel>
+            <translation><!-- iLevel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DM Name --></label>
+        <name>DM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Region --></label>
+        <name>Data_Region__c</name>
+        <picklistValues>
+            <masterLabel>AMER</masterLabel>
+            <translation><!-- AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dataset --></label>
+        <name>Dataset__c</name>
+        <picklistValues>
+            <masterLabel>Contacts</masterLabel>
+            <translation><!-- Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Debt Issue Size --></label>
+        <name>Debt_Issue_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent on Product Code --></label>
+        <name>Dependent_on_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Start Date --></label>
+        <name>Est_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- For usage based products (ACV/TRANS products), the estimated amount expected to be paid by the customer for this year, based on estimated usage. --></help>
+        <label><!-- Est. Annual Transaction Fees --></label>
+        <name>Estimated_Annual_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date on which project or report is expected to be delivered.  Applies to Project products, only; n/a for subscription products.  Required at Won or at Renewed if Subscription Dates and Term are not entered. --></help>
+        <label><!-- Est. Completion Date --></label>
+        <name>Estimated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Current year amount that Ipreo agrees not to exceed for expenses charged back to customer, typically associated with software implementation or installation. --></help>
+        <label><!-- Expense Cap --></label>
+        <name>Expense_Cap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Product Code --></label>
+        <name>Finance_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Product Comments --></label>
+        <name>Finance_Product_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of months of the Term being given to the customer for free.  Usually at the beginning of the term. --></help>
+        <label><!-- Free Period (months) --></label>
+        <name>Free_Period_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- License --></label>
+        <name>License__c</name>
+        <relationshipLabel><!-- Opportunity Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Required when Opportunity Product &quot;Status&quot; is Lost or is Cancelled. Or If Revenue Delta Type is Downtick. If the Lost/Cancelled Reason indicates the business was lost to a competitor or incumbent, field Competitor/Incumbent is also required. --></help>
+        <label><!-- Lost/Cancelled/Downtick Reason --></label>
+        <name>Lost_Cancelled_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Bankruptcy</masterLabel>
+            <translation><!-- Bankruptcy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budget (No Competitor)</masterLabel>
+            <translation><!-- Budget (No Competitor) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Uncertainty</masterLabel>
+            <translation><!-- Business Uncertainty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor (Functionality + Price)</masterLabel>
+            <translation><!-- Competitor (Functionality + Price) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor (Functionality)</masterLabel>
+            <translation><!-- Competitor (Functionality) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor (Price)</masterLabel>
+            <translation><!-- Competitor (Price) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Nothing (Functionality + Price)</masterLabel>
+            <translation><!-- Did Nothing (Functionality + Price) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Nothing (Functionality)</masterLabel>
+            <translation><!-- Did Nothing (Functionality) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Nothing (Price)</masterLabel>
+            <translation><!-- Did Nothing (Price) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exited Business</masterLabel>
+            <translation><!-- Exited Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fewer Users</masterLabel>
+            <translation><!-- Fewer Users --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Adjustment</masterLabel>
+            <translation><!-- Finance Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ipreo Decision</masterLabel>
+            <translation><!-- Ipreo Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merger &amp; Acquisition</masterLabel>
+            <translation><!-- Merger &amp; Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Reallocation</masterLabel>
+            <translation><!-- Product Reallocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidy Loss (No Competitor)</masterLabel>
+            <translation><!-- Subsidy Loss (No Competitor) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Resource</masterLabel>
+            <translation><!-- Technical Resource --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Master ACV Eligible --></label>
+        <name>Master_ACV_Eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master ACV Value --></label>
+        <name>Master_ACV_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a formula field that calculates ACpV - Annual Pass Through --></help>
+        <label><!-- Net ACpV --></label>
+        <name>Net_ACpV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Read only, formula field:  (ACpV - Annual Pass Through) - (Prior Year ACpV - Prior Year Pass Through). --></help>
+        <label><!-- Net New Business --></label>
+        <name>Net_New_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Calls --></label>
+        <name>No_of_Calls__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Certificates --></label>
+        <name>No_of_Certificates__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Conferences --></label>
+        <name>No_of_Conferences__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Deals --></label>
+        <name>No_of_Deals__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Meetings --></label>
+        <name>No_of_Meetings__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Questions --></label>
+        <name>No_of_Questions__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Reports --></label>
+        <name>No_of_Reports__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of users licensed for software products --></help>
+        <label><!-- No. of Users --></label>
+        <name>No_of_Users__c</name>
+    </fields>
+    <fields>
+        <label><!-- OppProductUniqueKey --></label>
+        <name>OppProductUniqueKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Per Transaction Fee --></label>
+        <name>Per_Transaction_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- For New Business Opportunities, this is 0.  For renewals, it is populated by the system with the ACpV from the previous Opportunity.  Used in calculating Net New Business for the Opportunity Product. --></help>
+        <label><!-- Prior Year ACpV --></label>
+        <name>Prior_Year_ACpV__c</name>
+    </fields>
+    <fields>
+        <help><!-- For New Business Opportunities, this is 0.  For renewals, it is populated by the system with the Annual Pass Through from the previous Opportunity.  Used in calculating Net New Business for the Opportunity Product. --></help>
+        <label><!-- Prior Year Pass Through --></label>
+        <name>Prior_Year_Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Lost Amount (Annual) --></label>
+        <name>Product_Lost_Amount_Annual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Lost Amount (Total) --></label>
+        <name>Product_Lost_Amount_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defaults from Region of Opportunity Owner.  Can be changed. --></help>
+        <label><!-- Product Region --></label>
+        <name>Product_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAPAN</masterLabel>
+            <translation><!-- JAPAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATAM</masterLabel>
+            <translation><!-- LATAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- ACV:  Annual Contracted Value - subscription product.  PROJ:  Project.  ACV/TRANS:  Usage based product.  ACV/PROJ:  Project sold as part of a subscription. --></help>
+        <label><!-- Product Revenue Type --></label>
+        <name>Product_Revenue_Type__c</name>
+        <picklistValues>
+            <masterLabel>ACV</masterLabel>
+            <translation><!-- ACV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACV/TRANS</masterLabel>
+            <translation><!-- ACV/TRANS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROJ</masterLabel>
+            <translation><!-- PROJ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Subregion --></label>
+        <name>Product_Subregion__c</name>
+        <picklistValues>
+            <masterLabel>Germanics</masterLabel>
+            <translation><!-- Germanics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russia</masterLabel>
+            <translation><!-- Russia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southern Europe</masterLabel>
+            <translation><!-- Southern Europe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- New Business:  new product for new customer.  Upsell:  new product for existing customer.  Add On:  add on users for existing product.  Renewal:  renewal of existing product. --></help>
+        <label><!-- Product Transaction Type --></label>
+        <name>Product_Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add On</masterLabel>
+            <translation><!-- Add On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Business</masterLabel>
+            <translation><!-- New Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upsell</masterLabel>
+            <translation><!-- Upsell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Vertical --></label>
+        <name>Product_Vertical__c</name>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG</masterLabel>
+            <translation><!-- GMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCS</masterLabel>
+            <translation><!-- PCS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Opportunity Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RAG Status --></label>
+        <name>RAG_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for RAG Status --></label>
+        <name>Reason_for_RAG_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recognition Month --></label>
+        <name>Recognition_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Partner that recommended IPREO to the customer. --></help>
+        <label><!-- Levered Sale --></label>
+        <name>Referral_Partner__c</name>
+        <picklistValues>
+            <masterLabel>Arbor Advisory</masterLabel>
+            <translation><!-- Arbor Advisory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Artemis IR</masterLabel>
+            <translation><!-- Artemis IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackstone</masterLabel>
+            <translation><!-- Blackstone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brunswick</masterLabel>
+            <translation><!-- Brunswick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christensen IR</masterLabel>
+            <translation><!-- Christensen IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Citigate DR</masterLabel>
+            <translation><!-- Citigate DR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College Hill</masterLabel>
+            <translation><!-- College Hill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continental Stock Transfer</masterLabel>
+            <translation><!-- Continental Stock Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daiwa IR</masterLabel>
+            <translation><!-- Daiwa IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deutsche DR</masterLabel>
+            <translation><!-- Deutsche DR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EQS</masterLabel>
+            <translation><!-- EQS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goldman Sachs</masterLabel>
+            <translation><!-- Goldman Sachs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investis</masterLabel>
+            <translation><!-- Investis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iridium</masterLabel>
+            <translation><!-- Iridium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JPM DR</masterLabel>
+            <translation><!-- JPM DR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Eye</masterLabel>
+            <translation><!-- Market Eye --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mitsubishi Securities</masterLabel>
+            <translation><!-- Mitsubishi Securities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nomura IR</masterLabel>
+            <translation><!-- Nomura IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Exchange</masterLabel>
+            <translation><!-- Open Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q4 Websystems</masterLabel>
+            <translation><!-- Q4 Websystems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registrar</masterLabel>
+            <translation><!-- Registrar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMTB</masterLabel>
+            <translation><!-- SMTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SNL Financial</masterLabel>
+            <translation><!-- SNL Financial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santander</masterLabel>
+            <translation><!-- Santander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singapore Stock Exchange</masterLabel>
+            <translation><!-- Singapore Stock Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solebury IR</masterLabel>
+            <translation><!-- Solebury IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TSTA (Tokyo Stock Transfer Agent)</masterLabel>
+            <translation><!-- TSTA (Tokyo Stock Transfer Agent) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TSX</masterLabel>
+            <translation><!-- TSX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TSX Venture</masterLabel>
+            <translation><!-- TSX Venture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Takara Printing</masterLabel>
+            <translation><!-- Takara Printing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Theoria</masterLabel>
+            <translation><!-- Theoria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wonderful Sky</masterLabel>
+            <translation><!-- Wonderful Sky --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Increase % expected when Opportunity Product is renewed.  When Opportunity is Closed Won Verified, causing a Renewal Opportunity to be created, the ACpV on the Opportunity Product on the Renewal is set to current ACpV + (current ACpV*Renewal Increase %). --></help>
+        <label><!-- Renewal Increase (%) --></label>
+        <name>Renewal_Increase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Implementation (UAT) --></label>
+        <name>Requires_Implementation_UAT__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Revenue Delta Type --></label>
+        <name>Revenue_Delta_Type__c</name>
+        <picklistValues>
+            <masterLabel>Downtick</masterLabel>
+            <translation><!-- Downtick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flat</masterLabel>
+            <translation><!-- Flat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uptick</masterLabel>
+            <translation><!-- Uptick --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revenue Recognition Date &gt;= Current Mont --></label>
+        <name>Revenue_Recognition_Date_Current_Mont__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Recognition Date --></label>
+        <name>Revenue_Recognition_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Recognition Month --></label>
+        <name>Revenue_Recognition_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site License --></label>
+        <name>Site_License__c</name>
+        <picklistValues>
+            <masterLabel>AMER</masterLabel>
+            <translation><!-- AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Required when Opportunity Stage is Closed%.  When Status has not been populated, most fields on page are not validated by system.  Once Status is populated (with either Won/Lost for New Business or Renewed/Cancelled for Renewals), the validations occur. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewed</masterLabel>
+            <translation><!-- Renewed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won</masterLabel>
+            <translation><!-- Won --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subgroup --></label>
+        <name>Subgroup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Applies to Opportunity Products sold as a subscription, only (N/A for projects).  Subscription End Date must be same (coterminous) for all Opportunity Products on the Opportunity.  Req at Won, Renewed if Subscription Start Date and Term populated. --></help>
+        <label><!-- Subscription End Date --></label>
+        <name>Subscription_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Applies to Opportunity Products sold as a subscription, only (N/A for projects).  Required at Status &apos;Won&apos; or &apos;Renewed&apos; if Subscription End Date and Term are populated. --></help>
+        <label><!-- Subscription Start Date --></label>
+        <name>Subscription_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Start Date is &gt;= Current Mo --></label>
+        <name>Subscription_Start_Date_is_Current_Mo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Term of subscription, INCLUSIVE of any free period.  Leave blank for non-subscription products.  If entered, Subscription Start Date and Subscription End Date must also be entered. --></help>
+        <label><!-- Term (months) --></label>
+        <name>Term_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- Current year amount Ipreo will charge to customer upfront for expenses, typically expenses associated with software implementation or installation. --></help>
+        <label><!-- Implementation/Upfront Fee --></label>
+        <name>Upfront_Expense_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates that the Opportunity Product was for a former Ipreo customer of this product that went to a competitor and is now won back to Ipreo.  Cannot be checked for Lost or for Cancelled Opportunity Products. --></help>
+        <label><!-- Win Back --></label>
+        <name>Win_Back__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Comp Date is &gt;= Current Month --></label>
+        <name>Work_Order_Comp_Date_is_Current_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Completion Date --></label>
+        <name>Work_Order_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Est Completion Date --></label>
+        <name>Work_Order_Est_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Owner --></label>
+        <name>Work_Order_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Queue --></label>
+        <name>Work_Order_Queue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Status --></label>
+        <name>Work_Order_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order --></label>
+        <name>Work_Order__c</name>
+        <relationshipLabel><!-- Opportunity Product --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Opportunity Product Layout</layout>
+        <sections>
+            <label><!-- Asset --></label>
+            <section>Asset</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- GMG --></label>
+            <section>GMG</section>
+        </sections>
+        <sections>
+            <label><!-- GMI --></label>
+            <section>GMI</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Status --></label>
+            <section>Product Status</section>
+        </sections>
+        <sections>
+            <label><!-- Project/Conditional Transaction Dates --></label>
+            <section>Project/Conditional Transaction Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Subscription Dates --></label>
+            <section>Subscription Dates</section>
+        </sections>
+        <sections>
+            <label><!-- User and Data Info --></label>
+            <section>User and Data Info</section>
+        </sections>
+        <sections>
+            <label><!-- Work Order Information --></label>
+            <section>Work Order Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You can not save an opportunity product with a status without setting the opportunity product revenue type --></errorMessage>
+        <name>Cannot_Add_Opp_Status_WO_Product_Rev_Ty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Operations users can change Assets, except on Add On opportunity products.  Please ask Sales Operations for assistance. --></errorMessage>
+        <name>Cannot_Change_Asset</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit product on closed opportunities.  Please ask Sales Operations to make any necessary changes. --></errorMessage>
+        <name>Cannot_Edit_Prod_on_Closed_Opportunities</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Operations users can modify Product Region for renewal opportunity products. --></errorMessage>
+        <name>Cannot_Modify_Product_Region</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Operations users can modify Product Revenue Type for renewal opportunity products. --></errorMessage>
+        <name>Cannot_Modify_Product_Revenue_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Operations users can modify Product Subregion for renewal opportunity products. --></errorMessage>
+        <name>Cannot_Modify_Product_Subregion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Operations users can modify Subscription Start Date for renewal opportunity products. --></errorMessage>
+        <name>Cannot_Modify_Subscription_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Operations users can modify Win Back for renewal opportunity products. --></errorMessage>
+        <name>Cannot_Modify_Win_Back</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot enter Subscription Start/End dates or Term if Requires Implementation (UAT) value is Yes. --></errorMessage>
+        <name>Cant_Update_Subscription_Start_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ACpV must be less than or equal to TCpV --></errorMessage>
+        <name>Check_ACpV_Less_or_Equal_Than_TCpV</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ACpV and TCpV must be 0 when product is lost --></errorMessage>
+        <name>Check_ACpV_TCpV_on_Lost_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ACpV must be 0 when this product is cancelled --></errorMessage>
+        <name>Check_ACpV_on_Cancelled_or_Lost_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Estimated Annual Transaction Fees required when Product Revenue Type is ACV/TRANS --></errorMessage>
+        <name>Check_Est_Annual_Fee_for_Trans_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Product Revenue Type is PROJ, Est. Completion Date must be populated at Won/Renewed. --></errorMessage>
+        <name>Check_Est_Completion_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product Lost Amount (Annual) and Product Lost Amount (Total) must be greater than 0 when opportunity product status is Lost. --></errorMessage>
+        <name>Check_Lost_Amounts_When_Status_Lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product Lost Amount (Annual) and Product Lost Amount (Total) must be 0 when opportunity product status is not Lost. --></errorMessage>
+        <name>Check_Lost_Amounts_When_Status_Not_Lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pass Through cannot be greater than 0 for this type of product.  Please remove. --></errorMessage>
+        <name>Check_Pass_Through_Part_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pass Through required for this type of product --></errorMessage>
+        <name>Check_Pass_Through_Part_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Annual Pass Through cannot be greater than 0 for cancelled renewals.  Please remove. --></errorMessage>
+        <name>Check_Pass_Through_Part_3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Per Transaction Fee required when Product Revenue Type is ACV/TRANS --></errorMessage>
+        <name>Check_Per_Trans_Fee_for_Trans_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Require Product Subregion when Status is &quot;Won or Renewed&quot;  and Product Region is &quot;EMEA&quot; --></errorMessage>
+        <name>Check_Product_Subregion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot choose ACV,  ACV/TRANS on a project opportunity --></errorMessage>
+        <name>Check_Revenue_Type_for_Project_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot choose PROJ on a subscription opportunity --></errorMessage>
+        <name>Check_Revenue_Type_for_Subscription_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot enter product with blank status on a closed opportunity --></errorMessage>
+        <name>Check_Status_for_Closed_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot choose Renewed or Cancelled on a new business opportunity --></errorMessage>
+        <name>Check_Status_for_New_Business_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot choose Won or Lost on a renewal opportunity --></errorMessage>
+        <name>Check_Status_for_Renewal_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Subscription Start Date must be before Subscription End Date --></errorMessage>
+        <name>Check_Subscription_Start_AND_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- TCpV must be 0 when this product is cancelled --></errorMessage>
+        <name>Check_TCpV_When_Cancel_or_Lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Term (months) cannot be greater than 0 for cancelled renewals.  Please remove. --></errorMessage>
+        <name>Check_Term</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Term must be 12 months or greater for this type of product --></errorMessage>
+        <name>Check_Term_Less_Than_12</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot choose Renewal on a new business opportunity --></errorMessage>
+        <name>Check_Type_for_New_Business_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot choose New Business, Upsell, or Add On on a renewal opportunity --></errorMessage>
+        <name>Check_Type_for_Renewal_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Estimated Completion Date cannot be in the past. --></errorMessage>
+        <name>Est_Completion_Date_Cannot_Be_Past_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Product Revenue Type should be same as Revenue Type of Product Setup --></errorMessage>
+        <name>OptyProrevetype_equal_to_Pro_revtype</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Apply NYSE Subsidy? required when NYSE Program Tier entered --></errorMessage>
+        <name>Req_Apply_NYSE_Subsidy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Competitor/Incumbent required when Loss/Cancel Reason is for a competitor or incumbent --></errorMessage>
+        <name>Req_Competitor_Incumbent_Loss_Cancel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Competitor/Incumbent required when won --></errorMessage>
+        <name>Req_Competitor_Incumbent_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Estimated Completion Date required (i.e. Product Revenue Type=PROJ) or Subscription Start and End Date and Term required when won or renewed (i.e. Product Revenue Type contains ACV) --></errorMessage>
+        <name>Req_Completion_Date_or_Subscription_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Data Region required for this type of product --></errorMessage>
+        <name>Req_Data_Region</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Dataset required for this type of product --></errorMessage>
+        <name>Req_Dataset</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debt Issue Size required for this type of product --></errorMessage>
+        <name>Req_Debt_Issue_Size</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lost/Cancelled/Downtick Comment required when lost or cancelled or downtick --></errorMessage>
+        <name>Req_Lost_Cancelled_Down_Comment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lost/Cancelled/Downtick Reason - Please Specify, required when product is Lost --></errorMessage>
+        <name>Req_Lost_Cancelled_Reason_Please_Specify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lost/Cancelled/Downtick Reason required when lost or cancelled or downtick --></errorMessage>
+        <name>Req_Lost_Cancelled_Reason_When_Lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No. of Calls required for this type of product --></errorMessage>
+        <name>Req_No_of_Calls</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No. of Certificates required for this type of product --></errorMessage>
+        <name>Req_No_of_Certificates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No. of Conferences required for this type of product --></errorMessage>
+        <name>Req_No_of_Conferences</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No. of Deals required for this type of product --></errorMessage>
+        <name>Req_No_of_Deals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No. of Meetings required for this type of product --></errorMessage>
+        <name>Req_No_of_Meetings</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No. of Questions required for this type of product --></errorMessage>
+        <name>Req_No_of_Questions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No. of Reports required for this type of product --></errorMessage>
+        <name>Req_No_of_Reports</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No. of Users required for this type of product --></errorMessage>
+        <name>Req_No_of_Users</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product Region is required when you close this opportunity product. --></errorMessage>
+        <name>Req_Region_When_Won_or_Renewed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter a value --></errorMessage>
+        <name>Req_Revenue_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Site License required for this type of product --></errorMessage>
+        <name>Req_Site_License</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Subscription End Date required when Subscription Start Date or Term entered --></errorMessage>
+        <name>Req_Subscription_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Subscription Start Date required when Subscription End Date or Term entered --></errorMessage>
+        <name>Req_Subscription_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Term required when Subscription Start and End Dates entered --></errorMessage>
+        <name>Req_Term_for_Subscription_Period</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requires Implementation (UAT)  is required --></errorMessage>
+        <name>Req_Value_Requires_Implementation_UAT</name>
+    </validationRules>
+</CustomObjectTranslation>

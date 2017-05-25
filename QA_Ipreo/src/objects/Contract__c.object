@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Mobile_Contract</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Mobile_Contract</fullName>
+        <fields>Name</fields>
+        <fields>Contract_Type__c</fields>
+        <fields>Effective_Date__c</fields>
+        <fields>Status__c</fields>
+        <label>Mobile Contract</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used instead of the standard Contract object to allow queues.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Vertical__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.Vertical__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Vertical</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sold To Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Any_Change_to_Audit_Rights_in_RS_T_CM__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Any Change to Audit Rights in RS&amp;T/CM</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Any_Change_to_Terms_of_Use__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Any Change to Terms of Use</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Assignment_Restricted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Assignment Restricted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Associated_MSA__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Associated MSA</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contract__c.Account__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Account__c</valueField>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Contract__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Schedules</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Audit_Rights_Removed_or_Diluted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Audit Rights Removed or Diluted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Bill To Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contracts (Account)</relationshipLabel>
+        <relationshipName>Contracts1_del</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Billing_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Billing Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Account__c</valueField>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Contracts (Billing Contact)</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Country</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Frequency_Other_Please_Specify__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Frequency - Other Please Specify</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Frequency</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Semi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Annually</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Upfront</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Start_Date_Other_Pls_Specify__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Start Date - Other Pls Specify</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Start Date</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Subscription Start Date</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Billing_State_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing State/Province</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Street</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Zip_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Zip/Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Continuity_and_Disaster_Recover__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Continuity and Disaster Recover</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Cap_to_Cust_Liability_for_Direct_Damages__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cap to Cust Liability for Direct Damages</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Change_of_Control_Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Change of Control Trigger</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>4000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contract_Age_Days__c</fullName>
+        <description>Number of days contract has been open. If there is an Effective date populated, then it will use that as the end date.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Customer_Signed_Date__c ), TODAY() -  Initial_Submission_Date__c , Customer_Signed_Date__c - Initial_Submission_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contract Age (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_ID__c</fullName>
+        <displayFormat>CON-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Contract ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>MSA With Schedules: Master Services Agreement
+Data Agreement: change to data access
+Project Agreement:  customer consent to purchase Project
+Amendment/Schedule:  new schedule assoc with existing MSA
+Additional User Agreement:  change to No. of users</inlineHelpText>
+        <label>Contract Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>MSA with Schedules</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Agreement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Project Agreement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amendment/Schedule</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Additional User Agreement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Short Form Agreement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contracts_Team_Approval_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Contracts Team Approval Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contracts_Team_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contracts Team Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contracts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Counter_Signed_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Counter Signed  By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contracts2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Counter_Signed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Counter Signed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Code_of_Conduct_Policies__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Customer Code of Conduct/Policies</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Signed_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Must be manually populated</description>
+        <externalId>false</externalId>
+        <label>Customer Signed By</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Account__c</valueField>
+            </filterItems>
+            <infoMessage>Select a contact from the Account, or remove the filter to select contacts from other Accounts.</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Contracts (Customer Signed By)</relationshipLabel>
+        <relationshipName>Signed_Customers</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Signed_Date__c</fullName>
+        <description>Must be manually populated</description>
+        <externalId>false</externalId>
+        <label>Customer Signed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Data_Hosting_Restricted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Data Hosting Restricted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Detailed_Billing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Detailed Billing</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EU_Standard_Clauses_Requirement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>EU Standard Clauses Requirement</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Effective_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Effective Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Evergreen_Period_Other_Please_Specify__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Day(s)</inlineHelpText>
+        <label>Evergreen Period - Other Please Specify</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Evergreen_Period__c</fullName>
+        <externalId>false</externalId>
+        <label>Evergreen Period</label>
+        <picklist>
+            <picklistValues>
+                <fullName>30</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>60</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>90</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>180</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Evergreen__c</fullName>
+        <externalId>false</externalId>
+        <label>Evergreen</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Exit_Management_and_Transition_Services__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Exit Management and Transition Services</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Governing_Law__c</fullName>
+        <externalId>false</externalId>
+        <label>Governing Law</label>
+        <picklist>
+            <picklistValues>
+                <fullName>NY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UK</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hong Kong</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Indemnification_Other_than_IP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Indemnification Other than IP</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Initial_Submission_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Initial Submission Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Insurance_Certificates__c</fullName>
+        <externalId>false</externalId>
+        <label>Insurance Certificates</label>
+        <picklist>
+            <controllingField>Insurance_Requirements__c</controllingField>
+            <picklistValues>
+                <fullName>Certificate of Insurance</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Named As Additional Insured</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Notice of Change</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Insurance_Requirements__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Insurance Requirements</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Liability_Limits_for_Ipreo__c</fullName>
+        <externalId>false</externalId>
+        <label>Liability Limits for Ipreo</label>
+        <picklist>
+            <picklistValues>
+                <fullName>&lt;$3M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$3M-5M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>&gt;$5M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Most_Favored_Nation_Exclusivity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Most Favored Nation/Exclusivity</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Attachments__c</fullName>
+        <description>Used to calculate the number of attachments on the contract, this field will not on the page layout, it&apos;s for validation.</description>
+        <externalId>false</externalId>
+        <label>No. of Attachments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Solicit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Non-Solicit</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notice_of_Approaching_Renewal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Management approval reason.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Request for Ipreo to provide customer with notice of approaching renewal period.</inlineHelpText>
+        <label>Notice of Approaching Renewal</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notice_of_Fee_Increase_Period__c</fullName>
+        <externalId>false</externalId>
+        <label>Notice of Fee Increase Period</label>
+        <picklist>
+            <picklistValues>
+                <fullName>30</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>60</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>90</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Notice_of_Fee_Increase_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Notice of Fee Increase Required</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notice_of_Renewal_Fees_Written_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Notice of Renewal Fees/Written Approval</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notice_on_Change_of_Site_Policies__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Notice on Change of Site Policies</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notify_on_Changes_to_Subcontractors__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Notify on Changes to Subcontractors</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Terms__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Terms</label>
+        <picklist>
+            <picklistValues>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>60 Days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>90 Days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Publicity_Restricted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Publicity Restricted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Order Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Purchase Order Required</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Notice_Period__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Notice Period</label>
+        <picklist>
+            <picklistValues>
+                <fullName>30</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>60</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>90</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Notice_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Renewal Notice Required</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Restriction_on_Transfer_of_Data__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Restriction on Transfer of Data</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Right_to_Aggregate_Data_Removed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Right to Aggregate Data Removed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sharepoint_Folder__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This URL field will only work when you are connected to the Ipreo network.</inlineHelpText>
+        <label>Sharepoint Folder</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Special_Billing_Info__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Billing Info</label>
+        <length>4000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Special_Billing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Special Billing</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Pending</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Executed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fully Executed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subcontractor_Access_Restricted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Subcontractor Access Restricted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Termination_for_Convenience__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Termination for Convenience</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Uncapped_Liability_for_Ipreo__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Uncapped Liability for Ipreo</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Contract</label>
+    <listViews>
+        <fullName>AllContracts</fullName>
+        <columns>NAME</columns>
+        <columns>Contract_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Contracts</label>
+    </listViews>
+    <listViews>
+        <fullName>Contracts_Fully_Executed</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Vertical__c</columns>
+        <columns>Contract_Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Contract_Age_Days__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Fully Executed</value>
+        </filters>
+        <label>Contracts - Fully Executed</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Contracts_New_This_Week</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Vertical__c</columns>
+        <columns>Contract_ID__c</columns>
+        <columns>Effective_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>Contracts New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Contracts_New_Today</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Vertical__c</columns>
+        <columns>Contract_ID__c</columns>
+        <columns>Effective_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Contracts New Today</label>
+    </listViews>
+    <listViews>
+        <fullName>Contracts_Pending_Status</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Vertical__c</columns>
+        <columns>Contract_Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Contract_Age_Days__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </filters>
+        <label>Contracts - Pending Status</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Contracts_Queue_Contract_Customer</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Vertical__c</columns>
+        <columns>Contract_Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Contract_Age_Days__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Customer Executed</value>
+        </filters>
+        <label>Contracts - Customer Executed</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Contract Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Contracts</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Contract_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contract_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Evergreen__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Effective_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Contract_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contract_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Evergreen__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Effective_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OWNER.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Contract_ID__c</searchFilterFields>
+        <searchFilterFields>Account__c</searchFilterFields>
+        <searchFilterFields>Contract_Type__c</searchFilterFields>
+        <searchFilterFields>Evergreen__c</searchFilterFields>
+        <searchFilterFields>Effective_Date__c</searchFilterFields>
+        <searchFilterFields>OWNER.ALIAS</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>Contract_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contract_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Evergreen__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Effective_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Billing_Acnt_req_at_Status_Cus_and_Fully</fullName>
+        <active>true</active>
+        <description>Billing Account required at Status &quot;Customer Executed&quot; or &quot;Fully Executed&quot;</description>
+        <errorConditionFormula>ISBLANK( Billing_Account__c )  &amp;&amp;  
+(ISPICKVAL( Status__c , &apos;Customer Executed&apos;)  || 
+ISPICKVAL( Status__c , &apos;Fully Executed&apos;))</errorConditionFormula>
+        <errorDisplayField>Billing_Account__c</errorDisplayField>
+        <errorMessage>Billing Account required at Status &quot;Customer Executed&quot; or &quot;Fully Executed&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Readonly_When_Fully_Executed</fullName>
+        <active>true</active>
+        <description>Using custom permission, Edit_Fully_Executed_Contract, because some permission sets need the ability to edit fully executed contracts, and validation rules cannot reference permission sets.</description>
+        <errorConditionFormula>ISPICKVAL( PRIORVALUE(Status__c), &apos;Fully Executed&apos;)  &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos; &amp;&amp; NOT ( $Permission.Edit_Fully_Executed_Contract )</errorConditionFormula>
+        <errorMessage>Cannot edit fully executed contracts.  Please ask the Contracts or Sales Ops team to make any necessary changes.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Approval_Date_When_Fully_Executed</fullName>
+        <active>false</active>
+        <errorConditionFormula>ISPICKVAL( Status__c, &quot;Fully Executed&quot;) &amp;&amp; ISBLANK( Contracts_Team_Approval_Date__c )</errorConditionFormula>
+        <errorDisplayField>Contracts_Team_Approval_Date__c</errorDisplayField>
+        <errorMessage>Contracts Team Approval Date required when contract is fully executed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Approver_when_fully_executed</fullName>
+        <active>false</active>
+        <errorConditionFormula>ISPICKVAL( Status__c , &quot;Fully Executed&quot;) &amp;&amp; ISBLANK( Contracts_Team_Approver__c )</errorConditionFormula>
+        <errorDisplayField>Contracts_Team_Approver__c</errorDisplayField>
+        <errorMessage>Contracts Team Approver required when contract is fully executed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Attachment_When_Executed</fullName>
+        <active>true</active>
+        <errorConditionFormula>(No_of_Attachments__c = 0 ||  ISBLANK(No_of_Attachments__c) )
+&amp;&amp; (ISPICKVAL( Status__c , &apos;Customer Executed&apos;) || ISPICKVAL( Status__c , &apos;Fully Executed&apos;))</errorConditionFormula>
+        <errorMessage>Attachment required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Billing_City_When_Executed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Billing_City__c ) &amp;&amp; 
+( 
+ISPICKVAL( Status__c , &apos;Customer Executed&apos;) || 
+ISPICKVAL( Status__c , &apos;Fully Executed&apos;) 
+)</errorConditionFormula>
+        <errorDisplayField>Billing_City__c</errorDisplayField>
+        <errorMessage>Billing City required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Billing_Contact_When_Executed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(Billing_Contact__c)  &amp;&amp; 
+( 
+ISPICKVAL( Status__c , &apos;Customer Executed&apos;) || 
+ISPICKVAL( Status__c , &apos;Fully Executed&apos;) 
+)</errorConditionFormula>
+        <errorDisplayField>Billing_Contact__c</errorDisplayField>
+        <errorMessage>Billing Contact required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Billing_Country_When_Executed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(Billing_Country__c)  &amp;&amp; 
+( 
+ISPICKVAL( Status__c , &apos;Customer Executed&apos;) || 
+ISPICKVAL( Status__c , &apos;Fully Executed&apos;) 
+)</errorConditionFormula>
+        <errorDisplayField>Billing_Country__c</errorDisplayField>
+        <errorMessage>Billing Country required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Billing_Frequency_Other_Please</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( Billing_Frequency__c , &apos;Other&apos; ) &amp;&amp;  ISBLANK( Billing_Frequency_Other_Please_Specify__c )</errorConditionFormula>
+        <errorDisplayField>Billing_Frequency_Other_Please_Specify__c</errorDisplayField>
+        <errorMessage>Billing Frequency - Other Please Specify required when Billing Frequency is &quot;Other&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Billing_Frequency_When_Executed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( Billing_Frequency__c , &apos;&apos;) &amp;&amp;
+(
+ISPICKVAL( Status__c , &apos;Customer Executed&apos;) ||
+ISPICKVAL( Status__c , &apos;Fully Executed&apos;)
+)</errorConditionFormula>
+        <errorDisplayField>Billing_Frequency__c</errorDisplayField>
+        <errorMessage>Billing Frequency required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Billing_StartDate_When_Executed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( Billing_Start_Date__c , &apos;&apos;) &amp;&amp; 
+( 
+ISPICKVAL( Status__c , &apos;Customer Executed&apos;) || 
+ISPICKVAL( Status__c , &apos;Fully Executed&apos;) 
+)</errorConditionFormula>
+        <errorDisplayField>Billing_Start_Date__c</errorDisplayField>
+        <errorMessage>Billing Start Date required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Billing_Start_Date_Other_Please</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Billing_Start_Date_Other_Pls_Specify__c ) &amp;&amp; ISPICKVAL( Billing_Start_Date__c , &apos;Other&apos;)</errorConditionFormula>
+        <errorDisplayField>Billing_Start_Date_Other_Pls_Specify__c</errorDisplayField>
+        <errorMessage>Billing Start Date - Other Please Specify required when Billing Start Date is &quot;Other&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Billing_Street_When_Executed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(Billing_Street__c)  &amp;&amp; 
+( 
+ISPICKVAL( Status__c , &apos;Customer Executed&apos;) || 
+ISPICKVAL( Status__c , &apos;Fully Executed&apos;) 
+)</errorConditionFormula>
+        <errorDisplayField>Billing_Street__c</errorDisplayField>
+        <errorMessage>Billing Street required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Counter_Signed_By_When_Executed</fullName>
+        <active>false</active>
+        <errorConditionFormula>ISBLANK(  Counter_Signed_By__c  ) &amp;&amp; ISPICKVAL( Status__c , &apos;Fully Executed&apos;)</errorConditionFormula>
+        <errorDisplayField>Counter_Signed_By__c</errorDisplayField>
+        <errorMessage>Counter Signed By required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Counter_Signed_Date_When_Executed</fullName>
+        <active>false</active>
+        <errorConditionFormula>ISBLANK(  Counter_Signed_Date__c ) &amp;&amp; ISPICKVAL( Status__c , &apos;Fully Executed&apos;)</errorConditionFormula>
+        <errorDisplayField>Counter_Signed_Date__c</errorDisplayField>
+        <errorMessage>Counter Signed Date required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Customer_Signed_Date_When_Executed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(  Customer_Signed_Date__c  ) &amp;&amp;
+( 
+ISPICKVAL( Status__c , &apos;Customer Executed&apos;) || 
+ISPICKVAL( Status__c , &apos;Fully Executed&apos;) 
+)</errorConditionFormula>
+        <errorDisplayField>Customer_Signed_Date__c</errorDisplayField>
+        <errorMessage>Customer Signed Date required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Effective_Date_When_Executed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(  Effective_Date__c ) &amp;&amp; ISPICKVAL( Status__c , &apos;Fully Executed&apos;)</errorConditionFormula>
+        <errorDisplayField>Effective_Date__c</errorDisplayField>
+        <errorMessage>Effective Date required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_EvergreenPeriod_When_Period_is_Other</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Evergreen_Period_Other_Please_Specify__c ) &amp;&amp; ISPICKVAL( Evergreen_Period__c , &apos;Other&apos;)</errorConditionFormula>
+        <errorDisplayField>Evergreen_Period_Other_Please_Specify__c</errorDisplayField>
+        <errorMessage>Evergreen Period - Other Please Specify required when Evergreen Period is &quot;Other&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Evergreen_Period_When_Evergreen</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Evergreen__c, &apos;Yes&apos;)  &amp;&amp; ISPICKVAL(Evergreen_Period__c,&apos;&apos;)</errorConditionFormula>
+        <errorDisplayField>Evergreen_Period__c</errorDisplayField>
+        <errorMessage>Evergreen Period required when Evergreen is set to &apos;Yes&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Notice_of_Fee_Increase_Period</fullName>
+        <active>true</active>
+        <errorConditionFormula>Notice_of_Fee_Increase_Required__c &amp;&amp; ISPICKVAL( Notice_of_Fee_Increase_Period__c , &apos;&apos; )</errorConditionFormula>
+        <errorDisplayField>Notice_of_Fee_Increase_Period__c</errorDisplayField>
+        <errorMessage>Notice of Fee Increase Period required when Notice of Fee Increase Required is checked</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Payment_Terms_When_Executed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( Payment_Terms__c, &apos;&apos;) &amp;&amp; 
+( 
+ISPICKVAL( Status__c , &apos;Customer Executed&apos;) || 
+ISPICKVAL( Status__c , &apos;Fully Executed&apos;) 
+)</errorConditionFormula>
+        <errorDisplayField>Payment_Terms__c</errorDisplayField>
+        <errorMessage>Payment Terms required to execute this contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Renewal_Notice_Period</fullName>
+        <active>true</active>
+        <errorConditionFormula>Renewal_Notice_Required__c &amp;&amp;   ISPICKVAL(Renewal_Notice_Period__c, &apos;&apos;)</errorConditionFormula>
+        <errorDisplayField>Renewal_Notice_Period__c</errorDisplayField>
+        <errorMessage>Renewal Notice Period required when Renewal Notice Required is checked</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_at_Customer_Executed_and_Fully_Exec</fullName>
+        <active>true</active>
+        <description>Made this Evergreen field required at  Customer Executed status and Fully Executed status. All profiles.</description>
+        <errorConditionFormula>AND( OR(ISPICKVAL( Status__c , &quot;Customer Executed&quot;) ,ISPICKVAL( Status__c , &quot;Fully Executed&quot;) )
+  ,ISPICKVAL( Evergreen__c , &quot;&quot;) )</errorConditionFormula>
+        <errorDisplayField>Evergreen__c</errorDisplayField>
+        <errorMessage>Evergreen field should be set to Yes/No at  Customer Executed and Fully Executed Status.</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User Asset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User Assets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset Account --></label>
+        <name>Asset_Account__c</name>
+        <relationshipLabel><!-- User Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Asset Active --></label>
+        <name>Asset_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- User Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Consultant Account --></label>
+        <name>Consultant_Account__c</name>
+        <relationshipLabel><!-- Consultant User Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DM Name --></label>
+        <name>DM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Consultant --></label>
+        <name>Is_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Sponsored User --></label>
+        <name>Is_Sponsored_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Region --></label>
+        <name>Product_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Subgroup --></label>
+        <name>Product_Subgroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Vertical --></label>
+        <name>Product_Vertical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Comp User</masterLabel>
+            <translation><!-- Comp User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal User</masterLabel>
+            <translation><!-- Internal User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POC Only</masterLabel>
+            <translation><!-- POC Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POC and User</masterLabel>
+            <translation><!-- POC and User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation><!-- User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sponsored Users Account --></label>
+        <name>Sponsored_Users_Account__c</name>
+        <relationshipLabel><!-- Sponsored User Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- System Outage Notification Opt Out --></label>
+        <name>System_Outage_Notification_Opt_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Country --></label>
+        <name>User_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- User Assets --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>User Asset Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select the user from the account of the asset. --></errorMessage>
+        <name>Check_Asset_User_Account</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mass_Edit_User_Assets --></label>
+        <name>Mass_Edit_User_Assets</name>
+    </webLinks>
+</CustomObjectTranslation>

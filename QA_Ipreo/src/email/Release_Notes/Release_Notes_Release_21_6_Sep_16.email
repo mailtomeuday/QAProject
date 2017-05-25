@@ -1,0 +1,157 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal" style="font-family: arial;"><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial">Items
+included in Release 21, deployed 6-Sep-16, are the following:</span><span style="font-family: Calibri, sans-serif; font-size: 12pt;">&nbsp;</span></p><p class="MsoNormal">
+
+</p><table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="719" style="width:539.5pt;margin-left:.1pt;border-collapse:collapse;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0in 0in 0in 0in">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:39.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  background:yellow;padding:0in 5.4pt 0in 5.4pt;height:39.75pt">
+  <p><b><span style="font-family: Calibri, sans-serif;">JIRA User Story #</span></b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+  </td>
+  <td width="365" style="width:273.5pt;border:solid windowtext 1.0pt;border-left:
+  none;background:yellow;padding:0in 5.4pt 0in 5.4pt;height:39.75pt">
+  <p><b><span style="font-family: Calibri, sans-serif;">Details</span></b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+  </td>
+  <td width="276" style="width:207.0pt;border:solid windowtext 1.0pt;border-left:
+  none;background:yellow;padding:0in 5.4pt 0in 5.4pt;height:39.75pt">
+  <p><b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+  minor-latin;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:Arial;color:red">WHO SHOULD BE AWARE</span></b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1205<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Ability for GMG AM/CS and Corporate
+  AM to edit Accounts across Verticals – better support for bulge bracket
+  Accounts that have both Corporate and GMG products.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Corporate AM, GMG AM/CS<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1204<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Change to validation of Description
+  on Opportunity – no longer required for Corporate Opportunities with NNB
+  &gt;= $50K.&nbsp; Still required for
+  Opportunities with at least one GMG Product.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Corporate Sales<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1163<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Change to validation of Contact Roles
+  on Opportunity – formerly required at Stage “Contract Pending” and now not
+  required until “Closed”.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">GMG Sales, Corporate Sales<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1113<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">New field “Partner Products in Use
+  (GMG)” on Account and new “partner” products added to Activity list of
+  Products:&nbsp; Algomi, BlueMatrix, Blue
+  Curve, One Access (API)<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">PSM, GMG Sales, GMG AM/CS<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1210<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">New fields added to Implementation
+  Work Order per Professional Services team request<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Professional Services, GMG AM/CS<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:6;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1244<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">New column in Opportunities related
+  list on Account:&nbsp; Net New Business<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Corporate Sales, GMG Sales (though
+  column visible to all)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:7;mso-yfti-lastrow:yes;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1241<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">New Activity Types and Sub Types for
+  AM Support<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Corporate AM<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table><br>]]></td>
+</tr>
+</table>

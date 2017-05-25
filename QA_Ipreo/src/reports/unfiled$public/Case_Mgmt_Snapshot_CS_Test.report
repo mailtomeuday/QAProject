@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <aggregates>
+        <calculatedFormula>AGE:SUM - Case.Time_Elapsed_Before_First_Response__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Closure Times</masterLabel>
+        <reportType>CaseHistory</reportType>
+        <scale>0</scale>
+    </aggregates>
+    <block>
+        <blockInfo>
+            <aggregateReferences>
+                <aggregate>FORMULA1</aggregate>
+            </aggregateReferences>
+            <blockId>B1</blockId>
+            <joinTable>s</joinTable>
+        </blockInfo>
+        <columns>
+            <field>OWNER</field>
+        </columns>
+        <columns>
+            <field>CASE_NUMBER</field>
+        </columns>
+        <columns>
+            <field>Account.Region__c</field>
+        </columns>
+        <columns>
+            <field>CREATED_DATE</field>
+        </columns>
+        <columns>
+            <field>Case.Time_Elapsed_Before_First_Response__c</field>
+        </columns>
+        <columns>
+            <field>CLOSED_DATE</field>
+        </columns>
+        <columns>
+            <field>AGE</field>
+        </columns>
+        <columns>
+            <field>OPEN</field>
+        </columns>
+        <columns>
+            <field>CLOSED</field>
+        </columns>
+        <columns>
+            <field>ACCOUNT.NAME</field>
+        </columns>
+        <columns>
+            <field>TYPE</field>
+        </columns>
+        <columns>
+            <field>Case.TFS_Ticket_No__c</field>
+        </columns>
+        <currency>USD</currency>
+        <filter>
+            <criteriaItems>
+                <column>Case.Product__c</column>
+                <operator>includes</operator>
+                <value></value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>ORIGIN</column>
+                <operator>equals</operator>
+                <value>Email2Case (RS&amp;T),Email2Case (Equity),Email2Case (Munis),Email2Case (Fixed Income),Email2Case (Fixed Income UAT)</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Case Lifecycle block 1</name>
+        <params>
+            <name>units</name>
+            <value>m</value>
+        </params>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CaseHistory</reportType>
+        <scope>organization</scope>
+        <sortColumn>CASE_NUMBER</sortColumn>
+        <sortOrder>Asc</sortOrder>
+        <timeFrameFilter>
+            <dateColumn>CREATED_DATEONLY</dateColumn>
+            <interval>INTERVAL_THISWEEK</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>s</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Case Mgmt Snapshot (CS-Test)</name>
+    <reportType>CaseHistory</reportType>
+    <showDetails>true</showDetails>
+</Report>

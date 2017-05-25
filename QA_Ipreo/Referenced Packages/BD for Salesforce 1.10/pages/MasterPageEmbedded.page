@@ -1,0 +1,438 @@
+<apex:page showHeader="false" sidebar="false" controller="Ipreo_BDSF_1_10.BDAEMasterController" action="{!actionHandler}">
+<apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'js/jquery-2.1.1.min.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'js/json2min.js')}"/>
+
+<!-- The One code. Don't divide! -->
+<script type="text/javascript">
+    if (!BDSF) {
+        var BDSF = {};
+    }
+    BDSF.pathToBDSFNotifiNotificationCss = "{!URLFOR($Resource.BDAE_Integration, 'css/BDSFNotifiNotificationCss.css')}";
+    BDSF.pathToJQuery = "{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'js/jquery-2.1.1.min.js')}";
+    BDSF.pathToBDSFNotifiOutputNotificationLogic = "{!URLFOR($Resource.BDAE_Integration, 'js/BDSFNotifiOutputNotificationLogic.js')}";
+    BDSF.pathToBDSFNotifiScriptLoaderOfScriptForNotification = "{!URLFOR($Resource.BDAE_Integration, 'js/BDSFNotifiScriptLoaderOfScriptForNotification.js')}";
+</script>
+<script type="text/javascript" src="{!URLFOR($Resource.BDAE_Integration, 'js/BDSFNotifiInputNotificationsHandler.js')}"></script>
+<!-- -------------------------- -->
+
+<script type="text/javascript">
+    BDSF.ConfirmationProcessor = function(action, confirmationType, data, isComplete){
+        return {
+            action : action,
+            confirmationType : confirmationType,
+            data : data,
+            isComplete : isComplete,
+            callback : function(event){
+                var buttonName = event.buttonName||"";
+                var result = {"Action" : action,
+                                "ButtonName" : buttonName,
+                                "ConfirmationType" : confirmationType,
+                                "Items" : data,
+                                "IsComplete": isComplete};
+                $j("input[id$='bdaeReceivedData']").val(unescape(JSON.stringify(result)));
+                $j("input[id$='bdaeActionProcessStart']")[0].click()
+            }
+        }
+    }
+    
+    BDSF.processDataResponce = function(dataResponce){
+        if(!dataResponce){
+            return;
+        }
+        var messages = dataResponce["messages"];
+        for(i = 0; i < messages.length; i++){
+            var obj = messages[i];
+            var callback;
+            var position;
+            if(obj.buttons.length > 1){
+                //var processor = new BDSF.ConfirmationProcessor(dataResponce["action"], obj.type, dataResponce["entityType"], dataResponce["isLead"], obj.data);
+                var processor = new BDSF.ConfirmationProcessor(dataResponce["action"], obj.confirmationType, obj.data, dataResponce["isComplete"]);
+                callback = processor.callback;
+                position = "center";
+            }
+            BDSF.handlerSendingNotification(obj.head, obj.body, obj.buttons, obj.color, obj.shadow, callback, obj.ttl, position);
+        }
+    }
+</script>
+<body>
+<script type="text/javascript">
+    var t = '{!PageTitle}';
+    if(t != null && t != '') {
+        document.title = t;
+    }
+
+    var bdaeKeepAlivePeriod = 1 * 60 * 60 * 1000; // 1 hour keep-alive
+
+    function BDAEKeepAlive() {
+        var ifrm = document.getElementById("ifKeepAlive");
+
+        if (ifrm == null) {
+            ifrm = document.createElement("IFRAME");
+            ifrm.setAttribute("id", "ifKeepAlive");
+            ifrm.style.display = "none";
+            ifrm.style.visibility = "hidden";
+            document.body.appendChild(ifrm);
+            
+            setTimeout("BDAEKeepAlive();", bdaeKeepAlivePeriod);
+            return;
+        }
+        
+        ifrm.setAttribute("src", "{!KeepAlivePageUrl}&keepAliveDate=" + new Date().getTime());
+
+        setTimeout("BDAEKeepAlive();", bdaeKeepAlivePeriod);
+    }
+
+    BDAEKeepAlive();
+</script>
+
+<script type="text/javascript">
+    (function()
+    {
+        if (window.parent == null || window.parent == window)
+        {
+            //return;
+        }
+        //check if top in same domain
+        var topLocation = "";
+        try
+        {
+            topLocation = window.top.location.toString();
+        }
+        catch(e)
+        {
+            return;
+        }
+        if (!topLocation)
+        {
+            return;
+        }
+        
+        var billfoldUrl = "{!BillfoldBaseUrl}";
+        
+        function getStateForLoadingBarPosition()
+        {
+            var result = {};
+            var $bdaeFrameContainer;
+            if (window.parent == window)
+            {
+                $bdaeFrameContainer = $j("#bdaeFrame");
+            }
+            else
+            {
+                $bdaeFrameContainer = $j(window.parent.document.getElementById("bdaeFrameContainer"));
+            }
+            result.IsRootPage = (window.parent == window);
+            result.ScrollTop = $j(window.top).scrollTop();
+            result.BdaeOffset = $bdaeFrameContainer.offset()["top"];
+            result.GenericPosition = Math.max(result.ScrollTop - result.BdaeOffset, 0);
+            result.ViewportHeight = $j(window.top).height();
+            return result;
+        }
+        
+        function setLoadingBarPosition(position)
+        {
+            if (window.top == window)
+            {
+                return;
+            }
+            try
+            {
+                $j(".progressContainer").css("top",  position + "px");
+            }
+            catch(e)
+            {
+            }
+        }
+        
+        var originalStartProgress = $j.StartProgress;
+        $j.StartProgress = function()
+        {
+            originalStartProgress();
+            var state = getStateForLoadingBarPosition();
+            setLoadingBarPosition(state.GenericPosition);
+        }
+        
+        function postMessageToBD(type, data)
+        {
+            var postMessageData = {};
+            postMessageData.Type = type;
+            for(var p in data)
+            {
+                postMessageData[p] = data[p];
+            }
+            var bdaeFrame = document.getElementById("bdaeFrame");
+            if(bdaeFrame){
+                bdaeFrame.contentWindow.postMessage(
+                    JSON.stringify(postMessageData), billfoldUrl);
+            }
+        }
+        
+        function postStateForLoadingBarMessage()
+        {
+            var state = getStateForLoadingBarPosition();
+            postMessageToBD("StateForLoadingBarPosition", state);
+        }
+        
+        var excelDialogBtnOKText = '';
+        var excelDialogBtnGoText = '';
+        
+        function onExcelDialogButtonClick(dialogResult)
+        {
+            var postMessageData = {};
+            var btnText = dialogResult.buttonName;
+            postMessageData.GoToAdvancedDownload = (btnText == excelDialogBtnGoText);
+            postMessageToBD("ExcelConfirmationDialogClosed", postMessageData);
+        }
+        
+        function handleMessage(e)
+        {
+            var e = e.originalEvent;
+            if (!e.origin == billfoldUrl)
+            {
+                return;
+            }
+            var data = null;
+            try
+            {
+                data = JSON.parse(e.data);
+            }
+            catch(e)
+            {
+                return;
+            }
+            if (data.Type == "GetStateForLoadingBarPosition")
+            {
+                postStateForLoadingBarMessage();
+            }
+            if (data.Type == 'OpenExcelConfirmationDialog')
+            {
+                excelDialogBtnOKText = data.BtnOKText;
+                excelDialogBtnGoText = data.BtnGoText;
+                var message = data.Message;
+                BDSF.handlerSendingNotification('', message,
+                    [excelDialogBtnOKText,excelDialogBtnGoText ],'',
+                    true, onExcelDialogButtonClick, 0, 'center');
+            }
+            if(data.type == "frameHeight" && "{!isCustomResize}" === "true"){
+                var frameHeight = data.data + {!IF(isNeedSynchronization,35,2)};
+                $j('#iframeContainer').height(frameHeight);
+                $j(window.parent.document).find("#bdaeFrameContainer").height(frameHeight);
+            }
+        }
+        
+        $j(window).bind('message', handleMessage);
+        $j(window.top).bind("scroll", function()
+        {
+            postStateForLoadingBarMessage();
+        });
+        $j(window.top).bind("resize", function()
+        {
+            postStateForLoadingBarMessage();
+        });
+    })();
+</script>
+
+<apex:outputPanel rendered="{!IsPageValid}">
+    <apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'js/crossframeutil.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'js/crossframeevent.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'js/salesforce.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'js/bdsfutil.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'css/UpdateProgressBar.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'css/InfoAboutSynchronizationBar.css')}"/>
+    <div id="infoAboutSynchronization">
+        <img class="imgRollupArrows" src="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'images/static_rotate.png')}"/>
+        <span class="wrapperTxtMsg">
+            <span class="syncTxtMsg">Ipreo Data Sync in Progress...</span>
+        </span>
+        <img class="syncHelpTxtMsg" src="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'images/icon_information.gif')}" title="If you continue to see this message for more than 8 hours, please contact your Ipreo Account Manager"/>
+    </div>
+    <script type="text/javascript">
+        if ({!isNeedSynchronization}){
+            setTimeout(function () {
+                document.getElementById('infoAboutSynchronization').style.display = 'block';
+            }, 5000);
+        }
+    </script>
+    <apex:form style="display:none" id="resultForm">
+        <apex:actionFunction name="GenerateSSOToken" action="{!generateToken}" rerender="out,error"/>
+        <apex:pageBlock mode="edit" id="block">
+            <apex:inputHidden id="bdaeReceivedData" value="{!jsonMessage}"/>
+            <apex:commandButton id="bdaeActionProcessStart" action="{!submit}" rerender="resultForm" status="status"/>
+            <apex:actionStatus id="status" startText="requesting..." onstart="$j.StartProgress();" onstop="$j.StopProgress();" />
+            <apex:outputPanel id="results">
+                <script>
+                    BDSF.processDataResponce({!dataResponce});
+                </script>
+                <apex:outputText value="{!jsresponce}" escape="false"/>
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+    
+    <apex:form >
+        <apex:actionFunction name="saveChanging" action="{!saveTeamHashCodeChanging}" reRender="fakePanel" />
+        <apex:outputPanel id="fakePanel"/>
+    </apex:form>
+    
+    <div id="bdaeLoadingBar" style="display: none;">
+        <div class="progressContainer">
+            <div class="progressActionContainer">
+                <div class="progressAction">
+                    <span class="progressImage">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="iframeContainer" style="position: absolute; width: 100%; height: 100%;">
+        <!-- $j.StopProgress() - fixed bug with popup window blank in IE7 -->
+        <iframe id="bdaeFrame" name="browseframe" frameborder="no" height="99.6%" width="100%" scrolling="auto" onload="if(typeof changeTitle === 'function'){changeTitle();} $j.StopProgress();"/>
+    </div>
+    
+    <script src="/soap/ajax/30.0/connection.js" type="text/javascript"></script>
+    <script src="/soap/ajax/30.0/apex.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        sforce.connection.init('{!$Api.Session_ID}', "https://" + window.location.host + "/services/Soap/u/27.0");
+    </script>
+    <!-- The script send all BillfoldID where curent user is a account team member. But only if exist changing from a last sending. -->
+    <!-- Sending a data using a SYNCHRONOUS AJAX javascript because we need be sure that data will sent before the page will be loaded -->
+    <script type="text/javascript">
+        if (!dsNS) {
+            var dsNS = {};
+        };
+
+        dsNS.authTokenBd = "{!ssotoken}";
+
+        dsNS.sendChangingTeamsForCurOwner = function (){
+            doPostToBilfold = function(){
+                if (!dsNS.authTokenBd) {
+                    <!-- Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.BDSFOwnerShipQuickSearchController.getBillfodToken}', function(result){dsNS.authTokenBd = result}); -->
+                    dsNS.authTokenBd = sforce.apex.execute('BDSFOwnerShipQuickSearchController', 'getBillfodToken',{})
+                };
+                if (billfolfIDForSending){
+                    $j.ajax({
+                        url: "{!BillfoldBaseUrl}/bdsf/BdsfAccountTeamSynchronizationService.svc/UpdateAccountTeams",
+                        type: "post",
+                        contentType: "application/json",
+                        async: false,
+                        data: billfolfIDForSending,
+                        headers: {"AUTHTOKEN": dsNS.authTokenBd}
+                        }).done(function(){
+                        }).fail(function(){
+                            isUpdateRecodToBillfoldWell = false;
+                        });
+                }
+            };
+            
+            <!-- listBillfoldIdTeam - The list of Billfold ID where current user in a team -->
+            var listBillfoldIdTeam = "{!listBillfoldIdTeam}";
+            listBillfoldIdTeam = listBillfoldIdTeam.substring(1,listBillfoldIdTeam.length - 1);
+            arrayBillfoldIdTeam = listBillfoldIdTeam.split(',');
+            if (arrayBillfoldIdTeam.length !== 0 && arrayBillfoldIdTeam[0] !== ""){
+                var isUpdateRecodToBillfoldWell = true;
+                var billfolfIDForSending;
+                if (arrayBillfoldIdTeam[0] !== 'empty'){
+                    for (var key in arrayBillfoldIdTeam){
+                        billfolfIDForSending = arrayBillfoldIdTeam[key];
+                        billfolfIDForSending = billfolfIDForSending.replace(/;/g,',');
+                        billfolfIDForSending = billfolfIDForSending.replace(/ /g,'');
+                        billfolfIDForSending =  "[" + billfolfIDForSending + "]";
+                        doPostToBilfold();
+                    }
+                } else {
+                    doPostToBilfold();
+                }
+                if (isUpdateRecodToBillfoldWell){
+                    saveChanging();
+                }
+            }
+        };
+    </script>
+    
+    <script type="text/javascript">
+        var url = "{!targetUrl}";
+        var proxy_url = "{!URLFOR($Resource.BDAE_Integration, 'crossframeproxy.html')}";
+        
+        function loadCurrentFrame(){
+            if (readCookie("ssoToken") == null || readCookie("ssoSessionToken") == null) {
+                if(!readCookie("isSSOBusy")){
+                    var expires_date = new Date(new Date().getTime() + 60*1000);
+                    saveCookie("isSSOBusy", true, expires_date.toGMTString(), "/");
+                    GenerateSSOToken();
+                } else {
+                    setTimeout(loadCurrentFrame, 500);
+                }
+            } else {
+                LoadIFrame(url, proxy_url, "");
+            }
+        }
+        
+        $j.StartProgress();
+        loadCurrentFrame();
+        if ({!isNeedSendInfoAboutContactsTeam} && !readCookie("isSSOBusy")){
+            dsNS.sendChangingTeamsForCurOwner();
+        }
+        
+        var isFirstLoad = true;
+        function changeTitle() {
+            if(!isFirstLoad) {
+                document.title = "BD for SalesForce";
+            }
+            isFirstLoad = false;
+        }
+        
+        $j(window).bind("message", function(e){
+            e = e.originalEvent;
+            if(e.origin !== '{!billfoldBaseUrl}' || e.data == 'getLoadingBarPosition'){
+                return;
+            }
+            messageData = JSON.parse(e.data);
+            if(messageData.type == "frameHeight" && "{!isCustomResize}" === "true"){
+                var frameHeight = messageData.data + {!IF(isNeedSynchronization,35,2)};
+                $j('#iframeContainer').height(messageData.data+2);
+                //$j('#iframeContainer').height(frameHeight);
+                $j(window.parent.document).find("#bdaeFrameContainer").height(frameHeight);
+                
+                    window.top.postMessage('{"frameId":"' + (getParent(window)).name + '","height":"' + (frameHeight + 50) + '"}', '*');
+                
+            }
+        });
+        
+        
+        function getParent(el){
+            var frame = el;
+            try{
+                if(el.parent.name!==undefined){
+                    frame = getParent(el.parent);
+                } else {
+                    return frame;
+                }
+            } catch (ex){
+                return frame;
+            }
+            return frame;
+        }
+    </script>
+    
+    <apex:outputPanel id="out">
+        <script type="text/javascript">
+            var sso_token = "{!ssotoken}";
+            if (sso_token != "") {
+                var expires_date = new Date(new Date().getTime() + (3 * 60 * 60 * 1000) + (30 * 1000)); // 3.55 hours expiration
+                saveCookie("ssoToken", "1", expires_date.toGMTString(), "/");
+                saveCookie("ssoSessionToken", "1", "", "/");
+                LoadIFrame(url, proxy_url, sso_token, "{!$Organization.Id}");
+                saveCookie("isSSOBusy", false, new Date().toGMTString(), "/");
+            }
+        </script>
+    </apex:outputPanel>
+</apex:outputPanel>
+<apex:outputPanel id="error" style="width:100%;position:absolute;display:none;">
+    <apex:pageMessage title="Error" summary="{!ErrorMessage}" severity="error" />
+    <script type="text/javascript">
+        if("{!ErrorMessage}" != '') {
+            $j.ShowElementById("span", "error");
+            $j.StopProgress();
+        }
+    </script>
+</apex:outputPanel>
+</body>
+</apex:page>

@@ -1,0 +1,21 @@
+<apex:page controller="GS_PermissionSetQueueController" action="{!getQueueMembers}" contentType="application/vnd.ms-excel#QueueMembersExport_{!today()}.xls" cache="true">
+<style>
+	table {
+	    border-collapse: collapse;
+	}
+	
+	table, td, th {
+	    border: 1px solid black;
+	    border-width: thin;
+	}
+</style>
+
+    <apex:pageBlock title="Queue Member Export Results" >
+       <apex:pageBlockTable value="{!queueMembers}" var="member">
+            <apex:column value="{!member.u.LastName}"/>
+            <apex:column value="{!member.u.FirstName}"/>
+            <apex:column headerValue="Role" value="{!member.u.UserRole.Name}"/>            
+            <apex:column headerValue="Queues" value="{!member.groupMember.Group.Name}"/>
+        </apex:pageBlockTable>     
+     </apex:pageBlock>    	
+</apex:page>

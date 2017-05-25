@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>Shift_JIS</encodingKey>
+    <name>Update: Ipreo Scheduled Maintenance - Japanese</name>
+    <style>none</style>
+    <subject>【Ipreo】 定期メンテナンスのお知らせ</subject>
+    <textOnly>次回メンテナンス予定日
+日時：2016年6月11日 12:00 PM　約15分間
+
+BD Corporateをご利用中のお客様へ
+
+平素よりBD Corporateをご利用いただきまして誠にありがとうございます。
+
+Ipreoでは、システムの拡大に伴い、隔週土曜日12:00～13:00の間に定期メンテナンスを実施しております。
+
+次回定期メンテナンスは、2016年6月11日 約15分間の予定で行います。定期メンテナンス中は、BD Corporateのご利用を停止させていただきます。また、事前にBD Corporate内にお知らせ用メッセージを掲載致します。
+
+ご質問等がございましたら、担当アカウントマネージャーもしくは、下記24時間サポートアドレスへご連絡ください。
+
+皆様のご理解とご協力をお願い申し上げます。
+
+Ipreoサポートチーム
+島田・ロブ・松本
+
+Phone：03-5207-2912 （平日9：00-17：30）
+24時間サポートアドレス：callmenowIR@ipreo.com　
+（日本オフィス営業時間外/英語のみ）
+
+©2016 Ipreo. All rights reserved.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

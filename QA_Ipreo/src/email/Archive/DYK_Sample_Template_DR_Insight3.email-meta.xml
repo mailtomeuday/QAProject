@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>DYK Sample Template- DR Insight</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>DYK_Sample_Template_DR_Insight</letterhead>
+    <name>DYK Sample Template- DR Insight3</name>
+    <style>freeForm</style>
+    <subject>DYK Sample Template- DR Insight</subject>
+    <type>html</type>
+</EmailTemplate>

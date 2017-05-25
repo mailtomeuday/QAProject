@@ -1,0 +1,179 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal"><span style='font-family: "Calibri","sans-serif"; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial;'>FYI:&nbsp; Items included in Ipreo Salesforce Release 25,
+deployed&nbsp;this morning&nbsp;(Monday, 31-Oct-16), included the following:</span></p><span style="font-family: Calibri, sans-serif; font-size: 12pt;"><p class="MsoNormal"><br></p><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+</font><table width="655" style="margin: auto auto auto 0.1pt; width: 491.3pt; border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellspacing="0" cellpadding="0"><tbody><tr style="height: 39.75pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"><td width="79" valign="top" style="background: yellow; padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 59pt; height: 39.75pt;"><font face="Times New Roman">
+  </font><p><b><span style='color: black; font-family: "Calibri","sans-serif"; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-fareast-font-family: "Times New Roman";'>JIRA User Story #</span></b></p><font face="Times New Roman">
+  </font></td><td width="294" style="background: yellow; border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; border-image: none; width: 220.8pt; height: 39.75pt;"><font face="Times New Roman">
+  </font><p><b><span style='color: black; font-family: "Calibri","sans-serif"; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-fareast-font-family: "Times New Roman";'>Details</span></b></p><font face="Times New Roman">
+  </font></td><td width="282" style="background: yellow; border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; border-image: none; width: 211.5pt; height: 39.75pt;"><font face="Times New Roman">
+  </font><p><b><span style='color: red; font-family: "Calibri","sans-serif"; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-fareast-font-family: "Times New Roman";'>WHO SHOULD BE AWARE</span></b></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 1;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-1287</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Corporate Sales Heat Map – deploy to
+  production with access for Paul Hebert and Mike Haggerty, only.</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Corporate Sales</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 2;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-1398</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Delete Heat Map reports aged older
+  than 1 month.</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Corporate Sales (Mike Haggerty, Marc
+  Greene, Paul Hebert) and GMG Sales (Pete Bentson)</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 3;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-495</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>The last of the clean up of the
+  former ACV/PROJ Opportunities.</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Sales Ops</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 4;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-1384</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="text-indent: -0.25in; margin-left: 0.5in; mso-list: l0 level1 lfo1;"><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-themecolor: text1; mso-bidi-theme-font: minor-latin;'><span style="mso-list: Ignore;">1)<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>New
+  field on Add User Assets to Campaign page for “Sponsored Users” that allows
+  inclusion or exclusion of Sponsored Users in campaign member selection</span></p><font face="Times New Roman">
+  </font><p style="text-indent: -0.25in; margin-left: 0.5in; mso-list: l0 level1 lfo1;"><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-themecolor: text1; mso-bidi-theme-font: minor-latin;'><span style="mso-list: Ignore;">2)<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>New
+  formula field on Contact “Sponsored User Status”</span></p><font face="Times New Roman">
+  </font><p style="text-indent: -0.25in; margin-left: 0.5in; mso-list: l0 level1 lfo1;"><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Calibri; mso-themecolor: text1; mso-bidi-theme-font: minor-latin;'><span style="mso-list: Ignore;">3)<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Default
+  the value of “Is Sponsored User” on Mass Edit User Assets.</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Corporate AM</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 5;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-1377</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Automatically set Vertical on
+  Accounts converted from EDD leads to “Corporate”.</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Corporate Sales, Sales Ops</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 6;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-1356</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Fix issue with Mass Edit User Assets
+  page for Accounts with &gt; 1000 Contacts.</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>GMG AM/CS</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 7;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-1353</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Validation of Opportunity.Renewal
+  Increment at Closed Won Verified needs to apply to Sys Admin, in addition to
+  Operations.</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Sales Ops</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 8;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-1349</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Add field Product Bundle to
+  Account.<span style="mso-spacerun: yes;">&nbsp; </span>Add triggers to update the
+  field as Assets and Work Orders associated with the Account are updated.<span style="mso-spacerun: yes;">&nbsp; </span>Field may be useful in some reports (ex
+  list Primary Account Managers on Accounts that have ISB).</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>GMG AM/CS, Corporate AM, Sales</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 9;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-1303</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Fix issue where License does not get
+  associated with Opportunity Product when Opportunity is Closed Won Verified,
+  re-opened and Opportunity Products added or removed, then Opportunity is
+  re-closed.</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Sales Ops</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 10;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-1317</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Add Job Category “Business
+  Development” and add Department “HR/Recruiting” to Contact drop down list
+  values.</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>GMG Sales</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 11;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>SPS-1333</span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>Populate missing Region field on
+  Accounts that have Country populated.<span style="mso-spacerun: yes;">&nbsp;
+  </span>Region is used to filter Accounts included in Heat Map reports.</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: black; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial; mso-themecolor: text1;'>GMG Sales, Corporate Sales</span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 12; mso-yfti-lastrow: yes;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p><span style='color: red; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial;'>SPS-1408 </span></p><font face="Times New Roman">
+  </font></td><td width="294" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 220.8pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: red; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial;'>Monthly update of Market Cap ($) for Corporate Accounts.
+  THIS ITEM WILL BE COMPLETED ON WEDNESDAY, 2-NOV-2016</span></p><font face="Times New Roman">
+  </font></td><td width="282" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 211.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p><span style='color: red; font-family: "Calibri","sans-serif"; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: Arial;'>Corporate Sales</span></p><font face="Times New Roman">
+  </font></td></tr></tbody></table><p class="MsoNormal"><font face="Times New Roman"><br></font></p></span><p class="MsoNormal"><br></p>]]></td>
+</tr>
+</table>

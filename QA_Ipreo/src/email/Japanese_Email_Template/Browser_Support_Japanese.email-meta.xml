@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>4/5 Campaign</description>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>Browser Support- Japanese DRAFT</name>
+    <style>none</style>
+    <subject>Important Update About BD Corporate Browser Support</subject>
+    <textOnly>Internet Explorer 8,9,10 の
+サポートが終了します。
+
+BD Corporateでサポートを終了する理由
+2016年1月、マイクロソフト社よるInternet Explorer 8,9,10のサポートが終了となりました。マイクロソフト社は今後、これらの更新を行いません。そのため、お客様のPCに対するマルウェアやサイバー攻撃へのリスクが高まります。
+
+弊社では昨年新機能をリリースいたしました。また、6月以降その他新機能のリリースを予定しております。今後リリースされる機能は、下記対象ブラウザーのみ対応しており、Internet Explorer 8,9,10ではご利用いただけません。
+
+対象ブラウザー
+セキュリティの観点上、またBD新機能を有効とするため、ブラウザのアップデートをお願い致します。
+BD Corporateにおけるサポート対象ブラウザー：
+• Chrome 12 以上
+• Firefox 3.6 以上
+• Safari 5.0 – 8.0
+• Internet Explorer 11
+
+ご協力をお願い致します。
+お客様にはご不便をおかけし、大変申し訳ございません。
+ご不明点・ご質問等がございましたら、担当のアカウントマネージャーまでご連絡ください。</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contract__c$Name</field>
+    </columns>
+    <columns>
+        <field>Contract__c$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Assets__r$Account</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Assets__r.Asset_Licenses__r$Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Assets__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Assets__r$Product2</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Assets__r.Asset_Licenses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Assets__r.Asset_Licenses__r$No_of_Seats__c</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Assets__r.Asset_Licenses__r$Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Assets__r.Asset_Licenses__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Assets__r.Asset_Licenses__r$End_Date__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>A list of all contracts with associated assets, opportunity and license information</description>
+    <format>Tabular</format>
+    <name>Contracts with Assets</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contracts_with_Assets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contract__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>9/27 BDC Release Mailer-WebIRPlus</name>
+    <style>none</style>
+    <subject>Newest Enhacments to WebIRPlus</subject>
+    <textOnly>.................................
+
+
+
+
+
+
+
+
+
+
+WebIRPlus&apos; newest enhancements are here!
+
+As we continue to improve your webIRplus experience, we are pleased to announce the latest round of enhancements to the platform, including updates to Advanced Search, Mail, the Goal Tracker, plus much more!
+
+Some of the latest enhancements include:
+
+
+
+
+
+Get in touch with your account manager now to learn more!
+
+callmenowIR@ipreo.com  |    +44 20 7665 9822 (Europe)
++852 58082616 (Asia Pacific)
+
+
+
+
+
+
+
+
+
+Privacy Policy
+
+
+
+
+
+
+© 2016 Ipreo. All Rights Reserved.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

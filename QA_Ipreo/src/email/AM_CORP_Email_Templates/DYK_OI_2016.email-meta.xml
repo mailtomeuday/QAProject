@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DYK OI 2016</name>
+    <style>none</style>
+    <subject>BD Outlook Integration</subject>
+    <textOnly>Outlook Integration
+
+
+Would it make your life easier to enter meeting data in one place and have it display on your BD Corporate and Outlook Calendars? We’ve got your covered! Ipreo’s BD Corporate Outlook Integration offers two-way sync functionality to help save you time and effort as you organize investor meetings.
+
+
+Using BD Outlook Integration you have the option to create a meeting in Outlook that maps over to your BD corporate account. Conversely, once the BD Outlook Integration feature is installed, all meetings entered into your BD Corporate account will automatically show up in your outlook calendar, complete with color coding so that you can distinguish BD meetings in your Outlook Calendar.
+
+
+As you probably know, Ipreo actively tracks investment community contacts to provide the most up-to-date information. BD Outlook Integration also allows you to seamlessly sync contacts in BD with your Outlook to ensure that you always have the most accurate contact data at the tip of your fingers.
+
+
+We look forward to helping you get up to speed on using the BD Corporate Outlook Integration Feature. Click here to access a Quick Guide that details the download process. Note that the initial install is quick and easy, but may require assistance from your company Helpdesk if you are not an administrator. Also included in the link is a brief overview on using BD Outlook Integration, but your dedicated Account Manager is available for training or to consult on how you can utilize this feature to help make your workday more efficient. Please let us know if there would be a good time to connect in the near future!
+
+
+Mostafa Bouhendjeur
+Associate Account Manager
+mostafa.bouhendjeur@ipreo.com
++44 207 665 9660
+
+
+
+
+For further information or training, please contact your dedicated Account Manager
+or 24/7 client support at: callmenowir@ipreo.com or the telephone numbers below:
+
+US: 1-800-305-0819 | Europe: +44 (0) 20 7665 9820 | APAC: +852 58082615
+
+
+Click here to view a video that highlights our upcoming enhancements to the BD Corporate Platform!
+
+Copyright © 2016. Ipreo. All rights Reserved</textOnly>
+    <type>custom</type>
+</EmailTemplate>

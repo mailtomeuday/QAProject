@@ -1,0 +1,19 @@
+<apex:page standardController="CampaignMember" extensions="Ipreo_BDSF_1_10.BDSFAddToCampaignController" standardStylesheets="true">
+    <apex:sectionHeader subtitle="New Campaign Member" title="Campaign Member Edit"/>
+    <apex:form >
+    <apex:pageBlock title="Campaign Member Edit">
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Save" action="{!saveMambers}"/>
+            <input type="button" class="btn" value="Cancel" onclick="top.window.close();"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="Campaign Member Information" columns="1">
+            <apex:inputField value="{!CampaignMember.CampaignId}"/>
+            <apex:inputField value="{!CampaignMember.Status}" required="true"/>
+            <apex:repeat value="{!members}" var="member">
+                <apex:outputField value="{!member.ContactId}" rendered="{!member.ContactId != null}"/>
+                <apex:outputField value="{!member.LeadId}" rendered="{!member.LeadId != null}"/>
+            </apex:repeat>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Outage notification sample (from HTML)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Outage notifications sample</name>
+    <style>none</style>
+    <subject>Ipreo Outage Advisory TEST</subject>
+    <textOnly>Outage Advisory
+
+Ipreo Products not available
+
+Event Date &amp; Time: 19-Jan-15 9:00am - ET ongoing
+Next Update expected: 10:30am ET
+
+Dear Client,
+
+
+Please be advised that we are currently experiencing  unexpected network issuee resulting in possible slowness and connectivity problems. We are actively investigating the issue and working to address it as soon as possible.
+
+We apologize for any inconvenience this is causing, thank you for patience. We will keep you updated regularly.
+
+Please don’t hesitate to email or call 24/7 support team  for questions or assistance:callmenowIR@ipreo.com
++1 (800) 305-0819 or (212) 849-5424 (Americas)
++44 20 7665 9822 (Europe)
++852 58082616 (Asia Pacific)
++81 3 4579 5698 (Japan)</textOnly>
+    <type>custom</type>
+</EmailTemplate>

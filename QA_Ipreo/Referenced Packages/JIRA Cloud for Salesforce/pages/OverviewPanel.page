@@ -1,0 +1,8 @@
+<apex:page >
+    <div>
+        This Visualforce page is deprecated in favor of a new and much improved JiraIssuesCasePage and will be removed in future versions.
+    </div>
+    <a href="https://docs.servicerocket.com/pages/viewpage.action?pageId=19988893" target="_blank">
+        How to configure the new Visualforce page
+    </a>
+</apex:page>

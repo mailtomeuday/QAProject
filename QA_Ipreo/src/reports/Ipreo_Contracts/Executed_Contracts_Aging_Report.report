@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Contract_Age_Days__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Initial_Submission_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Effective_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Customer_Signed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Counter_Signed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contract__c.Billing_Start_Date_Other_Pls_Specify__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>A list of all executed contracts and the number of days it was open</description>
+    <filter>
+        <criteriaItems>
+            <column>Contract__c.Status__c</column>
+            <operator>equals</operator>
+            <value>Customer Executed,Fully Executed</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contract__c.Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Executed Contracts Aging Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Contract__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contract__c.Account__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

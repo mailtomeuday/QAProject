@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ipreo_Standard_Internal</letterhead>
+    <name>IPREO HK IS MOVING</name>
+    <style>freeForm</style>
+    <subject>Ipreo HK is moving! New office in FWD Financial Centre</subject>
+    <textOnly>We are moving!	
+
+We are pleased to announce that we are moving to a new office location.	
+view the new location
+
+Starting from Monday, 30 May 2016 we will be delivering our service at the new office at FWD Financial Centre. Please do not hesitate to contact us at the new location. My updated contact detail is as follows:
+
+Lilyan Li 
+Associate Account Manager
+
+Direct: +852 37421055 
+Email: Lilyan.Li@ipreo.com
+
+As always, we appreciate your attention and support, and we look forward to continuing to serve you in our new space!	                       	
+
+We are here!
+
+Units 1405-6, 14/F
+FWD Financial Centre
+Des Voeux Road Central
+Hong Kong</textOnly>
+    <type>html</type>
+</EmailTemplate>

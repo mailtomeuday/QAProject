@@ -1,0 +1,261 @@
+<apex:page showHeader="false" controller="Ipreo_BDSF_1_10.BDSFSearchController" title="Link to BD" standardStylesheets="true">
+<body>
+<style>
+    .recordName{
+        position:relative;
+    }
+    
+    .tooltip{
+        position: absolute;
+        left: 80px;
+        top: 30px;
+        padding: 5px;
+        background: #fff;
+        border: 1px solid #000;
+        z-index: 5;
+        display: none;
+        width: 100%;
+        min-width: 500px;
+    }
+    
+    .tooltip a{
+        color: #015ba7;
+    }
+    
+    .tooltip table td{
+        background: none !important;
+    }
+    
+    .tooltip-header{
+        border-bottom: 1px solid #000;
+        font-size: 11px;
+        padding: 2px 4px 6px;
+    }
+    
+    .tooltip h2{
+        font-size: 13px;
+    }
+    
+    .tooltip-header table{
+        width: 100%;
+    }
+    
+    .tooltip-header td{
+        border-bottom: none !important;
+    }
+    
+    .tooltip-content{
+        padding: 6px 4px 2px;
+    }
+    
+    .tooltip-content table td{
+        border-bottom: none !important;
+    }
+    
+    .tooltip-content table td.labelCol{
+        width: 150px !important;
+        text-align: left;
+    }
+    
+    .tooltip-content table td.dataCol{
+        width: auto !important;
+    }
+    
+</style>
+<script type="text/javascript">document.title='Link to BD';</script>
+<apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'js/jquery-1.3.2.min.js')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'css/UpdateProgressBar.css')}"/>
+<script>
+    var fadingOutList = [];
+    var fadingInList = [];
+    function showPopup(el){
+        var elId = el.id;
+        var tooltip = $j(el).find('.tooltip');
+        if (fadingOutList[elId]) {
+            clearTimeout(fadingOutList[elId]);
+            fadingOutList[elId] = null;
+        } else {
+            if(!fadingInList[elId]){
+                fadingInList[elId] = setTimeout(function () {
+                    var positionOffset = tooltip.parent().offset();
+                    var wHeight = $j(window).height();
+                    var wScrollTop = $j(window).scrollTop();
+                    var objTop = (wHeight + wScrollTop) - (positionOffset.top + tooltip.outerHeight()) < 30? (wHeight + wScrollTop) - (positionOffset.top + tooltip.outerHeight()): 30;
+                    objTop = wHeight < tooltip.outerHeight() ? wScrollTop-positionOffset.top : objTop;
+                    tooltip.css('top',objTop + 'px');
+                    tooltip.show();
+                    fadingInList[elId] = null;
+                }, 500);
+            }
+        }
+    }
+    
+    function hidePopup(el){
+        var elId = el.id;
+        if (fadingInList[elId]) {
+            clearTimeout(fadingInList[elId]);
+            fadingInList[elId] = null;
+        } else {
+            if(!fadingOutList[elId]){
+                fadingOutList[elId] = setTimeout(function () {
+                    $j(el).find('.tooltip').hide();
+                    fadingOutList[elId] = null;
+                }, 200);
+            }
+        }
+    }
+</script>
+    <div id="progressImage" style="display: none;">
+        <div class="progressContainer">
+            <div class="progressActionContainer">
+                <div class="progressAction">
+                    <span class="progressImage">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+        $j.extend({
+            StartProgress:function() {
+                $j("div[id$=progressImage]").css("display", "block");
+            },
+            StopProgress:function() {
+                $j("div[id$=progressImage]").css("display", "none");
+            }
+        });
+        
+        function RegisterRefresh() {
+            // This value will persist between postbacks
+            window.returnValue = "refresh";
+        }
+    </script>
+    <apex:form >
+    <apex:pageBlock mode="edit" id="block">
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+               <apex:outputLabel for="searchText">Name</apex:outputLabel>
+               <apex:panelGroup >
+                  <apex:inputText id="searchText" value="{!searchText}"/>
+                  <apex:commandButton value="Search" action="{!DoSearch}" 
+                                      rerender="block" status="status"/>
+               </apex:panelGroup>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem rendered="{!NOT(ISNULL(CompanyType))}">
+                  <apex:selectRadio id="rbtCompanyType" value="{!CompanyType}">
+                     <apex:selectOption itemValue="BDInstitution" itemLabel="Institutions"/>
+                     <apex:selectOption itemValue="BDFund" itemLabel="Funds"/>
+                  </apex:selectRadio>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        <p>
+            Search and choose BD Profile to associate&nbsp;
+            <apex:outputPanel rendered="{!IsAccount}">account</apex:outputPanel>
+            <apex:outputPanel rendered="{!IsContact}">contact</apex:outputPanel>
+            <apex:outputPanel rendered="{!IsLead}">lead</apex:outputPanel>
+            with '{!objectName}' {!EntityType}
+        </p>
+        <apex:actionStatus id="status" onstart="$j.StartProgress();" onstop="$j.StopProgress();"/>
+        <apex:outputPanel rendered="{!ISNULL(ErrorMessage)}">
+        <apex:pageBlockSection title="Found Record(s)" columns="1" rendered="{!NOT(ISNULL(Results))}">
+            <apex:pageBlockTable value="{!Results}" var="c">
+              <apex:column >
+                <apex:commandButton value="{!IF(c.IsDisabled,'Linked','Link')}" oncomplete="RegisterRefresh(); window.close();" action="{!CreateLink}" disabled="{!c.IsDisabled}" rerender="block" status="status">
+                    <apex:param name="entityIdParam" assignTo="{!EntityId}" value="{!c.Id}" />
+                    <apex:param name="companyIdParam" assignTo="{!CompanyEntityId}" value="{!c.CompanyId}" />
+                    <apex:param name="companyTypeParam" assignTo="{!SelectedCompanyType}" value="{!c.CompanyType}" />
+                </apex:commandButton>
+              </apex:column>
+              <apex:column headerValue="Name" styleClass="recordName" onmouseover="showPopup(this);" onmouseout="hidePopup(this);">
+                  <apex:outputText value="{!c.Name}"/>
+                  <apex:outputPanel styleClass="tooltip" layout="block" rendered="{!!IsContact2}">
+                      <div class="tooltip-header">
+                          <table class="unhighlight">
+                              <tr>
+                                  <td><h2>{!c.Name}</h2>&nbsp;<apex:outputText value="Buy Side" rendered="{!c.IsBuySide}"/></td>
+                                  <td><apex:outputText style="float:right; margin-left: 10px;" value="{!c.TypeName}"/></td>
+                              </tr>
+                          </table>
+                      </div>
+                      <div class="tooltip-content">
+                          <table class="detailList unhighlight">
+                              <tr><td class="labelCol">Location</td><td class="dataCol">
+                                  <apex:outputText value="{!c.City}, " rendered="{!c.City != null}"/>
+                                  <apex:outputText value="{!c.Country}"/>
+                              </td></tr>
+                              <tr><td class="labelCol">Address</td><td class="dataCol">
+                                  <apex:outputText value="{!c.FullAddress}, " rendered="{!c.FullAddress != null}"/>
+                                  <apex:outputText value="{!c.City}, " rendered="{!c.City != null}"/>
+                                  <apex:outputText value="{!c.State}, " rendered="{!c.State != null}"/>
+                                  <apex:outputText value="{!c.Zip}, " rendered="{!c.Zip != null}"/>
+                                  <apex:outputText value="{!c.Country}"/>
+                              </td></tr>
+                              <tr><td class="labelCol">Phone</td><td class="dataCol"><apex:outputText value="{!c.Phone}"/></td></tr>
+                              <tr><td class="labelCol">Website</td><td class="dataCol"><apex:outputLink value="{!c.Website}"><apex:outputText value="{!c.Website}"/></apex:outputLink></td></tr>
+                              <tr><td class="labelCol">Primary Equity Style</td><td class="dataCol"><apex:outputText value="{!c.Style}"/></td></tr>
+                              <tr><td class="labelCol">Dominant Orientation</td><td class="dataCol"><apex:outputText value="{!c.OrientationFocus}"/></td></tr>
+                              <tr><td class="labelCol">Equity Portfolio Turnover</td><td class="dataCol"><apex:outputText value="{!c.Turnover}%"/></td></tr>
+                              <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                              <tr><td><h2>Assets</h2></td></tr>
+                              <tr><td class="labelCol">Stated (USD, mm)</td><td class="dataCol"><apex:outputText value="{!c.StatedAssets}"/></td></tr>
+                              <tr><td class="labelCol">Reported (USD, mm)</td><td class="dataCol"><apex:outputText value="{!c.ReportedTotalAssets}"/></td></tr>
+                              <tr><td class="labelCol">Equity (USD, mm)</td><td class="dataCol"><apex:outputText value="{!c.ReportedEquityAssets}"/></td></tr>
+                              <tr><td class="labelCol">Fixed Income (USD, mm)</td><td class="dataCol"><apex:outputText value="{!c.ReportedFixedIncomeAssets}"/></td></tr>
+                              
+                          </table>
+                      </div>
+                  </apex:outputPanel>
+                  <apex:outputPanel styleClass="tooltip" layout="block" rendered="{!IsContact2}">
+                      <div class="tooltip-header">
+                          <table class="unhighlight">
+                              <tr>
+                                  <td><h2>{!c.Name}</h2>&nbsp;<apex:outputText value="Buy Side" rendered="{!c.IsBuySide}"/></td>
+                                  <td><apex:outputText style="float:right; margin-left: 10px;" value="{!c.RoleName}"/></td>
+                              </tr>
+                          </table>
+                      </div>
+                      <div class="tooltip-content">
+                          <table class="detailList unhighlight">
+                              <tr><td><h2>Contact Details</h2></td><td></td></tr>
+                              <tr><td class="labelCol">Account Name</td><td class="dataCol">
+                                  <apex:outputLink value="{!c.CompanyId}"><apex:outputText value="{!c.CompanyName}"/></apex:outputLink><apex:outputText value=" {!c.CompanyType}"/>
+                              </td></tr>
+                              <tr><td class="labelCol">Address</td><td class="dataCol">
+                                  <apex:outputText value="{!c.FullAddress}, " rendered="{!c.FullAddress != null}"/>
+                                  <apex:outputText value="{!c.City}, " rendered="{!c.City != null}"/>
+                                  <apex:outputText value="{!c.State}, " rendered="{!c.State != null}"/>
+                                  <apex:outputText value="{!c.Zip}, " rendered="{!c.Zip != null}"/>
+                                  <apex:outputText value="{!c.Country}"/>
+                              </td></tr>
+                              <tr><td class="labelCol">Phone</td><td class="dataCol"><apex:outputText value="{!c.Phone}"/></td></tr>
+                              <tr><td class="labelCol">Email</td><td class="dataCol"><apex:outputText value="{!c.Email}"/></td></tr>
+                              <tr><td></td><td></td></tr>
+                              <tr><td><h2>Account Details</h2></td><td></td></tr>
+                              <tr><td class="labelCol">Primary Equity Style</td><td class="dataCol"><apex:outputText value="{!companyMapping[c.CompanyId].Style}"/></td></tr>
+                              <tr><td class="labelCol">Orientation</td><td class="dataCol"><apex:outputText value="{!companyMapping[c.CompanyId].OrientationFocus}"/></td></tr>
+                              <tr><td class="labelCol">Equity Portfolio Turnover</td><td class="dataCol"><apex:outputText value="{!companyMapping[c.CompanyId].Turnover}%"/></td></tr>
+                          </table>
+                      </div>
+                  </apex:outputPanel>
+              </apex:column>
+              <apex:column value="{!c.CompanyName}" headerValue="Institution Name" rendered="{!IsContact2}" />
+              <apex:column value="{!c.ReportedTotalAssets}" headerValue="Total Reported Assets ($, mm)" rendered="{!not(IsContact2)}" />
+
+              <apex:column value="{!c.CompanyType}" headerValue="Institution/Fund Type" rendered="{!not(IsContact2)}" />
+              <apex:column value="{!c.InvestmentCenter}" headerValue="Investment Center" rendered="{!not(IsContact2)}" />
+              <apex:column value="{!c.RoleName}" headerValue="Job Function" rendered="{!IsContact2}" />
+              <apex:column value="{!c.Country}" headerValue="Country"/>
+              <apex:column value="{!c.InvestmentCenter}" headerValue="Investment Center" rendered="{!IsContact2}" />
+           </apex:pageBlockTable>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Found Record(s)" rendered="{!ISNULL(Results)}">
+            No items found.
+        </apex:pageBlockSection>
+        </apex:outputPanel>
+        <apex:pageBlockSection title="Error" rendered="{!NOT(ISNULL(ErrorMessage))}">
+            {!ErrorMessage}
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+</body>
+</apex:page>

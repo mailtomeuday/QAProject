@@ -1,0 +1,5 @@
+<apex:page >
+    <div>
+        This Visualforce page is deprecated in favor of a new and much improved ConfigurationPage and will be removed in future versions.
+    </div>
+</apex:page>

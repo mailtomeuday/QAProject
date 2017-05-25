@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ipreo_Standard_Internal</letterhead>
+    <name>Contract Approval Request</name>
+    <style>freeForm</style>
+    <subject>New Contract Approval Request</subject>
+    <textOnly>Contract awaits your approval.
+
+Account: {!Contract__c.Account__c}
+
+Contract Type: {!Contract__c.Contract_Type__c}
+
+Please click here to approve or reject the record in Salesforce.com:
+{!ApprovalRequest.Internal_URL}
+
+Please click here to access the contract in Salesforce.com:
+https://test.salesforce.com/{!Contract__c.Id}
+
+Access all of your approval items in Salesforce.com:
+https://test.salesforce.com/04i</textOnly>
+    <type>html</type>
+</EmailTemplate>

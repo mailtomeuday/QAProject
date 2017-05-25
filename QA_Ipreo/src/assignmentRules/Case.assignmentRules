@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Ipreo Assignment Rules</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Corporate_Account_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (Corporate)</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RS_T_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (RS&amp;T)</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Buyside_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (Buyside)</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Munis_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (Munis)</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Equity_WM_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (Equity)</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Fixed_Income_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (Fixed Income)</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Sales_Requests_IR_case_queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (SalesRequests-IR)</value>
+            </criteriaItems>
+            <template>Cases/Case_Assignment_Notification_Trial_Access</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Trial_Users_GMG_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (Trial Users GMG)</value>
+            </criteriaItems>
+            <template>Cases/Case_Assignment_Notification_Trial_Access</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Fixed_Income_UAT_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (Fixed Income UAT)</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FactSet_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (FactSet)</value>
+            </criteriaItems>
+            <template>Cases/Case_Assignment_Notification_to_Factset_Case_Queue</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AM_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (AM Support)</value>
+            </criteriaItems>
+            <template>Cases/Case_Assignment_Notification_to_Factset_Case_Queue</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AM_Support_CPT</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (AM Support - CPT)</value>
+            </criteriaItems>
+            <template>Cases/Case_Assignment_Notification_to_Factset_Case_Queue</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AM_Support_JP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (AM Support - JP)</value>
+            </criteriaItems>
+            <template>Cases/Case_Assignment_Notification_to_Factset_Case_Queue</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>iCompliance_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (iCompliance)</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CMS_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email2Case (CMS)</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

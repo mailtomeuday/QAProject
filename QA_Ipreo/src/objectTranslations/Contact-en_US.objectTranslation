@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Office Phone</value>
+        </caseValues>
+        <name>phone_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Alternate Email --></label>
+        <name>Alternate_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Bundle --></label>
+        <name>Asset_Bundle__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDEmail --></label>
+        <name>BDEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDFax --></label>
+        <name>BDFax__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDPhone --></label>
+        <name>BDPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- BD Vision ID --></label>
+        <name>BD_Vision_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Churn Reason --></label>
+        <name>Churn_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Churn --></label>
+        <name>Churn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Subscription Status --></label>
+        <name>Contact_Subscription_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corp IR-AM-CAB/PAC Member --></label>
+        <name>Corp_IR_AM_CAB_PAC_Member__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DM Run Name --></label>
+        <name>DM_Run_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debtdomain ID --></label>
+        <name>Debtdomain_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <picklistValues>
+            <masterLabel>Corporate Access</masterLabel>
+            <translation><!-- Corporate Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCM</masterLabel>
+            <translation><!-- DCM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECM</masterLabel>
+            <translation><!-- ECM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GCM</masterLabel>
+            <translation><!-- GCM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR/Recruiting</masterLabel>
+            <translation><!-- HR/Recruiting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Goes By --></label>
+        <name>Goes_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- BD Data Update --></label>
+        <name>Ipreo_BDSF_1_10__BDDataUpdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- BD Warehouse Id --></label>
+        <name>Ipreo_BDSF_1_10__BDWarehouseId__c</name>
+    </fields>
+    <fields>
+        <label><!-- BD Synchronization History --></label>
+        <name>Ipreo_BDSF_1_10__BD_SyncHistory__c</name>
+    </fields>
+    <fields>
+        <label><!-- BD Last synchronization time --></label>
+        <name>Ipreo_BDSF_1_10__bd_lastsynctime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Category --></label>
+        <name>Job_Category__c</name>
+        <picklistValues>
+            <masterLabel>Account Manager</masterLabel>
+            <translation><!-- Account Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administrator</masterLabel>
+            <translation><!-- Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst</masterLabel>
+            <translation><!-- Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate</masterLabel>
+            <translation><!-- Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate Director</masterLabel>
+            <translation><!-- Associate Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate Manager</masterLabel>
+            <translation><!-- Associate Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate Vice President (AVP)</masterLabel>
+            <translation><!-- Associate Vice President (AVP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Analyst</masterLabel>
+            <translation><!-- Business Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Development</masterLabel>
+            <translation><!-- Business Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chairman</masterLabel>
+            <translation><!-- Chairman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Administrative Officer (CA)</masterLabel>
+            <translation><!-- Chief Administrative Officer (CA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Compliance Officer (CCO)</masterLabel>
+            <translation><!-- Chief Compliance Officer (CCO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Executive Officer (CEO)</masterLabel>
+            <translation><!-- Chief Executive Officer (CEO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Financial Officer (CFO)</masterLabel>
+            <translation><!-- Chief Financial Officer (CFO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Information Officer (CIO)</masterLabel>
+            <translation><!-- Chief Information Officer (CIO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Operating Officer (COO)</masterLabel>
+            <translation><!-- Chief Operating Officer (COO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Technology Officer (CTO)</masterLabel>
+            <translation><!-- Chief Technology Officer (CTO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Director</masterLabel>
+            <translation><!-- Commercial Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Secretary</masterLabel>
+            <translation><!-- Company Secretary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Officer</masterLabel>
+            <translation><!-- Compliance Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation><!-- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Secretary</masterLabel>
+            <translation><!-- Corporate Secretary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Database Administrator</masterLabel>
+            <translation><!-- Database Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director</masterLabel>
+            <translation><!-- Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Director (ED)</masterLabel>
+            <translation><!-- Executive Director (ED) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Vice President (EVP)</masterLabel>
+            <translation><!-- Executive Vice President (EVP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Counsel</masterLabel>
+            <translation><!-- General Counsel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head</masterLabel>
+            <translation><!-- Head --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intern</masterLabel>
+            <translation><!-- Intern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation><!-- Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Relations</masterLabel>
+            <translation><!-- Investor Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Relations Officer (IRO)</masterLabel>
+            <translation><!-- Investor Relations Officer (IRO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager</masterLabel>
+            <translation><!-- Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managing Director (MD)</masterLabel>
+            <translation><!-- Managing Director (MD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portfolio Manager</masterLabel>
+            <translation><!-- Portfolio Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Principal</masterLabel>
+            <translation><!-- Principal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Analyst</masterLabel>
+            <translation><!-- Research Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Assistant</masterLabel>
+            <translation><!-- Sales Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secretary</masterLabel>
+            <translation><!-- Secretary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Analyst</masterLabel>
+            <translation><!-- Senior Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Director</masterLabel>
+            <translation><!-- Senior Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Investor Relations Advisor</masterLabel>
+            <translation><!-- Senior Investor Relations Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Manager</masterLabel>
+            <translation><!-- Senior Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Vice President (SVP)</masterLabel>
+            <translation><!-- Senior Vice President (SVP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialist</masterLabel>
+            <translation><!-- Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supervisor</masterLabel>
+            <translation><!-- Supervisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trader</masterLabel>
+            <translation><!-- Trader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasurer</masterLabel>
+            <translation><!-- Treasurer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President (VP)</masterLabel>
+            <translation><!-- Vice President (VP) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn Company Id --></label>
+        <name>LID__LinkedIn_Company_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn Member Token --></label>
+        <name>LID__LinkedIn_Member_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketo Score --></label>
+        <name>Marketo_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Active Assets --></label>
+        <name>No_of_Active_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Active Sponsored Assets --></label>
+        <name>No_of_Active_Sponsored_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsored User Status --></label>
+        <name>Sponsored_User_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set by system:  if Contact has an active User Asset (Contact is associated with an asset with an active subscription) then User Status is &apos;Active&apos;.  Otherwise, &apos;Inactive&apos;. --></help>
+        <label><!-- User Status --></label>
+        <name>User_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- iContact Contact Id --></label>
+        <name>iContactforSF__iContact_Contact_Id__c</name>
+    </fields>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Corporate --></label>
+            <section>Corporate</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Information --></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label><!-- LinkedIn Company Page --></label>
+            <section>LinkedIn Company Page</section>
+        </sections>
+        <sections>
+            <label><!-- LinkedIn Member Profile --></label>
+            <section>LinkedIn Member Profile</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You can not change the account. --></errorMessage>
+        <name>Cannot_Modify_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Country required when save a contact. --></errorMessage>
+        <name>Req_MailingCountry</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- BD_Ad_Profile --></label>
+        <name>Ipreo_BDSF_1_10__BD_Ad_Profile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Open_BD_Contact_Profile --></label>
+        <name>Ipreo_BDSF_1_10__Open_BD_Contact_Profile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+</CustomObjectTranslation>

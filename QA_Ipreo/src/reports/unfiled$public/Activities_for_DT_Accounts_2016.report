@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Activity$Account</field>
+    </columns>
+    <columns>
+        <field>Activity$What</field>
+    </columns>
+    <columns>
+        <field>Activity$Who</field>
+    </columns>
+    <columns>
+        <field>Activity$Owner</field>
+    </columns>
+    <columns>
+        <field>Activity$Activity_Type__c</field>
+    </columns>
+    <columns>
+        <field>Activity$ActivityDate</field>
+    </columns>
+    <columns>
+        <field>Activity$Executive_Summary__c</field>
+    </columns>
+    <columns>
+        <field>Activity$Subject</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Activities for selected Accounts excluding those on Cases</description>
+    <filter>
+        <booleanFilter>(1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 11 or 12 or 13 or 14 or 15 or 16) AND 17</booleanFilter>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>jp morgan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>j.p. morgan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>bank of america</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>merrill lynch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>barclay</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>morgan stanley</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>royal bank of canada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>rbc</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>deutsche bank</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>deutsche borse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>deutsche securities</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>deutsche investment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>credit suisse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>ubs</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>mizuho</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Account</column>
+            <operator>contains</operator>
+            <value>standard chartered</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$What</column>
+            <operator>notContain</operator>
+            <value>000</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Activities for DT Accounts 2016</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Activity$ActivityDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

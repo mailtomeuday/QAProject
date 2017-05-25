@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaseSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAssignNotificationTemplate>Cases/Case_Reassignment_Notification</caseAssignNotificationTemplate>
+    <caseFeedItemSettings>
+        <characterLimit>400</characterLimit>
+        <collapseThread>false</collapseThread>
+        <displayFormat>Default</displayFormat>
+        <feedItemType>EmailMessageEvent</feedItemType>
+    </caseFeedItemSettings>
+    <closeCaseThroughStatusChange>true</closeCaseThroughStatusChange>
+    <defaultCaseOwner>General_Support_Queue</defaultCaseOwner>
+    <defaultCaseOwnerType>Queue</defaultCaseOwnerType>
+    <defaultCaseUser>ipreo.systemuser@ipreo.com</defaultCaseUser>
+    <emailToCase>
+        <enableEmailToCase>true</enableEmailToCase>
+        <enableHtmlEmail>true</enableHtmlEmail>
+        <enableOnDemandEmailToCase>true</enableOnDemandEmailToCase>
+        <enableThreadIDInBody>true</enableThreadIDInBody>
+        <enableThreadIDInSubject>false</enableThreadIDInSubject>
+        <notifyOwnerOnNewCaseEmail>true</notifyOwnerOnNewCaseEmail>
+        <overEmailLimitAction>Bounce</overEmailLimitAction>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (AM Support)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>am.support-jp@ipreo.com</emailAddress>
+            <routingName>AM.Support-JP@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (AM Support)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>am.support.cpt@ipreo.com</emailAddress>
+            <routingName>AM.Support.CPT@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (AM Support)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>amsupport@ipreo.com</emailAddress>
+            <routingName>AMSupport@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (RS&amp;T)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ambadas_morkhandikar@epam.com</emailAddress>
+            <routingName>Automating closign of cases for Munis and FI</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>venugopal_kapa@epam.com</emailAddress>
+            <routingName>Automating closign of cases for Munis and FI 2</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Munis)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>neelima_vempada@epam.com</emailAddress>
+            <routingName>Automating closing of cases for Munis and FI</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Corporate)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>nyse-ipreo@ipreo.com</emailAddress>
+            <routingName>Nyse-ipreo@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (SalesRequests-IR)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>salesrequests-ir@ipreo.com</emailAddress>
+            <routingName>SalesRequests-IR</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Trial Users GMG)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>trialusersgmg@ipreo.com</emailAddress>
+            <routingName>Trial Users GMG</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>barclaysequity@ipreo.com</emailAddress>
+            <routingName>barclaysequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (RS&amp;T)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>barclayshelp@ipreo.com</emailAddress>
+            <routingName>barclayshelp@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>barclaysrbb@ipreo.com</emailAddress>
+            <routingName>barclaysrbb@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Corporate)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>bdtrials@ipreo.com</emailAddress>
+            <routingName>bdtrials@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>bmoequity@ipreo.com</emailAddress>
+            <routingName>bmoequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Fixed Income)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>buysidesupport@ipreo.com</emailAddress>
+            <routingName>buysidesupport@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (RS&amp;T)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>callmenowcm@ipreo.com</emailAddress>
+            <routingName>callmenowcm@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Corporate)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>callmenowir@ipreo.com</emailAddress>
+            <routingName>callmenowir@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>canaccordequity@ipreo.com</emailAddress>
+            <routingName>canaccordequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>canaccordrbb@ipreo.com</emailAddress>
+            <routingName>canaccordrbb@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Corporate)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>capita@ipreo.com</emailAddress>
+            <routingName>capita@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Corporate)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cbsdirect_core@ipreo.com</emailAddress>
+            <routingName>cbsdirect_core@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Corporate)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cbsdirectsupport@ipreo.com</emailAddress>
+            <routingName>cbsdirectsupport@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ciccequity@ipreo.com</emailAddress>
+            <routingName>ciccequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (RS&amp;T)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>citi-ipic@ipreo.com</emailAddress>
+            <routingName>citi-ipic@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Corporate)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>citidr@ipreo.com</emailAddress>
+            <routingName>citidr@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>citiequity@ipreo.com</emailAddress>
+            <routingName>citiequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>citiretail@ipreo.com</emailAddress>
+            <routingName>citiretail@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (RS&amp;T)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cmhelp@ipreo.com</emailAddress>
+            <routingName>cmhelp@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>csequity@ipreo.com</emailAddress>
+            <routingName>csequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>csrbb@ipreo.com</emailAddress>
+            <routingName>csrbb@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>dbequity@ipreo.com</emailAddress>
+            <routingName>dbequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>dbretail@ipreo.com</emailAddress>
+            <routingName>dbretail@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Fixed Income UAT)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>debtproductuat@ipreo.com</emailAddress>
+            <routingName>debtProductUAT@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Fixed Income)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>debtproduct@ipreo.com</emailAddress>
+            <routingName>debtproduct@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Corporate)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>drinsightsupport@ipreo.com</emailAddress>
+            <routingName>drinsightsupport@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>dspproduct@ipreo.com</emailAddress>
+            <routingName>dspproduct@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ebbhelp@ipreo.com</emailAddress>
+            <routingName>ebbhelp@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>eqhelp@ipreo.com</emailAddress>
+            <routingName>eqhelp@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>etraderbb@ipreo.com</emailAddress>
+            <routingName>etraderbb@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (FactSet)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>factset-product@ipreo.com</emailAddress>
+            <routingName>factset-product@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>fidelityrbb@ipreo.com</emailAddress>
+            <routingName>fidelityrbb@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Fixed Income)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>fihelp@ipreo.com</emailAddress>
+            <routingName>fihelp@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Fixed Income UAT)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>fihelpuat@ipreo.com</emailAddress>
+            <routingName>fihelpuat@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ghequity@ipreo.com</emailAddress>
+            <routingName>ghequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>gsequityissuenet@ipreo.com</emailAddress>
+            <routingName>gsequityissuenet@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (CMS)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>help.roadshowaccess@ipreo.com</emailAddress>
+            <routingName>help.roadshowaccess@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>i-dealhelp@ipreo.com</emailAddress>
+            <routingName>i-dealhelp@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (iCompliance)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>icomplianceproduct@ipreo.com</emailAddress>
+            <routingName>icomplianceproduct@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (CMS)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ipreocapitalmarkets@ipreo.com</emailAddress>
+            <routingName>ipreocapitalmarkets@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Fixed Income)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>issuebook-support@ipreo.com</emailAddress>
+            <routingName>issuebook-support@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Fixed Income UAT)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>issuebookuat-support@ipreo.com</emailAddress>
+            <routingName>issuebookuat-support@ipreo.com</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Fixed Income)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>issuelaunch-support@ipreo.com</emailAddress>
+            <routingName>issuelaunch-support@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Fixed Income)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>issuenet-support@ipreo.com</emailAddress>
+            <routingName>issuenet-support@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Fixed Income UAT)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>issuenetuat-support@ipreo.com</emailAddress>
+            <routingName>issuenetuat-support@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jmpequity@ipreo.com</emailAddress>
+            <routingName>jmpequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jpmdsp@ipreo.com</emailAddress>
+            <routingName>jpmdsp@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jpmequityissuenet@ipreo.com</emailAddress>
+            <routingName>jpmequityissuenet@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>jrequity@ipreo.com</emailAddress>
+            <routingName>jrequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>keybancequity@ipreo.com</emailAddress>
+            <routingName>keybancequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>kkrequity@ipreo.com</emailAddress>
+            <routingName>kkrequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>lazardequity@ipreo.com</emailAddress>
+            <routingName>lazardequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>leerinkequity@ipreo.com</emailAddress>
+            <routingName>leerinkequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>mlequity@ipreo.com</emailAddress>
+            <routingName>mlequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>msequity@ipreo.com</emailAddress>
+            <routingName>msequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Munis)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>munis@ipreo.com</emailAddress>
+            <routingName>munis@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Munis)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>negotiated.calendar@ipreo.com</emailAddress>
+            <routingName>negotiated.calendar@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rbcequity@ipreo.com</emailAddress>
+            <routingName>rbcequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>retailprod@ipreo.com</emailAddress>
+            <routingName>retailprod@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rjdsp@ipreo.com</emailAddress>
+            <routingName>rjdsp@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>sterneageeequity@ipreo.com</emailAddress>
+            <routingName>sterneageeequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>tdarbb@ipreo.com</emailAddress>
+            <routingName>tdarbb@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ubsequity@ipreo.com</emailAddress>
+            <routingName>ubsequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (RS&amp;T)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ubshelp@ipreo.com</emailAddress>
+            <routingName>ubshelp@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>wfarbb@ipreo.com</emailAddress>
+            <routingName>wfarbb@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email2Case (Equity)</caseOrigin>
+            <casePriority>2 - Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>wfsequity@ipreo.com</emailAddress>
+            <routingName>wfsequity@ipreo.com</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <unauthorizedSenderAction>Discard</unauthorizedSenderAction>
+    </emailToCase>
+    <enableCaseFeed>false</enableCaseFeed>
+    <enableEarlyEscalationRuleTriggers>false</enableEarlyEscalationRuleTriggers>
+    <enableSuggestedSolutions>false</enableSuggestedSolutions>
+    <notifyContactOnCaseComment>false</notifyContactOnCaseComment>
+    <notifyDefaultCaseOwner>true</notifyDefaultCaseOwner>
+    <notifyOwnerOnCaseComment>false</notifyOwnerOnCaseComment>
+    <notifyOwnerOnCaseOwnerChange>true</notifyOwnerOnCaseOwnerChange>
+    <showFewerCloseActions>true</showFewerCloseActions>
+    <useSystemEmailAddress>true</useSystemEmailAddress>
+    <webToCase>
+        <enableWebToCase>false</enableWebToCase>
+    </webToCase>
+</CaseSettings>

@@ -1,0 +1,191 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal"><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial">Items
+included in Release 20, deployed 22-Aug-16, are the following:&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="719" style="width:539.5pt;margin-left:.1pt;border-collapse:collapse;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0in 0in 0in 0in">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:39.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  background:yellow;padding:0in 5.4pt 0in 5.4pt;height:39.75pt">
+  <p><b><span style="font-family: Calibri, sans-serif;">JIRA User Story #</span></b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+  </td>
+  <td width="365" style="width:273.5pt;border:solid windowtext 1.0pt;border-left:
+  none;background:yellow;padding:0in 5.4pt 0in 5.4pt;height:39.75pt;border-image: none">
+  <p><b><span style="font-family: Calibri, sans-serif;">Details</span></b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+  </td>
+  <td width="276" style="width:207.0pt;border:solid windowtext 1.0pt;border-left:
+  none;background:yellow;padding:0in 5.4pt 0in 5.4pt;height:39.75pt;border-image: none">
+  <p><b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+  minor-latin;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:Arial;color:red">WHO SHOULD BE AWARE</span></b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt;
+  border-image: none">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1082<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">“At Risk” (or RAG Status) On
+  Opportunity Product:&nbsp; view only fields
+  added to Opportunity Product (no additional data entry required by
+  anybody).&nbsp; Fields available for
+  reporting.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">GMG Sales, GMG AM/CS<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt;
+  border-image: none">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-698<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Professional Services team use of
+  Work Orders to manage implementation projects.&nbsp; Just a reminder of the page layout changes
+  on the implementation work order.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Professional Services Team, GMG
+  AM/CS, Finance (minimal impact to Finance)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-668<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Default Activity Type on Emails added
+  to Salesforce by Outlook Plugin<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Anybody who adds emails to Salesforce
+  from the Outlook Plugin<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1206<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Product Catalog changes and updates.&nbsp; Newly added products include:&nbsp; BD Corporate (Assist), Data Feed (Equity
+  Corporate), Data Feed (Fixed Income Corporate), Global Markets Intelligence
+  (Deal Surveillance), BD Advanced (Syndicated Loans), Data Feed (Syndicated
+  Loans), Buyside IQ (GMG), One Access (API), Global Markets Intelligence
+  (Activist Surveillance)<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Corporate and GMG Sales<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-679<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">New Activity Types “Call (Not Connected)”
+  and “Call (Voicemail)” no longer require User Relationship field or Products
+  field selection.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Mostly Corporate Sales and GMG Sales,
+  but also anybody who logs Call (Not Connected) and Call (Voicemail)
+  Activities.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:6;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1161<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Allow Sales User to edit NYSE Program
+  Tier on Opportunity<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Corporate Sales<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:7;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1094<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Contract – change Evergreen field
+  from check box to drop down and do associated data update (changing Contracts
+  where check box was checked to have Yes selected and where check box was
+  blank to have No selected).<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Corporate and GMG Sales, Contracts<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:8;mso-yfti-lastrow:yes;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1179<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Deploy SPS-638 (Related To =
+  Opportunity &amp; Send Alert = Yes) for Sales Meeting Activity Types.&nbsp; Previously, this validation was deployed
+  for Proposal Sent and Contract Sent Activity Types.<o:p></o:p></span></p>
+  </td>
+  <td width="276" style="width:207.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Corporate and GMG Sales, or anybody
+  who logs Events with Types Meeting (Sales Demo Prospect), Meeting (Sales Demo
+  Client), Meeting (Sales).<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>]]></td>
+</tr>
+</table>

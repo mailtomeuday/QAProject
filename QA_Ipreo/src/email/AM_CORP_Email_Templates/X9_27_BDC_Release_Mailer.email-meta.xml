@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Newest Enhancements to BD Corporate-9/27/16</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>9/27 BDC Release Mailer</name>
+    <style>none</style>
+    <subject>Newest Enhancements to BD Corporate</subject>
+    <textOnly>BD Corporate&apos;s newest enhancements are here! 
+
+As we continue to improve your BD Corporate experience, we are pleased to announce the latest round of enhancements to the platform, including updates to Advanced Search, Mail, the Goal Tracker, plus much more! 
+
+Some of the latest enhancements include: 
+               
+Advanced Search - List enhancements make it easier to find your lists, and isolate the firms, funds and contacts you’re looking for
+
+Analytics - Quick Excel download &amp; partial custom Excel download now available, plus you can now edit the query that you just ran
+
+Goal Tracker - Recurring Goals now feature period scroller providing the ability to view data for any of a Recurring Goals’ previous periods
+
+BD Mail - We have relocated the BD Mail Subject line for easier access
+
+Corporate Governance- Global Markets Intelligence data now available for those who are currently subscribed to Corporate Governance and Stock Surveillance
+
+
+Get in touch with your account manager now to learn more! 
+
+callmenowIR@ipreo.com | + 1-800-305-0819</textOnly>
+    <type>custom</type>
+</EmailTemplate>

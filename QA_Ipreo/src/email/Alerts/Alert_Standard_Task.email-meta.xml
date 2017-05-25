@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>HTML Version</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Alert Standard Task</name>
+    <style>none</style>
+    <subject>Alert: {!Account.Name}: {!Task.Who}: {!Task.Type} by {!Task.LastModifiedBy}</subject>
+    <textOnly>Account Name: {!Account.Name}
+
+Click here for Activity
+https://cs20.salesforce.com/{!Task.Id}
+
+Related To: {!Task.What}
+
+Name: {!Task.Who}
+Owner: {!Task.LastModifiedBy}
+Type: {!Task.Type}
+
+Account Health: {!Account.Account_Health__c}
+User Relationship: {!Task.User_Relationship__c}
+
+Product Discussed/Reviewed/Demoed at Meeting:
+{!Task.Products__c}
+
+Detailed Notes and Next Steps:
+{!Task.Description}
+
+Executive Summary:
+{!Task.Executive_Summary__c}
+
+Attendees:
+{!Task.Attendees_External_and_Internal__c}
+
+Date: {!Task.ActivityDate}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

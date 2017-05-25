@@ -1,0 +1,191 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal"><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial">FYI:&nbsp; Items included in Ipreo Salesforce Release 24,
+deployed on Monday, 17-Oct-16, included the following:</span><span style="font-family: Calibri, sans-serif; font-size: 12pt;">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="719" style="width:539.5pt;margin-left:.1pt;border-collapse:collapse;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0in 0in 0in 0in">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:39.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  background:yellow;padding:0in 5.4pt 0in 5.4pt;height:39.75pt">
+  <p><b><span style="font-family: Calibri, sans-serif;">JIRA User Story #</span></b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+  </td>
+  <td width="365" style="width:273.5pt;border:solid windowtext 1.0pt;border-left:
+  none;background:yellow;padding:0in 5.4pt 0in 5.4pt;height:39.75pt">
+  <p><b><span style="font-family: Calibri, sans-serif;">Details</span></b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+  </td>
+  <td width="276" style="width:207.0pt;border:solid windowtext 1.0pt;border-left:
+  none;background:yellow;padding:0in 5.4pt 0in 5.4pt;height:39.75pt">
+  <p><b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+  minor-latin;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+  minor-latin;mso-bidi-font-family:Arial;color:red">WHO SHOULD BE AWARE</span></b><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;
+  mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial"><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1123<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Provide Corporate AM ability to
+  identify Cases that have been escalated to FactSet.&nbsp; New check box field “Escalated to FactSet”
+  to be displayed in Additional Information section on Case.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Corporate AM<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1327<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Provide GMG Professional Services
+  team with ability to identify Implementation Work Orders that are Status “On
+  Hold” and have Priority “5 – Duplicate” by adding these values to the
+  existing drop down lists.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">GMG Professional Services<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1368<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Provide a new&nbsp; Alert Group “x – Information
+  Security”.&nbsp; <o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Account Management, Sales, people who
+  send Alerts<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1360<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Simplify the process of finding
+  Contact(s) on the Mass Edit User Assets page by sorting the list of Contacts
+  on the &nbsp;page.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">GMG AM/CS, Corporate AM<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1273<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Provide ability to assign TSX Tier to
+  Accounts and to Opportunities by adding this field (drop down list) to those
+  pages.&nbsp; Default the TSX Tier of the
+  Opportunity from the Account.&nbsp; &nbsp;Provide the ability to assign value “TSX”
+  for an Opportunity that is a Leveraged Sale by adding that value to the drop
+  down list.***TSX Venture also added.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Sales Ops, Corporate Sales, Finance<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:6;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1333<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Populate the missing Region field on
+  approximately 73 Accounts that have Billing Country = Mexico and are missing
+  Region.&nbsp; NOTE:&nbsp; we are starting to use the Account.Region
+  for Heat Map and other reports and have identified 4700+ other Accounts that
+  have Country and are missing Region.&nbsp;
+  We will address them potentially in batches.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Sales Ops, Corporate Sales, Corporate
+  AM, GMG AM/CS<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:7;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1285<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Wave formatting issues related to
+  Salesforce Winter 17 release resolved.&nbsp;
+  Wave users should NOT notice adverse changes to the formats of their
+  reports.&nbsp; Please contact
+  salesforce_support if questions on this one.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Wave users (ExComm)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:8;mso-yfti-lastrow:yes;height:30.75pt">
+  <td width="79" valign="top" style="width:59.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">SPS-1355<o:p></o:p></span></p>
+  </td>
+  <td width="365" valign="top" style="width:273.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Add 36 Products to the Product
+  Catalog (products that can be selected on Opportunity Products) including
+  Data Feed products, new BD Advanced products, Share Register Analysis and
+  other products.&nbsp; Update 9 other
+  products – the updates should have minimal/no impact for Sales.<o:p></o:p></span></p>
+  </td>
+  <td width="276" valign="top" style="width:207.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+  <p><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Sales Ops, Corporate Sales, GMG
+  Sales, Finance<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial">&nbsp;</span></p>]]></td>
+</tr>
+</table>

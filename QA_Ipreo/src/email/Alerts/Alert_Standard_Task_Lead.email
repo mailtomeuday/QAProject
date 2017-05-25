@@ -1,0 +1,101 @@
+<html>
+<body>
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    <b>
+        Account Name:
+    </b>
+        <b>
+            {!Lead.Company}
+        </b>
+</div>
+
+<br/>
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+	<a href="{!Task.Base_URL__c}/{!Task.Id}">
+	    <b>
+	        Click here for Activity
+	    </b>
+	</a>
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    Name:
+    <b>
+        {!Task.Who}
+    </b>
+</div>
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    Activity Owner:
+    <b>
+        {!Task.LastModifiedBy}
+    </b>
+</div>
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    Type:
+    <b>
+        {!Task.Type}
+    </b>
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    <b>
+        User Relationship:
+    </b>
+     {!Task.User_Relationship__c}
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    <b>
+        Product(s) Discussed/Reviewed/Demoed at Meeting:
+    </b>
+    <br/>
+    {!Task.Products__c}
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt; word-wrap : break-word;width: 100%;">
+    <b>
+        Executive Summary:
+    </b>
+    <br/>
+    {!Task.Executive_Summary__c}
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt; word-wrap : break-word;width: 100%;">
+    <b>
+        Detailed Notes and Next Steps:
+    </b>
+    <br/>
+    {!Task.Description}
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt; word-wrap : break-word;width: 100%;">
+    <b>
+        Attendees (External and Internal):
+    </b>
+    <br/>
+    {!Task.Attendees_External_and_Internal__c}
+    <br/>
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    <b>
+      Date:
+    </b>
+    {!Task.ActivityDate}
+</div>
+</body>
+</html>

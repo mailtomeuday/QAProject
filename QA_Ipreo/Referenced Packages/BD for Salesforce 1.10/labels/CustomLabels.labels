@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>notAuthorizedToBD</fullName>
+        <categories>VF messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Not authorized to BD</shortDescription>
+        <value>You are not authorized to access BD for Salesforce or connection failed:</value>
+    </labels>
+    <labels>
+        <fullName>syncStartedStatusMesage</fullName>
+        <categories>VF messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sync started status message</shortDescription>
+        <value>The synchronization has been started asynchronously. You can track its status at &quot;Setup -&gt; Monitoring -&gt; Apex Jobs&quot; page.</value>
+    </labels>
+</CustomLabels>

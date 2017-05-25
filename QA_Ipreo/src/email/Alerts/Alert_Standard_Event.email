@@ -1,0 +1,104 @@
+<html>
+<body>
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    <b>
+        Account Name:
+    </b>
+    <a href="{!Event.Base_URL__c}/{!Account.Id}">
+        <b>
+            {!Event.Account}
+        </b>
+    </a>
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+	<a href="{!Event.Base_URL__c}/{!Event.Id}">
+	    <b>
+	        Click here for Activity
+	    </b>
+	</a>
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    Name:
+    <b>
+        {!Event.Who}
+    </b>
+</div>
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    Activity Owner:
+    <b>
+        {!Event.LastModifiedBy}
+    </b>
+</div>
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    Type:
+    <b>
+        {!Event.Type}
+    </b>
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    <b>
+        User Relationship:
+    </b>
+    {!Event.User_Relationship__c}
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    <b>
+        Product(s) Discussed/Reviewed/Demoed at Meeting:
+    </b>
+    <br/>
+    {!Event.Products__c}
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt; word-wrap : break-word;width: 100%;">
+    <b>
+        Executive Summary:
+    </b>
+    <br/>
+    {!Event.Executive_Summary__c}
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt; word-wrap : break-word;width: 100%;">
+    <b>
+        Detailed Notes and Next Steps:
+    </b>
+    <br/>
+    {!Event.Description}
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt; word-wrap : break-word;width: 100%;">
+    <b>
+        Attendees (External and Internal):
+    </b>
+    <br/>
+    {!Event.Attendees_External_and_Internal__c}
+    <br/>
+</div>
+
+<br/>
+
+<div style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 10pt;">
+    <b>
+      End Date:
+    </b>
+    {!Event.ActivityDate}
+</div>
+</body>
+</html>

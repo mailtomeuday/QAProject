@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Service_Alert_Sep_2016</letterhead>
+    <name>Service Alert Disruption Sep 2016</name>
+    <style>freeForm</style>
+    <subject>Service Alert Disruption Sep 2016</subject>
+    <type>html</type>
+</EmailTemplate>

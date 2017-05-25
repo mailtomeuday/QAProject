@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ipreo_Standard_Internal</letterhead>
+    <name>CWTEST</name>
+    <style>freeForm</style>
+    <subject>Goal Tracker</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I just wanted to shot over a quick email to remind you about Goal Tracker and how it can be best leveraged.
+
+With Ipreo’s Goal Tracker, you may easily set up goals for a real-time view of how you are progressing against those targets on your new homepage. Simply create your Goal based on your teams’ objectives and then watch how you are trending against it as you enter your investor meetings via the Desktop or Mobile App!
+
+
+As an IR professional, the Goal Tracker allows you to monitor and report on your goals based on your proprietary CRM data so that you may reach the right people with the right frequency and subsequently make the most of your time and your managements’ time when you’re on the road.
+
+
+Goal Tracker may be accessed through the Home Page or the Activities tab and Goal Tracker subtab where you may then simply add either a personal or team goal to manage your meetings and measure your outreach.
+
+
+
+Best Regards,
+
+
+Charles J. Wohlgemuth
+
+Associate Account Manager
+
+Corporate Investor Relations
+
+Ipreo
+
+1359 Broadway, 2nd Floor
+
+New York, NY 10018
+
+P: 212-849-3777
+
+
+24 Hour Help: (800) 305-0819/ callmenowir@ipreo.com</textOnly>
+    <type>html</type>
+</EmailTemplate>

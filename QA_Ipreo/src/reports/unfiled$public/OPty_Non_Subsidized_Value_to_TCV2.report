@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Non_Subsidized_Contracted_Value__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Ttesting 171</description>
+    <filter>
+        <criteriaItems>
+            <column>OPPORTUNITY_ID</column>
+            <operator>equals</operator>
+            <value>006j000000NJPiB,006j000000OY3JI,006j000000JwBF2,006j000000PpxB7,006j000000OYRaN,006j000000JwBGo,006j000000NJL3S,006j000000PYYan,006j000000NDdKc,006j000000JwBIR,006j000000NJKyc,006j000000JwXI2,006j000000JwBJA,006j000000JwBKE,006j000000ObwXz,006j000000OZAbl,006j000000OYSBW,006j000000Oa3kw,006j000000OYqAy,006j000000OaPA0,006j000000JwBNQ,006j000000JwBNS,006j000000NK06n,006j000000OYMWp,006j000000JwBNp,006j000000JwBcJ,006j000000Obi1J,006j000000OXzy7,006j000000OaP7Q,006j000000OYS6Y,006j000000JwBWH,006j000000JwBQ8,006j000000NJur8,006j000000ObxA5,006j000000JwBQn,006j000000JwBQo</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>OPty.Non-Subsidized Value to TCV2</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

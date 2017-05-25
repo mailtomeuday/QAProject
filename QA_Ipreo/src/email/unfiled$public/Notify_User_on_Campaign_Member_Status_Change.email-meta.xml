@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This template is used in Apex Class &apos;GS_SendAlertController&apos;. Merge fields from CampaignMember, Campaign and Contact and Lead only accepted in this template.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Notify User on Campaign Member Status Change</name>
+    <style>none</style>
+    <subject>Campaign Member  {!CampaignMember.Status} Status</subject>
+    <type>text</type>
+</EmailTemplate>

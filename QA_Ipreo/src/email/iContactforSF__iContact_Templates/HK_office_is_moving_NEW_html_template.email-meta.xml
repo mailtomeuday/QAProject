@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HK office is moving- NEW html template</name>
+    <style>none</style>
+    <subject>Ipreo HK is moving! New office in FWD Financial Centre</subject>
+    <type>custom</type>
+</EmailTemplate>

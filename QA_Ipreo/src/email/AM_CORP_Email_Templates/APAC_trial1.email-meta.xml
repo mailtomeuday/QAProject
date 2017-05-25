@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ipreo_Standard_Internal</letterhead>
+    <name>APAC -trial</name>
+    <style>freeForm</style>
+    <subject>Welcome to Ipreo&apos;s BD Corporate platform</subject>
+    <textOnly>Dear {!Contact.FirstName} ,
+
+
+
+Welcome to Ipreo&apos;s BD Corporate platform.  BD Corporate is the leading source of comprehensive profiles of institutional money managers and their cross-asset class holdings information, including equity and fixed income. BD Corporate caters specifically to the IR workflow and acts as an integral resource for investor relations professionals to search, target, and manage all investor interactions. Key areas of differentiation for BD Corporate are:
+
+
+
+-    Highly flexible targeting functionality and reporting
+
+
+
+-    Clean and intuitive search functionality
+
+
+
+-    Global, multi-asset class institutional contacts, profiles and holdings data
+
+
+
+-    Over 146,000 equity and fixed income contacts at more than 57,900 buy-side and sell-side financial institutions globally
+
+
+
+-    The hedge fund database alone provides nearly 25,000 investment professionals at over 6,400 hedge fund institutions managing over 26,000 funds
+
+
+
+-    Advanced analytical and investor screening tools
+
+
+
+-    Complete contact management capabilities including activity reporting and performance benchmarking
+
+
+
+- Full integration with Ipreo’s Global Market Intelligence and Analytics offerings
+
+
+
+-    Access to Research &amp; Estimates information directly through BD Corporate
+
+
+
+-    Tagged Qualified Domestic Institutional Investor (QDII) firm profiles and contact information
+
+
+
+-    Award winning 24 hour follow the sun customer service
+
+Your unique user login information for https://bdcorporate.ipreo.com is below:
+
+Username:
+Password: (case sensitive)
+
+Trial ends date:  Feb 29 , 2016
+
+
+To change your password, go to the top right hand corner and choose from the pull down next to your name.  There, you can also default a landing page, security, peer list, industry, and choose rows per screen.
+
+
+
+Besides, the web-based version,  you can download our BD mobile app to your ipad /Android Tablet from App store / Play Store . The BD Mobile app provides all the essentials you need to access investor information, input meeting notes, and manage your schedule on the road.
+
+
+
+You can access the BD Mobile app with the following credentials:
+
+Login ID:
+
+Password: (Case Sensitive)
+
+
+
+Please visit Settings  in the global navigation bar to change your password
+
+
+
+As part of this Trial engagement you have the ability to leverage our Account Management services that would be representative of our ongoing relationship. You will be assigned a dedicated account manager whose contact details will be in the top left corner of your screen.  You can also access 24/7 help via the callmenow facility, detailed in the top left-hand corner of your screen once you log in. Callmenow will respond to your query within 10 minutes at any time of the day or night regardless of your global location.
+
+Please do not hesitate to contact me if you would like further training, or Edward Soon on +852 3742 1050  We are happy to help, and we look forward to your feedback on BD Corporate.
+
+Thanks,
+
+
+
+&lt; Insert your signature&gt;</textOnly>
+    <type>html</type>
+</EmailTemplate>

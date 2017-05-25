@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>GMG AM EMEA/APAC Account Manager</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>GMG AM EMEA/APAC Account Manager</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>GMG_AM_EMEA_APAC_Manager</parentRole>
+</Role>

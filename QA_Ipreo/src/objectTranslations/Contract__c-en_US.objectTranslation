@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contracts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Vertical --></label>
+        <name>Account_Vertical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Any Change to Audit Rights in RS&amp;T/CM --></label>
+        <name>Any_Change_to_Audit_Rights_in_RS_T_CM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Any Change to Terms of Use --></label>
+        <name>Any_Change_to_Terms_of_Use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment Restricted --></label>
+        <name>Assignment_Restricted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associated MSA --></label>
+        <name>Associated_MSA__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Audit Rights Removed or Diluted --></label>
+        <name>Audit_Rights_Removed_or_Diluted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Account --></label>
+        <name>Billing_Account__c</name>
+        <relationshipLabel><!-- Contracts (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact --></label>
+        <name>Billing_Contact__c</name>
+        <relationshipLabel><!-- Contracts (Billing Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency - Other Please Specify --></label>
+        <name>Billing_Frequency_Other_Please_Specify__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency --></label>
+        <name>Billing_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Delivery</masterLabel>
+            <translation><!-- On Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi</masterLabel>
+            <translation><!-- Semi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upfront</masterLabel>
+            <translation><!-- Upfront --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Start Date - Other Pls Specify --></label>
+        <name>Billing_Start_Date_Other_Pls_Specify__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Start Date --></label>
+        <name>Billing_Start_Date__c</name>
+        <picklistValues>
+            <masterLabel>On Delivery</masterLabel>
+            <translation><!-- On Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription Start Date</masterLabel>
+            <translation><!-- Subscription Start Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing State/Province --></label>
+        <name>Billing_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Zip/Postal Code --></label>
+        <name>Billing_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Continuity and Disaster Recover --></label>
+        <name>Business_Continuity_and_Disaster_Recover__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cap to Cust Liability for Direct Damages --></label>
+        <name>Cap_to_Cust_Liability_for_Direct_Damages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change of Control Trigger --></label>
+        <name>Change_of_Control_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Age (Days) --></label>
+        <name>Contract_Age_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract ID --></label>
+        <name>Contract_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- MSA With Schedules: Master Services Agreement
+Data Agreement: change to data access
+Project Agreement:  customer consent to purchase Project
+Amendment/Schedule:  new schedule assoc with existing MSA
+Additional User Agreement:  change to No. of users --></help>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type__c</name>
+        <picklistValues>
+            <masterLabel>Additional User Agreement</masterLabel>
+            <translation><!-- Additional User Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amendment/Schedule</masterLabel>
+            <translation><!-- Amendment/Schedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Agreement</masterLabel>
+            <translation><!-- Data Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSA with Schedules</masterLabel>
+            <translation><!-- MSA with Schedules --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Agreement</masterLabel>
+            <translation><!-- Project Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Form Agreement</masterLabel>
+            <translation><!-- Short Form Agreement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contracts Team Approval Date --></label>
+        <name>Contracts_Team_Approval_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contracts Team Approver --></label>
+        <name>Contracts_Team_Approver__c</name>
+        <relationshipLabel><!-- Contracts (Contracts Team Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Counter Signed  By --></label>
+        <name>Counter_Signed_By__c</name>
+        <relationshipLabel><!-- Contracts (Counter Signed  By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Counter Signed Date --></label>
+        <name>Counter_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code of Conduct/Policies --></label>
+        <name>Customer_Code_of_Conduct_Policies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Signed By --></label>
+        <name>Customer_Signed_By__c</name>
+        <relationshipLabel><!-- Contracts (Customer Signed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Signed Date --></label>
+        <name>Customer_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Hosting Restricted --></label>
+        <name>Data_Hosting_Restricted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detailed Billing --></label>
+        <name>Detailed_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- EU Standard Clauses Requirement --></label>
+        <name>EU_Standard_Clauses_Requirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Day(s) --></help>
+        <label><!-- Evergreen Period - Other Please Specify --></label>
+        <name>Evergreen_Period_Other_Please_Specify__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evergreen Period --></label>
+        <name>Evergreen_Period__c</name>
+        <picklistValues>
+            <masterLabel>180</masterLabel>
+            <translation><!-- 180 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Evergreen --></label>
+        <name>Evergreen__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exit Management and Transition Services --></label>
+        <name>Exit_Management_and_Transition_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Governing Law --></label>
+        <name>Governing_Law__c</name>
+        <picklistValues>
+            <masterLabel>Hong Kong</masterLabel>
+            <translation><!-- Hong Kong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Indemnification Other than IP --></label>
+        <name>Indemnification_Other_than_IP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Submission Date --></label>
+        <name>Initial_Submission_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Certificates --></label>
+        <name>Insurance_Certificates__c</name>
+        <picklistValues>
+            <masterLabel>Certificate of Insurance</masterLabel>
+            <translation><!-- Certificate of Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Named As Additional Insured</masterLabel>
+            <translation><!-- Customer Named As Additional Insured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notice of Change</masterLabel>
+            <translation><!-- Notice of Change --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Insurance Requirements --></label>
+        <name>Insurance_Requirements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liability Limits for Ipreo --></label>
+        <name>Liability_Limits_for_Ipreo__c</name>
+        <picklistValues>
+            <masterLabel>$3M-5M</masterLabel>
+            <translation><!-- $3M-5M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;$3M</masterLabel>
+            <translation><!-- &lt;$3M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;$5M</masterLabel>
+            <translation><!-- &gt;$5M --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Most Favored Nation/Exclusivity --></label>
+        <name>Most_Favored_Nation_Exclusivity__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Attachments --></label>
+        <name>No_of_Attachments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Solicit --></label>
+        <name>Non_Solicit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Request for Ipreo to provide customer with notice of approaching renewal period. --></help>
+        <label><!-- Notice of Approaching Renewal --></label>
+        <name>Notice_of_Approaching_Renewal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notice of Fee Increase Period --></label>
+        <name>Notice_of_Fee_Increase_Period__c</name>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notice of Fee Increase Required --></label>
+        <name>Notice_of_Fee_Increase_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notice of Renewal Fees/Written Approval --></label>
+        <name>Notice_of_Renewal_Fees_Written_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notice on Change of Site Policies --></label>
+        <name>Notice_on_Change_of_Site_Policies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify on Changes to Subcontractors --></label>
+        <name>Notify_on_Changes_to_Subcontractors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>30 Days</masterLabel>
+            <translation><!-- 30 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Days</masterLabel>
+            <translation><!-- 60 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 Days</masterLabel>
+            <translation><!-- 90 Days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Publicity Restricted --></label>
+        <name>Publicity_Restricted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order Number --></label>
+        <name>Purchase_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order Required --></label>
+        <name>Purchase_Order_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Notice Period --></label>
+        <name>Renewal_Notice_Period__c</name>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Renewal Notice Required --></label>
+        <name>Renewal_Notice_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restriction on Transfer of Data --></label>
+        <name>Restriction_on_Transfer_of_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Right to Aggregate Data Removed --></label>
+        <name>Right_to_Aggregate_Data_Removed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This URL field will only work when you are connected to the Ipreo network. --></help>
+        <label><!-- Sharepoint Folder --></label>
+        <name>Sharepoint_Folder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Billing Info --></label>
+        <name>Special_Billing_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Billing --></label>
+        <name>Special_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Customer Executed</masterLabel>
+            <translation><!-- Customer Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fully Executed</masterLabel>
+            <translation><!-- Fully Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subcontractor Access Restricted --></label>
+        <name>Subcontractor_Access_Restricted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination for Convenience --></label>
+        <name>Termination_for_Convenience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uncapped Liability for Ipreo --></label>
+        <name>Uncapped_Liability_for_Ipreo__c</name>
+    </fields>
+    <layouts>
+        <layout>Contract Layout</layout>
+        <sections>
+            <label><!-- Billing and PO Information --></label>
+            <section>Billing and PO Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Contract Signatures --></label>
+            <section>Contract Signatures</section>
+        </sections>
+        <sections>
+            <label><!-- Contract Workflow --></label>
+            <section>Contract Workflow</section>
+        </sections>
+        <sections>
+            <label><!-- Contractual Terms --></label>
+            <section>Contractual Terms</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Information --></label>
+            <section>Renewal Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Billing Account required at Status &quot;Customer Executed&quot; or &quot;Fully Executed&quot; --></errorMessage>
+        <name>Billing_Acnt_req_at_Status_Cus_and_Fully</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit fully executed contracts.  Please ask the Contracts or Sales Ops team to make any necessary changes. --></errorMessage>
+        <name>Readonly_When_Fully_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contracts Team Approval Date required when contract is fully executed --></errorMessage>
+        <name>Req_Approval_Date_When_Fully_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contracts Team Approver required when contract is fully executed --></errorMessage>
+        <name>Req_Approver_when_fully_executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attachment required to execute this contract --></errorMessage>
+        <name>Req_Attachment_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing City required to execute this contract --></errorMessage>
+        <name>Req_Billing_City_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Contact required to execute this contract --></errorMessage>
+        <name>Req_Billing_Contact_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Country required to execute this contract --></errorMessage>
+        <name>Req_Billing_Country_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Frequency - Other Please Specify required when Billing Frequency is &quot;Other&quot; --></errorMessage>
+        <name>Req_Billing_Frequency_Other_Please</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Frequency required to execute this contract --></errorMessage>
+        <name>Req_Billing_Frequency_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Start Date required to execute this contract --></errorMessage>
+        <name>Req_Billing_StartDate_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Start Date - Other Please Specify required when Billing Start Date is &quot;Other&quot; --></errorMessage>
+        <name>Req_Billing_Start_Date_Other_Please</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Street required to execute this contract --></errorMessage>
+        <name>Req_Billing_Street_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Counter Signed By required to execute this contract --></errorMessage>
+        <name>Req_Counter_Signed_By_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Counter Signed Date required to execute this contract --></errorMessage>
+        <name>Req_Counter_Signed_Date_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Signed Date required to execute this contract --></errorMessage>
+        <name>Req_Customer_Signed_Date_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Effective Date required to execute this contract --></errorMessage>
+        <name>Req_Effective_Date_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Evergreen Period - Other Please Specify required when Evergreen Period is &quot;Other&quot; --></errorMessage>
+        <name>Req_EvergreenPeriod_When_Period_is_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Evergreen Period required when Evergreen is set to &apos;Yes&apos; --></errorMessage>
+        <name>Req_Evergreen_Period_When_Evergreen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Notice of Fee Increase Period required when Notice of Fee Increase Required is checked --></errorMessage>
+        <name>Req_Notice_of_Fee_Increase_Period</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Terms required to execute this contract --></errorMessage>
+        <name>Req_Payment_Terms_When_Executed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Renewal Notice Period required when Renewal Notice Required is checked --></errorMessage>
+        <name>Req_Renewal_Notice_Period</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Evergreen field should be set to Yes/No at  Customer Executed and Fully Executed Status. --></errorMessage>
+        <name>Req_at_Customer_Executed_and_Fully_Exec</name>
+    </validationRules>
+</CustomObjectTranslation>

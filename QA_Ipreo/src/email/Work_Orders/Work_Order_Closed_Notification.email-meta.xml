@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>an email to the Sales Rep noted on a Work Order when it is moved to one of the closed statuses</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Work Order Closed Notification</name>
+    <style>none</style>
+    <subject>Work Order # {!Work_Order__c.Work_Order_Number__c} closed: {!Work_Order__c.Name}</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,140 @@
+<apex:page controller="GS_CampaignMemberReportController" tabStyle="Campaign" title="Campaign Members Report">
+    <apex:includeScript value="{!$Resource.jQuery}" />
+    <style>
+        .conCss {
+        cursor: pointer;
+        }
+        
+        .labelStyle {
+        vertical-align: top;
+        }
+        .border-top {
+        padding-top: 10px;
+        border-top: 1pt solid #DED3D3 !important;
+        }
+        .txt-align {
+        text-align: right;
+        padding-right: 10px;
+        }
+        .table {
+        width: 100%;border-collapse: collapse;
+        }
+        
+        .hrStyle {
+        width: 100%;
+        height: 1px;
+        background: #DFDFDF;
+        display: block;
+        border: none;
+        }
+        
+        .back-to-top {
+        position: fixed;
+        bottom: 2em;
+        right: 0px;
+        text-decoration: none;
+        color: #000000;
+        background-color: rgba(235, 235, 235, 0.80);
+        font-size: 12px;
+        padding: 1em;
+        display: none;
+        }
+        
+        .back-to-top:hover {    
+        background-color: rgba(135, 135, 135, 0.50);
+        }
+        
+        .go-to-bottom {
+        position: fixed;
+        /** bottom: 2em; **/
+        right: 0px;
+        text-decoration: none;
+        color: #000000;
+        background-color: rgba(235, 235, 235, 0.80);
+        font-size: 12px;
+        padding: 1em;
+        display: block;
+        margin-top: 5%;
+        }
+        
+        .go-to-bottom:hover {   
+        background-color: rgba(135, 135, 135, 0.50);
+        }
+        .inputText {
+        visibility: hidden;
+        width: 50%;
+        }
+    </style>
+    <script>
+        function selectAccount(t) {
+            var v = $(t).val();
+            if(v == 3) {
+                $("[id*='assetAccountRow']").css("visibility", "visible");
+                
+            }else {
+                $("[id*='assetAccountRow']").css("visibility", "hidden");
+
+            }
+        }
+
+    </script>
+    <div id="content">
+        <apex:form id="theForm">
+            <apex:pageMessages id="errorMsg"/>            
+            <apex:actionFunction name="doSearch" action="{!doSearch}" reRender="panelButtons,errorMsg" status="status-waiting" />
+            <apex:actionFunction name="AbortOperation" action="{!AbortOperation}" reRender="panelButtons,errorMsg" status="status-waiting" />
+            <apex:pageBlock id="pgBlock" title="Campaign Member Activity Report">
+                <apex:pageBlockButtons id="pgButtons" location="top">
+                	<apex:outputPanel id="panelButtons">
+	                    <apex:commandButton onclick="doSearch();return false;" disabled="{!disableButton}"  value="Confirm Filter" status="status-waiting"/>
+	                <!--<apex:commandButton action="{!doSearch}" disabled="{!disableButton}" value="Confirm Filter" rerender="pgButtons,errorMsg,panelButtons" status="status-waiting"/> 
+	                    <apex:commandButton action="{!AbortOperation}" value="Abort Operation" status="status-waiting"/>                    -->
+	                    <apex:commandButton onclick="AbortOperation();return false;" value="Abort Operation" status="status-waiting"/>
+                        <apex:commandButton action="{!navigateToBack}" value="Back" rerender="errorMsg,pgBlock" status="status-waiting"/>
+                    </apex:outputPanel>
+                </apex:pageBlockButtons>
+                <apex:outputPanel id="theOutputPanel">
+                    <div class="pbSubheader brandTertiaryBgr first tertiaryPalette">
+                        <h3>Specify Filter Criteria</h3>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td style="width: 30%;" colspan="2">
+                                <apex:selectRadio value="{!accountFilter}" layout="pageDirection" onchange="selectAccount(this)">
+                                    <apex:selectOptions value="{!AccountFilterOptions}" />
+                                </apex:selectRadio>
+                            </td>
+                            <td style="width: 7%;" class="txt-align">
+                                Status
+                            </td>
+                            <td>
+                                <apex:selectList multiselect="true" value="{!Status}" size="4" style="width: 120px;" id="fscope4">
+                                    <apex:selectOptions value="{!StatusOptions}" />
+                                </apex:selectList>
+                            </td>
+                        </tr>
+                            <tr id="assetAccountRow" style="visibility: hidden;" >
+                                <td colspan="5">
+                                    <label for="fscope5" id="fscope91">Campaign</label>&nbsp;
+                                    <apex:inputField value="{!campWrapper.Campaign__c}"  id="fscope5"/>
+                                </td>
+		                   </tr> 
+                    </table>                    
+                </apex:outputPanel>
+            </apex:pageBlock>
+            <apex:actionstatus id="status-waiting">
+                <apex:facet name="start">
+                    <div class="waitingSearchDiv" id="el_loading" style=" background-color: #dcdcdc ;
+                                                                         height: 100%;opacity:0.80;filter:alpha(opacity=80);width:100%;">
+                        <div class="waitingHolder" style="position: fixed; top: 50%; left: 30%; width: 50%;">
+                            <img class="waitingImage" src="/img/loading32.gif" title="Loading....." />
+                            <span class="waitingDescription" style="font-size:20px;font-weight:bold;color:RED;">
+                                Loading......
+                            </span>
+                        </div>
+                    </div>
+                </apex:facet>
+            </apex:actionstatus>                   
+        </apex:form>
+    </div>        
+</apex:page>

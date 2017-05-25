@@ -1,0 +1,3 @@
+<apex:page >
+    <apex:iframe scrolling="true" src="/apex/ConfigurationPage" />
+</apex:page>

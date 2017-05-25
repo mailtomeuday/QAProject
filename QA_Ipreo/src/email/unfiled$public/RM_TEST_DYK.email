@@ -1,0 +1,22 @@
+<table border="0" cellpadding="0" width="650" cellspacing="0" height="400" >
+<tr valign="top" >
+<td width="460" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" >
+<table border="0" cellpadding="5" width="460" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); text-align: center;"><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Dear&nbsp;</span><font face="arial">{!Contact.FirstName}&nbsp;{!Contact.LastName}</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: center;"><span style="font-size: 12pt;"><br></span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: center;"><span style="font-size: 12pt;"><i>Did you know that :</i></span></div><div style="font-family: arial; font-size: 12pt; text-align: center;"><span style="font-size: 12pt;"><font color="#000099"><br></font></span></div><div style="font-family: arial; font-size: 12pt; text-align: center;"><span style="font-size: 12pt;"><b><font color="#000099">IPREO BDCORPORATE IS THE MOST INTUITIVE AND CUTTING EDGE SOFTWARE</font></b></span></div><div style="font-family: arial; font-size: 12pt; text-align: center;"><span style="font-size: 12pt;"><b><font color="#000099"><br></font></b></span></div><div style="font-family: arial; font-size: 12pt; text-align: center;"><span style="font-size: 12pt;"><b><font color="#000099"><img src="https://c.na16.content.force.com/servlet/servlet.ImageServer?id=015j0000000MOCZ&amp;oid=00Dj0000001q7gi" border="0" align="left" alt=""><br></font></b></span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: center;"><span style="font-size: 12pt;"><br></span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: center;"><span style="font-size: 12pt;"><br></span></div>]]></td>
+</tr>
+</table>
+</td>
+<td width="10" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" >
+<![CDATA[]]></td>
+<td width="180" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" >
+<table border="0" cellpadding="5" width="180" cellspacing="5" height="400" >
+<tr valign="top" height="100" >
+<td rowspan="3" width="180" tEditID="c2r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c2r1" locked="0" >
+<![CDATA[<div><font face="arial"><span style="font-size: 12pt;"><br></span></font></div><font face="arial"><span style="font-size: 12pt;"><i>Your Dedicated Account Manager </i>:</span></font><div><br><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Romain Madier</div><div><font face="arial"><span style="font-size: 12pt;">0033156591629</span></font></div><div><font face="arial">&nbsp;{!Contact.Email}</font></div></div>]]></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>

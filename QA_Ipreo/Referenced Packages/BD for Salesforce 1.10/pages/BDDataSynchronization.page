@@ -1,0 +1,11 @@
+<apex:page controller="Ipreo_BDSF_1_10.BDSFDataSynchronizationController"  >
+    <apex:form >
+      <br/><br/>
+      <apex:commandButton action="{!SynchronizeContacts}" value="Synchronize Contacts"  />
+      <apex:commandButton action="{!SynchronizeAccounts}" value="Synchronize Accounts"  />
+      <apex:commandButton action="{!SynchronizeLeads}" value="Synchronize Leads"  />
+      <br/><br/>
+      <apex:outputText >{!Message}</apex:outputText>
+      
+</apex:form>
+</apex:page>

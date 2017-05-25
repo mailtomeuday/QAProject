@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>IPREO ftd LKA Templates</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://echo.ny.ipreo.com/Contracts/Contract%20Templates/Forms/AllItems.aspx?RootFolder=%2fContracts%2fContract%20Templates%2fIpreo%20Ltd%2e%20fka%20Marketpipe%20Limited&amp;FolderCTID=&amp;View=%7bC8E040BF%2dE0C8%2d4D49%2d962A%2d26254149AA6A%7d</url>
+</CustomPageWebLink>

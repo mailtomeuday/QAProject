@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Campaign$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Campaign$iContactforSF__Average_Click_Rate__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Campaign.iContactforSF__iContact_Sent_Messages__r$iContactforSF__Click_Rate__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.iContactforSF__iContact_Sent_Messages__r$iContactforSF__Clicks__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.iContactforSF__iContact_Sent_Messages__r$iContactforSF__Unique_Clicks__c</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign.iContactforSF__iContact_Sent_Messages__r$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Click Rate - Messages This Month</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>iContactforSF__Campaigns_with_iContact_Sent_Messages__c</reportType>
+    <scope>orgActive</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Campaign.iContactforSF__iContact_Sent_Messages__r$iContactforSF__Clicks__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Campaign$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Registration now open: Annual Investor Relations Wisdom Summit 2016</name>
+    <style>none</style>
+    <subject>Registration now open: Annual Investor Relations Wisdom Summit 2016</subject>
+    <textOnly>You are invited to participate in Asia’s premier investor relations event.
+Ipreo Wisdom Investor Relations Summit
+
+
+Register now
+Click the link below to register for  Beijing, Hong Kong, Taipei or Singapore.
+The event is complimentary.
+
+Register
+
+
+If you are unable to access this link, simply email marketing@ipreo.com to register
+
+
+
+
+
+
+
+THE AGENDA: A FULL-DAY, IN-DEPTH WORKSHOP WITH PEER-TO-PEER DISCUSSIONS, WILL INCLUDE THE FOLLOWING THEMES:
+
+Investment Climate:
+Market strategies and economists detail their outlook for the economy and equity investments in the region.
+
+Investor Relations:
+Discussions on global best practices with leading IROs from the region and beyond.
+
+Views from the Buy Side:
+Hear how investors put their assets to work and how IR plays a role in attracting capital.
+
+Corporate Governance &amp; Proxy Voting:
+
+Understand the critical corporate governance topics that impact management and boards from influential proxy voting policy makers
+
+Corporate Access
+
+A review of best practices and new technologies impacting interactions between the Buy Side, the Sell Side and Issuers
+
+
+
+in partnership with:
+
+
+Copyright © 2016. Ipreo. All rights reserved</textOnly>
+    <type>custom</type>
+</EmailTemplate>

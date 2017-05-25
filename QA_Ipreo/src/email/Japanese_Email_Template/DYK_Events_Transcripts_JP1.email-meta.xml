@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>Shift_JIS</encodingKey>
+    <name>DYK- Events &amp; Transcripts- JP</name>
+    <style>none</style>
+    <subject>Ipreo- Did You Know?イベント＆議事　録更新情報サービス</subject>
+    <textOnly>イベント＆議事　録更新情報サービス
+
+BD Corporateをご利用中のお客様へ
+
+日頃よりBD Corporateをご利用いただきまして誠にありがとうございます。
+
+さて、決算発表が本格化するシーズンとなり他社の業績発表や
+
+業界内のイベントにご注目される機会も多いかと存じます。
+
+このような繁忙期にはぜひ弊社の電子メール通知機能をご利用頂き、
+
+会議やコール情報更新を随時受信することにより
+
+業務の効率化を図られてはいかがでしょうか。
+
+本サービスは御社のBD Corporateにイベント＆議事録機能を
+
+追加していただくだけでご利用頂けます。
+
+また、この機能内のカレンダーではイベントの日付、電話会議の詳細、
+
+連絡窓口や会議録音の記録にアクセスすることが可能です。
+
+電子メール通知機能では、登録した会社に関する会議記録の更新情報を
+
+随時受け取るように設定可能です。
+
+
+作成・使用方法についてはこちら をご覧ください。
+
+ご質問がございましたら、担当アカウントマネージャーまでご連絡ください。
+
+Ipreoサポートチーム　島田/ロブ　　TEL：03-5207-2912 （平日9：00-17：30）
+
+Copyright © 2016. Ipreo. All rights Reserved</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,10 @@
+*** WORK ORDER NOTIFICATION ***  
+
+The following work order has been closed:
+
+Click on the link to access the work order:  {!Work_Order__c.Link}
+
+Name: {!Work_Order__c.Name} 
+Company:  {!Work_Order__c.Account__c}
+Opportunity:  {!Work_Order__c.Opportunity__c}
+Status:  {!Work_Order__c.Status__c}

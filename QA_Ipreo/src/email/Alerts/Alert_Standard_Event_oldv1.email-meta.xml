@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ipreo_Standard_Internal</letterhead>
+    <name>Alert Standard Event Old v1</name>
+    <style>freeForm</style>
+    <subject>Alert:  {!Event.What} {!Event.Who} {!Event.Type} by {!Event.LastModifiedBy}</subject>
+    <textOnly>Related To: {!Event.What}
+
+Name:  {!Event.Who}
+
+Last Modified By:  {!Event.LastModifiedBy}
+
+Type:  {!Event.Type}
+
+Product(s):  {!Event.Products__c}
+
+Description:
+{!Event.Description}
+
+End Date:  {!Event.EndDateTime}</textOnly>
+    <type>html</type>
+</EmailTemplate>

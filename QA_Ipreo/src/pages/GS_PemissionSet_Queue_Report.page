@@ -1,0 +1,22 @@
+<apex:page controller="GS_PermissionSetQueueController">
+   <apex:form >
+    <apex:pageBlock title="Export Reports" >  
+    	<apex:pageBlockSection columns="1">
+	    	<apex:pageBlockSectionItem >
+	    		<apex:outputpanel >
+		    	<apex:outputLabel >Select report</apex:outputLabel><span>&nbsp;&nbsp;</span>
+		    	<apex:selectList id="chooseReport" value="{!report}" size="1">
+		            <apex:selectOption itemValue="PermissionSet" itemLabel="Permission Set Report"/>
+		            <apex:selectOption itemValue="QueueMember" itemLabel="Queue Member Report"/>            
+		        </apex:selectList> <span>&nbsp;&nbsp;</span>
+		        <apex:commandButton value="Export" action="{!exportToExcel}"/>
+		      </apex:outputpanel>   
+			</apex:pageBlockSectionItem>        
+        </apex:pageBlockSection>  
+        <!-- <apex:pageBlockButtons location="Bottom">
+                  <apex:commandButton value="Export" action="{!exportToExcel}"/>
+		</apex:pageBlockButtons>  -->                  
+           
+    </apex:pageBlock>
+   </apex:form>
+</apex:page>

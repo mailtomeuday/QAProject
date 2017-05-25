@@ -1,0 +1,195 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Times New Roman">
+</font><span style="font-size: 14pt;"><font face="Calibri">These changes were deployed today (8-Aug-16).&nbsp; Please review them as they potentially impact your use of Salesforce.</font></span><font face="Times New Roman">
+
+</font><p style="margin: 0in 0in 0pt;"><span style="font-size: 14pt;"><font face="Calibri">&nbsp;</font></span></p><font face="Times New Roman">
+
+</font><p style="margin: 0in 0in 0pt;"><span lang="EN-IN" style="color: rgb(31, 73, 125); mso-ansi-language: EN-IN;"><font face="Calibri">&nbsp;</font></span></p><font face="Times New Roman">
+
+</font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+  </font><font face="Times New Roman">
+ </font><font face="Times New Roman">
+</font><table width="719" style="margin: auto auto auto 0.1pt; width: 539.5pt; border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellspacing="0" cellpadding="0"><tbody><tr style="height: 39.75pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"><td width="79" valign="top" style="background: yellow; padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 59pt; height: 39.75pt;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><b><span style="color: black;"><font face="Calibri">JIRA User Story #</font></span></b></p><font face="Times New Roman">
+  </font></td><td width="365" style="background: yellow; border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; border-image: none; width: 273.5pt; height: 39.75pt;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><b><span style="color: black;"><font face="Calibri">Details</font></span></b></p><font face="Times New Roman">
+  </font></td><td width="276" style="background: yellow; border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; border-image: none; width: 207pt; height: 39.75pt;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><b><span style="color: red;"><font face="Calibri">WHO SHOULD BE AWARE/PURPOSE OF
+  THE CHANGE</font></span></b></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 1;"><td width="79" valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">1008</font></span></p><font face="Times New Roman">
+  </font></td><td width="365" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 273.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Opportunity
+  Product:&nbsp; change of Lost/Cancelled Reason (picklist) to
+  Lost/Cancelled/Downtick Reason and change of picklist valid values.&nbsp;
+  Includes data update. </font></span></p><font face="Times New Roman">
+  </font></td><td width="276" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 207pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Salesreps will
+  see:</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in; mso-list: l1 level1 lfo1;"><span style="color: black; font-family: Symbol; font-size: 9pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><span style="color: black; font-size: 9pt;"><font face="Calibri">Different
+  values in the picklist</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in; mso-list: l1 level1 lfo1;"><span style="color: black; font-family: Symbol; font-size: 9pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><span style="color: black; font-size: 9pt;"><font face="Calibri">Different
+  field label</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in; mso-list: l1 level1 lfo1;"><span style="color: black; font-family: Symbol; font-size: 9pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><span style="color: black; font-size: 9pt;"><font face="Calibri">They
+  are required to select a value for Won/Renewed Products that have a
+  “Downtick”</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Sales Managers,
+  ExComm and Finance should be able to provide better insight into downticks as
+  well as lost and cancelled Opportunity Products.</font></span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 2;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">1078</font></span></p><font face="Times New Roman">
+  </font></td><td width="365" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 273.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Opportunity
+  Product: </font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in; mso-list: l0 level1 lfo2;"><span style="color: black; font-family: Symbol; font-size: 9pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><span style="color: black; font-size: 9pt;"><font face="Calibri">Relabel
+  free text field “Cancel Comments” to “Lost/Cancelled/Downtick Comments” and
+  require this field not just for Cancelled but also for Lost and Downtick
+  Opportunity Products.</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in; mso-list: l0 level1 lfo2;"><span style="color: black; font-family: Symbol; font-size: 9pt; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;"><span style="mso-list: Ignore;">·<span style='font: 7pt/normal "Times New Roman"; font-size-adjust: none; font-stretch: normal;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><span style="color: black; font-size: 9pt;"><font face="Calibri">Competitor/Incumbent
+  (picklist) continues to be required if “Lost/Cancelled/Downtick Reason”
+  starts with “Competitor” or with “Incumbent”.</font></span></p><font face="Times New Roman">
+  </font></td><td width="276" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 207pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Salesreps will
+  see the label change and that they are required to enter the Comments in some
+  additional cases, per the “Details” column.</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">&nbsp;</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Sales Managers,
+  ExComm and Finance should be able to provide better insight into downticks as
+  well as lost and cancelled Opportunity Products.</font></span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 3;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">1061</font></span></p><font face="Times New Roman">
+  </font></td><td width="365" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 273.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><font face="Calibri"><span style="color: black; font-size: 9pt;">Opportunity
+  Product:&nbsp; For Products that are set up in the product catalog with
+  “Requires&nbsp; Implementation&nbsp;(</span><span style="color: black; font-size: 9pt;">UAT)</span><span style="color: black; font-size: 9pt;">” = True, require that Salesrep select
+  Yes or No for “Requires&nbsp;Implementation (</span><span style="color: black; font-size: 9pt;">UAT)</span><span style="color: black; font-size: 9pt;">” on the Opportunity
+  Product.&nbsp; If Salesrep selects “Yes”, prevent Salesrep from entering
+  Subscription Dates on the Opportunity Product.</span></font></p><font face="Times New Roman">
+  </font></td><td width="276" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 207pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Salesreps will
+  see the new field and the validation messages per the “Details” column.</font></span></p><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Sales Ops will get a new notification when Work Orders associated with Opportunity Products that have Requires Implementation (UAT) = true are closed and will then update the Subscription Dates on the related Opportunities and Licenses.</font></span></p><font face="Times New Roman">
+</font><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 4;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">1064</font></span></p><font face="Times New Roman">
+  </font></td><td width="365" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 273.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Opportunity:&nbsp;
+  Allow Salesreps to Close Opportunity with multiple ACV or ACV/TRANS
+  Opportunity Products that have same value for Est. Completion Date.&nbsp;
+  Current validation is to only allow multiple Opportunity Products if they all
+  have same Subscription End Date.</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">&nbsp;</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">PROJ Revenue
+  Type Products still can only be added as single Opportunity Product
+  Opportunities (no change).</font></span></p><font face="Times New Roman">
+  </font></td><td width="276" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 207pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Salesreps will
+  be able to add, for example, Opportunities for both ISB and ISN products
+  where for both the Est. Completion Date is the same and for both the
+  Subscription Dates are unknown (Subscription Dates will be left blank by
+  Salesrep).</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">&nbsp;</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">After the
+  Products have been implemented for the client and the Subscription Dates have
+  become known, Sys Admin on Sales Ops team will update the Opportunity
+  Product, Renewal Opportunity and License Dates to reflect the Subscription
+  Dates.</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">&nbsp;</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">This change
+  improves our process for managing Subscription Dates for products that
+  require implementation for both Salesreps, who can now enter a single Opp for
+  all products on the Contract in these cases and also for Finance, who depends
+  on the Subscription Dates being accurate for their reports.</font></span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 5;"><td width="79" valign="top" style="background: white; border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">1080</font></span></p><font face="Times New Roman">
+  </font></td><td width="365" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 273.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Opportunity:</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">New
+  Business:&nbsp; Require Salesrep to enter “Description” on the Opportunity if
+  the TCV is &gt; $50K.&nbsp; </font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Renewals:&nbsp;
+  Require Salesrep to enter “Description” on the Opp if the NNB is &gt;
+  $50K.&nbsp; </font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Both:&nbsp;
+  Validation runs when Opportunity Stage changes.</font></span></p><font face="Times New Roman">
+  </font></td><td width="276" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 207pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Salesreps will
+  see that they are required to enter the Description in some cases, per the
+  “Details” column.&nbsp; </font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">&nbsp;</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Sales manager,
+  ExComm and Finance should be provided with more “color” for larger
+  Opportunities.</font></span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 6;"><td width="79" valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">638</font></span></p><font face="Times New Roman">
+  </font></td><td width="365" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 273.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Activities:&nbsp;
+  </font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">For Activity
+  Types “Contract Sent” and “Proposal Sent”, require that “Related To” be an
+  Opportunity and require that an Alert be sent.&nbsp; </font></span></p><font face="Times New Roman">
+  </font></td><td width="276" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 207pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Salesreps that
+  log Activities for “Contract Sent” and “Proposal Sent” will potentially see
+  the validation message.&nbsp; </font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">&nbsp;</font></span></p><font face="Times New Roman">
+  </font><p style="margin: 0in 0in 0pt;"><span style="color: black; font-size: 9pt;"><font face="Calibri">Change will make
+  the process of informing people about certain activities and meetings more
+  efficient.</font></span></p><font face="Times New Roman">
+  </font></td></tr><tr style="height: 30.75pt; mso-yfti-irow: 7; mso-yfti-lastrow: yes;"><td width="79" valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 59pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+&nbsp; </font><font face="Times New Roman">
+  </font></td><td width="365" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 273.5pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">
+&nbsp;</font><font face="Times New Roman">
+</font></td><td width="276" valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 207pt; height: 30.75pt; background-color: transparent;"><font face="Times New Roman">&nbsp; </font></td></tr></tbody></table><font face="Times New Roman">
+
+</font><p style="margin: 0in 0in 0pt;"><span lang="EN-IN" style="color: rgb(31, 73, 125); mso-ansi-language: EN-IN;"><font face="Calibri">&nbsp;</font></span></p><font face="Times New Roman">
+
+</font><p style="margin: 0in 0in 0pt;"><span lang="EN-IN" style="color: rgb(31, 73, 125); mso-ansi-language: EN-IN;"><font face="Calibri">&nbsp;</font></span></p><font face="Times New Roman">
+
+</font>]]></td>
+</tr>
+</table>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Corporate_Pricing</links>
+    <links>GMG_Pricing</links>
+    <links>Capital_Markets_Templates</links>
+    <links>Corporate_and_IR_Templates</links>
+    <links>IPREO_ftd_LKA_Templates</links>
+    <links>Municipals_Templates</links>
+    <links>Proposal_Templates</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

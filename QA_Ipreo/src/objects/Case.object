@@ -1,0 +1,4226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Mobile_Case</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Mobile_Case</fullName>
+        <fields>Subject</fields>
+        <fields>CaseNumber</fields>
+        <fields>Priority</fields>
+        <fields>Status</fields>
+        <label>Mobile Case</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>AHRS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>AHRS</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account.Region__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Asset.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.AccountId</valueField>
+            </filterItems>
+            <infoMessage>If this is a sponsored asset, please click &quot;Show all results&quot;, below, and search for assets in the Sponsored Assets related list of the case account.</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Auto_Closed_On_Create__c</fullName>
+        <externalId>false</externalId>
+        <label>Auto Closed On Create</label>
+        <length>3</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case_Owner_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case Owner Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case_Reference__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Reference</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Resolution__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Resolution</label>
+        <picklist>
+            <controllingField>Sub_Type__c</controllingField>
+            <picklistValues>
+                <fullName>Resolved (Question Answered)</fullName>
+                <default>false</default>
+                <controllingFieldValues>API</controllingFieldValues>
+                <controllingFieldValues>Certification</controllingFieldValues>
+                <controllingFieldValues>Data Issue</controllingFieldValues>
+                <controllingFieldValues>Feeds</controllingFieldValues>
+                <controllingFieldValues>Hedge</controllingFieldValues>
+                <controllingFieldValues>IssueNet Deal Alert</controllingFieldValues>
+                <controllingFieldValues>Order/Allocation</controllingFieldValues>
+                <controllingFieldValues>Periodic Data</controllingFieldValues>
+                <controllingFieldValues>Pricing/Final Terms</controllingFieldValues>
+                <controllingFieldValues>Question/Inquiry</controllingFieldValues>
+                <controllingFieldValues>Regulatory Reporting</controllingFieldValues>
+                <controllingFieldValues>Research Lead</controllingFieldValues>
+                <controllingFieldValues>System</controllingFieldValues>
+                <controllingFieldValues>Wire Issue/Failure</controllingFieldValues>
+                <controllingFieldValues>Wires/Communications</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resolved (Software Fix Provided)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Data Issue</controllingFieldValues>
+                <controllingFieldValues>Failure Alerts</controllingFieldValues>
+                <controllingFieldValues>Known Error</controllingFieldValues>
+                <controllingFieldValues>Possible Defect</controllingFieldValues>
+                <controllingFieldValues>Wire Issue/Failure</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resolved (Data Fix Provided)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Data Issue</controllingFieldValues>
+                <controllingFieldValues>Failure Alerts</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resolved (Activity Completed)</fullName>
+                <default>false</default>
+                <controllingFieldValues>API</controllingFieldValues>
+                <controllingFieldValues>Account Set-Up</controllingFieldValues>
+                <controllingFieldValues>Activate User</controllingFieldValues>
+                <controllingFieldValues>Ad hoc/management reports</controllingFieldValues>
+                <controllingFieldValues>Add On Users Request</controllingFieldValues>
+                <controllingFieldValues>Amend Coverage</controllingFieldValues>
+                <controllingFieldValues>BD Assist</controllingFieldValues>
+                <controllingFieldValues>Cancel Request</controllingFieldValues>
+                <controllingFieldValues>Certification</controllingFieldValues>
+                <controllingFieldValues>Configuration Change Request</controllingFieldValues>
+                <controllingFieldValues>Contact / activity import</controllingFieldValues>
+                <controllingFieldValues>Data request</controllingFieldValues>
+                <controllingFieldValues>Deactivate User</controllingFieldValues>
+                <controllingFieldValues>Deal Creation</controllingFieldValues>
+                <controllingFieldValues>Document Request</controllingFieldValues>
+                <controllingFieldValues>Entitlements</controllingFieldValues>
+                <controllingFieldValues>Failure Alerts</controllingFieldValues>
+                <controllingFieldValues>Feature Request</controllingFieldValues>
+                <controllingFieldValues>Feeds</controllingFieldValues>
+                <controllingFieldValues>Hardware/Software Request</controllingFieldValues>
+                <controllingFieldValues>Hedge</controllingFieldValues>
+                <controllingFieldValues>Implementation Request/Issue</controllingFieldValues>
+                <controllingFieldValues>Ipreo ad hoc/management reports</controllingFieldValues>
+                <controllingFieldValues>IssueNet Deal Alert</controllingFieldValues>
+                <controllingFieldValues>Localization</controllingFieldValues>
+                <controllingFieldValues>Machine Registration</controllingFieldValues>
+                <controllingFieldValues>Meeting Request</controllingFieldValues>
+                <controllingFieldValues>Migration</controllingFieldValues>
+                <controllingFieldValues>Network</controllingFieldValues>
+                <controllingFieldValues>Onsite Support</controllingFieldValues>
+                <controllingFieldValues>Onsite Training</controllingFieldValues>
+                <controllingFieldValues>Password Reset</controllingFieldValues>
+                <controllingFieldValues>Periodic Data</controllingFieldValues>
+                <controllingFieldValues>Pricing/Final Terms</controllingFieldValues>
+                <controllingFieldValues>Profile creation</controllingFieldValues>
+                <controllingFieldValues>Regulatory Reporting</controllingFieldValues>
+                <controllingFieldValues>Research Lead</controllingFieldValues>
+                <controllingFieldValues>Sales Entry</controllingFieldValues>
+                <controllingFieldValues>System</controllingFieldValues>
+                <controllingFieldValues>System or Component</controllingFieldValues>
+                <controllingFieldValues>Template</controllingFieldValues>
+                <controllingFieldValues>Trade Booking/Settlement</controllingFieldValues>
+                <controllingFieldValues>Training Request</controllingFieldValues>
+                <controllingFieldValues>Trial Access Request</controllingFieldValues>
+                <controllingFieldValues>UAT Acceptance</controllingFieldValues>
+                <controllingFieldValues>Violation</controllingFieldValues>
+                <controllingFieldValues>Wire Alert</controllingFieldValues>
+                <controllingFieldValues>Wire Issue/Failure</controllingFieldValues>
+                <controllingFieldValues>Wires/Communications</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workaround provided</fullName>
+                <default>false</default>
+                <controllingFieldValues>Known Error</controllingFieldValues>
+                <controllingFieldValues>Possible Defect</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>User Training Issue</fullName>
+                <default>false</default>
+                <controllingFieldValues>Possible Defect</controllingFieldValues>
+                <controllingFieldValues>Question/Inquiry</controllingFieldValues>
+                <controllingFieldValues>Regulatory Reporting</controllingFieldValues>
+                <controllingFieldValues>UAT Acceptance</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed by Customer</fullName>
+                <default>false</default>
+                <controllingFieldValues>API</controllingFieldValues>
+                <controllingFieldValues>Account Set-Up</controllingFieldValues>
+                <controllingFieldValues>Activate User</controllingFieldValues>
+                <controllingFieldValues>Add On Users Request</controllingFieldValues>
+                <controllingFieldValues>Amend Coverage</controllingFieldValues>
+                <controllingFieldValues>BD Assist</controllingFieldValues>
+                <controllingFieldValues>Cancel Request</controllingFieldValues>
+                <controllingFieldValues>Certification</controllingFieldValues>
+                <controllingFieldValues>Configuration Change Request</controllingFieldValues>
+                <controllingFieldValues>Data Issue</controllingFieldValues>
+                <controllingFieldValues>Deactivate User</controllingFieldValues>
+                <controllingFieldValues>Deal Creation</controllingFieldValues>
+                <controllingFieldValues>Document Request</controllingFieldValues>
+                <controllingFieldValues>Feature Request</controllingFieldValues>
+                <controllingFieldValues>Feeds</controllingFieldValues>
+                <controllingFieldValues>Hardware/Software Request</controllingFieldValues>
+                <controllingFieldValues>Hedge</controllingFieldValues>
+                <controllingFieldValues>Implementation Request/Issue</controllingFieldValues>
+                <controllingFieldValues>Known Error</controllingFieldValues>
+                <controllingFieldValues>Machine Registration</controllingFieldValues>
+                <controllingFieldValues>Meeting Request</controllingFieldValues>
+                <controllingFieldValues>Network</controllingFieldValues>
+                <controllingFieldValues>Onsite Support</controllingFieldValues>
+                <controllingFieldValues>Onsite Training</controllingFieldValues>
+                <controllingFieldValues>Order/Allocation</controllingFieldValues>
+                <controllingFieldValues>Password Reset</controllingFieldValues>
+                <controllingFieldValues>Periodic Data</controllingFieldValues>
+                <controllingFieldValues>Possible Defect</controllingFieldValues>
+                <controllingFieldValues>Pricing/Final Terms</controllingFieldValues>
+                <controllingFieldValues>Question/Inquiry</controllingFieldValues>
+                <controllingFieldValues>Regulatory Reporting</controllingFieldValues>
+                <controllingFieldValues>Research Lead</controllingFieldValues>
+                <controllingFieldValues>Sales Entry</controllingFieldValues>
+                <controllingFieldValues>System</controllingFieldValues>
+                <controllingFieldValues>System or Component</controllingFieldValues>
+                <controllingFieldValues>Template</controllingFieldValues>
+                <controllingFieldValues>Trade Booking/Settlement</controllingFieldValues>
+                <controllingFieldValues>Training Request</controllingFieldValues>
+                <controllingFieldValues>Trial Access Request</controllingFieldValues>
+                <controllingFieldValues>UAT Acceptance</controllingFieldValues>
+                <controllingFieldValues>Violation</controllingFieldValues>
+                <controllingFieldValues>Wire Issue/Failure</controllingFieldValues>
+                <controllingFieldValues>Wires/Communications</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed - Duplicate</fullName>
+                <default>false</default>
+                <controllingFieldValues>API</controllingFieldValues>
+                <controllingFieldValues>Account Set-Up</controllingFieldValues>
+                <controllingFieldValues>Activate User</controllingFieldValues>
+                <controllingFieldValues>Ad hoc/management reports</controllingFieldValues>
+                <controllingFieldValues>Add On Users Request</controllingFieldValues>
+                <controllingFieldValues>Amend Coverage</controllingFieldValues>
+                <controllingFieldValues>BD Assist</controllingFieldValues>
+                <controllingFieldValues>Cancel Request</controllingFieldValues>
+                <controllingFieldValues>Certification</controllingFieldValues>
+                <controllingFieldValues>Configuration Change Request</controllingFieldValues>
+                <controllingFieldValues>Contact / activity import</controllingFieldValues>
+                <controllingFieldValues>Data Issue</controllingFieldValues>
+                <controllingFieldValues>Data request</controllingFieldValues>
+                <controllingFieldValues>Deactivate User</controllingFieldValues>
+                <controllingFieldValues>Deal Creation</controllingFieldValues>
+                <controllingFieldValues>Document Request</controllingFieldValues>
+                <controllingFieldValues>Email Bounceback or Auto Response</controllingFieldValues>
+                <controllingFieldValues>Entitlements</controllingFieldValues>
+                <controllingFieldValues>Failure Alerts</controllingFieldValues>
+                <controllingFieldValues>Feature Request</controllingFieldValues>
+                <controllingFieldValues>Feeds</controllingFieldValues>
+                <controllingFieldValues>Hardware/Software Request</controllingFieldValues>
+                <controllingFieldValues>Hedge</controllingFieldValues>
+                <controllingFieldValues>Implementation Request/Issue</controllingFieldValues>
+                <controllingFieldValues>Ipreo ad hoc/management reports</controllingFieldValues>
+                <controllingFieldValues>IssueNet Deal Alert</controllingFieldValues>
+                <controllingFieldValues>Known Error</controllingFieldValues>
+                <controllingFieldValues>Localization</controllingFieldValues>
+                <controllingFieldValues>Machine Registration</controllingFieldValues>
+                <controllingFieldValues>Meeting Request</controllingFieldValues>
+                <controllingFieldValues>Migration</controllingFieldValues>
+                <controllingFieldValues>Network</controllingFieldValues>
+                <controllingFieldValues>Onsite Support</controllingFieldValues>
+                <controllingFieldValues>Onsite Training</controllingFieldValues>
+                <controllingFieldValues>Order/Allocation</controllingFieldValues>
+                <controllingFieldValues>Password Reset</controllingFieldValues>
+                <controllingFieldValues>Periodic Data</controllingFieldValues>
+                <controllingFieldValues>Possible Defect</controllingFieldValues>
+                <controllingFieldValues>Pricing/Final Terms</controllingFieldValues>
+                <controllingFieldValues>Profile creation</controllingFieldValues>
+                <controllingFieldValues>Question/Inquiry</controllingFieldValues>
+                <controllingFieldValues>Regulatory Reporting</controllingFieldValues>
+                <controllingFieldValues>Research Lead</controllingFieldValues>
+                <controllingFieldValues>Sales Entry</controllingFieldValues>
+                <controllingFieldValues>System</controllingFieldValues>
+                <controllingFieldValues>System or Component</controllingFieldValues>
+                <controllingFieldValues>Template</controllingFieldValues>
+                <controllingFieldValues>Trade Booking/Settlement</controllingFieldValues>
+                <controllingFieldValues>Training Request</controllingFieldValues>
+                <controllingFieldValues>Trial Access Request</controllingFieldValues>
+                <controllingFieldValues>UAT Acceptance</controllingFieldValues>
+                <controllingFieldValues>Violation</controllingFieldValues>
+                <controllingFieldValues>Wire Alert</controllingFieldValues>
+                <controllingFieldValues>Wire Issue/Failure</controllingFieldValues>
+                <controllingFieldValues>Wires/Communications</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Action Required</fullName>
+                <default>false</default>
+                <controllingFieldValues>API</controllingFieldValues>
+                <controllingFieldValues>Account Set-Up</controllingFieldValues>
+                <controllingFieldValues>Activate User</controllingFieldValues>
+                <controllingFieldValues>Ad hoc/management reports</controllingFieldValues>
+                <controllingFieldValues>Add On Users Request</controllingFieldValues>
+                <controllingFieldValues>Amend Coverage</controllingFieldValues>
+                <controllingFieldValues>BD Assist</controllingFieldValues>
+                <controllingFieldValues>Cancel Request</controllingFieldValues>
+                <controllingFieldValues>Certification</controllingFieldValues>
+                <controllingFieldValues>Configuration Change Request</controllingFieldValues>
+                <controllingFieldValues>Contact / activity import</controllingFieldValues>
+                <controllingFieldValues>Data Issue</controllingFieldValues>
+                <controllingFieldValues>Data request</controllingFieldValues>
+                <controllingFieldValues>Deactivate User</controllingFieldValues>
+                <controllingFieldValues>Deal Creation</controllingFieldValues>
+                <controllingFieldValues>Document Request</controllingFieldValues>
+                <controllingFieldValues>Email Bounceback or Auto Response</controllingFieldValues>
+                <controllingFieldValues>Entitlements</controllingFieldValues>
+                <controllingFieldValues>Failure Alerts</controllingFieldValues>
+                <controllingFieldValues>Feature Request</controllingFieldValues>
+                <controllingFieldValues>Feeds</controllingFieldValues>
+                <controllingFieldValues>Hardware/Software Request</controllingFieldValues>
+                <controllingFieldValues>Hedge</controllingFieldValues>
+                <controllingFieldValues>Implementation Request/Issue</controllingFieldValues>
+                <controllingFieldValues>Ipreo ad hoc/management reports</controllingFieldValues>
+                <controllingFieldValues>IssueNet Deal Alert</controllingFieldValues>
+                <controllingFieldValues>Known Error</controllingFieldValues>
+                <controllingFieldValues>Localization</controllingFieldValues>
+                <controllingFieldValues>Machine Registration</controllingFieldValues>
+                <controllingFieldValues>Meeting Request</controllingFieldValues>
+                <controllingFieldValues>Migration</controllingFieldValues>
+                <controllingFieldValues>Network</controllingFieldValues>
+                <controllingFieldValues>Onsite Support</controllingFieldValues>
+                <controllingFieldValues>Onsite Training</controllingFieldValues>
+                <controllingFieldValues>Order/Allocation</controllingFieldValues>
+                <controllingFieldValues>Password Reset</controllingFieldValues>
+                <controllingFieldValues>Periodic Data</controllingFieldValues>
+                <controllingFieldValues>Possible Defect</controllingFieldValues>
+                <controllingFieldValues>Pricing/Final Terms</controllingFieldValues>
+                <controllingFieldValues>Profile creation</controllingFieldValues>
+                <controllingFieldValues>Question/Inquiry</controllingFieldValues>
+                <controllingFieldValues>Regulatory Reporting</controllingFieldValues>
+                <controllingFieldValues>Research Lead</controllingFieldValues>
+                <controllingFieldValues>Sales Entry</controllingFieldValues>
+                <controllingFieldValues>System</controllingFieldValues>
+                <controllingFieldValues>System or Component</controllingFieldValues>
+                <controllingFieldValues>Template</controllingFieldValues>
+                <controllingFieldValues>Trade Booking/Settlement</controllingFieldValues>
+                <controllingFieldValues>Training Request</controllingFieldValues>
+                <controllingFieldValues>Trial Access Request</controllingFieldValues>
+                <controllingFieldValues>UAT Acceptance</controllingFieldValues>
+                <controllingFieldValues>Violation</controllingFieldValues>
+                <controllingFieldValues>Wire Alert</controllingFieldValues>
+                <controllingFieldValues>Wire Issue/Failure</controllingFieldValues>
+                <controllingFieldValues>Wires/Communications</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Close_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>MONTH( DATEVALUE(ClosedDate))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Close Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.AccountId</valueField>
+            </filterItems>
+            <infoMessage>If the contact is a sponsored account contact, please click &quot;Show all results&quot;, below.</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Contact_Office_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.Phone</formula>
+        <label>Contact Office Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Customer_Sent_Email_After_Case_Closed__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Sent Email After Case Closed</label>
+        <picklist>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Day_of_the_Week_Created__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+  MOD(  DATEVALUE(CreatedDate) - DATE( 1900, 1, 7 ), 7 ),
+  0, &quot;Sunday&quot;,
+  1, &quot;Monday&quot;,
+  2, &quot;Tuesday&quot;,
+  3, &quot;Wednesday&quot;,
+  4, &quot;Thursday&quot;,
+  5, &quot;Friday&quot;, 
+  &quot;Saturday&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day of the Week Created</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Day_of_the_Week_Cust_Responded__c</fullName>
+        <description>Day of week when customer responded</description>
+        <externalId>false</externalId>
+        <formula>CASE(
+MOD( DATEVALUE( Last_Email_Received_From_Customer__c ) - DATE( 1900, 1, 7 ), 7 ),
+0, &quot;Sunday&quot;,
+1, &quot;Monday&quot;,
+2, &quot;Tuesday&quot;,
+3, &quot;Wednesday&quot;,
+4, &quot;Thursday&quot;,
+5, &quot;Friday&quot;, 
+&quot;Saturday&quot;
+)</formula>
+        <label>Day of the Week Cust Responded</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Effort_Minutes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field captures the amount of effort a rep spends on the ticket (not how long it was open).</inlineHelpText>
+        <label>Effort (Minutes)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EntitlementId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FactSet_Escalated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If the case is FactSet Escalated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the case is FactSet Escalated</inlineHelpText>
+        <label>FactSet Escalated</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>First_Response_Provided_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>First Response Provided Date/Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>First_Response_Provided__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>First Response Provided</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>First_Response_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedDate - First_Response_Provided_Date_Time__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>First Response Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hour_Created_GMT__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(MID(TEXT(CreatedDate - 5),12,2))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hour Created (GMT)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hour_Cust_Responded_GMT__c</fullName>
+        <description>Hour in GMT when customer last responded</description>
+        <externalId>false</externalId>
+        <formula>VALUE(MID(TEXT(Last_Email_Received_From_Customer__c - 5),12,2))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hour Cust Responded (GMT)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inserted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Help get case milestone by updating this field when the case is created.</description>
+        <externalId>false</externalId>
+        <label>Inserted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsStopped</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Last_Email_Received_From_Customer__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Email Received From Customer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>MilestoneStatus</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>MilestoneStatusIcon</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity__r.StageName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>A user may populate this field (usually from the Opportunity Cases related list) for scenarios like trial access, which requires internal setup.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunity that lead to this case</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>8x8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct Phone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (AM Support)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (Buyside)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (CMS)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (Corporate)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (FactSet)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (Fixed Income UAT)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (iCompliance)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (Munis)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (RS&amp;T)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (SalesRequests-IR)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (SFDC Support)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email2Case (Trial Users GMG)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Support Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Outage_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Outage Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Outtale_Related__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Outage Related</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>1 - High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 - Medium</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 - Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ProductId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Activist Intelligence (Shark Repellent)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (2111)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (2242)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (5130)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (Alerts Only)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (Axe Management)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (Corporate Issuers)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (Derivatives)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (QIB)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (Reg S)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (Retail)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (SMMP)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Advanced (Syndicated Loans)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Axe Management (Add-on Feature)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Corporate (Assist)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Corporate (Basic)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Corporate (CRM Add-on)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Corporate (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Corporate (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Corporate (Retail)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Corporate Governance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Dialer (Add-on Feature)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Enterprise (Add-on Feature)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD IR Consultant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Mail (Add-on Feature)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Research Distribution (Add-on)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Salesforce</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Trade Management (Add-on Feature)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Vision (Alerts Only)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Vision (Corporate Issuers)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Vision (Derivatives)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Vision (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Vision (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Vision (Retail)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Beneficial Ownership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BuysideIQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BuysideIQ (GMG)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Capital Markets Analytics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compliance Workstation (Audit Feed)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (2111)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (2242)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (5130)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (Corporate Issuers)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (Derivatives)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (Equity Corporate)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (Fixed Income Corporate)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (Municipal)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (QIB)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (Reg S)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (Service Providers)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (SMMP)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed (Syndicated Loans)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (2111)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (2242)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (5130)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (Corporate Issuers)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (Derivatives)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (Equity Corporate)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (Fixed Income Corporate)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (Municipal)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (QIB)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (Reg S)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (Service Providers)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (SMMP)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Feed - One Time (Syndicated Loans)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deal Monitor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deal Services (API)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debtdomain Agency Sites</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debtdomain Compliance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debtdomain CRM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debtdomain Custom Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debtdomain Dataroom</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debtdomain DLO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debtdomain Pipeline Reporting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debtdomain Portfolio Valuation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debtdomain Primary Sites</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debtdomain Secondary Sites</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Directed Share Program</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entity Data Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Equity Bookbuild</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Equity Deals Database</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ESG &amp; SRI Analysis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>etouches Conference Registration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Events &amp; Transcripts (Capital IQ)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Events &amp; Transcripts (FactSet)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FactSet Excel Add-in (CD &amp; Strat)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FactSet Excel Add-in (IR)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FactSet Excel Add-in (Other)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FactSet Excel Add-in (Treasury)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FactSet Workstation (CD &amp; Strat)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FactSet Workstation (IR)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FactSet Workstation (IRC)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FactSet Workstation (Other)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FactSet Workstation (Treasury)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed Income ID</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed Income ID (Success Fee)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Foreign Shareholder ID (project)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Foreign Shareholder ID (retainer)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Global Markets Intelligence</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Global Markets Intelligence (+)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Global Markets Intelligence (Activist Surveillance)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Global Markets Intelligence (Activist Surveillance - Retainer)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Global Markets Intelligence (Block Tracker)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Global Markets Intelligence (Deal Surveillance)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Governance Benchmarking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Governance Risk Service</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Governance Roadshow</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iCompliance (2111)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iCompliance (5130)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iCompliance (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iCompliance (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iCompliance (QIB)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iCompliance (Reg S)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iConference (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iConference (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Information Agent (project)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investor Access - EQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investor Access - FI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investor Access Workstation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investor Profiles (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investor Profiles (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iPlanner (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iPlanner (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iProspectus (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iProspectus (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iProspectus (Municipals)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IssueBook</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IssueBook (Phoenix)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IssueBook Wires</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IssueLaunch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IssueNet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Issuer View</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>M&amp;A Analysis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Muni Analytics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Muni Bidcomp</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Muni Bookrunning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MuniCalendar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Muni Deal Track</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Muni Electronic Order Entry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Muni Gameday</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MuniIC (Information Center)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Muni Non-Managed Deals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MuniWatch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Muni Wires</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NDR Optimization Program</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OneAccess (API)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Open Exchange Virtual Meetings (Corp)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OpenExchange Virtual Meetings (RST)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Perception Studies (project)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Perception Studies (retainer)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pitch Builder (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pitch Builder (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Primary Order Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prism Virtual Data Room</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Profile Builder (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Profile Builder (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Proxy (Success Fee)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Proxy Negative Vote Recommendation Fee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Proxy Solicitation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quotes &amp; News</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research &amp; Estimates (Capital IQ)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research &amp; Estimates (FactSet)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail Bookbuild (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail Bookbuild (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail Bookbuild (Municipals)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roadshow Access (Equity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roadshow Access (Fixed Income)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roadshow Access (Loan)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roadshow Access (Municipals)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shareholder ID (project)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shareholder ID (retainer)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shareholder Meeting Agenda Analysis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shareholder Meeting Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shareholder Optimization Report</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Share Register Analysis (project)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Share Register Analysis (retainer)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sustainability Perception Studies</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Targeting (project)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Targeting (retainer)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Variable Rate Trading</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webcasting services (resale)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New problem</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Training Issue</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Responded_by_Email_But_Not_Taken_Owner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used to check when the email is replied by the service user, if someone has taken this owner of the case from a queue, check on, if not check off.</description>
+        <externalId>false</externalId>
+        <label>Responded by Email But Not Taken Owner</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sent_Email_Message__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If there is any email message has been sent, then the trigger will set this to true.</description>
+        <externalId>false</externalId>
+        <label>Sent Email Message</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SlaExitDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SlaStartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>true</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client Review</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <closed>true</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StopStartDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Sub_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Type</label>
+        <picklist>
+            <controllingField>Type</controllingField>
+            <picklistValues>
+                <fullName>Account Set-Up</fullName>
+                <default>false</default>
+                <controllingFieldValues>AM Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Activate User</fullName>
+                <default>false</default>
+                <controllingFieldValues>Access Management</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add On Users Request</fullName>
+                <default>false</default>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ad hoc/management reports</fullName>
+                <default>false</default>
+                <controllingFieldValues>AM Support</controllingFieldValues>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amend Coverage</fullName>
+                <default>false</default>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>API</fullName>
+                <default>false</default>
+                <controllingFieldValues>System/Environment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Assist</fullName>
+                <default>false</default>
+                <controllingFieldValues>AM Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancel Request</fullName>
+                <default>false</default>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Certification</fullName>
+                <default>false</default>
+                <controllingFieldValues>System/Environment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Configuration Change Request</fullName>
+                <default>false</default>
+                <controllingFieldValues>System/Environment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contact / activity import</fullName>
+                <default>false</default>
+                <controllingFieldValues>AM Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Issue</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product Issue</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data request</fullName>
+                <default>false</default>
+                <controllingFieldValues>AM Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deactivate User</fullName>
+                <default>false</default>
+                <controllingFieldValues>Access Management</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deal Creation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Document Request</fullName>
+                <default>false</default>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email Bounceback or Auto Response</fullName>
+                <default>false</default>
+                <controllingFieldValues>Alerts</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entitlements</fullName>
+                <default>false</default>
+                <controllingFieldValues>AM Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Failure Alerts</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Feeds</fullName>
+                <default>false</default>
+                <controllingFieldValues>System/Environment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hardware/Software Request</fullName>
+                <default>false</default>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hedge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Implementation Request/Issue</fullName>
+                <default>false</default>
+                <controllingFieldValues>Implementation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IssueNet Deal Alert</fullName>
+                <default>false</default>
+                <controllingFieldValues>Alerts</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Known Error</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product Issue</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Localization</fullName>
+                <default>false</default>
+                <controllingFieldValues>AM Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Machine Registration</fullName>
+                <default>false</default>
+                <controllingFieldValues>Access Management</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting Request</fullName>
+                <default>false</default>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migration</fullName>
+                <default>false</default>
+                <controllingFieldValues>AM Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Network</fullName>
+                <default>false</default>
+                <controllingFieldValues>System/Environment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Onsite Support</fullName>
+                <default>false</default>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Onsite Training</fullName>
+                <default>false</default>
+                <controllingFieldValues>Implementation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Order/Allocation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+                <controllingFieldValues>Access Management</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Periodic Data</fullName>
+                <default>false</default>
+                <controllingFieldValues>Periodic Audits</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Possible Defect</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product Issue</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pricing/Final Terms</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Profile creation</fullName>
+                <default>false</default>
+                <controllingFieldValues>AM Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Question/Inquiry</fullName>
+                <default>false</default>
+                <controllingFieldValues>FactSet Request</controllingFieldValues>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Regulatory Reporting</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research Lead</fullName>
+                <default>false</default>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Entry</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>System</fullName>
+                <default>false</default>
+                <controllingFieldValues>Periodic Audits</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>System or Component</fullName>
+                <default>false</default>
+                <controllingFieldValues>System/Environment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Template</fullName>
+                <default>false</default>
+                <controllingFieldValues>FactSet Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Booking/Settlement</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Training Request</fullName>
+                <default>false</default>
+                <controllingFieldValues>FactSet Request</controllingFieldValues>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trial Access Request</fullName>
+                <default>false</default>
+                <controllingFieldValues>Access Management</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UAT Acceptance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Implementation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Violation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product Issue</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wire Alert</fullName>
+                <default>false</default>
+                <controllingFieldValues>Alerts</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wire Issue/Failure</fullName>
+                <default>false</default>
+                <controllingFieldValues>Service Request</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wires/Communications</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transactional</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ipreo ad hoc/management reports</fullName>
+                <default>false</default>
+                <controllingFieldValues>AM Support</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>TFS_Ticket_No__c</fullName>
+        <description>The numerical number of the TFS ticket.</description>
+        <externalId>false</externalId>
+        <label>TFS Ticket No.</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TFS_URL__c</fullName>
+        <description>A URL field to facilitate the adding of a UL  link to a TFS ticket</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manually add the URL link to the TFS ticket for ease of access</inlineHelpText>
+        <label>TFS URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Time_Elapsed_Before_First_Response__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(First_Response_Provided_Date_Time__c),0,(First_Response_Provided_Date_Time__c - CreatedDate)*1440)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time Elapsed Before First Response</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Open__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(IsClosed, TEXT(FLOOR(  ClosedDate - CreatedDate )) &amp; &quot; days&quot;, TEXT(FLOOR (NOW() - CreatedDate)) &amp; &quot; days&quot;)
+&amp; &quot; &quot; &amp;
+IF(IsClosed, TEXT( FLOOR( MOD( (ClosedDate - CreatedDate ) * 24, 24 ))) &amp; &quot; hours&quot;, TEXT( FLOOR( MOD( (NOW() - CreatedDate ) * 24, 24 ) )) &amp; &quot; hours&quot;)
+&amp; &quot; &quot; &amp;
+IF(IsClosed, TEXT(ROUND( MOD( (ClosedDate - CreatedDate ) * 24 * 60, 60 ), 0 )) &amp; &quot; minutes&quot;, TEXT( ROUND( MOD( (NOW() - CreatedDate ) * 24 * 60, 60 ), 0 )) &amp; &quot; minutes&quot; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time Open</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_to_Close__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE( ClosedDate ) - DATEVALUE( CreatedDate )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time to Close</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trial_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Trial End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Trial_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Trial Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Service Request</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Access Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Issue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>System/Environment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Implementation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AM Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FactSet Request</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transactional</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Periodic Audits</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alerts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>AM_Support_CPT_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (AM Support - CPT)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>AM Support - CPT (Closed)</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>AM_Support_JP_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (AM Support - JP)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>AM Support - JP (Closed)</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>AM_Support_JP_Open</fullName>
+        <booleanFilter>(1 AND 2) OR (3 and 4)</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (AM Support - JP)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (AM Support - JP)</value>
+        </filters>
+        <label>AM Support - JP (Open)</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>AM_Support_NA_Case</fullName>
+        <booleanFilter>(1 AND 2) OR (3 and 4)</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (AM Support)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (AM Support)</value>
+        </filters>
+        <label>*AM Support - (Open)</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>AM_Support_NA_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (AM Support)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>*AM Support - (Closed)</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>AllNewCasesToday</fullName>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CREATED_DATE_DATE_ONLY</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>* Cases - New Today</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>AllOpenCases</fullName>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.ORIGIN</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>* Cases - All Open</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Cases</fullName>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>* Cases - All Open and Closed</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Open_Corporate_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (SalesRequests-IR)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notContain</operation>
+            <value>closed</value>
+        </filters>
+        <label>*All Open SalesRequest Corporate Cases</label>
+        <sharedTo>
+            <roleAndSubordinates>Corporate</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CMS_Case_Origin_All</fullName>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (CMS)</value>
+        </filters>
+        <label>CMS Case Origin(All)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CMS_Case_Origin_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TFS_Ticket_No__c</columns>
+        <columns>TFS_URL__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (CMS)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>CMS Case Origin(Closed)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CMS_Case_Origin_Open</fullName>
+        <booleanFilter>(1 AND 2) OR (3 and 4)</booleanFilter>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>TFS_Ticket_No__c</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Time_Elapsed_Before_First_Response__c</columns>
+        <columns>First_Response_Provided__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (CMS)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notContain</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (CMS)</value>
+        </filters>
+        <label>CMS Case Origin (**Open**)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CMS_Case_Queue_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>CMS Case Queue</label>
+        <queue>CMS_Case_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Corporate_Case_Origin_All</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Corporate)</value>
+        </filters>
+        <label>Corporate Case Origin(All)</label>
+        <sharedTo>
+            <roleAndSubordinates>Corporate</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Corporate_Case_Origin_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Corporate)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>Corporate Case Origin(Closed)</label>
+        <sharedTo>
+            <roleAndSubordinates>Corporate</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Corporate_Case_Origin_Open</fullName>
+        <booleanFilter>(1 AND 2) OR (3 and 4)</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (AM Support - CPT)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (AM Support - CPT)</value>
+        </filters>
+        <label>AM Support - CPT (Open)</label>
+        <sharedTo>
+            <roleAndSubordinates>Corporate</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Corporate_Case_Origin_Open1</fullName>
+        <booleanFilter>(1 AND 2) OR (3 and 4)</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Corporate)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Corporate)</value>
+        </filters>
+        <label>**Corporate Case Origin (Open)</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Corporate_Case_Queue_All</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <filterScope>Queue</filterScope>
+        <label>Corporate Case Queue(All)</label>
+        <queue>Corporate_Account_Case_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>Corporate</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Corporate_Cases_Closed_w_New_Emails</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Corporate)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>Corporate Cases Closed w New Emails</label>
+        <sharedTo>
+            <roleAndSubordinates>Corporate</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Equity_Case_Origin_All</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Equity)</value>
+        </filters>
+        <label>Equity Case Origin(All)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Equity_Case_Origin_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Equity)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>Equity Case Origin(Closed)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Equity_Case_Origin_Open</fullName>
+        <booleanFilter>(1 AND 2) OR (3 and 4)</booleanFilter>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>First_Response_Provided__c</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Product__c</columns>
+        <columns>TFS_Ticket_No__c</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Equity)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notContain</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Equity)</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>Equity Case Origin(Open)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Equity_Case_Queue_All</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TFS_Ticket_No__c</columns>
+        <columns>TFS_URL__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Equity Case Queue(All)</label>
+        <queue>Equity_WM_Case_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Equity_Cases_Closed_w_New_Emails</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Equity)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>Equity Cases Closed w New Emails</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>FactSet_Case_Queue_Closed1</fullName>
+        <booleanFilter>(1 AND 2 AND 4) OR (1 AND 3)</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Internal</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (FactSet)</value>
+        </filters>
+        <filters>
+            <field>Sub_Type__c</field>
+            <operation>equals</operation>
+            <value>FactSet Request</value>
+        </filters>
+        <label>*FactSet Case Queue- All Closed</label>
+        <sharedTo>
+            <group>AM_CORP</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>FactSet_Case_Queue_Open</fullName>
+        <booleanFilter>((1 AND 2) OR (4 AND 5 AND 2)) OR ((1 AND 3) OR (4 AND 5 AND 3))</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (FactSet)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Internal</value>
+        </filters>
+        <filters>
+            <field>Sub_Type__c</field>
+            <operation>equals</operation>
+            <value>FactSet Request</value>
+        </filters>
+        <label>**FactSet Case Queue Open</label>
+        <sharedTo>
+            <roleAndSubordinates>Corporate</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Fixed_Income_Case_Origin_All</fullName>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Fixed Income),Email2Case (Fixed Income UAT)</value>
+        </filters>
+        <label>Fixed Income Case Origin(All)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Fixed_Income_Case_Origin_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TFS_Ticket_No__c</columns>
+        <columns>TFS_URL__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Fixed Income)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>Fixed Income Case Origin(Closed)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Fixed_Income_Case_Origin_Open</fullName>
+        <booleanFilter>(1 AND 2) OR (3 and 4)</booleanFilter>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TFS_Ticket_No__c</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Time_Elapsed_Before_First_Response__c</columns>
+        <columns>First_Response_Provided__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Fixed Income),Email2Case (Fixed Income UAT)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notContain</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Fixed Income),Email2Case (Fixed Income UAT)</value>
+        </filters>
+        <label>Fixed Income Case Origin (**Open**)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Fixed_Income_Case_Queue_All</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TFS_Ticket_No__c</columns>
+        <columns>TFS_URL__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Fixed Income Case Queue(All)</label>
+        <queue>Fixed_Income_Case_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Fixed_Income_Cases_Closed_w_New_Emails</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Fixed Income)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>Fixed Income Cases Closed w New Emails</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Fixed_Income_UAT_Case_Origin_All</fullName>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Fixed Income UAT)</value>
+        </filters>
+        <label>Fixed Income UAT Case Origin(All)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Fixed_Income_UAT_Case_Origin_Open</fullName>
+        <booleanFilter>(1 AND 2) OR (3 and 4)</booleanFilter>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>Product__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Fixed Income UAT)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New,In Progress,Client Review,On Hold</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Fixed Income UAT)</value>
+        </filters>
+        <label>Fixed Income UAT Case Origin (**Open**)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Fixed_Income_UAT_Case_Queue_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Fixed Income UAT Case Queue</label>
+        <queue>Fixed_Income_UAT_Case_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>General_Support_Case_Queue</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <label>General Support Case Queue</label>
+        <queue>General_Support_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Munis_Case_Origin_All</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Munis)</value>
+        </filters>
+        <label>Munis Case Origin(All)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Munis_Case_Origin_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Munis)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>Munis Case Origin(Closed)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Munis_Case_Origin_Open</fullName>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Munis)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notContain</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Munis)</value>
+        </filters>
+        <label>Munis Case Origin(Open)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Munis_Case_Queue_All</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <filterScope>Queue</filterScope>
+        <label>Munis Case Queue(All)</label>
+        <queue>Munis_Case_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Munis_Cases_Closed_w_New_Emails</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Munis)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>Munis Cases Closed w New Emails</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyCases</fullName>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <filterScope>Mine</filterScope>
+        <label>* My Cases - All Open and Closed</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyClosedCases</fullName>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>* My Cases - All Closed</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <booleanFilter>1 OR (2 AND 3)</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>Product__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>* My Cases - All Open</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>RST_Case_Origin_All</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (RS&amp;T)</value>
+        </filters>
+        <label>RS&amp;T Case Origin(All)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>RST_Case_Origin_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (RS&amp;T)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>RS&amp;T Case Origin(Closed)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>RST_Case_Origin_Open</fullName>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>First_Response_Provided__c</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>Case_Resolution__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (RS&amp;T)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (RS&amp;T)</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>RS&amp;T Case Origin(Open)</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>RST_Case_Queue_All</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (RS&amp;T)</value>
+        </filters>
+        <label>RS&amp;T Case Queue(All)</label>
+        <queue>RS_T_Case_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>RST_Cases_Closed_w_New_Emails</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (RS&amp;T)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>RS&amp;T Cases Closed w New Emails</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>RST_GMG_Trials_Queue</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OWNER_NAME</field>
+            <operation>equals</operation>
+            <value>RS&amp;T Case Queue,Trial Users GMG Case Queue</value>
+        </filters>
+        <label>RS&amp;T and GMG Trials Cases Owned by Queue</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Sales_Request_IR_Case</fullName>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>Trial_End_Date__c</columns>
+        <columns>Trial_Start_Date__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <label>Sales Request IR Case Queue(All)</label>
+        <queue>Sales_Requests_IR_case_queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>Corporate</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Sales_Request_IR_Case_Closed</fullName>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>Trial_End_Date__c</columns>
+        <columns>Trial_Start_Date__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Sales Request IR Case Queue(Closed)</label>
+        <queue>Sales_Requests_IR_case_queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>Corporate</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Sales_Request_IR_Case_Open</fullName>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>Trial_End_Date__c</columns>
+        <columns>Trial_Start_Date__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Sales Request IR Case Queue(Open)</label>
+        <queue>Sales_Requests_IR_case_queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>Corporate</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Trial_Users_GMG_Case_All</fullName>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>Trial_End_Date__c</columns>
+        <columns>Trial_Start_Date__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <label>Trial Users GMG Case Queue (All)</label>
+        <queue>Trial_Users_GMG_Case_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Trial_Users_GMG_Case_Closed</fullName>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>Trial_End_Date__c</columns>
+        <columns>Trial_Start_Date__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Trial Users GMG Case Queue (Closed)</label>
+        <queue>Trial_Users_GMG_Case_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Trial_Users_GMG_Case_Open</fullName>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>PRODUCT.NAME</columns>
+        <columns>Trial_End_Date__c</columns>
+        <columns>Trial_Start_Date__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Trial Users GMG Case Queue (Open)</label>
+        <queue>Trial_Users_GMG_Case_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>iCompliance_Case_Origin_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (iCompliance)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <label>iCompliance Case Origin (Closed)</label>
+    </listViews>
+    <listViews>
+        <fullName>iCompliance_Case_Origin_Open</fullName>
+        <booleanFilter>(1 AND 2) OR (3 AND 4)</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>First_Response_Provided__c</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (iCompliance)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notContain</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (iCompliance)</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>iCompliance Case Origin (Open)</label>
+    </listViews>
+    <listViews>
+        <fullName>iCompliance_Case_Queue_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>First_Response_Provided__c</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (iCompliance)</value>
+        </filters>
+        <label>iCompliance Case Origin (All)</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>sarah_fi_uat_test</fullName>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Customer_Sent_Email_After_Case_Closed__c</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (Fixed Income UAT)</value>
+        </filters>
+        <label>Sarah FI UAT Test</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>sarah_test_view</fullName>
+        <booleanFilter>(1 AND 2 and 5) OR (3 and 4 and 5)</booleanFilter>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>TFS_Ticket_No__c</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Last_Email_Received_From_Customer__c</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>Sub_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Time_Elapsed_Before_First_Response__c</columns>
+        <columns>First_Response_Provided__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (CMS)</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notContain</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Customer_Sent_Email_After_Case_Closed__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Email2Case (CMS)</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>contains</operation>
+            <value>smou</value>
+        </filters>
+        <label>Sarah Test View</label>
+        <sharedTo>
+            <roleAndSubordinates>GMG</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.TYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sub_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.EMAIL</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER_NAME</customTabListAdditionalFields>
+        <listViewButtons>Mass_Update</listViewButtons>
+        <listViewButtons>Mass_Delete</listViewButtons>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.TYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Sub_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.PRIORITY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.EMAIL</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>CASES.CASE_NUMBER</searchFilterFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>CASES.TYPE</searchFilterFields>
+        <searchFilterFields>Sub_Type__c</searchFilterFields>
+        <searchFilterFields>CASES.SUBJECT</searchFilterFields>
+        <searchFilterFields>CASES.PRIORITY</searchFilterFields>
+        <searchFilterFields>CASES.EMAIL</searchFilterFields>
+        <searchFilterFields>CASES.STATUS</searchFilterFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.TYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sub_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWriteTransfer</sharingModel>
+    <validationRules>
+        <fullName>Account_Name_Non_Ipreo_Required</fullName>
+        <active>true</active>
+        <description>If Case Origin is &quot;Email2Case (AM Support)&quot; and Sub Type is NOT &quot;Ipreo ad hoc/management reports&quot; then when Case is Closed require that Account Name is populated and is not &quot;Ipreo&quot;.[SPS-1705]</description>
+        <errorConditionFormula>AND(ISPICKVAL(Origin,&apos;Email2Case (AM Support)&apos;),  
+NOT(ISPICKVAL(Sub_Type__c,&apos;Ipreo ad hoc/management reports&apos;)),  
+ISPICKVAL(Status,&apos;Closed&apos;), 
+(Account.Name = &apos;Ipreo&apos;))</errorConditionFormula>
+        <errorDisplayField>AccountId</errorDisplayField>
+        <errorMessage>Account must be other than Ipreo</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Check_on_First_Responsed_Provided</fullName>
+        <active>false</active>
+        <description>Deactivate in phase 2</description>
+        <errorConditionFormula>ISNEW() &amp;&amp;  First_Response_Provided__c</errorConditionFormula>
+        <errorDisplayField>First_Response_Provided__c</errorDisplayField>
+        <errorMessage>Cannot check First Response Provided when creating case.  Check this checkbox only when editing the case.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Close_Others_Cases</fullName>
+        <active>true</active>
+        <description>A user can not close someone else&apos;s case, must take ownership first.</description>
+        <errorConditionFormula>$Profile.Name != &apos;System Administrator&apos; &amp;&amp; 
+NOT($Permission.Edit_Closed_Cases) &amp;&amp;
+$User.Id != OwnerId &amp;&amp;
+CONTAINS(TEXT(Status), &apos;Closed&apos;)</errorConditionFormula>
+        <errorMessage>You cannot close another user&apos;s case, or a case owned by a queue. You must first take ownership of the case, then close it.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Modify_Closed_Case</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($Profile.Name != &quot;System Administrator&quot;,  NOT($Permission.Edit_Closed_Cases), IsClosed, NOT(ISNEW()), NOT(ISPICKVAL( Status , &apos;Reopen&apos;)), NOT( ISCHANGED( Last_Email_Received_From_Customer__c )))</errorConditionFormula>
+        <errorMessage>Closed case can not be modified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Upt_Priority_If_Not_Assigned</fullName>
+        <active>true</active>
+        <description>If owned by a case queue, users cannot change priority</description>
+        <errorConditionFormula>LEFT(OwnerId, 3) == &apos;00G&apos; &amp;&amp; 
+ISCHANGED( Priority ) &amp;&amp;
+NOT(ISNEW())</errorConditionFormula>
+        <errorDisplayField>Priority</errorDisplayField>
+        <errorMessage>If owned by a case queue, users cannot change priority</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Upt_Status_If_Not_Assigned</fullName>
+        <active>true</active>
+        <description>If owned by a case queue, users cannot change status</description>
+        <errorConditionFormula>LEFT(OwnerId, 3) == &apos;00G&apos; &amp;&amp; 
+ISCHANGED( Status ) &amp;&amp;
+NOT(ISNEW()) &amp;&amp; 
+$Profile.Name != &quot;System Administrator&quot;</errorConditionFormula>
+        <errorDisplayField>Status</errorDisplayField>
+        <errorMessage>If owned by a case queue, users cannot change status</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Product_Required_On_FactSet_requests</fullName>
+        <active>true</active>
+        <description>At least one product required on FactSet requests.</description>
+        <errorConditionFormula>ISNULL( Product__c ) &amp;&amp; OR(  
+TEXT( Type ) = &apos;FactSet Request&apos; &amp;&amp; 
+OR(
+(NOT(CONTAINS(Text( Origin ), &apos;Email2Case&apos;))),
+CONTAINS(Text( Origin ), &apos;Email2Case&apos;)&amp;&amp; TEXT(Status) = &apos;Closed&apos;),
+Text( Origin )= &apos;Email2Case (FactSet)&apos; &amp;&amp; TEXT(Status) = &apos;Closed&apos;)</errorConditionFormula>
+        <errorDisplayField>Product__c</errorDisplayField>
+        <errorMessage>Please select at least one Product.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Account_When_Close_Case</fullName>
+        <active>true</active>
+        <description>When close a case but not using close case page layout, account should be required.</description>
+        <errorConditionFormula>ISBLANK( AccountId )&amp;&amp; 
+ISPICKVAL( Status , &apos;Closed&apos;)</errorConditionFormula>
+        <errorDisplayField>AccountId</errorDisplayField>
+        <errorMessage>Account required to close cases</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Account_When_Close_Trial_Case</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( AccountId )&amp;&amp; 
+ ISPICKVAL( Status , &apos;Closed&apos;) &amp;&amp; 
+ISPICKVAL(Sub_Type__c, &apos;Trial Access Request&apos;)</errorConditionFormula>
+        <errorDisplayField>AccountId</errorDisplayField>
+        <errorMessage>Account required to close trial access cases</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Case_Effort_When_Close_Case</fullName>
+        <active>true</active>
+        <description>When closing a case, and the owner has a GMG role, Effort (Minutes) should be required.</description>
+        <errorConditionFormula>ISBLANK(Effort_Minutes__c) &amp;&amp; ISCHANGED(Status) &amp;&amp; ISPICKVAL(Status , &apos;Closed&apos;) &amp;&amp; CONTAINS(Owner:User.UserRole.Name, &apos;GMG&apos;) &amp;&amp; $Profile.Name != &apos;System Administrator&apos;</errorConditionFormula>
+        <errorDisplayField>Effort_Minutes__c</errorDisplayField>
+        <errorMessage>Effort (Minutes) is required to close cases owned by GMG</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Case_Product_When_Close_Case</fullName>
+        <active>true</active>
+        <description>When closing a case, and the owner has a GMG role, a Product should be required.</description>
+        <errorConditionFormula>ISBLANK(Product__c) &amp;&amp; ISCHANGED(Status) &amp;&amp; ISPICKVAL(Status , &apos;Closed&apos;) &amp;&amp; CONTAINS(Owner:User.UserRole.Name, &apos;GMG&apos;) &amp;&amp; $Profile.Name != &apos;System Administrator&apos;</errorConditionFormula>
+        <errorDisplayField>Product__c</errorDisplayField>
+        <errorMessage>At least one Product is required to close cases owned by GMG</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Case_Resolution_When_Close_Case</fullName>
+        <active>true</active>
+        <description>When close a case but not using close case page layout, case resolution should be required.</description>
+        <errorConditionFormula>ISBLANK(  TEXT(Case_Resolution__c) )&amp;&amp; 
+ISPICKVAL( Status , &apos;Closed&apos;)</errorConditionFormula>
+        <errorDisplayField>Case_Resolution__c</errorDisplayField>
+        <errorMessage>Case resolution required to close cases</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Source_Opp_When_Trial_Case_Resolved</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Opportunity__c ) &amp;&amp;  ISPICKVAL( Sub_Type__c , &apos;Trial Access Request&apos;) &amp;&amp; ISPICKVAL(  Case_Resolution__c  , &apos;Resolved (Activity Completed)&apos;)</errorConditionFormula>
+        <errorDisplayField>Opportunity__c</errorDisplayField>
+        <errorMessage>Source Opportunity required when a Trial Access Request case is resolved</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Trial_Require_Start_End_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Sub_Type__c, &quot;Trial Access Request&quot;)&amp;&amp; 
+(ISBLANK(Trial_Start_Date__c)||ISBLANK(Trial_End_Date__c))</errorConditionFormula>
+        <errorMessage>Trial Access Request requires Start/End Date</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Mass_Delete</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Delete</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/9.0/connection.js&quot;)}
+
+var records = {!GETRECORDIDS($ObjectType.Case)};
+
+if (records[0] == null) {
+    alert(&quot;Please select at least one record.&quot;)
+} else {
+    if (confirm(&quot;You have chosen to delete &quot; + records.length + &quot; records. Are you sure you want to continue?&quot;)) {
+        var errors = [];
+        var result = sforce.connection.deleteIds(records);
+        if (result &amp;&amp; result.length) {
+            var numFailed = 0;
+            var numSucceeded = 0;
+            for (var i = 0; i &lt; result.length; i++) {
+                var res = result[i];
+                if (res &amp;&amp; res.success == &apos;true&apos;) {
+                    numSucceeded++;
+                } else {
+                    var es = res.getArray(&quot;errors&quot;);
+                    if (es.length &gt; 0 &amp;&amp; errors.indexOf(es[0].message) &lt; 0) {
+                        errors.push(es[0].message);
+                    }
+                    numFailed++;
+                }
+            }
+            if (numFailed &gt; 0) {
+                alert(&quot;Failed: &quot; + numFailed + &quot;\nSucceeded: &quot; + numSucceeded + &quot;\nReason for failure(s): &quot; + errors.join(&quot;\n&quot;));
+            }
+        }
+        window.location.reload();
+    }
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Update</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Update</masterLabel>
+        <openType>sidebar</openType>
+        <page>GS_MassUpdateCases</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Case</fullName>
+        <availability>online</availability>
+        <description>For Opportunity</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Case</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/500/e?cas4_={!Opportunity.Account}&amp;cas4_lkid={!Opportunity.AccountId}&amp;CF00Nj0000000g8LI={!Opportunity.Name}&amp;CF00Nj0000000g8LI_lkid={!Opportunity.Id}&amp;retURL=%2F{!Opportunity.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Reopen_Case</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Reopen Case</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)}
+
+if({!Case.IsClosed} != 1){
+	alert(&apos;{!$Label.Msg_Case_Has_Not_Been_Closed}&apos;);
+} else {
+	var thisCase = new sforce.SObject(&quot;Case&quot;);
+
+	thisCase.Id = &apos;{!Case.Id}&apos;;
+
+	thisCase.Status = &apos;Reopen&apos;;
+
+	var result = sforce.connection.update([thisCase]);
+	if(result[0].success == &apos;true&apos;) {
+		window.location.reload();
+	} else{
+		alert(&apos;{!$Label.Msg_Admin_Error}&apos;);
+	}
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Take_Ownership</fullName>
+        <availability>online</availability>
+        <description>When the case is owned by a queue, user can click this button to assign this case to his or her self.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Take Ownership</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)}
+
+// OWNER ID
+var OWNERID = &apos;{!$User.Id}&apos;;
+
+var currentCase = new sforce.SObject(&quot;Case&quot;);
+currentCase.Id = &apos;{!Case.Id}&apos;;
+currentCase.OwnerId = OWNERID;
+var result = sforce.connection.update([currentCase ]);
+if(result[0].getBoolean(&quot;success&quot;))
+{
+   window.location.reload();
+}
+else{
+  alert(&apos;Error : &apos;+ result[0].errors.message);
+}</url>
+    </webLinks>
+</CustomObject>

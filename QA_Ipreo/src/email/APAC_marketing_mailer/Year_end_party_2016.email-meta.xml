@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Year end party 2016</name>
+    <style>none</style>
+    <subject>[Exclusive Invitation] Ipreo&apos;s End of Year Celebration Party at Armani/Privé</subject>
+    <textOnly>Zacor
+
+
+
+
+
+It&apos;s time to celebrate!
+
+Ipreo is pleased to invite you to our annual end of year party for clients and friends. Join us on the glamorous rooftop terrace at Armani/Privé with the luminous view of Hong Kong cityscape while enjoying the following:
+
+Drinks &amp; canapés
+Networking with fellow industry professionals
+Music and fun!
+
+As this is a free-to-attend event, entry will be on a first-come first-serve basis.
+
+
+Also note that this event times nicely with the IR Magazine Conference &amp; Awards earlier in the day. For more info visit here.
+
+
+
+Mark your calendar
+
+Date: December 6, 2017
+Time: 7-10PM
+Venue: Armani/Privé, 3/F,
+Chater House, 8 Connaught Road,
+Central, Hong Kong | Map
+
+
+Getting there
+
+Armani/Privé is easily accessible from Exit E of the Central MTR station.When coming out of the underground MTR Exit E, Landmark Chater will be on the left-hand side. There is a dedicated escalator entrance to both Armani/Prive lounge, club and terrace.
+
+©2016 Copyright Ipreo. All rights reserved. Contact us.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

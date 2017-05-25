@@ -1,0 +1,12 @@
+<apex:page controller="ExampleController">
+ 
+  T1: {!t1} <br/>
+  T2: {!t2} <br/>
+  <apex:pageBlock id="pgBlock">
+      T1: {!t1} <br/>
+      T2: {!t2} <br/>
+    </apex:pageBlock>         
+  <apex:form >
+    <apex:commandLink value="refresh" rerender="pgBlock"/>
+  </apex:form>
+</apex:page>

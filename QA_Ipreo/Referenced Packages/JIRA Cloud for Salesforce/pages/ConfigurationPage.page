@@ -1,0 +1,5 @@
+<apex:page sidebar="false" showHeader="false" controller="JCFS.RemoteProxyController">
+
+    <c:ConfigurationPageComponent />
+
+</apex:page>

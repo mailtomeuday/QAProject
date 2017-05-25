@@ -1,0 +1,20 @@
+<apex:page controller="GS_HeatmapAccountFilterController" >
+<apex:form >
+    <apex:pageMessages />
+    <apex:pageBlock title="Heat map report" mode="edit">
+       <apex:pageBlockSection title="Account filter" columns="2">
+       <apex:selectList value="{!verticals}" label="Vertical" multiselect="true">
+            <apex:selectOptions value="{!VerticalOptions}"/>
+        </apex:selectList>
+        <apex:selectList value="{!region}" label="Region" size="1">
+            <apex:selectOptions value="{!RegionOptions}"/>
+        </apex:selectList>
+        </apex:pageBlockSection>
+
+<apex:pageBlockButtons location="bottom">
+        <apex:commandButton value="Get Report" action="{!FilterAccounts}" />
+</apex:pageBlockButtons> 
+</apex:pageBlock>       
+</apex:form>
+
+</apex:page>

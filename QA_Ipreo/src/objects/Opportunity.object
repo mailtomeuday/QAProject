@@ -1,0 +1,4542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Budget</fullName>
+        <description>Used only for Budget Opportunity Record Types</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>New Business and Renewals</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won Verified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Identified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote%2FProposal Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Access Pending</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Renewals</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Cancelled Verified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won Verified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Identified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provisional Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote%2FProposal Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Access Pending</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>Mobile_Opportunity</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Mobile_Opportunity</fullName>
+        <fields>AccountId</fields>
+        <fields>Opportunity_Identifier__c</fields>
+        <fields>StageName</fields>
+        <fields>Amount</fields>
+        <label>Mobile Opportunity</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>ACV__c</fullName>
+        <description>Annual Contract Value</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Annual Contracted Value - Roll up of ACpV (Annual Contract Product Value) from Opportunity Product(s).</inlineHelpText>
+        <label>ACV</label>
+        <summarizedField>OpportunityLineItem.ACpV__c</summarizedField>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Billing_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.BillingCity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Billing City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Billing_Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.BillingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Billing Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Billing_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.BillingState</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Billing State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Name_on_Contract__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Name on Contract</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount</fullName>
+        <inlineHelpText>Total Contracted Value - Roll up of TCpV (Total Contracted Product Value) from Opportunity Product(s).</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Announce_Deal__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked when the Deal Announcement (email) should be sent at Closed Won Verified or unchecked for confidential deals.  Defaults to checked for new Opportunity and resets to unchecked AFTER announcement is sent.</inlineHelpText>
+        <label>Announce Deal</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Annual_Pass_Through__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll up of Annual Pass Through from Opportunity Product(s).</inlineHelpText>
+        <label>Annual Pass Through</label>
+        <summarizedField>OpportunityLineItem.Annual_Pass_Through__c</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Lost</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>At_Risk__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>At Risk</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Base_URL__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT($Api.Partner_Server_URL_260, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_260))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Base URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Billing_Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill To Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Billing_City__c</formula>
+        <label>Billing City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Billing_Contact__r.FirstName &amp;&quot; &quot;&amp; Contract__r.Billing_Contact__r.LastName</formula>
+        <label>Billing Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Billing_Country__c</formula>
+        <label>Billing Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Frequency_Other_Please_Specify__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Billing_Frequency_Other_Please_Specify__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Billing Frequency - Other Please Specify</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Contract__r.Billing_Frequency__c )</formula>
+        <label>Billing Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Start_Date_Other_Pls_Specify__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Billing_Start_Date_Other_Pls_Specify__c</formula>
+        <label>Billing Start Date - Other Pls Specify</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Contract__r.Billing_Start_Date__c )</formula>
+        <label>Billing Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_State_Province__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Billing_State_Province__c</formula>
+        <label>Billing State/Province</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Street__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Billing_Street__c</formula>
+        <label>Billing Street</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Zip_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Billing_Zip_Postal_Code__c</formula>
+        <label>Billing Zip/Postal Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bundled_With__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Opportunities that are bundled together</description>
+        <externalId>false</externalId>
+        <label>Bundled With</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The Opportunity does not exist or does not match an opportunity on the current Account.</errorMessage>
+            <filterItems>
+                <field>$Source.AccountId</field>
+                <operation>equals</operation>
+                <valueField>Opportunity.AccountId</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Opportunities (Bundled With)</relationshipLabel>
+        <relationshipName>Opportunities1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Cancel_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancel Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cancel_Relief__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cancel Relief</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CloseDate</fullName>
+        <inlineHelpText>Date on which Opportunity Owner expects sale to close.  System updates to current date when Opportunity Stage changes to Closed Won Sales and to Closed Won Verified.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Close_Date_is_Current_Month__c</fullName>
+        <description>Used primarily for ExComm report filtering in Wave</description>
+        <externalId>false</externalId>
+        <formula>Month ( CloseDate ) &gt;= Month ( TODAY() )</formula>
+        <label>Close Date is &gt;= Current Month</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Commit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Commit</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Confidential_Announcement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked when the Confidential Deal Announcement (email) should be sent at Closed Won Verified.  Defaults to unchecked for new Opportunity.</inlineHelpText>
+        <label>Confidential Announcement</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <inlineHelpText>Link to the Contract with which Opportunity is associated.  Populated when user clicks Add Contract on Opportunity or when user selects an existing Contract with which to associate Opportunity.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Contract__r.Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contract Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to custom contract object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the Contract with which Opportunity is associated.  Populated when user clicks Add Contract on Opportunity or when user selects an existing Contract with which to associate Opportunity.</inlineHelpText>
+        <label>Contract</label>
+        <referenceTo>Contract__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Deal_Announcement_Kudos__c</fullName>
+        <externalId>false</externalId>
+        <label>Deal Announcement Kudos</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Deal_Announcement_Sent__c</fullName>
+        <description>Flag to indicate if the closed won verified deal announcement is sent.  Used to inhibit a deal announcement from being sent twice if the opportunity is re-set to Closed Won Verified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Most recent date on which Deal Announcement was sent.  Set by system on sending of announcement.</inlineHelpText>
+        <label>Deal Announcement Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Detailed_Billing__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Detailed_Billing__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Detailed Billing</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Annual_Transaction_Fees__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll up of Estimated Annual Transaction Fees from Opportunity Product(s).</inlineHelpText>
+        <label>Est. Annual Transaction Fees</label>
+        <summarizedField>OpportunityLineItem.Estimated_Annual_Fees__c</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Lost</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Completion_Date__c</fullName>
+        <description>Est. Completion Date based on Est. Completion Date of Opp Products. This field gets updated using Apex Class</description>
+        <externalId>false</externalId>
+        <label>Opportunity Est. Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Evergreen_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Evergreen Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Evergreen_Period__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL( Contract__r.Evergreen_Period__c, &quot;Other&quot; ), TEXT(Contract__r.Evergreen_Period_Other_Please_Specify__c), TEXT(  Contract__r.Evergreen_Period__c ) )</formula>
+        <label>Evergreen Period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Evergreen__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(Contract__r.Evergreen__c, &apos;Yes&apos;), True, False)</formula>
+        <label>Evergreen</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Finance_Account_ID_Bak__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Account ID Bak</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Account.Finance_Account_ID__c)  ,  Account.Account_ID__c ,  Account.Finance_Account_ID__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Finance Account ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Adjustment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Finance Adjustment</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Comments</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_Budget__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>In Budget</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Unpaid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Invoice Unpaid</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Is_Close_Date_In_Current_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Is Close Date In Current Year</label>
+        <length>3</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Key_Win__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>to indicate that the Opportunity is a Key Win. Manually maintained.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>indicate if Opportunity is a Key Win</inlineHelpText>
+        <label>Key Win</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LID__LinkedIn_Company_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>LinkedIn Id of the company</description>
+        <externalId>false</externalId>
+        <label>LinkedIn Company Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOB__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Line of Business.  Defaults from Account when Opportunity is saved.  Can be updated.  Selection of Vertical filters the list of values for LOB.  Required at Closed Won Sales, Closed Won Verified.</inlineHelpText>
+        <label>LOB</label>
+        <picklist>
+            <controllingField>Vertical__c</controllingField>
+            <picklistValues>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compliance*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Access</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Secretary/Legal</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debt Capital Markets</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Equity Capital Markets</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Equity Sales*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Equity Trading*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FI Sales*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FI Trading*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investment Banking</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IR</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loans Agency</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loan Syndication</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loan Trading</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing/Bus. Dev.</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Municipals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Operations/IT</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Portfolio Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prime Broker</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Company Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research-Independent</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research-Industry/Market</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Risk Management*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Strategy</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trading</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Treasury</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Callmenow Line</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EDD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ipreo Sales Line</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ipreo Website</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Created_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Created By</label>
+        <length>4000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lost_Amount_Annual__c</fullName>
+        <description>Rollup of Product Lost Amount (Annual) from Lost Products.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rollup of Product Lost Amount (Annual) from Lost Products.</inlineHelpText>
+        <label>Lost Amount (Annual)</label>
+        <summarizedField>OpportunityLineItem.Product_Lost_Amount_Annual__c</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Status__c</field>
+            <operation>equals</operation>
+            <value>Lost</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Lost_Amount_Total__c</fullName>
+        <description>Rollup of Product Lost Amount (Total) from Lost Products.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rollup of Product Lost Amount (Total) from Lost Products.</inlineHelpText>
+        <label>Lost Amount (Total)</label>
+        <summarizedField>OpportunityLineItem.Product_Lost_Amount_Total__c</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Status__c</field>
+            <operation>equals</operation>
+            <value>Lost</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>NYSE_Program_Tier__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates that the Opportunity is associated with a NYSE Program (NYSE is subsidizing at least one Opportunity Product on the Opportunity).  Defaults from Account.  If selected, &quot;Non-Subsidized Contracted Value&quot; must also be populated.</inlineHelpText>
+        <label>NYSE Program Tier</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <inlineHelpText>Initially set by Opportunity Owner.  Should include Account Name.  System resets Opportunity Name to Account Name + Product Codes + Opportunity Type + Close Year when Stage is Closed Won Sales, Closed Won Verified.</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Net_ACV__c</fullName>
+        <externalId>false</externalId>
+        <formula>ACV__c -  Annual_Pass_Through__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is a formula field that calculates ACV - Annual Pass Through</inlineHelpText>
+        <label>Net ACV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Net_New_Business__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll up of Net New Business from Opportunity Product(s).  Also (ACV - Annual Pass Through) - (Prior Year ACV - Prior Year Pass Through).</inlineHelpText>
+        <label>Net New Business</label>
+        <summarizedField>OpportunityLineItem.Net_New_Business__c</summarizedField>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>No_of_GMG_Opportunity_Products__c</fullName>
+        <description>Number of GMG Opportunity Products</description>
+        <externalId>false</externalId>
+        <label>No. of GMG Opportunity Products</label>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Product_Vertical__c</field>
+            <operation>equals</operation>
+            <value>GMG</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Opp_Products_with_One_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Opp Products with One Year</label>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Term_Months__c</field>
+            <operation>equals</operation>
+            <value>12</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Opp_Products_without_Status__c</fullName>
+        <description>To check if there is a opportunity product without status.</description>
+        <externalId>false</externalId>
+        <label>No. of Opp Products without Status</label>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Status__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Opp_Products_without_Subsidy__c</fullName>
+        <description>Summary field to count Opportunity Products without Subsidy</description>
+        <externalId>false</externalId>
+        <label>No. of Opp Products without Subsidy</label>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Apply_NYSE_Subsidy__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Product_Transaction_Type__c</field>
+            <operation>equals</operation>
+            <value>New Business, Upsell, Add On, Renewal</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Opportunity_Products__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Opportunity Products</label>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Opportunity_Products_with_PROJ__c</fullName>
+        <description>summary fields to calculate number of Opportunity Products with Product Revenue Type as &apos;PROJ&apos;. This field can be used to validate Revenue type.</description>
+        <externalId>false</externalId>
+        <label>No. of Opportunity Products with PROJ</label>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Product_Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>PROJ</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Product_Add_Ons__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Product Add Ons</label>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Product_Transaction_Type__c</field>
+            <operation>equals</operation>
+            <value>Add On</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Renewed_Opp_Products__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Renewed Opp Products</label>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Status__c</field>
+            <operation>equals</operation>
+            <value>Renewed</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Non_Subsidized_Contracted_Value__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount the customer would pay for the Opportunity Products on this Opportunity if subsidies did not apply (if customer came off subsidy).</inlineHelpText>
+        <label>NYSE Non-subsidized Contract Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>OppUniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Data migration purpose</description>
+        <externalId>true</externalId>
+        <label>OppUniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Identifier__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Identifier</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Number__c</fullName>
+        <displayFormat>{0000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Opportunity Number</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Original_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Original Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Renewal Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Owner_Closed_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner.LastName + &apos;, &apos; + 
+Owner.FirstName + &apos; - &apos; +  
+Text(YEAR(CloseDate)) + &apos;-&apos; +  
+IF(
+	LEN(Text(Month(CloseDate))) = 1 , 
+	(&apos;0&apos; + Text(Month(CloseDate))), 
+	Text(Month(CloseDate))
+	) + &apos;-&apos; +  
+IF(
+	LEN(Text(Day(CloseDate))) = 1 , 
+	(&apos;0&apos; + Text(Day(CloseDate))), 
+	Text(Day(CloseDate))
+	)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner - Closed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prevent_Opp_Creation_on_Convert_System__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Within your business processes, you might have your process setup, as to not have Opportunities created directly from Leads during conversion.
+
+The Lead Conversion Page Layout and the conversion process are not customizable though.
+
+Using a validation rule can prevent creation of an Opportunity upon Lead Conversion.
+
+As a workaround, follow these steps:
+Create a Checkbox field on Opportunity, default Unchecked
+Create a Checkbox field on Leads, default Checked
+Map the Lead field to the Opportunity field
+Create a Validation rule on Opportunities
+As the error Condition Formula insert the Checkbox field you just created.
+As the error message, enter &quot;Creating an Opportunity on Lead conversion is currently not allowed.&quot;  Show on top of Page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a &quot;system&quot; field used to prevent Opportunity creation upon Lead conversion.  Do not use for any other purpose.</inlineHelpText>
+        <label>Prevent Opp Creation on Convert (System)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Prior_Year_ACV__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll up of Prior Year ACpV from Opportunity Product(s).</inlineHelpText>
+        <label>Prior Year ACV</label>
+        <summarizedField>OpportunityLineItem.Prior_Year_ACpV__c</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Lost</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Prior_Year_Pass_Through__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll up of Prior Year Pass Through from Opportunity Product(s).</inlineHelpText>
+        <label>Prior Year Pass Through</label>
+        <summarizedField>OpportunityLineItem.Prior_Year_Pass_Through__c</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Lost</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Probability</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Product_Bundle__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Bundle</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Purchase_Order_Number__c</formula>
+        <label>Purchase Order Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order_Required__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Purchase_Order_Required__c</formula>
+        <label>Purchase Order Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Record_Type_Name__c</fullName>
+        <description>Used only in Sales Wave app reporting</description>
+        <externalId>false</externalId>
+        <formula>RecordType.Name</formula>
+        <label>Record Type Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renewal_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Increment__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Freq of renewals after initial delivery of proj or initial subscrip term.  For projects, Close Date on Renewal Opp is Close Date on original Opp+Renewal Incr.  For subscrips, Subscription End Date on Renewal is  Subscription End Date on orig+Renewal Incr.</inlineHelpText>
+        <label>Renewal Increment</label>
+        <picklist>
+            <picklistValues>
+                <fullName>6 months</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 year</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 years</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 years</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4 years</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 years</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 years</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Notice_Period__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text( Contract__r.Renewal_Notice_Period__c )</formula>
+        <label>Renewal Notice Period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renewal_Notice_Required__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Renewal_Notice_Required__c</formula>
+        <label>Renewal Notice Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Renewal Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Provisional Cancel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_Delta_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Revenue Delta Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Uptick</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Downtick</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Either Subscription (ACV and ACV/TRANS) or Project (PROJ).  Required to save the Opportunity.</inlineHelpText>
+        <label>Revenue Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Subscription</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Project</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Ops_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Sales Ops team member responsible for verification of the Closed Opportunity.  Only editable by Sales Ops.  Required at Opportunity Stage &quot;Closed Won Verified&quot;.</inlineHelpText>
+        <label>Sales Ops Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Opportunities_Sales_Ops_Owner</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sold_To_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sold To Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Special_Billing_Period__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contract__r.Special_Billing__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Special Billing Period</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Opportunity Identified</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>10</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Meeting</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>25</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trial Access Pending</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>35</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trial Access</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>50</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quote/Proposal Sent</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>75</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contract Pending</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>90</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Won Sales</fullName>
+                <default>false</default>
+                <closed>true</closed>
+                <forecastCategory>Closed</forecastCategory>
+                <probability>100</probability>
+                <won>true</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Won Verified</fullName>
+                <default>false</default>
+                <closed>true</closed>
+                <forecastCategory>Closed</forecastCategory>
+                <probability>100</probability>
+                <won>true</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Provisional Cancel</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>50</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <closed>true</closed>
+                <forecastCategory>Omitted</forecastCategory>
+                <probability>0</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Cancelled</fullName>
+                <default>false</default>
+                <closed>true</closed>
+                <forecastCategory>Closed</forecastCategory>
+                <probability>0</probability>
+                <won>true</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Cancelled Verified</fullName>
+                <default>false</default>
+                <closed>true</closed>
+                <forecastCategory>Closed</forecastCategory>
+                <probability>0</probability>
+                <won>true</won>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TSX_Tier__c</fullName>
+        <externalId>false</externalId>
+        <label>TSX Tier</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Venture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>This_Year_ACV__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Item 401: Closed Won Verifed Sales To Date - a roll up of all ACV on Opp but just for Closed Date=This Year.
+if Closed Date=This Year, update this field as 1, then use to roll-up ACV</description>
+        <externalId>false</externalId>
+        <label>This Year ACV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Verified_Date__c</fullName>
+        <description>Stores the date when the Opportunity Stage was changed to &quot;Closed Won Verified&quot; or &quot;Closed Cancelled Verified&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stores the date when the Opportunity Stage was changed to &quot;Closed Won Verified&quot; or &quot;Closed Cancelled Verified&quot;</inlineHelpText>
+        <label>Verified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Vertical__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Ipreo Vertical with which Opportunity is associated (ex GMG, Corporate).  Defaults from Account when Opportunity is saved.  Can be updated.  Selection of Vertical filters the list of values for LOB.  Required at Closed Won Sales, Closed Won Verified.</inlineHelpText>
+        <label>Vertical</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Buyside</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sellside</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>Bentson_NEW_Opptys_ALL</fullName>
+        <columns>Owner_Closed_Date__c</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Account_Billing_City__c</columns>
+        <columns>Account_Billing_State__c</columns>
+        <columns>Account_Billing_Country__c</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>Key_Win__c</columns>
+        <columns>Commit__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Business</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Won Verified,Closed Lost</value>
+        </filters>
+        <label>GMG NEW Opptys - ALL</label>
+    </listViews>
+    <listViews>
+        <fullName>Bentson_NEW_Opptys_NEXT_90_DAYS</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Key_Win__c</columns>
+        <columns>Commit__c</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Business</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Won Verified,Closed Lost</value>
+        </filters>
+        <label>GMG NEW Opptys - NEXT 90 DAYS</label>
+    </listViews>
+    <listViews>
+        <fullName>Bentson_NEW_Opptys_THIS_MONTH</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Business</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Won Verified,Closed Lost</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>GMG NEW Opptys - THIS MONTH</label>
+    </listViews>
+    <listViews>
+        <fullName>Bentson_NEW_Opptys_THIS_MONTH1</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Key_Win__c</columns>
+        <columns>Commit__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Business</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Won Verified,Closed Lost</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>GMG NEW Opptys - BACKLOG</label>
+    </listViews>
+    <listViews>
+        <fullName>Bentson_NEW_Opptys_THIS_YEAR</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>Key_Win__c</columns>
+        <columns>Commit__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Business</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Won Verified,Closed Lost</value>
+        </filters>
+        <label>GMG NEW Opptys - THIS YEAR</label>
+    </listViews>
+    <listViews>
+        <fullName>Bentson_RENEWAL_Opptys_ALL</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Owner_Closed_Date__c</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Cancelled Verified,Closed Won Verified</value>
+        </filters>
+        <label>GMG RENEWAL Opptys - ALL</label>
+    </listViews>
+    <listViews>
+        <fullName>Bentson_RENEWAL_Opptys_BACKLOG</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>At_Risk__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Cancelled Verified,Closed Won Verified</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>GMG RENEWAL Opptys - BACKLOG</label>
+    </listViews>
+    <listViews>
+        <fullName>Bentson_RENEWAL_Opptys_NEXT_90_DAYS</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>At_Risk__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Cancelled Verified,Closed Won Verified</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <label>GMG RENEWAL Opptys - NEXT 90 DAYS</label>
+    </listViews>
+    <listViews>
+        <fullName>Bentson_RENEWAL_Opptys_THIS_MONTH</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Cancelled Verified,Closed Won Verified</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>GMG RENEWAL Opptys - THIS MONTH</label>
+    </listViews>
+    <listViews>
+        <fullName>Bentson_RENEWAL_Opptys_THIS_YEAR</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>At_Risk__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Cancelled Verified,Closed Won Verified</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <label>GMG RENEWAL Opptys - THIS YEAR</label>
+    </listViews>
+    <listViews>
+        <fullName>Closed_Won_Cancelled_Opps_for_Processing</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>ACV__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Won Sales,Closed Cancelled</value>
+        </filters>
+        <label>Closed Won/Cancelled Opps for Processing</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Closed_Won_Sales</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>OPPORTUNITY.CLOSED</columns>
+        <columns>OPPORTUNITY.WON</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Cancelled</value>
+        </filters>
+        <label>Closed Cancelled</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Closed_Won_Sales_GMG</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>Vertical__c</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Renewal_Date__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>ACV__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Annual_Pass_Through__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <columns>Sales_Ops_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Won Sales,Closed Cancelled</value>
+        </filters>
+        <label>Closed Won Sales (By Vertical)</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Closed_Won_Sales_Needs_Verified</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Renewal_Date__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Vertical__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>ACV__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>Evergreen_Date__c</columns>
+        <columns>Annual_Pass_Through__c</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <columns>Sales_Ops_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Won Sales,Closed Cancelled</value>
+        </filters>
+        <label>SalesOps Verification Queue</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Closed_Won_Sales_Needs_Verified_Katy</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACV__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>Annual_Pass_Through__c</columns>
+        <columns>Prior_Year_Pass_Through__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>OPPORTUNITY.CLOSED</columns>
+        <columns>OPPORTUNITY.WON</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Won Sales,Closed Cancelled</value>
+        </filters>
+        <filters>
+            <field>Prior_Year_Pass_Through__c</field>
+            <operation>notEqual</operation>
+            <value>USD 0</value>
+        </filters>
+        <label>Closed Won Sales (Needs Verified) - Katy</label>
+    </listViews>
+    <listViews>
+        <fullName>Closed_Won_Verified_New_Business</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.FISCAL_QUARTER</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Record_Type_Name__c</field>
+            <operation>equals</operation>
+            <value>New Business</value>
+        </filters>
+        <label>Closed Won Verified New Business</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Closed_Won_Verified_as_of_2_6_16</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Won Verified</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>1/1/2016</value>
+        </filters>
+        <label>Closed Won Verified as of  1.1.16</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>GMG_NEW_Opptys_NEXT_6_MONTHS</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Key_Win__c</columns>
+        <columns>Commit__c</columns>
+        <columns>At_Risk__c</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Business</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>NEXT_N_DAYS:180</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Won Verified,Closed Lost</value>
+        </filters>
+        <label>GMG NEW Opptys - NEXT 6 MONTHS</label>
+    </listViews>
+    <listViews>
+        <fullName>GMG_NEW_Opptys_NEXT_90_DAYS_IG</fullName>
+        <columns>Opportunity_Number__c</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Business</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Won Verified,Closed Lost</value>
+        </filters>
+        <label>IG GMG NEW Opptys - NEXT 90 DAYS</label>
+    </listViews>
+    <listViews>
+        <fullName>GMG_NEW_Opptys_NEXT_90_DAYS_PS</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Business</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Won Verified,Closed Lost</value>
+        </filters>
+        <filters>
+            <field>Product_Bundle__c</field>
+            <operation>contains</operation>
+            <value>EBB,ICMP,IPL,PTBR,ICO,BDV,RBB,PBR,ISN,et,BDRD,BDENT,ISB,IPS,Muni,SMMP</value>
+        </filters>
+        <filters>
+            <field>Product_Bundle__c</field>
+            <operation>notContain</operation>
+            <value>GMI,TARG</value>
+        </filters>
+        <label>PS - GMG NEW Opptys - NEXT 90 DAYS</label>
+    </listViews>
+    <listViews>
+        <fullName>GMG_NEW_Opptys_THIS_QUARTER</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.New_Business</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_QUARTER</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Won Verified,Closed Lost</value>
+        </filters>
+        <label>GMG NEW Opptys - THIS QUARTER</label>
+    </listViews>
+    <listViews>
+        <fullName>GMG_RENEWAL_Opptys_NEXT_6_MONTHS</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Prior_Year_ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Cancelled Verified,Closed Won Verified</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>NEXT_N_DAYS:180</value>
+        </filters>
+        <label>GMG RENEWAL Opptys - NEXT 6 MONTHS</label>
+    </listViews>
+    <listViews>
+        <fullName>GMG_RENEWAL_Opptys_THIS_QUARTER</fullName>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notContain</operation>
+            <value>Closed Cancelled Verified,Closed Won Verified</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_QUARTER</value>
+        </filters>
+        <label>GMG RENEWAL Opptys - THIS QUARTER</label>
+    </listViews>
+    <listViews>
+        <fullName>MyClosedLostOpportunitiesCY</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Lost</value>
+        </filters>
+        <label>My Closed Lost Opportunities - CY</label>
+    </listViews>
+    <listViews>
+        <fullName>MyClosedOpportunitiesCY</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Closed Opportunities - CY</label>
+    </listViews>
+    <listViews>
+        <fullName>MyClosedWonOpportunitiesCY</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Won Sales,Closed Won Verified</value>
+        </filters>
+        <label>My Closed Won Opportunities - CY</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenOpportunitiesCY</fullName>
+        <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Open Opportunities - Current Year</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenOpportunitiesNxt90days</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open Opportunities - Closing Next 90</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenOpportunitiesNxtMonth</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open Opportunities - Closing Next Mon</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenOpportunitiesNxtQtr</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_QUARTER</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open Opportunities - Closing Next Qtr</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenOpportunitiesThisMonth</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open Opportunities - Closing This Mon</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenRenewalsCY</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open Renewals - CY</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenRenewalsCYandNxtYr</fullName>
+        <booleanFilter>(1 OR 4) AND 2 AND 3</booleanFilter>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_YEAR</value>
+        </filters>
+        <label>My Open Renewals - CY and Next Year</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenRenewalsClosingNext90</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open Renewals - Closing Next 90</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_New_Opportunities_Closing_Next_90</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+        <columns>OPPORTUNITY.NEXT_STEP</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal,Opportunity.New_Business</value>
+        </filters>
+        <label>My New Opportunities - Closing Next 90</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Renewals_CY</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>Product_Bundle__c</columns>
+        <columns>ACV__c</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>PTO renewals to work on</label>
+    </listViews>
+    <listViews>
+        <fullName>Opportuniites_Created_This_Week</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <columns>OPPORTUNITY.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>Opportunities - Created This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Opportunities_NewToday</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Opportunities - New Today</label>
+    </listViews>
+    <listViews>
+        <fullName>Opportunities_with_Billing_Address</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Owner_Closed_Date__c</columns>
+        <columns>Account_Billing_City__c</columns>
+        <columns>Account_Billing_State__c</columns>
+        <columns>Account_Billing_Country__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Opportunities with Billing Address</label>
+    </listViews>
+    <listViews>
+        <fullName>Project_Open_Createdthismonth</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Project</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Project (Open) - Created This Month</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Project_Open_Current_In_Year</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Project</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Project (Open) - Created In Current Year</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Subscription_Cancel_all</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>Renewal_Status__c</columns>
+        <columns>ACV__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Subscription</value>
+        </filters>
+        <filters>
+            <field>Renewal_Status__c</field>
+            <operation>equals</operation>
+            <value>Provisional Cancel,Partial,Cancel</value>
+        </filters>
+        <label>Subscription Cancel (All)</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Subscription_Open_Current_Year</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Subscription</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Subscription (Open) - Current Year</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Subscription_Open_This_Month</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <filters>
+            <field>Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Subscription</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Subscription (Open) - This Month</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Subscription_Renew_Open</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.RECORDTYPE</columns>
+        <columns>Revenue_Type__c</columns>
+        <columns>ACV__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Net_New_Business__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.Renewal</value>
+        </filters>
+        <filters>
+            <field>Revenue_Type__c</field>
+            <operation>equals</operation>
+            <value>Subscription</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Subscription Renew (Open)</label>
+        <sharedTo>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Budget</fullName>
+        <active>true</active>
+        <businessProcess>Budget</businessProcess>
+        <description>Used for Budget records</description>
+        <label>Budget</label>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contracted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB__c</picklist>
+            <values>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Secretary%2FLegal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Debt Capital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equity Capital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equity Sales*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equity Trading*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FI Sales*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FI Trading*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investment Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Syndication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Trading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loans Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing%2FBus%2E Dev%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations%2FIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portfolio Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prime Broker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Company Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-Independent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-Industry%2FMarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Risk Management*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Callmenow Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ipreo Sales Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ipreo Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>NYSE_Program_Tier__c</picklist>
+            <values>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Renewal_Increment__c</picklist>
+            <values>
+                <fullName>1 year</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 years</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Renewal_Status__c</picklist>
+            <values>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provisional Cancel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Revenue_Delta_Type__c</picklist>
+            <values>
+                <fullName>Downtick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uptick</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Revenue_Type__c</picklist>
+            <values>
+                <fullName>Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscription</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vertical__c</picklist>
+            <values>
+                <fullName>Buyside</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sellside</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>New_Business</fullName>
+        <active>true</active>
+        <businessProcess>New Business and Renewals</businessProcess>
+        <description>Use this if there are no ACV renewal products on your opportunity.</description>
+        <label>New Business</label>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contracted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB__c</picklist>
+            <values>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Secretary%2FLegal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Debt Capital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equity Capital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equity Sales*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equity Trading*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FI Sales*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FI Trading*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investment Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Syndication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Trading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loans Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing%2FBus%2E Dev%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations%2FIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portfolio Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prime Broker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Company Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-Independent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-Industry%2FMarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Risk Management*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Callmenow Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ipreo Sales Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ipreo Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>NYSE_Program_Tier__c</picklist>
+            <values>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Renewal_Increment__c</picklist>
+            <values>
+                <fullName>1 year</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 years</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Renewal_Status__c</picklist>
+            <values>
+                <fullName>Renewal Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Revenue_Delta_Type__c</picklist>
+            <values>
+                <fullName>Downtick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uptick</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Revenue_Type__c</picklist>
+            <values>
+                <fullName>Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscription</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TSX_Tier__c</picklist>
+            <values>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Venture</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vertical__c</picklist>
+            <values>
+                <fullName>Buyside</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sellside</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Renewal</fullName>
+        <active>true</active>
+        <businessProcess>Renewals</businessProcess>
+        <description>Use this if there are one or more ACV renewal products on your opportunity.</description>
+        <label>Renewal</label>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contracted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB__c</picklist>
+            <values>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Secretary%2FLegal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Debt Capital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equity Capital Markets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equity Sales*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equity Trading*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FI Sales*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FI Trading*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investment Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Syndication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Trading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loans Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing%2FBus%2E Dev%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations%2FIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portfolio Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prime Broker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Company Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-Independent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-Industry%2FMarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Risk Management*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales*</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trading</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Callmenow Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ipreo Sales Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ipreo Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>NYSE_Program_Tier__c</picklist>
+            <values>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Renewal_Increment__c</picklist>
+            <values>
+                <fullName>1 year</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 years</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6 years</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Renewal_Status__c</picklist>
+            <values>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Revenue_Delta_Type__c</picklist>
+            <values>
+                <fullName>Downtick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uptick</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Revenue_Type__c</picklist>
+            <values>
+                <fullName>Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subscription</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TSX_Tier__c</picklist>
+            <values>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Venture</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Vertical__c</picklist>
+            <values>
+                <fullName>Buyside</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sellside</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Vertical__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.STAGE_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.PROBABILITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Revenue_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACV__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CORE.USERS.FULL_NAME</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Vertical__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.STAGE_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.PROBABILITY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.CLOSE_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Revenue_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACV__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>OPPORTUNITY.NAME</searchFilterFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>OPPORTUNITY.RECORDTYPE</searchFilterFields>
+        <searchFilterFields>Vertical__c</searchFilterFields>
+        <searchFilterFields>OPPORTUNITY.STAGE_NAME</searchFilterFields>
+        <searchFilterFields>OPPORTUNITY.PROBABILITY</searchFilterFields>
+        <searchFilterFields>OPPORTUNITY.CLOSE_DATE</searchFilterFields>
+        <searchFilterFields>Revenue_Type__c</searchFilterFields>
+        <searchFilterFields>ACV__c</searchFilterFields>
+        <searchFilterFields>CORE.USERS.FULL_NAME</searchFilterFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Vertical__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.PROBABILITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Revenue_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACV__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.FULL_NAME</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Account_Region_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Profile.Name != &apos;System Administrator&apos;,
+CONTAINS(TEXT(StageName), &apos;Closed&apos;),
+ISPICKVAL(Account.Region__c,&apos;&apos;)
+)</errorConditionFormula>
+        <errorMessage>Region on the related Account is blank. Please select a region on the related Account or contact Operations User or system Administrator in order to continue.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Add_or_Remove_Renewal_Opp_Product</fullName>
+        <active>true</active>
+        <errorConditionFormula>$Profile.Name != &apos;Operations User&apos; &amp;&amp;
+ $Profile.Name != &apos;System Administrator&apos; &amp;&amp;
+  RecordType.DeveloperName = &apos;Renewal&apos; &amp;&amp;  ISCHANGED(No_of_Opportunity_Products__c )</errorConditionFormula>
+        <errorMessage>Cannot add or remove products from a renewal opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_CWV_Opp_Invoice_Unpaid</fullName>
+        <active>true</active>
+        <description>Cannot close won verify opportunity since Invoice is Unpaid</description>
+        <errorConditionFormula>And($Profile.Name != &apos;System Administrator&apos; ,Invoice_Unpaid__c, ISPICKVAL(StageName,&apos;Closed Won Verified&apos;))</errorConditionFormula>
+        <errorDisplayField>Invoice_Unpaid__c</errorDisplayField>
+        <errorMessage>Cannot Close Won Verify Opportunity Since Invoice is Unpaid</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Cancel_Opp_with_Renewed_Product</fullName>
+        <active>true</active>
+        <description>Can not close cancel an renewal opportunity with any product which is renewed. The opportunity products should be cancelled.</description>
+        <errorConditionFormula>$Profile.Name != &apos;System Administrator&apos; &amp;&amp; 
+RecordType.DeveloperName = &apos;Renewal&apos; &amp;&amp;
+( ISPICKVAL( StageName , &apos;Closed Cancelled&apos;)   ||  ISPICKVAL( StageName , &apos;Closed Cancelled Verified&apos;))&amp;&amp;
+No_of_Renewed_Opp_Products__c != 0</errorConditionFormula>
+        <errorDisplayField>StageName</errorDisplayField>
+        <errorMessage>You can not close cancel this opportunity with renewed opportunity product. Please check the opportunity products.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Close_Opp_Without_Contract</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT( $Permission.By_Pass_Opportunity_Validations ) &amp;&amp;
+IsClosed &amp;&amp; CONTAINS(TEXT(StageName), &quot;Won&quot;) &amp;&amp; (
+    ISBLANK( Contract__c ) ||
+    NOT( ISPICKVAL( Contract__r.Status__c , &quot;Customer Executed&quot; ) ) &amp;&amp;
+    NOT( ISPICKVAL( Contract__r.Status__c , &quot;Fully Executed&quot; ) )
+)</errorConditionFormula>
+        <errorDisplayField>Contract__c</errorDisplayField>
+        <errorMessage>Cannot close win opportunity without a contract in Customer Executed or Fully Executed status</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Close_Opp_Without_Opp_Prod_Status</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( No_of_Opp_Products_without_Status__c &gt; 0,
+     IsClosed
+)</errorConditionFormula>
+        <errorMessage>Cannot close opportunity with products that do not have a status</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Cls_Opty_if_InvoiceUnpaid_Checked</fullName>
+        <active>true</active>
+        <description>Prevent SalesRep from changing the opportunity stage to Closed Won Sales if  &quot;Invoice Unpaid&quot; field is checked</description>
+        <errorConditionFormula>$Profile.Name =&apos;Sales User&apos; &amp;&amp; 
+ISPICKVAL( StageName , &apos;Closed Won Sales&apos;)  &amp;&amp; 
+Invoice_Unpaid__c = TRUE</errorConditionFormula>
+        <errorMessage>Not eligible to renew, prior year invoice unpaid. Please consult Finance and Sales Manager</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Create_Opp_On_Lead_Conversion</fullName>
+        <active>false</active>
+        <description>Throw an error if an Opportunity is being created during the Lead conversion process.  There is a Prevent_Opp_Creation_on_Convert_System__c on both the Lead and Opportunity objects that are mapped to each other.</description>
+        <errorConditionFormula>Prevent_Opp_Creation_on_Convert_System__c</errorConditionFormula>
+        <errorMessage>Creating an Opportunity upon Lead conversion is currently not allowed.  Please select the &apos;Do not create a new opportunity upon conversion&apos; checkbox to continue.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Edit_Closed_Opportunities</fullName>
+        <active>true</active>
+        <errorConditionFormula>PRIORVALUE( IsClosed ) = TRUE &amp;&amp;  
+($Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos;)</errorConditionFormula>
+        <errorMessage>Cannot edit closed opportunities.  Please ask Sales Operations to make any necessary changes.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Modify_Close_Date_On_Closed_Opp</fullName>
+        <active>true</active>
+        <description>Cannot modify the Close Date field on a closed Opportunity</description>
+        <errorConditionFormula>$Profile.Name != &quot;System Administrator&quot; 
+&amp;&amp; ISCHANGED(CloseDate)
+&amp;&amp; IsClosed</errorConditionFormula>
+        <errorDisplayField>CloseDate</errorDisplayField>
+        <errorMessage>Cannot modify the Close Date on a closed Opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Modify_Close_Date_on_Renewal_Opp</fullName>
+        <active>true</active>
+        <description>Cannot modify the Close Date on a Renewal Opportunity</description>
+        <errorConditionFormula>$Profile.Name != &apos;System Administrator&apos; &amp;&amp;
+  RecordType.DeveloperName = &apos;Renewal&apos; &amp;&amp;  ISCHANGED(CloseDate)</errorConditionFormula>
+        <errorDisplayField>CloseDate</errorDisplayField>
+        <errorMessage>Cannot modify the Close Date on a Renewal Opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Modify_Closed_Verified_Opp</fullName>
+        <active>true</active>
+        <errorConditionFormula>$Profile.Name != &apos;System Administrator&apos; &amp;&amp;
+( 
+ ISPICKVAL(PRIORVALUE(StageName),&apos;Closed Won Verified&apos;) ||
+ISPICKVAL(PRIORVALUE(StageName),&apos;Closed Cancelled Verified&apos;)
+)</errorConditionFormula>
+        <errorMessage>Cannot edit closed verified opportunities. Please ask System Administrator to make any necessary changes.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Set_Stage_to_Closed_Won_Verified</fullName>
+        <active>true</active>
+        <errorConditionFormula>($Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos;) &amp;&amp;
+ISCHANGED( StageName ) &amp;&amp; ISPICKVAL( StageName, &apos;Closed Won Verified&apos;)</errorConditionFormula>
+        <errorMessage>Only Operations users can change to Closed Won Verified.  Please ask Sales Operations to advance this stage.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_All_Products_Are_Add_Ons_Products</fullName>
+        <active>true</active>
+        <errorConditionFormula>No_of_Product_Add_Ons__c != 0 &amp;&amp;  No_of_Product_Add_Ons__c !=  No_of_Opportunity_Products__c</errorConditionFormula>
+        <errorMessage>Opportunities with one or more Add On opportunity products must only contain Add On opportunity products</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Oppty_Products_without_Subsidy</fullName>
+        <active>true</active>
+        <description>Check opportunity products without subsidy if tier value is entered on Opportunity and stage is closed won sales and closed won verified.</description>
+        <errorConditionFormula>AND(No_of_Opp_Products_without_Subsidy__c &gt; 0,   
+    NOT( ISPICKVAL(NYSE_Program_Tier__c, &apos;&apos;) ),
+    AND(CONTAINS(TEXT(StageName), &quot;Closed&quot;),
+        TEXT(StageName)&lt;&gt; &quot;Closed Lost&quot;)
+)</errorConditionFormula>
+        <errorMessage>Apply NYSE Subsidy? is required on all products when NYSE Program Tier provided</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Opt_When_Closed_Cancel_Verified</fullName>
+        <active>true</active>
+        <errorConditionFormula>$Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos; &amp;&amp;
+ISCHANGED( StageName ) &amp;&amp;
+ISPICKVAL( StageName, &apos;Closed Cancelled Verified&apos;)</errorConditionFormula>
+        <errorDisplayField>StageName</errorDisplayField>
+        <errorMessage>Only Operations users can change to Closed Cancelled Verified. Please ask Sales Operations to advance this stage.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>LID__Check_CompanyId_Value</fullName>
+        <active>true</active>
+        <description>Throws an exception message if the company id contains non-numerics</description>
+        <errorConditionFormula>AND(
+	(LID__LinkedIn_Company_Id__c &lt;&gt; NULL),
+	NOT(ISNUMBER(LID__LinkedIn_Company_Id__c))
+)</errorConditionFormula>
+        <errorDisplayField>LID__LinkedIn_Company_Id__c</errorDisplayField>
+        <errorMessage>CompanyId should be a numeric value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NNB_negative_when_Provisional_Cancel</fullName>
+        <active>true</active>
+        <description>Net New Business should be &lt; 0 when Stage is Provisional Cancel
+SPS-1697</description>
+        <errorConditionFormula>AND
+(
+    Net_New_Business__c &gt;=0, 
+    ISPICKVAL(StageName, &apos;Provisional Cancel&apos;)
+)</errorConditionFormula>
+        <errorMessage>Net New Business must be &lt; 0 when Stage is Provisional Cancel.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Ops_can_only_set_cancel_rel_at_closed</fullName>
+        <active>true</active>
+        <errorConditionFormula>$Profile.Name = &apos;Operations User&apos;
+&amp;&amp;
+ISCHANGED(Cancel_Relief__c)
+&amp;&amp;
+NOT(ISPICKVAL( StageName, &apos;Closed Cancelled Verified&apos;) || ISPICKVAL( StageName, &apos;Closed Cancelled&apos;))</errorConditionFormula>
+        <errorDisplayField>Cancel_Relief__c</errorDisplayField>
+        <errorMessage>Sales Ops can only set Cancel Relief at Closed Cancelled (Or Closed Cancelled Verified) stages.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Contracted_Value_When_NYSE_Valued</fullName>
+        <active>true</active>
+        <errorConditionFormula>( IsWon || IsClosed )
+&amp;&amp; NOT(ISPICKVAL(NYSE_Program_Tier__c , &apos;&apos;))
+&amp;&amp; ISBLANK(Non_Subsidized_Contracted_Value__c)</errorConditionFormula>
+        <errorMessage>Contracted Value required when NYSE Program Tier has a value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_LOB_When_Close_Win</fullName>
+        <active>true</active>
+        <errorConditionFormula>IsWon &amp;&amp;  IsClosed &amp;&amp; ISPICKVAL( LOB__c , &apos;&apos;) &amp;&amp; NOT( ISPICKVAL( Vertical__c , &apos;Other&apos; ) ) &amp;&amp; $Profile.Name &lt;&gt; &apos;System Administrator&apos;</errorConditionFormula>
+        <errorDisplayField>LOB__c</errorDisplayField>
+        <errorMessage>LOB required to close win this opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_NYSE_Program_Tier</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+    ISPICKVAL( StageName , &apos;Closed Won Verified&apos;)
+   ,NOT(ISBLANK( Non_Subsidized_Contracted_Value__c ))
+   ,ISPICKVAL( NYSE_Program_Tier__c , &apos;&apos;) 
+)</errorConditionFormula>
+        <errorMessage>NYSE Program Tier required when Contracted Value entered</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Renewal_Increment_to_Close_Win</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT($Permission.By_Pass_Opportunity_Validations ) &amp;&amp; ISPICKVAL(Renewal_Increment__c ,&apos;&apos;) &amp;&amp;  IsClosed &amp;&amp;  IsWon &amp;&amp;  No_of_Product_Add_Ons__c = 0</errorConditionFormula>
+        <errorDisplayField>Renewal_Increment__c</errorDisplayField>
+        <errorMessage>Renewal Increment required to close win this opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Sales_Ops_Owner_Close_Won_Verified</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(  StageName , &apos;Closed Won Verified&apos;)
+&amp;&amp; ISBLANK( Sales_Ops_Owner__c )</errorConditionFormula>
+        <errorDisplayField>Sales_Ops_Owner__c</errorDisplayField>
+        <errorMessage>Sales Ops Owner required when stage is Closed Won Verified</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_at_Least_One_Product</fullName>
+        <active>true</active>
+        <errorConditionFormula>IsClosed &amp;&amp; IsWon &amp;&amp; No_of_Opportunity_Products__c = 0</errorConditionFormula>
+        <errorMessage>At least one opportunity product required to close win this opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Description</fullName>
+        <active>true</active>
+        <errorConditionFormula>Record_Type_Name__c != &quot;Budget&quot; &amp;&amp; ISNEW() &amp;&amp; ISBLANK(Description) &amp;&amp;  $Profile.Name != &quot;System Administrator&quot; &amp;&amp; $Profile.Name != &quot;Operations User&quot; &amp;&amp; (CONTAINS(Owner.UserRole.Name, &quot;GMG&quot;) || CONTAINS(Owner.UserRole.Name, &quot;Buyside&quot;))</errorConditionFormula>
+        <errorDisplayField>Description</errorDisplayField>
+        <errorMessage>GMG Opportunities require a Description to be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Next_Step</fullName>
+        <active>true</active>
+        <errorConditionFormula>(
+(ISNEW() &amp;&amp; ISBLANK(NextStep)) 
+|| 
+(NOT(ISNEW()) &amp;&amp; 
+ISCHANGED(StageName) &amp;&amp; 
+(ISBLANK(NextStep) || NOT(ISCHANGED(NextStep))))
+) 
+&amp;&amp; 
+Record_Type_Name__c != &quot;Budget&quot; &amp;&amp; 
+$Profile.Name != &quot;System Administrator&quot; &amp;&amp; 
+$Profile.Name != &quot;Operations User&quot; &amp;&amp; 
+(CONTAINS(Owner.UserRole.Name, &quot;GMG&quot;) || CONTAINS(Owner.UserRole.Name, &quot;Buyside&quot;))</errorConditionFormula>
+        <errorDisplayField>NextStep</errorDisplayField>
+        <errorMessage>GMG Opportunities require the &quot;Next Step&quot; to be entered and it must be different from the previous value when changing the stage.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Revenue_Type_Validation_For_Subscription</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( Text(Revenue_Type__c) = &apos;Subscription&apos;,  No_of_Opportunity_Products__c &gt; 0,  No_of_Opportunity_Products_with_PROJ__c &gt; 0,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;)</errorConditionFormula>
+        <errorDisplayField>Revenue_Type__c</errorDisplayField>
+        <errorMessage>Cannot choose Subscription. Opportunity has/have Product(s) with Product Revenue Type PROJ</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Revenue_Type_Validation_Project</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( Text(Revenue_Type__c) = &apos;Project&apos;,  No_of_Opportunity_Products__c &gt; 0,  No_of_Opportunity_Products__c &lt;&gt;  No_of_Opportunity_Products_with_PROJ__c,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos; )</errorConditionFormula>
+        <errorDisplayField>Revenue_Type__c</errorDisplayField>
+        <errorMessage>Cannot choose Project. Opportunity has/have Product(s) with Product Revenue Type ACV, ACV/TRANS</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_AnnounceDeal_ConfidentialDeal</fullName>
+        <active>true</active>
+        <errorConditionFormula>Announce_Deal__c &amp;&amp;  Confidential_Announcement__c</errorConditionFormula>
+        <errorMessage>Please select either Announce Deal or Confidential Announcement</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Add_Contract</fullName>
+        <availability>online</availability>
+        <description>Creates new contract and associates contract to opportunity</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Add Contract</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)}
+
+// Constants
+var CONTRACT_OWNERID = &apos;00Gj0000000a8t4EAA&apos;;
+
+// Check for pre-existing contract
+if({!NOT(ISBLANK( Opportunity.Contract__c ))}) {
+    alert(&apos;{!$Label.Add_Contract_Contract_Already_Exists}&apos;);
+
+// Prompt for contract creation
+} else {
+
+    // Query database to both get the opportunity record type name and get an opportunity record to update
+    result = sforce.connection.query(&quot;SELECT Id, Contract__c, RecordType.Name FROM Opportunity WHERE Opportunity.Id = &apos;{!Opportunity.Id}&apos;&quot;);
+
+    // Query Account name since opportunity.Account has the issue with single quote
+    resultAcc = sforce.connection.query(&quot;SELECT Id, Contract__c, Account.Name FROM Opportunity WHERE Opportunity.Id = &apos;{!Opportunity.Id}&apos;&quot;);
+
+    // If query successful, create contract record with pre-populated fields
+    if(result.getArray(&quot;records&quot;).length == 1) {
+        var oppty        = result.getArray(&quot;records&quot;)[0];
+        var opptyWithAcc = resultAcc.getArray(&quot;records&quot;)[0];
+        var cont         = new sforce.SObject(&apos;Contract__c&apos;);
+        var newName      = (oppty.RecordType.Name == &apos;New Business&apos;) ? &apos;New &apos; : &apos;&apos;;
+
+        // Truncate name to 80 characters to accommodate the 80-char field length
+        cont.Name        = {!JSENCODE(&apos;opptyWithAcc.Account.Name&apos;)} + &apos; &apos; + &apos;{!Opportunity.Product_Bundle__c} &apos; + newName + &apos;{!YEAR(TODAY())}&apos;;
+        cont.Name        = cont.Name.substring(0, 80);
+
+        cont.OwnerId     = CONTRACT_OWNERID;
+        cont.Billing_Account__c = &apos;{! Opportunity.AccountId }&apos;;
+        cont.Account__c  = &apos;{!Opportunity.AccountId}&apos;;
+        result           = sforce.connection.create([cont]);
+
+        // If contract created, update opportunity with lookup to new contract record
+        if(result[0].success == &apos;true&apos;) {
+            cont.Id = result[0].id;
+            oppty.Contract__c = cont.Id;
+            delete oppty[&quot;RecordType&quot;];
+            result = sforce.connection.update([oppty]);
+
+            // If opportunity updated, redirect to contract edit page with a return URL to opportunity
+            if(result[0].success == &apos;true&apos;) {
+                window.location.href = &apos;/&apos; + cont.Id + &apos;/e?retURL=&apos; + &quot;{!URLENCODE(&apos;/&apos;)}&quot; + cont.Id;
+
+            // Error updating opportunity
+            } else {
+                alert(&apos;{!$Label.Add_Contract_Error_Update_Oppty}&apos; + &apos;\n\n&apos; + result[0].errors.message);
+            }
+
+        // Error creating contract
+        } else {
+            alert(&apos;{!$Label.Add_Contract_Error_Creating_Contract}&apos; + &apos;\n\n&apos; + result[0].errors.message);
+        }
+
+    // Error querying database for opportunity record
+    } else {
+        alert(&apos;{!$Label.Add_Contract_Error_Query_Database}&apos;);
+    }
+}</url>
+    </webLinks>
+</CustomObject>

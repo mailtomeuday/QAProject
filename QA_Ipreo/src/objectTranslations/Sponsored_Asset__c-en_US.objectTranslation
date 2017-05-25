@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sponsored Asset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sponsored Assets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Sponsored Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Name (Marketo) --></label>
+        <name>Asset_Name_Marketo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Name --></label>
+        <name>Asset_Name__c</name>
+        <relationshipLabel><!-- Sponsored Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DM Name --></label>
+        <name>DM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shareholder ID (project) --></label>
+        <name>Shareholder_ID_project__c</name>
+    </fields>
+    <layouts>
+        <layout>Sponsored Asset Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

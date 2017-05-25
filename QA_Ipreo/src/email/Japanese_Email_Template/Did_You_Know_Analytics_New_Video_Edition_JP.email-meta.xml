@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Did You Know? Analytics New Video Edition- JP</name>
+    <style>none</style>
+    <subject>Did You Know? New Video Edition</subject>
+    <textOnly>DID YOU KNOW? New Video Edition!
+
+Have you ever wanted to see in one visual how an institution’s ownership in your company stacks up relative to a peer, or multiple peers?
+
+Did You Know now you can compare ownership activity in multiple securities simultaneously with just a few clicks?
+Watch this Quick Video to learn more!
+
+For further information or training, please contact your dedicated Account Manager
+or 24/7 client support at: callmenowIR@ipreo.com or the telephone numbers below:
+
+US: 1-800-305-0819 | Europe: +44 (0) 20 7665 9820 | APAC: +852 58082616
+
+Copyright © 2016. Ipreo. All rights Reserved</textOnly>
+    <type>custom</type>
+</EmailTemplate>

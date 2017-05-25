@@ -1,0 +1,44 @@
+<apex:page standardController="Asset" extensions="GS_SponsoredUserAssetsController">
+    <apex:includeScript value="{!$Resource.jQuery}" />
+    <script>
+        function refreshUserList(input){
+            if(input.checked){
+                window.setTimeout(refreshSponUserList);
+            }
+            else{
+                window.setTimeout(refreshAllUserList);
+            }
+            
+        }
+
+
+    </script>
+    
+    <apex:pageBlock >
+
+        <apex:form >
+            <apex:actionFunction name="refreshSponUserList" action="{!querySponsoredUserAssets}" reRender="userList" status="myStatus"/>
+            <apex:actionFunction name="refreshAllUserList" action="{!queryAllUserAssets}" reRender="userList" status="myStatus" />
+        </apex:form>
+
+
+        <apex:form >
+            <!-- <input type="checkbox"  value="Click me" onclick="refreshUserList(this)" /> Show Sponsored User Assets&nbsp; -->
+            
+            <apex:outputPanel id="userList" >
+
+                <apex:actionStatus startText="(requesting...)" id="myStatus" />
+
+                <apex:pageblockTable value="{!UserAsset}" var="o" style="width:100%">
+                    <apex:column value="{!o.Asset__r.Name}" />
+                    <apex:column value="{!o.User__r.Account.Name}" />
+                    <apex:column value="{!o.User__r.LastName}" />
+                    <apex:column value="{!o.User__r.FirstName}" />
+                    <apex:column value="{!o.Role__c}" />
+                    <apex:column value="{!o.Active__c}" />
+                    <!-- <apex:column value="{!o.Is_Sponsored_User__c}" /> -->
+                </apex:pageblockTable>
+            </apex:outputPanel>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

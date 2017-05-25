@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Work_Order__c.Status__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CUST_OWNER_ALIAS</column>
+            <operator>equals</operator>
+            <value>Provision - Corporate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Work_Order__c.Status__c</column>
+            <operator>notContain</operator>
+            <value>closed,Closed - Live,Closed - Not Live,In Process,Closed - Provisioned,Closed - Not Provisioned,Closed - Completed,Closed - Not Completed,Closed - Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Work_Order__c.Product_Region__c</column>
+            <operator>equals</operator>
+            <value>APAC,JAPAN</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>APAC- W/O - Open &amp; Unassigned</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Work_Order__c@Work_Order__c.Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

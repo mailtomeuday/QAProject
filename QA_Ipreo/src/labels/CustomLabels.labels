@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Add_Contract_Confirm</fullName>
+        <categories>confirm, add contract, contract</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Contract Confirm</shortDescription>
+        <value>Add contract?</value>
+    </labels>
+    <labels>
+        <fullName>Add_Contract_Contract_Already_Exists</fullName>
+        <categories>error, add contract, contract, exists</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Contract Contract Already Exists</shortDescription>
+        <value>Contract already exists</value>
+    </labels>
+    <labels>
+        <fullName>Add_Contract_Error_Creating_Contract</fullName>
+        <categories>error, add contract, create, contract</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Contract Error Creating Contract</shortDescription>
+        <value>There was an error creating the contract record.  Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Add_Contract_Error_Query_Database</fullName>
+        <categories>error, add contract, query, database</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Contract Error Querying Database</shortDescription>
+        <value>There was an error querying the database.  Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Add_Contract_Error_Update_Oppty</fullName>
+        <categories>error, add contract, opportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Contract Error Updating Opportunity</shortDescription>
+        <value>There was an error updating this opportunity with a link to the new contract.  Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Batch_Size</fullName>
+        <categories>GS_AccountTeamMemberBatchScheduleJob</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Batch Size</shortDescription>
+        <value>80</value>
+    </labels>
+    <labels>
+        <fullName>Check_Account_Deleting_Operator</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Check Account Deleting Operator</shortDescription>
+        <value>Only system administrator can delete account.</value>
+    </labels>
+    <labels>
+        <fullName>Check_Contact_Deleting_Operator</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Check Contact Deleting Operator</shortDescription>
+        <value>Only system administrator and operation user can delete contact.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Admin_Error</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Admin Error</shortDescription>
+        <value>Please contact administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Assign_User_Err</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Assign User Err</shortDescription>
+        <value>Please select the user from the account of the asset, the account of sponsored user or the consulting company.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Cannot_Create_Duplicate_User_Assets</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Cannot Create Duplicate User Assets</shortDescription>
+        <value>Can not create duplicate user assets.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Cannot_Locate_an_Individual_Foot</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Cannot Locate an Individual Foot</shortDescription>
+        <value>. Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Cannot_Locate_an_Individual_Head</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Cannot Locate an Individual Head</shortDescription>
+        <value>Cannot locate an user for selected name</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Cannot_locate_an_alert_group_foot</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Cannot locate an alert group foot</shortDescription>
+        <value>.  Please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Cannot_locate_an_alert_group_head</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Cannot locate an alert group head</shortDescription>
+        <value>Cannot locate an alert group for selected value</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Case_Has_Not_Been_Closed</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Case Has Not Been Closed</shortDescription>
+        <value>You can only reopen a closed case.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Coterminous_Sub_End_Date_Est_Comp_Date</fullName>
+        <categories>Apex Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Coterminous Subscription End or Estimated Completion Date</shortDescription>
+        <value>All subscription end dates or Est. completion dates must be coterminous</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Coterminous_Subscription_End_Date</fullName>
+        <categories>Apex Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Coterminous Subscription End Date</shortDescription>
+        <value>All subscription end dates must be coterminous</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Duplicate_Sponsored_Assets</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Duplicate Sponsored Assets</shortDescription>
+        <value>Cannot Create Duplicate Sponsored Assets.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Invalid_Country</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Invalid Country</shortDescription>
+        <value>The country value you have entered does not match any value on the Ipreo standard list of countries. To see what values Ipreo allows, please navigate to the document section and the standard list folder and click on the country standard list. If you have trouble finding the list, please ask support for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Locate_Account_Error</fullName>
+        <categories>Apex Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Locate Account Error</shortDescription>
+        <value>Cannot locate account for account team alert</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Multiple_Nulls_Subscription_End_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Multiple Nulls Subscription End Date</shortDescription>
+        <value>Multi-Product Opportunities are for subscription Products, only. Before setting Status to Won, enter coterminous Subscription End Date for ALL Opportunity Products.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Multiple_Nulls_Subscription_End_Date_Est_Comp_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Multiple Nulls Subscription End Date Or Est Completion Date</shortDescription>
+        <value>Multi-Product Opportunities are for subscription Products, only. Before setting Status to Won, enter coterminous Subscription End Date or Est. Completion Date for ALL Opportunity Products.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_No_Member_on_Account_Team</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg No Member on Account Team</shortDescription>
+        <value>Account has no members on the Account Team</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Req_Opportunity_Contact_Role</fullName>
+        <categories>Apex error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg Req Opportunity Contact Role</shortDescription>
+        <value>At least one contact role required on the Opportunity to enter this sales stage.</value>
+    </labels>
+    <labels>
+        <fullName>Page_Size</fullName>
+        <categories>Pagination</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Page Size</shortDescription>
+        <value>200</value>
+    </labels>
+</CustomLabels>

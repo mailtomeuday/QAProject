@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Work_Order__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Work_Order__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>Work_Order__c.Product_Region__c</field>
+    </columns>
+    <columns>
+        <field>Work_Order__c.ACpV__c</field>
+    </columns>
+    <columns>
+        <field>Work_Order__c.Est_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Work_Order__c.Est_Completion_Date__c</field>
+    </columns>
+    <columns>
+        <field>Work_Order__c.Completion_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Opportunity.Product_Bundle__c</field>
+    </columns>
+    <columns>
+        <field>FK_OPP_STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Opportunity.Opportunity_Identifier__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All closed opportunities with open work orders estimated to complete in the next 30 days</description>
+    <filter>
+        <criteriaItems>
+            <column>Work_Order__c.Status__c</column>
+            <operator>equals</operator>
+            <value>Open,Project Planning,Requirements Gathering,Development,UAT Set Up,UAT,In Process</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Closed Opps &amp; Open Work Orders Due Nxt30</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Work_Order__c@Work_Order__c.Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Work_Order__c.Est_Completion_Date__c</dateColumn>
+        <interval>INTERVAL_NEXT30</interval>
+    </timeFrameFilter>
+</Report>

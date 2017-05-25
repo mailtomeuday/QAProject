@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SFDC_TEST</letterhead>
+    <name>DYK Sample Template- DR Insight II</name>
+    <style>freeForm</style>
+    <subject>DYK Sample Template- DR Insight</subject>
+    <textOnly>Goal Tracker
+
+
+Did you know that BNY Mellon’s 2015 Global Trends in Investor Relations Study covering over 500 companies found that over the past five years companies have placed increasing importance on both qualitative and quantitative metrics in evaluating overall IR performance? In 2015, 59% of companies tied IR professionals’ remuneration to some measure of IR activities. Click here to view the study. For many of our IR Clients, setting and tracking goals around investment community interactions is becoming an essential KPI. To help our clients’ measure success against key goals, Ipreo has created a simple and easy-to-use tool called Goal Tracker!
+
+
+The Goal Tracker allows you to set quantitative goals against current or prospective shareholders. Additionally, the Goal Tracker can be employed to track your internal goals for Management and IR interaction with the investment community. As you enter meetings in your proprietary CRM the Goal Tracker automatically updates your goals, allowing you to monitor and report on your progress in real time. At a glance, this organizational tool will help keep you informed on how far you’ve come, and how far you need to go to achieve the goals you set forth for your team throughout the year.
+
+Click here to access a Quick Guide that will help familiarize you with the Goal Tracker feature. Please contact your dedicated Account Manager to receive a more personalized consultation on how to leverage this feature to help achieve and track your goals moving forward.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For further information or training, please contact your dedicated Account Manager
+or 24/7 client support by clicking here or the telephone numbers below:
+
+US: 1-800-305-0819 | Europe: +44 (0) 20 7665 9820 | APAC: +852 58082615
+
+https://www.adrbnymellon.com/dr_disclaimer.htm
+
+
+Copyright © 2016. All rights Reserved</textOnly>
+    <type>html</type>
+</EmailTemplate>

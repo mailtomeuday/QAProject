@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Work Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Work Orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACV --></label>
+        <name>ACV__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACpV --></label>
+        <name>ACpV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acceptance Date --></label>
+        <name>Acceptance_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Vertical --></label>
+        <name>Account_Vertical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active Need to Be Updated --></label>
+        <name>Active_Need_to_Be_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Allocated (Secondary PM) --></label>
+        <name>Allocated_Secondary_PM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analyst Team Lead --></label>
+        <name>Analyst_Team_Lead__c</name>
+        <relationshipLabel><!-- Work Orders (Analyst Team Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Annual Pass Through --></label>
+        <name>Annual_Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Populated Active Status --></label>
+        <name>Auto_Populated_Active_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Accreditation</masterLabel>
+            <translation><!-- Accreditation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Clean-up</masterLabel>
+            <translation><!-- Data Clean-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Extract</masterLabel>
+            <translation><!-- Data Extract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Load</masterLabel>
+            <translation><!-- Data Load --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Mapping</masterLabel>
+            <translation><!-- Data Mapping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feeds (BD)</masterLabel>
+            <translation><!-- Feeds (BD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrations (changes)</masterLabel>
+            <translation><!-- Integrations (changes) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrations (new)</masterLabel>
+            <translation><!-- Integrations (new) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migration</masterLabel>
+            <translation><!-- Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Implementation</masterLabel>
+            <translation><!-- New Implementation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports (changes)</masterLabel>
+            <translation><!-- Reports (changes) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports (new)</masterLabel>
+            <translation><!-- Reports (new) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAM</masterLabel>
+            <translation><!-- TAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client RAG Comments --></label>
+        <name>Client_RAG_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client RAG --></label>
+        <name>Client_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Success Analyst --></label>
+        <name>Client_Success_Analyst__c</name>
+        <relationshipLabel><!-- Work Orders (Client Success Analyst) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- % Complete --></label>
+        <name>Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Date --></label>
+        <name>Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current % Allocated --></label>
+        <name>Current_Allocated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Est. Project Completion Date --></label>
+        <name>Current_Est_Project_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DM Name --></label>
+        <name>DM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Region --></label>
+        <name>Data_Region__c</name>
+        <picklistValues>
+            <masterLabel>AMER</masterLabel>
+            <translation><!-- AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dataset --></label>
+        <name>Dataset__c</name>
+        <picklistValues>
+            <masterLabel>Contacts</masterLabel>
+            <translation><!-- Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Debt Issue Size --></label>
+        <name>Debt_Issue_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Annual Transaction Fees --></label>
+        <name>Est_Annual_Transaction_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Completion Date --></label>
+        <name>Est_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Start Date --></label>
+        <name>Est_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Allocation % --></label>
+        <name>Expected_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Cap --></label>
+        <name>Expense_Cap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expenses Description --></label>
+        <name>Expenses_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expenses --></label>
+        <name>Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Product Code --></label>
+        <name>Finance_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Period (months) --></label>
+        <name>Free_Period_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Est. Project Completion Date --></label>
+        <name>Initial_Est_Project_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed --></label>
+        <name>Is_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mail sent already --></label>
+        <name>Is_Mail_sent_already__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link --></label>
+        <name>Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net New Business --></label>
+        <name>Net_New_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Calls --></label>
+        <name>No_of_Calls__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Conferences --></label>
+        <name>No_of_Conferences__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Deals --></label>
+        <name>No_of_Deals__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Meetings --></label>
+        <name>No_of_Meetings__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Questions --></label>
+        <name>No_of_Questions__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Reports --></label>
+        <name>No_of_Reports__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Users --></help>
+        <label><!-- No. of Users --></label>
+        <name>No_of_Users__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Overall RAG Comments --></label>
+        <name>Overall_RAG_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall RAG --></label>
+        <name>Overall_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Account Manager --></label>
+        <name>Primary_Account_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Analyst --></label>
+        <name>Primary_Analyst__c</name>
+        <relationshipLabel><!-- Work Orders (Primary Analyst) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Sales Rep --></label>
+        <name>Primary_Sales_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Year ACpV --></label>
+        <name>Prior_Year_ACpV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Year Pass Through --></label>
+        <name>Prior_Year_Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>1- Very High</masterLabel>
+            <translation><!-- 1- Very High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2- High</masterLabel>
+            <translation><!-- 2- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3- Medium</masterLabel>
+            <translation><!-- 3- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4- Low</masterLabel>
+            <translation><!-- 4- Low --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Comments --></label>
+        <name>Product_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Region --></label>
+        <name>Product_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAPAN</masterLabel>
+            <translation><!-- JAPAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATAM</masterLabel>
+            <translation><!-- LATAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Revenue Type --></label>
+        <name>Product_Revenue_Type__c</name>
+        <picklistValues>
+            <masterLabel>ACV</masterLabel>
+            <translation><!-- ACV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACV/TRANS</masterLabel>
+            <translation><!-- ACV/TRANS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROJ</masterLabel>
+            <translation><!-- PROJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANS</masterLabel>
+            <translation><!-- TRANS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Transaction Type --></label>
+        <name>Product_Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add On</masterLabel>
+            <translation><!-- Add On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Business</masterLabel>
+            <translation><!-- New Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upsell</masterLabel>
+            <translation><!-- Upsell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Vertical --></label>
+        <name>Product_Vertical__c</name>
+        <picklistValues>
+            <masterLabel>Capital Markets</masterLabel>
+            <translation><!-- Capital Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RS&amp;T</masterLabel>
+            <translation><!-- RS&amp;T --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Manager --></label>
+        <name>Professional_Services_Manager__c</name>
+        <relationshipLabel><!-- Work Orders (Project Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Description --></label>
+        <name>Project_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Start Date --></label>
+        <name>Project_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Partner --></label>
+        <name>Referral_Partner__c</name>
+        <picklistValues>
+            <masterLabel>Artemis IR</masterLabel>
+            <translation><!-- Artemis IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackstone</masterLabel>
+            <translation><!-- Blackstone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brunswick</masterLabel>
+            <translation><!-- Brunswick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christensen IR</masterLabel>
+            <translation><!-- Christensen IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Citi DR</masterLabel>
+            <translation><!-- Citi DR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Citigate DR</masterLabel>
+            <translation><!-- Citigate DR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College Hill</masterLabel>
+            <translation><!-- College Hill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daiwa IR</masterLabel>
+            <translation><!-- Daiwa IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deutsche DR</masterLabel>
+            <translation><!-- Deutsche DR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goldman Sachs</masterLabel>
+            <translation><!-- Goldman Sachs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investis</masterLabel>
+            <translation><!-- Investis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JPM DR</masterLabel>
+            <translation><!-- JPM DR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mitsubishi Securities</masterLabel>
+            <translation><!-- Mitsubishi Securities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NYSE</masterLabel>
+            <translation><!-- NYSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nomura IR</masterLabel>
+            <translation><!-- Nomura IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Exchange</masterLabel>
+            <translation><!-- Open Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q4 Websystems</masterLabel>
+            <translation><!-- Q4 Websystems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registrar</masterLabel>
+            <translation><!-- Registrar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMTB</masterLabel>
+            <translation><!-- SMTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SNL Financial</masterLabel>
+            <translation><!-- SNL Financial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santander</masterLabel>
+            <translation><!-- Santander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Takara Printing</masterLabel>
+            <translation><!-- Takara Printing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requires Implementation (UAT) --></label>
+        <name>Requires_Implementation_UAT__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep --></label>
+        <name>Sales_Rep__c</name>
+        <relationshipLabel><!-- Work Orders (Sales Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scope RAG Comments --></label>
+        <name>Scope_RAG_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scope RAG --></label>
+        <name>Scope_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secondary Account Manager --></label>
+        <name>Secondary_Account_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Analyst --></label>
+        <name>Secondary_Analyst__c</name>
+        <relationshipLabel><!-- Work Orders (Secondary Analyst) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary Sales Rep --></label>
+        <name>Secondary_Sales_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site License --></label>
+        <name>Site_License__c</name>
+        <picklistValues>
+            <masterLabel>AMER</masterLabel>
+            <translation><!-- AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed - Cancelled</masterLabel>
+            <translation><!-- Closed - Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Completed</masterLabel>
+            <translation><!-- Closed - Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Live</masterLabel>
+            <translation><!-- Closed - Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Not Completed</masterLabel>
+            <translation><!-- Closed - Not Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Not Live</masterLabel>
+            <translation><!-- Closed - Not Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Not Provisioned</masterLabel>
+            <translation><!-- Closed - Not Provisioned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Provisioned</masterLabel>
+            <translation><!-- Closed - Provisioned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process</masterLabel>
+            <translation><!-- In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live (Project Still Open)</masterLabel>
+            <translation><!-- Live (Project Still Open) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Planning</masterLabel>
+            <translation><!-- Project Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requirements Gathering</masterLabel>
+            <translation><!-- Requirements Gathering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT</masterLabel>
+            <translation><!-- UAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT Accepted</masterLabel>
+            <translation><!-- UAT Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT Set Up</masterLabel>
+            <translation><!-- UAT Set Up --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subgroup --></label>
+        <name>Subgroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription End Date --></label>
+        <name>Subscription_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Start Date --></label>
+        <name>Subscription_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCpV --></label>
+        <name>TCpV__c</name>
+    </fields>
+    <fields>
+        <label><!-- T+1Mo Allocation % --></label>
+        <name>T_1Mo_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- T+2Mo Allocation % --></label>
+        <name>T_2Mo_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Lead --></label>
+        <name>Technical_Lead__c</name>
+        <relationshipLabel><!-- Work Orders (Technical Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Term (months) --></label>
+        <name>Term_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timeline RAG Comments --></label>
+        <name>Timeline_RAG_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timeline RAG --></label>
+        <name>Timeline_RAG__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upfront Expense Fee --></label>
+        <name>Upfront_Expense_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Effort (Days) --></label>
+        <name>Work_Effort_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Comments --></label>
+        <name>Work_Order_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Number --></label>
+        <name>Work_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Queue --></label>
+        <name>Work_Order_Queue__c</name>
+    </fields>
+    <layouts>
+        <layout>Implementation Work Order Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Information --></label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Comments --></label>
+            <section>Product Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Configuration --></label>
+            <section>Product Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Implementation Details --></label>
+            <section>Project Implementation Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Work Order Management --></label>
+            <section>Work Order Management</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WO Implementation Service and Chatter</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Information --></label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Comments --></label>
+            <section>Product Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Configuration --></label>
+            <section>Product Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Implementation Details --></label>
+            <section>Project Implementation Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Work Order Management --></label>
+            <section>Work Order Management</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WO Manually Created</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Information --></label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Comments --></label>
+            <section>Product Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Configuration --></label>
+            <section>Product Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Project Implementation Details --></label>
+            <section>Project Implementation Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Work Order Management --></label>
+            <section>Work Order Management</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Order Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Information --></label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Comments --></label>
+            <section>Product Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Configuration --></label>
+            <section>Product Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Work Order Management --></label>
+            <section>Work Order Management</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Work Order Page Layout for Service and Chatter Users</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Information --></label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Comments --></label>
+            <section>Product Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Configuration --></label>
+            <section>Product Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Work Order Management --></label>
+            <section>Work Order Management</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Analytics --></label>
+        <name>Analytics</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cancellation --></label>
+        <name>Cancellation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Implementation --></label>
+        <name>Implementation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Implementation (manually added Work Order) --></label>
+        <name>Implementation_Manual</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Provision --></label>
+        <name>Provision</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Acceptance Date is required when Status is UAT Accepted, Live (Project Still Open) or Closed – Live. --></errorMessage>
+        <name>Acceptance_Date_req_when_Status_is_selec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Acceptance Date should be entered only when Status is UAT Accepted, Live (not yet closed) or Closed - Live. --></errorMessage>
+        <name>Acceptance_Dte_notreq_when_Status_is_sel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completion Date cannot be modified on a closed Work Order.  Please contact the System Administrator to change the Completion Date. --></errorMessage>
+        <name>Cannot_Change_CompletionDate_When_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status cannot be modified on a closed Work Order.  Please contact the System Administrator to change the Status. --></errorMessage>
+        <name>Cannot_Change_Status_When_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can not close a work order which is not owned by you. --></errorMessage>
+        <name>Cannot_Close_Others_WO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Acceptance Date cannot be changed --></errorMessage>
+        <name>Cannot_change_Acceptance_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Initial Est. Project Completion Date should be after Project Start Date --></errorMessage>
+        <name>Check_InitEstCompDate_ProjectDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Estimated Completion Date cannot be in the past. --></errorMessage>
+        <name>Est_Completion_Date_Cannot_Be_Past_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- RAG Comments are required when any of the RAG Status is &apos;Red&apos; or &apos;Amber&apos; --></errorMessage>
+        <name>RAG_Comments_are_req_if_RAG_status_is_se</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Category required when status is Closed - Live. --></errorMessage>
+        <name>Req_Category_When_Closed_Live</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completion Date required when status is Closed. --></errorMessage>
+        <name>Req_CompletionDate_When_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completion Date required when status is Closed - Completed. --></errorMessage>
+        <name>Req_CompletionDate_When_Closed_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completion Date required when status is Closed - Live. --></errorMessage>
+        <name>Req_CompletionDate_When_Closed_Live</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completion Date required when status is Closed - Provisioned. --></errorMessage>
+        <name>Req_CompletionDate_When_Closed_Provision</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Subscription Start Date required when status is Closed and Product Revenue Type is not PROJ. If you do not have edit access to the field, please contact Sales Operations for assistance. --></errorMessage>
+        <name>Req_SubscriptionStartDate_When_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Work Effort (Days) required when status is Closed - Live. --></errorMessage>
+        <name>Req_WorkEffort_When_Closed_Live</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Primary Analyst required to Close Project Related Work Orders --></errorMessage>
+        <name>Reqd_Prim_Analyst_Close_Project_WO</name>
+    </validationRules>
+</CustomObjectTranslation>

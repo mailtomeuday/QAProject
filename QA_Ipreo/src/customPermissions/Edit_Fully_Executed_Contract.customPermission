@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used in a Contract object validation rule disallowing users from editing contracts unless they have this privilege.  This custom permission is necessary because it will be assigned to permission sets, and validation rules cannot reference permission sets.</description>
+    <label>Edit Fully Executed Contract</label>
+</CustomPermission>

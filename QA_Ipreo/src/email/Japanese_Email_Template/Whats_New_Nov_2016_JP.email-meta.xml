@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>Shift_JIS</encodingKey>
+    <letterhead>Whats_New_10_Oct_16</letterhead>
+    <name>Whats New Nov 2016-JP</name>
+    <style>freeForm</style>
+    <subject>新機能リリースのお知らせ</subject>
+    <type>html</type>
+</EmailTemplate>

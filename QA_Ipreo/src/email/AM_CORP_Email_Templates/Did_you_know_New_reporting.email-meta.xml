@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Did you know? New reporting- Rita</name>
+    <style>none</style>
+    <subject>Did you know? New reporting Interface</subject>
+    <textOnly>New Reporting Interface
+
+
+Ipreo has rolled out a new user interface for Reporting in BD Corporate. The sleek, modern design offers a more intuitive, user-friendly workflow for generating pre-formatted reports in BD Corporate.
+
+
+The new Reporting pages provide additional features to streamline your workflow as well. You can now tag the reports you use the most as Favorites for easy access in the future. We’ve also made it easier to save your reporting projects so that you can create your reports in advance of the Event and edit them as the schedule changes. Rather than waiting until the last minute to put your report together, you can have the saved report ready to go and run it before the meeting with the latest data!
+
+
+Reports are now compatible with Internet Explorer 11, Firefox, and Google Chrome.
+
+
+I look forward to helping you become more familiar with the new Reporting interface in BD Corporate! Click here to access a Quick Guide that provides a brief overview on how to utilize this new platform. As always, please feel free to contact your Dedicated Account Manager for a more personalized consultation.
+
+
+
+Rita Wong
+Team Lead, APAC
+rita.wong@ipreo.com
++852 3742 1057
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For further information or training, please contact your dedicated Account Manager
+or 24/7 client support at: callmenowir@ipreo.com or the telephone numbers below:
+
+US: 1-800-305-0819 | Europe: +44 (0) 20 7665 9820 | APAC: +852 58082616
+
+Copyright © 2016. Ipreo. All rights Reserved</textOnly>
+    <type>custom</type>
+</EmailTemplate>

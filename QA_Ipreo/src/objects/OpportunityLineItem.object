@@ -1,0 +1,2088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Mobile_Opportunity_Product</fullName>
+        <fields>Product2Id</fields>
+        <fields>Account__c</fields>
+        <fields>ACpV__c</fields>
+        <fields>UnitPrice</fields>
+        <label>Mobile Opportunity Product</label>
+    </compactLayouts>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ACpV__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Annual Contracted Product Value - the Product level breakout for Annual Contracted Value (ACV).</inlineHelpText>
+        <label>ACpV</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Facilitates Opportunity Product.Asset lookup filter. Maintained through trigger.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Opportunity Product</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Annual_Pass_Through__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For products where part of the amount paid by the customer is &quot;passed through&quot; to a third party, such as Factset Workstation, this is the portion of the ACpV (current year amount) that is passed through and not kept by Ipreo.</inlineHelpText>
+        <label>Annual Pass Through</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Apply_NYSE_Subsidy__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For customers purchasing products that are being subsidized by the NYSE, this allows selective application of the subsidy to specific products.  Defaults to &apos;no&apos;.  Select &apos;yes&apos; in order to apply subsidy to the Opportunity Product.</inlineHelpText>
+        <label>Apply NYSE Subsidy?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Asset associated with Opportunity</description>
+        <externalId>false</externalId>
+        <label>Asset</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Asset.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Account__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Asset.Product2Id</field>
+                <operation>equals</operation>
+                <valueField>$Source.Product__c</valueField>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Opportunity Products</relationshipLabel>
+        <relationshipName>Opportunity_Products</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Backlog_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Backlog__c, 
+	IF(ISPICKVAL(Opportunity.ForecastCategoryName, &quot;Projected&quot;), Subscription_Start_Date__c - TODAY(), Subscription_Start_Date__c -  Revenue_Recognition_Date__c), 
+	NULL
+)</formula>
+        <label>Backlog Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Backlog__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Product_Transaction_Type__c, &quot;Renewal&quot;) &amp;&amp; Subscription_Start_Date__c &lt; DATE(YEAR(TODAY()), MONTH(TODAY()), 01), TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Backlog</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Backup_Opportunity_Product_Id__c</fullName>
+        <description>This field is used to get Id in report. For SPS-580 data fix. Delete this field after the data fix.</description>
+        <externalId>false</externalId>
+        <formula>Id</formula>
+        <label>Backup Opportunity Product Id</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cancel_Comment__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Required if product is Lost/Cancelled/Downtick</inlineHelpText>
+        <label>Lost/Cancelled/Downtick Comment</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Competitor_Incumbent__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For Products that are &quot;Won&quot;, the Competitor or Incumbent from which we took the customer&apos;s business.  For  Products that are &quot;Lost&quot; or are &quot;Cancelled&quot;, the Competitor or Incumbent to which we lost the customer&apos;s business.</inlineHelpText>
+        <label>Competitor/Incumbent</label>
+        <picklist>
+            <controllingField>Product_Vertical__c</controllingField>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+                <controllingFieldValues>GMG</controllingFieldValues>
+                <controllingFieldValues>PCS</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IPO</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+                <controllingFieldValues>GMG</controllingFieldValues>
+                <controllingFieldValues>PCS</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Analec</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ansarada</fullName>
+                <default>false</default>
+                <controllingFieldValues>PCS</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Asbet</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bloomberg</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BlueMatrix</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Boudica</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CapIQ</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CEB</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Citrix</fullName>
+                <default>false</default>
+                <controllingFieldValues>PCS</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cmi2i</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Computershare</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dealogic</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deal RoadShow</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DebtX</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DF King</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dynamics</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance Adjustment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Firmex</fullName>
+                <default>false</default>
+                <controllingFieldValues>PCS</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>iLevel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intralinks</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+                <controllingFieldValues>PCS</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investor Networks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IR Japan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>J-IRIS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JSS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Markit®</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Merrill Corporation</fullName>
+                <default>false</default>
+                <controllingFieldValues>PCS</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Modular Finance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MZ Ilios</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Napa</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nasdaq</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NetRoadShow</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NextJ</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Orient Capital</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oxford Intelligence Partners</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PitchBook</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preqin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Q4</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RD:IR</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rivel</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RR Donnelley - Venue</fullName>
+                <default>false</default>
+                <controllingFieldValues>PCS</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Singletrack</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SyndTrak</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Taylor Rafferty</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Thomson Reuters</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier1</fullName>
+                <default>false</default>
+                <controllingFieldValues>GMG</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DM_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>DM Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Region</label>
+        <picklist>
+            <picklistValues>
+                <fullName>AMER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>APAC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EMEA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Dataset__c</fullName>
+        <externalId>false</externalId>
+        <label>Dataset</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Contacts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ownership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Debt_Issue_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Debt Issue Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dependent_on_Product_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text( PricebookEntry.Product2.Dependent_on_Product_Code__c )</formula>
+        <label>Dependent on Product Code</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>Est_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Est. Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Annual_Fees__c</fullName>
+        <description>For transactional revenue</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For usage based products (ACV/TRANS products), the estimated amount expected to be paid by the customer for this year, based on estimated usage.</inlineHelpText>
+        <label>Est. Annual Transaction Fees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Completion_Date__c</fullName>
+        <description>To track Delivery Date on Opportunity Products  when project revenue will be realized.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date on which project or report is expected to be delivered.  Applies to Project products, only; n/a for subscription products.  Required at Won or at Renewed if Subscription Dates and Term are not entered.</inlineHelpText>
+        <label>Est. Completion Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expense_Cap__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Current year amount that Ipreo agrees not to exceed for expenses charged back to customer, typically associated with software implementation or installation.</inlineHelpText>
+        <label>Expense Cap</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Product_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text( PricebookEntry.Product2.Finance_Product_Code__c )</formula>
+        <label>Finance Product Code</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Product_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Product Comments</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Free_Period_months__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of months of the Term being given to the customer for free.  Usually at the beginning of the term.</inlineHelpText>
+        <label>Free Period (months)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Group__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( PricebookEntry.Product2.Family )</formula>
+        <label>Group</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>License</label>
+        <referenceTo>Asset_License__c</referenceTo>
+        <relationshipLabel>Opportunity Product</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Lost_Cancelled_Reason__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Required when Opportunity Product &quot;Status&quot; is Lost or is Cancelled. Or If Revenue Delta Type is Downtick. If the Lost/Cancelled Reason indicates the business was lost to a competitor or incumbent, field Competitor/Incumbent is also required.</inlineHelpText>
+        <label>Lost/Cancelled/Downtick Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Budget (No Competitor)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Uncertainty</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor (Functionality)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor (Functionality + Price)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor (Price)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Did Nothing (Functionality)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Did Nothing (Functionality + Price)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Did Nothing (Price)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exited Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fewer Users</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance Adjustment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ipreo Decision</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Merger &amp; Acquisition</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Reallocation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Subsidy Loss (No Competitor)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technical Resource</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Master_ACV_Eligible__c</fullName>
+        <description>Formula Logic:
+=IF(Product Revenue Type = ACV or ACV/TRANS,
+IF(Today’s Date is &gt;= Subscription Start Date AND &lt;= Subscription End Date, “TRUE”,
+IF(Forecast Category = Projected AND Product Transaction Type = Renewal, “TRUE”, “FALSE”</description>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISPICKVAL(Product_Revenue_Type__c, &quot;ACV&quot;), ISPICKVAL(Product_Revenue_Type__c, &quot;ACV/TRANS&quot;)), 
+	IF(AND(Opportunity.RecordType.Name = &quot;Renewal&quot;, ISBLANK(Opportunity.Original_Opportunity__c), ISPICKVAL(Opportunity.ForecastCategoryName, &quot;Projected&quot;)), 
+		TRUE, 
+		IF(AND(Opportunity.RecordType.Name = &quot;Renewal&quot;, ISBLANK(Opportunity.Original_Opportunity__c), ISPICKVAL(Opportunity.ForecastCategoryName, &quot;Contracted&quot;), Subscription_Start_Date__c &gt; TODAY()), 
+			TRUE, 
+			IF(AND(Opportunity.RecordType.Name = &quot;Renewal&quot;, ISPICKVAL(Status__c, &quot;Cancelled&quot;), Subscription_Start_Date__c &lt;= TODAY(), Subscription_End_Date__c &gt;= TODAY()),
+				TRUE, 
+				IF(AND(Subscription_Start_Date__c &lt;= TODAY(), Subscription_End_Date__c &gt;= TODAY(), ISPICKVAL(Opportunity.ForecastCategoryName, &quot;Contracted&quot;)), 
+					TRUE, 
+					FALSE
+				) 
+			) 
+		) 
+	), 
+	FALSE 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Master ACV Eligible</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Master_ACV_Value__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISPICKVAL(Product_Revenue_Type__c, &quot;ACV&quot;), ISPICKVAL(Product_Revenue_Type__c, &quot;ACV/TRANS&quot;)), 
+IF(AND(Opportunity.RecordType.Name = &quot;Renewal&quot;, ISBLANK(Opportunity.Original_Opportunity__c), ISPICKVAL(Opportunity.ForecastCategoryName, &quot;Projected&quot;)), Prior_Year_ACpV__c - Prior_Year_Pass_Through__c, 
+IF(AND(Opportunity.RecordType.Name = &quot;Renewal&quot;, ISBLANK(Opportunity.Original_Opportunity__c), ISPICKVAL(Opportunity.ForecastCategoryName, &quot;Contracted&quot;), Subscription_Start_Date__c &gt; TODAY()),  Prior_Year_ACpV__c - Prior_Year_Pass_Through__c, 
+IF(AND(Opportunity.RecordType.Name = &quot;Renewal&quot;, ISPICKVAL(Status__c, &quot;Cancelled&quot;), Subscription_Start_Date__c &lt;= TODAY(), Subscription_End_Date__c &gt;= TODAY()), Net_New_Business__c,
+IF(AND(Subscription_Start_Date__c &lt;= TODAY(), Subscription_End_Date__c &gt;= TODAY(), ISPICKVAL(Opportunity.ForecastCategoryName, &quot;Contracted&quot;)),  Net_ACpV__c, 
+0 
+) 
+)
+) 
+), 
+0 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Master ACV Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Net_ACpV__c</fullName>
+        <externalId>false</externalId>
+        <formula>ACpV__c -  Annual_Pass_Through__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is a formula field that calculates ACpV - Annual Pass Through</inlineHelpText>
+        <label>Net ACpV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Net_New_Business__c</fullName>
+        <description>(Renewals only)
+Delta between current revenue and previous revenue
+Calculated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Read only, formula field:  (ACpV - Annual Pass Through) - (Prior Year ACpV - Prior Year Pass Through).</inlineHelpText>
+        <label>Net New Business</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Calls__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Calls</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Certificates__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Certificates</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Conferences__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Conferences</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Deals__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Deals</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Meetings__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Meetings</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Questions__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Questions</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Reports__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Reports</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Users__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of users licensed for software products</inlineHelpText>
+        <label>No. of Users</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OppProductUniqueKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>data migration purpose</description>
+        <externalId>true</externalId>
+        <label>OppProductUniqueKey</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Per_Transaction_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Per Transaction Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Prior_Year_ACpV__c</fullName>
+        <description>For use in renewal uptick calculation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For New Business Opportunities, this is 0.  For renewals, it is populated by the system with the ACpV from the previous Opportunity.  Used in calculating Net New Business for the Opportunity Product.</inlineHelpText>
+        <label>Prior Year ACpV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Prior_Year_Pass_Through__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For New Business Opportunities, this is 0.  For renewals, it is populated by the system with the Annual Pass Through from the previous Opportunity.  Used in calculating Net New Business for the Opportunity Product.</inlineHelpText>
+        <label>Prior Year Pass Through</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Product_Lost_Amount_Annual__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Lost Amount (Annual)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Product_Lost_Amount_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Lost Amount (Total)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Product_Region__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Defaults from Region of Opportunity Owner.  Can be changed.</inlineHelpText>
+        <label>Product Region</label>
+        <picklist>
+            <picklistValues>
+                <fullName>NA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LATAM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EMEA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>APAC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JAPAN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Revenue_Type__c</fullName>
+        <description>Type of revenue associated with the opportunity product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ACV:  Annual Contracted Value - subscription product.  PROJ:  Project.  ACV/TRANS:  Usage based product.  ACV/PROJ:  Project sold as part of a subscription.</inlineHelpText>
+        <label>Product Revenue Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>ACV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PROJ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ACV/TRANS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Subregion__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Subregion</label>
+        <picklist>
+            <controllingField>Product_Region__c</controllingField>
+            <picklistValues>
+                <fullName>Germanics</fullName>
+                <default>false</default>
+                <controllingFieldValues>EMEA</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Russia</fullName>
+                <default>false</default>
+                <controllingFieldValues>EMEA</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Southern Europe</fullName>
+                <default>false</default>
+                <controllingFieldValues>EMEA</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <controllingFieldValues>EMEA</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Transaction_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>New Business:  new product for new customer.  Upsell:  new product for existing customer.  Add On:  add on users for existing product.  Renewal:  renewal of existing product.</inlineHelpText>
+        <label>Product Transaction Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Upsell</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add On</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Vertical__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Vertical</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GMG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PCS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Facilitates Opportunity Product.Asset lookup filter. Maintained through trigger.</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Opportunity Product</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>RAG_Status__c</fullName>
+        <description>Get Asset Status to Opportunity Product</description>
+        <externalId>false</externalId>
+        <formula>Text( Asset__r.RAG_status__c )</formula>
+        <label>RAG Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason_for_RAG_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset__r.Reason_for_RAG_Status__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reason for RAG Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Recognition_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(  Subscription_Start_Date__c ),
+    	   1, &apos;January&apos;,
+    	   2, &apos;February&apos;,
+    	   3, &apos;March&apos;,
+    	   4, &apos;April&apos;,
+    	   5, &apos;May&apos;,
+    	   6, &apos;June&apos;,
+    	   7, &apos;July&apos;,
+    	   8, &apos;August&apos;,
+    	   9, &apos;September&apos;,
+    	   10, &apos;October&apos;,
+    	   11, &apos;November&apos;,
+    	   12, &apos;December&apos;,
+    	   &apos;&apos;)
++ &apos; - &apos; + TEXT(YEAR(Subscription_Start_Date__c))</formula>
+        <label>Recognition Month</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Referral_Partner__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Partner that recommended IPREO to the customer.</inlineHelpText>
+        <label>Levered Sale</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Arbor Advisory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Artemis IR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blackstone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Brunswick</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Christensen IR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Citigate DR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>College Hill</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Continental Stock Transfer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Daiwa IR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deutsche DR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EQS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Goldman Sachs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Iridium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JPM DR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Market Eye</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mitsubishi Securities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nomura IR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Open Exchange</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Q4 Websystems</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Registrar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Santander</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Singapore Stock Exchange</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SMTB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SNL Financial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Solebury IR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Takara Printing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Theoria</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TSTA (Tokyo Stock Transfer Agent)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TSX</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TSX Venture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wonderful Sky</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Increase__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Increase % expected when Opportunity Product is renewed.  When Opportunity is Closed Won Verified, causing a Renewal Opportunity to be created, the ACpV on the Opportunity Product on the Renewal is set to current ACpV + (current ACpV*Renewal Increase %).</inlineHelpText>
+        <label>Renewal Increase (%)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Requires_Implementation_UAT__c</fullName>
+        <externalId>false</externalId>
+        <label>Requires Implementation (UAT)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_Delta_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Revenue Delta Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Uptick</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Downtick</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_Recognition_Date_Current_Mont__c</fullName>
+        <description>Used primarily for ExComm report filtering in Wave</description>
+        <externalId>false</externalId>
+        <formula>Revenue_Recognition_Date__c &gt;= DATE(YEAR(TODAY()),MONTH(TODAY()),01)</formula>
+        <label>Revenue Recognition Date &gt;= Current Mont</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_Recognition_Date__c</fullName>
+        <description>Used primarily in reporting</description>
+        <externalId>false</externalId>
+        <formula>IF(
+	CONTAINS(TEXT(Opportunity.StageName), &quot;Verified&quot;), 
+	IF(
+		NOT(ISPICKVAL(Product_Revenue_Type__c, &quot;PROJ&quot;)),
+		IF(
+			AND(
+   				NOT( ISBLANK(Opportunity.CloseDate) ) ,
+   				NOT( ISBLANK(Subscription_Start_Date__c) )
+  			),
+   			IF(
+				Opportunity.CloseDate &gt; Subscription_Start_Date__c, 
+     				Opportunity.CloseDate,
+     				Subscription_Start_Date__c
+     			), 
+  			NULL
+		),
+		Work_Order__r.Completion_Date__c
+	),
+	NULL
+)</formula>
+        <label>Revenue Recognition Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_Recognition_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATE(YEAR( Revenue_Recognition_Date__c ),MONTH( Revenue_Recognition_Date__c ),1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Revenue Recognition Month</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Site_License__c</fullName>
+        <externalId>false</externalId>
+        <label>Site License</label>
+        <picklist>
+            <picklistValues>
+                <fullName>AMER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>APAC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EMEA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>The values of Won/Lost pertain to New Business opportunities and the values of Cancelled/Renewed pertain to Renewal opportunities.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Required when Opportunity Stage is Closed%.  When Status has not been populated, most fields on page are not validated by system.  Once Status is populated (with either Won/Lost for New Business or Renewed/Cancelled for Renewals), the validations occur.</inlineHelpText>
+        <label>Status</label>
+        <picklist>
+            <controllingField>Product_Transaction_Type__c</controllingField>
+            <picklistValues>
+                <fullName>Won</fullName>
+                <default>false</default>
+                <controllingFieldValues>Add On</controllingFieldValues>
+                <controllingFieldValues>New Business</controllingFieldValues>
+                <controllingFieldValues>Upsell</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lost</fullName>
+                <default>false</default>
+                <controllingFieldValues>Add On</controllingFieldValues>
+                <controllingFieldValues>New Business</controllingFieldValues>
+                <controllingFieldValues>Upsell</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewed</fullName>
+                <default>false</default>
+                <controllingFieldValues>Renewal</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <controllingFieldValues>Renewal</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subgroup__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text( PricebookEntry.Product2.Subgroup__c )</formula>
+        <label>Subgroup</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subscription_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Applies to Opportunity Products sold as a subscription, only (N/A for projects).  Subscription End Date must be same (coterminous) for all Opportunity Products on the Opportunity.  Req at Won, Renewed if Subscription Start Date and Term populated.</inlineHelpText>
+        <label>Subscription End Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Subscription_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Applies to Opportunity Products sold as a subscription, only (N/A for projects).  Required at Status &apos;Won&apos; or &apos;Renewed&apos; if Subscription End Date and Term are populated.</inlineHelpText>
+        <label>Subscription Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Subscription_Start_Date_is_Current_Mo__c</fullName>
+        <description>Used primarily for ExComm report filtering in Wave</description>
+        <externalId>false</externalId>
+        <formula>Subscription_Start_Date__c  &gt;= DATE(YEAR(TODAY()),MONTH(TODAY()),05)</formula>
+        <label>Subscription Start Date is &gt;= Current Mo</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>Term_Months__c</fullName>
+        <description>Opportunity Term in Months</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Term of subscription, INCLUSIVE of any free period.  Leave blank for non-subscription products.  If entered, Subscription Start Date and Subscription End Date must also be entered.</inlineHelpText>
+        <label>Term (months)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+        <inlineHelpText>Total Contracted Product Value - the Product level breakout for Total Contracted Value (TCV).  Will be different from Annual Contracted Product Value (ACpV) when term is greater than one year.</inlineHelpText>
+    </fields>
+    <fields>
+        <fullName>Upfront_Expense_Fee__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Current year amount Ipreo will charge to customer upfront for expenses, typically expenses associated with software implementation or installation.</inlineHelpText>
+        <label>Implementation/Upfront Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Win_Back__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates that the Opportunity Product was for a former Ipreo customer of this product that went to a competitor and is now won back to Ipreo.  Cannot be checked for Lost or for Cancelled Opportunity Products.</inlineHelpText>
+        <label>Win Back</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Comp_Date_is_Current_Month__c</fullName>
+        <description>Used primarily for ExComm report filtering in Wave</description>
+        <externalId>false</externalId>
+        <formula>Work_Order_Completion_Date__c &gt;= DATE(YEAR(TODAY()),MONTH(TODAY()),05)</formula>
+        <label>Work Order Comp Date is &gt;= Current Month</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Work_Order__r.Completion_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Work Order Completion Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Est_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Work_Order__r.Est_Completion_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Work Order Est Completion Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Work_Order__r.Owner:User.FirstName &amp; &quot; &quot; &amp; Work_Order__r.Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Work Order Owner</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Queue__c</fullName>
+        <externalId>false</externalId>
+        <formula>Work_Order__r.Owner:Queue.QueueName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Work Order Queue</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Work_Order__r.Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Work Order Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Work_Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Work Order</label>
+        <referenceTo>Work_Order__c</referenceTo>
+        <relationshipLabel>Opportunity Product</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <validationRules>
+        <fullName>Cannot_Add_Opp_Status_WO_Product_Rev_Ty</fullName>
+        <active>true</active>
+        <description>Can not save an opportunity product with a status without setting the opportunity product revenue type</description>
+        <errorConditionFormula>(ISPICKVAL( Status__c , &apos;Won&apos;) || ISPICKVAL( Status__c , &apos;Renewed&apos;) || ISPICKVAL( Status__c , &apos;Lost&apos;) || ISPICKVAL( Status__c , &apos;Cancelled&apos;) ) &amp;&amp; ISBLANK(Text(  Product_Revenue_Type__c  ))</errorConditionFormula>
+        <errorDisplayField>Product_Revenue_Type__c</errorDisplayField>
+        <errorMessage>You can not save an opportunity product with a status without setting the opportunity product revenue type</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Change_Asset</fullName>
+        <active>true</active>
+        <errorConditionFormula>($Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos;) &amp;&amp;
+((ISNEW() &amp;&amp; NOT(ISBLANK(Asset__c ))) || 
+  ISCHANGED( Asset__c )) &amp;&amp;
+ NOT(ISPICKVAL(Product_Transaction_Type__c , &apos;Add On&apos;))</errorConditionFormula>
+        <errorDisplayField>Asset__c</errorDisplayField>
+        <errorMessage>Only Operations users can change Assets, except on Add On opportunity products.  Please ask Sales Operations for assistance.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Edit_Prod_on_Closed_Opportunities</fullName>
+        <active>true</active>
+        <description>Prevent users from editing products on Closed Opportunities. Allow System Admin and Operations user to edit closed opportunities</description>
+        <errorConditionFormula>Opportunity.IsClosed = TRUE &amp;&amp;  
+($Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos;)</errorConditionFormula>
+        <errorMessage>Cannot edit product on closed opportunities.  Please ask Sales Operations to make any necessary changes.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Modify_Product_Region</fullName>
+        <active>true</active>
+        <errorConditionFormula>($Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos;) &amp;&amp;
+ISCHANGED(   Product_Region__c   ) &amp;&amp;
+NOT( ISNEW() ) &amp;&amp;
+ISPICKVAL(Product_Transaction_Type__c, &apos;Renewal&apos;)</errorConditionFormula>
+        <errorDisplayField>Product_Region__c</errorDisplayField>
+        <errorMessage>Only Operations users can modify Product Region for renewal opportunity products.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Modify_Product_Revenue_Type</fullName>
+        <active>false</active>
+        <errorConditionFormula>($Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos;) &amp;&amp;
+ISCHANGED(  Product_Revenue_Type__c  ) &amp;&amp;
+NOT( ISNEW() ) &amp;&amp;
+ISPICKVAL(Product_Transaction_Type__c, &apos;Renewal&apos;)</errorConditionFormula>
+        <errorDisplayField>Product_Revenue_Type__c</errorDisplayField>
+        <errorMessage>Only Operations users can modify Product Revenue Type for renewal opportunity products.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Modify_Product_Subregion</fullName>
+        <active>false</active>
+        <errorConditionFormula>($Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos;) &amp;&amp;
+ISCHANGED(    Product_Subregion__c    ) &amp;&amp;
+NOT( ISNEW() ) &amp;&amp;
+ISPICKVAL(Product_Transaction_Type__c, &apos;Renewal&apos;)</errorConditionFormula>
+        <errorDisplayField>Product_Subregion__c</errorDisplayField>
+        <errorMessage>Only Operations users can modify Product Subregion for renewal opportunity products.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Modify_Subscription_Start_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>($Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos;) &amp;&amp;
+ISCHANGED(  Subscription_Start_Date__c  ) &amp;&amp;
+NOT( ISNEW() ) &amp;&amp;
+ISPICKVAL(Product_Transaction_Type__c, &apos;Renewal&apos;)</errorConditionFormula>
+        <errorDisplayField>Subscription_Start_Date__c</errorDisplayField>
+        <errorMessage>Only Operations users can modify Subscription Start Date for renewal opportunity products.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Modify_Win_Back</fullName>
+        <active>true</active>
+        <errorConditionFormula>($Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+$Profile.Name != &apos;System Administrator&apos;) &amp;&amp;
+ISCHANGED( Win_Back__c ) &amp;&amp;
+NOT( ISNEW() ) &amp;&amp;
+ISPICKVAL(Product_Transaction_Type__c, &apos;Renewal&apos;)</errorConditionFormula>
+        <errorDisplayField>Win_Back__c</errorDisplayField>
+        <errorMessage>Only Operations users can modify Win Back for renewal opportunity products.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cant_Update_Subscription_Start_End_Date</fullName>
+        <active>true</active>
+        <description>Users (other than  Operations and Sys Admin profile users) cannot update Subscription Start Date and Subscription End Date &amp; term if the Requires Implementation (UAT) is Yes.</description>
+        <errorConditionFormula>($Profile.Name != &quot;System Administrator&quot; &amp;&amp; $Profile.Name != &quot;Operations User&quot;)&amp;&amp;(ISPICKVAL(Requires_Implementation_UAT__c, &apos;Yes&apos;)&amp;&amp;(ISPICKVAL(Status__c, &apos;Won&apos;)) &amp;&amp;(!ISBLANK(Subscription_End_Date__c) || !ISBLANK(Subscription_Start_Date__c) || !ISBLANK(Term_Months__c)))</errorConditionFormula>
+        <errorMessage>Cannot enter Subscription Start/End dates or Term if Requires Implementation (UAT) value is Yes.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_ACpV_Less_or_Equal_Than_TCpV</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISBLANK(ACpV__c)) &amp;&amp; NOT(ISBLANK( UnitPrice )) &amp;&amp; ACpV__c &gt; UnitPrice</errorConditionFormula>
+        <errorDisplayField>ACpV__c</errorDisplayField>
+        <errorMessage>ACpV must be less than or equal to TCpV</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_ACpV_TCpV_on_Lost_Product</fullName>
+        <active>true</active>
+        <description>If Lost, ACpV and TCpV must be 0. Rule is updated based on SPS-1411</description>
+        <errorConditionFormula>(ACpV__c != 0 || UnitPrice != 0) &amp;&amp;
+ISPICKVAL(Status__c, &apos;Lost&apos;)</errorConditionFormula>
+        <errorMessage>ACpV and TCpV must be 0 when product is lost</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_ACpV_on_Cancelled_or_Lost_Product</fullName>
+        <active>true</active>
+        <description>If Cancelled, ACpV must be 0. Rule is updated based on SPS-978 (To Exclude Lost from the rule)</description>
+        <errorConditionFormula>(ACpV__c != 0 || ISBLANK(ACpV__c) ) &amp;&amp;
+ISPICKVAL(Status__c, &apos;Cancelled&apos;)</errorConditionFormula>
+        <errorDisplayField>ACpV__c</errorDisplayField>
+        <errorMessage>ACpV must be 0 when this product is cancelled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Est_Annual_Fee_for_Trans_Product</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISPICKVAL(Status__c , &apos;Cancelled&apos;))
+&amp;&amp;
+((
+     ISNEW()
+  &amp;&amp; ISPICKVAL( Product_Revenue_Type__c , &apos;ACV/TRANS&apos;)
+  &amp;&amp; ISBLANK(Estimated_Annual_Fees__c )
+)
+||
+(
+     NOT(ISNEW())
+  &amp;&amp; ISPICKVAL( Product_Revenue_Type__c , &apos;ACV/TRANS&apos;) 
+  &amp;&amp; ISBLANK(Estimated_Annual_Fees__c )
+))</errorConditionFormula>
+        <errorDisplayField>Estimated_Annual_Fees__c</errorDisplayField>
+        <errorMessage>Estimated Annual Transaction Fees required when Product Revenue Type is ACV/TRANS</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Est_Completion_Date</fullName>
+        <active>true</active>
+        <description>If the Product Revenue Type is PROJ, Est. Completion Date must be populated at Won/Renewed. Error message: &quot;If the Product Revenue Type is PROJ, Est. Completion Date must be populated at Won/Renewed.&quot;</description>
+        <errorConditionFormula>AND( ISPICKVAL( Product_Revenue_Type__c , &apos;PROJ&apos;) , ISBLANK(Estimated_Completion_Date__c ) ,
+ISPICKVAL(  Status__c  , &apos;Won&apos;) || ISPICKVAL( Status__c  , &apos;Renewed&apos;)  )</errorConditionFormula>
+        <errorMessage>If the Product Revenue Type is PROJ, Est. Completion Date must be populated at Won/Renewed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Lost_Amounts_When_Status_Lost</fullName>
+        <active>true</active>
+        <description>Product Lost Amount (Annual) and Product Lost Amount (Total) must be greater than 0 when opportunity product status is Lost.</description>
+        <errorConditionFormula>AND(
+IsPickVal(Status__c, &apos;Lost&apos;),(ISBLANK(Product_Lost_Amount_Annual__c) ||  Product_Lost_Amount_Annual__c &lt;= 0 || ISBLANK(Product_Lost_Amount_Total__c) ||
+Product_Lost_Amount_Total__c &lt;= 0)
+)</errorConditionFormula>
+        <errorMessage>Product Lost Amount (Annual) and Product Lost Amount (Total) must be greater than 0 when opportunity product status is Lost.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Lost_Amounts_When_Status_Not_Lost</fullName>
+        <active>true</active>
+        <description>Product Lost Amount (Annual) and Product Lost Amount (Total) must be 0 when opportunity product status is not Lost. Added as part of JIRA SPS-1411</description>
+        <errorConditionFormula>AND(NOT(IsPickVal(Status__c, &apos;Lost&apos;)),(Product_Lost_Amount_Annual__c != 0 || NOT(ISBLANK(Product_Lost_Amount_Annual__c )) || Product_Lost_Amount_Total__c != 0 || NOT(ISBLANK(Product_Lost_Amount_Total__c ))))</errorConditionFormula>
+        <errorMessage>Product Lost Amount (Annual) and Product Lost Amount (Total) must be 0 when opportunity product status is not Lost.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Pass_Through_Part_1</fullName>
+        <active>true</active>
+        <errorConditionFormula>(NOT(ISBLANK(Annual_Pass_Through__c )) &amp;&amp; Annual_Pass_Through__c  &gt; 0 ) &amp;&amp;
+ NOT(Product2.Pass_Through_Required__c)</errorConditionFormula>
+        <errorDisplayField>Annual_Pass_Through__c</errorDisplayField>
+        <errorMessage>Pass Through cannot be greater than 0 for this type of product.  Please remove.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Pass_Through_Part_2</fullName>
+        <active>true</active>
+        <errorConditionFormula>Product2.Pass_Through_Required__c &amp;&amp;
+ISBLANK(Annual_Pass_Through__c )</errorConditionFormula>
+        <errorDisplayField>Annual_Pass_Through__c</errorDisplayField>
+        <errorMessage>Pass Through required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Pass_Through_Part_3</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISBLANK(Annual_Pass_Through__c)) &amp;&amp; Annual_Pass_Through__c  &gt; 0 
+&amp;&amp; ISPICKVAL(Product_Transaction_Type__c, &apos;Renewal&apos;) &amp;&amp; ISPICKVAL(Status__c, &apos;Cancelled&apos;)</errorConditionFormula>
+        <errorDisplayField>Annual_Pass_Through__c</errorDisplayField>
+        <errorMessage>Annual Pass Through cannot be greater than 0 for cancelled renewals.  Please remove.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Per_Trans_Fee_for_Trans_Product</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISPICKVAL(Status__c , &apos;&apos;))
+&amp;&amp;
+( NOT(ISNEW())
+  &amp;&amp; ISPICKVAL( Product_Revenue_Type__c , &apos;ACV/TRANS&apos;) 
+  &amp;&amp; ISBLANK(Per_Transaction_Fee__c)
+)</errorConditionFormula>
+        <errorDisplayField>Per_Transaction_Fee__c</errorDisplayField>
+        <errorMessage>Per Transaction Fee required when Product Revenue Type is ACV/TRANS</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Product_Subregion</fullName>
+        <active>true</active>
+        <description>On the Opportunity Product Status of &quot;Won&quot; require sub region if the region is EMEA</description>
+        <errorConditionFormula>IF(AND(OR(ISPICKVAL(Status__c, &quot;Won&quot;), ISPICKVAL(Status__c, &quot;Renewed&quot;)), ISPICKVAL(Product_Region__c, &quot;EMEA&quot;),ISBLANK(TEXT(Product_Subregion__c))), TRUE, FALSE)</errorConditionFormula>
+        <errorMessage>Require Product Subregion when Status is &quot;Won or Renewed&quot;  and Product Region is &quot;EMEA&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Revenue_Type_for_Project_Opp</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL( Product_Revenue_Type__c , &apos;ACV&apos;) ||
+ISPICKVAL( Product_Revenue_Type__c , &apos;ACV/TRANS&apos;) ) &amp;&amp;
+ISPICKVAL( Opportunity.Revenue_Type__c , &apos;Project&apos;) &amp;&amp;
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;</errorConditionFormula>
+        <errorDisplayField>Product_Revenue_Type__c</errorDisplayField>
+        <errorMessage>Cannot choose ACV,  ACV/TRANS on a project opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Revenue_Type_for_Subscription_Opp</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( Product_Revenue_Type__c , &apos;PROJ&apos;)  &amp;&amp;
+ISPICKVAL( Opportunity.Revenue_Type__c , &apos;Subscription&apos;) &amp;&amp; 
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;</errorConditionFormula>
+        <errorDisplayField>Product_Revenue_Type__c</errorDisplayField>
+        <errorMessage>Cannot choose PROJ on a subscription opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Status_for_Closed_Opp</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISPICKVAL( Status__c , &apos;&apos;) ,  Opportunity.IsClosed )</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Cannot enter product with blank status on a closed opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Status_for_New_Business_Opp</fullName>
+        <active>true</active>
+        <description>Ensure that the values of Won/Lost are only used for New Business opportunity.</description>
+        <errorConditionFormula>AND( OR( ISPICKVAL(Status__c, &apos;Renewed&apos;)
+        ,ISPICKVAL(Status__c, &apos;Cancelled&apos;)
+       ),
+    Opportunity.RecordType.DeveloperName = &apos;New_Business&apos;
+)</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Cannot choose Renewed or Cancelled on a new business opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Status_for_Renewal_Opp</fullName>
+        <active>true</active>
+        <description>Ensure that the values of Won/Lost are only used for Renewal opportunity.</description>
+        <errorConditionFormula>AND( OR( ISPICKVAL(Status__c, &apos;Won&apos;)
+        ,ISPICKVAL(Status__c, &apos;Lost&apos;)
+       )
+    ,  Opportunity.RecordType.DeveloperName = &apos;Renewal&apos;
+)</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Cannot choose Won or Lost on a renewal opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Subscription_Start_AND_End_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISBLANK(Subscription_Start_Date__c)) &amp;&amp;
+NOT(ISBLANK( Subscription_End_Date__c )) &amp;&amp;
+Subscription_Start_Date__c &gt; Subscription_End_Date__c</errorConditionFormula>
+        <errorDisplayField>Subscription_Start_Date__c</errorDisplayField>
+        <errorMessage>Subscription Start Date must be before Subscription End Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_TCpV_When_Cancel_or_Lost</fullName>
+        <active>true</active>
+        <errorConditionFormula>UnitPrice != 0 &amp;&amp; ISPICKVAL( Status__c , &apos;Cancelled&apos;)</errorConditionFormula>
+        <errorDisplayField>UnitPrice</errorDisplayField>
+        <errorMessage>TCpV must be 0 when this product is cancelled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Term</fullName>
+        <active>true</active>
+        <description>Term cannot be greater than 0 for cancelled renewals.</description>
+        <errorConditionFormula>NOT(ISBLANK(Term_Months__c)) &amp;&amp; Term_Months__c  &gt; 0 
+&amp;&amp; ISPICKVAL(Product_Transaction_Type__c, &apos;Renewal&apos;) &amp;&amp; ISPICKVAL(Status__c, &apos;Cancelled&apos;)</errorConditionFormula>
+        <errorDisplayField>Term_Months__c</errorDisplayField>
+        <errorMessage>Term (months) cannot be greater than 0 for cancelled renewals.  Please remove.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Term_Less_Than_12</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+     OR(
+         ISPICKVAL( Status__c , &apos;Won&apos;)
+        ,ISPICKVAL( Status__c , &apos;Renewed&apos;) 
+       )
+    , ISPICKVAL( Product2.Dependent_on_Product_Code__c , &apos;&apos; )
+    , Term_Months__c &lt; 12
+    ,OR( ISCHANGED(Status__c)
+        ,ISCHANGED(Term_Months__c)
+       )
+    ,AND(
+          NOT( $Profile.Name = &apos;Operations User&apos;)
+         ,NOT( $Profile.Name = &apos;System Administrator&apos;)
+        )
+    , NOT( ISPICKVAL(  Product_Revenue_Type__c , &apos;PROJ&apos;))
+    , NOT( ISPICKVAL(Product_Transaction_Type__c, &apos;Add On&apos;) )
+)</errorConditionFormula>
+        <errorDisplayField>Term_Months__c</errorDisplayField>
+        <errorMessage>Term must be 12 months or greater for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Type_for_New_Business_Opp</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Product_Transaction_Type__c , &apos;Renewal&apos;) &amp;&amp;
+ Opportunity.RecordType.DeveloperName = &apos;New_Business&apos;</errorConditionFormula>
+        <errorDisplayField>Product_Transaction_Type__c</errorDisplayField>
+        <errorMessage>Cannot choose Renewal on a new business opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Type_for_Renewal_Opp</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL(Product_Transaction_Type__c , &apos;New Business&apos;) ||
+ ISPICKVAL(Product_Transaction_Type__c, &apos;Upsell&apos;) ||
+ ISPICKVAL(Product_Transaction_Type__c, &apos;Add On&apos;)) &amp;&amp;
+ Opportunity.RecordType.DeveloperName = &apos;Renewal&apos;</errorConditionFormula>
+        <errorDisplayField>Product_Transaction_Type__c</errorDisplayField>
+        <errorMessage>Cannot choose New Business, Upsell, or Add On on a renewal opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Est_Completion_Date_Cannot_Be_Past_Date</fullName>
+        <active>true</active>
+        <description>Estimated Completion Date cannot be in the past</description>
+        <errorConditionFormula>AND(NOT($Profile.Name = &quot;System Administrator&quot;), Estimated_Completion_Date__c &lt; TODAY())</errorConditionFormula>
+        <errorDisplayField>Estimated_Completion_Date__c</errorDisplayField>
+        <errorMessage>Estimated Completion Date cannot be in the past.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OptyProrevetype_equal_to_Pro_revtype</fullName>
+        <active>true</active>
+        <description>Opty.Product Revenue Type should be same as Product.Revenue Type</description>
+        <errorConditionFormula>($Profile.Name != &apos;System Administrator&apos;) &amp;&amp; (TEXT(Product__r.Revenue_Type__c) != TEXT(Product_Revenue_Type__c))</errorConditionFormula>
+        <errorMessage>Opportunity Product Revenue Type should be same as Revenue Type of Product Setup</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Apply_NYSE_Subsidy</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISPICKVAL(Opportunity.NYSE_Program_Tier__c, &apos;&apos;))
+&amp;&amp; ISPICKVAL(Apply_NYSE_Subsidy__c, &apos;&apos;)
+&amp;&amp; NOT(ISNEW())
+&amp;&amp; NOT(ISPICKVAL(Product_Transaction_Type__c, &apos;Renewal&apos;) &amp;&amp; ISPICKVAL(Status__c, &apos;Cancelled&apos;))</errorConditionFormula>
+        <errorDisplayField>Apply_NYSE_Subsidy__c</errorDisplayField>
+        <errorMessage>Apply NYSE Subsidy? required when NYSE Program Tier entered</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Competitor_Incumbent_Loss_Cancel</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Competitor_Incumbent__c  ) &amp;&amp;
+ (BEGINS(Text(Lost_Cancelled_Reason__c), &apos;Incumbent&apos;) ||
+  BEGINS(Text(Lost_Cancelled_Reason__c), &apos;Competitor&apos;) )</errorConditionFormula>
+        <errorDisplayField>Competitor_Incumbent__c</errorDisplayField>
+        <errorMessage>Competitor/Incumbent required when Loss/Cancel Reason is for a competitor or incumbent</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Competitor_Incumbent_Won</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( Status__c , &apos;Won&apos; ) &amp;&amp; ISBLANK( Competitor_Incumbent__c )</errorConditionFormula>
+        <errorDisplayField>Competitor_Incumbent__c</errorDisplayField>
+        <errorMessage>Competitor/Incumbent required when won</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Completion_Date_or_Subscription_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>($Profile.Name != &apos;Operations User&apos; &amp;&amp; 
+ $Profile.Name != &apos;System Administrator&apos;) &amp;&amp;
+(ISPICKVAL( Status__c , &apos;Won&apos;) ||
+ ISPICKVAL( Status__c, &apos;Renewed&apos;)) &amp;&amp;
+ISBLANK(Estimated_Completion_Date__c) &amp;&amp;
+ ISBLANK( Subscription_Start_Date__c ) &amp;&amp;
+  ISBLANK( Subscription_End_Date__c )</errorConditionFormula>
+        <errorMessage>Estimated Completion Date required (i.e. Product Revenue Type=PROJ) or Subscription Start and End Date and Term required when won or renewed (i.e. Product Revenue Type contains ACV)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Data_Region</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Data_Region__c ) &amp;&amp;
+ PricebookEntry.Product2.Data_Region__c &amp;&amp;
+(ISPICKVAL( Status__c , &apos;Won&apos; ) || 
+ISPICKVAL( Status__c , &apos;Renewed&apos; ))</errorConditionFormula>
+        <errorDisplayField>Data_Region__c</errorDisplayField>
+        <errorMessage>Data Region required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Dataset</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Dataset__c ) &amp;&amp;
+ PricebookEntry.Product2.Dataset__c &amp;&amp;
+(ISPICKVAL( Status__c , &apos;Won&apos; ) || 
+ISPICKVAL( Status__c , &apos;Renewed&apos; ))</errorConditionFormula>
+        <errorDisplayField>Dataset__c</errorDisplayField>
+        <errorMessage>Dataset required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Debt_Issue_Size</fullName>
+        <active>true</active>
+        <errorConditionFormula>Product2.Debt_Issue_Size__c = TRUE &amp;&amp;  ISBLANK(Debt_Issue_Size__c ) &amp;&amp;
+(  ISPICKVAL(Status__c, &apos;Won&apos;) || ISPICKVAL(Status__c, &apos;Renewed&apos;))</errorConditionFormula>
+        <errorDisplayField>Debt_Issue_Size__c</errorDisplayField>
+        <errorMessage>Debt Issue Size required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Lost_Cancelled_Down_Comment</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(Cancel_Comment__c) &amp;&amp;
+(ISPICKVAL(Status__c, &apos;Lost&apos;)
+|| ISPICKVAL(Status__c, &apos;Cancelled&apos;)
+|| (Opportunity.RecordType.Name = &apos;Renewal&apos; &amp;&amp; Net_New_Business__c &lt; 0)
+)</errorConditionFormula>
+        <errorDisplayField>Cancel_Comment__c</errorDisplayField>
+        <errorMessage>Lost/Cancelled/Downtick Comment required when lost or cancelled or downtick</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Lost_Cancelled_Reason_Please_Specify</fullName>
+        <active>false</active>
+        <errorConditionFormula>ISPICKVAL( Status__c, &apos;Lost&apos;) &amp;&amp;  ISBLANK(Cancel_Comment__c)</errorConditionFormula>
+        <errorDisplayField>Cancel_Comment__c</errorDisplayField>
+        <errorMessage>Lost/Cancelled/Downtick Reason - Please Specify, required when product is Lost</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Lost_Cancelled_Reason_When_Lost</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Lost_Cancelled_Reason__c, &apos;&apos;) &amp;&amp;
+(
+   ISPICKVAL(Status__c, &apos;Lost&apos;)
+|| ISPICKVAL(Status__c, &apos;Cancelled&apos;)
+|| (Opportunity.RecordType.Name = &apos;Renewal&apos; &amp;&amp; Net_New_Business__c &lt; 0)
+)</errorConditionFormula>
+        <errorDisplayField>Lost_Cancelled_Reason__c</errorDisplayField>
+        <errorMessage>Lost/Cancelled/Downtick Reason required when lost or cancelled or downtick</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_No_of_Calls</fullName>
+        <active>true</active>
+        <errorConditionFormula>Product2.No_of_Calls_Dialer__c = TRUE &amp;&amp; ISBLANK( No_of_Calls__c ) &amp;&amp;
+(  ISPICKVAL(Status__c, &apos;Won&apos;) || ISPICKVAL(Status__c, &apos;Renewed&apos;))</errorConditionFormula>
+        <errorDisplayField>No_of_Calls__c</errorDisplayField>
+        <errorMessage>No. of Calls required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_No_of_Certificates</fullName>
+        <active>true</active>
+        <errorConditionFormula>Product2.No_of_Certificates__c = TRUE &amp;&amp; ISBLANK( No_of_Certificates__c ) &amp;&amp;
+(  ISPICKVAL(Status__c, &apos;Won&apos;) || ISPICKVAL(Status__c, &apos;Renewed&apos;))</errorConditionFormula>
+        <errorDisplayField>No_of_Certificates__c</errorDisplayField>
+        <errorMessage>No. of Certificates required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_No_of_Conferences</fullName>
+        <active>true</active>
+        <errorConditionFormula>Product2.No_of_Conferences__c = TRUE &amp;&amp; ISBLANK( No_of_Conferences__c ) &amp;&amp;
+(  ISPICKVAL(Status__c, &apos;Won&apos;) || ISPICKVAL(Status__c, &apos;Renewed&apos;))</errorConditionFormula>
+        <errorDisplayField>No_of_Conferences__c</errorDisplayField>
+        <errorMessage>No. of Conferences required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_No_of_Deals</fullName>
+        <active>true</active>
+        <errorConditionFormula>Product2.No_of_Deals_Transaction_Volumes__c = TRUE &amp;&amp; ISBLANK( No_of_Deals__c ) &amp;&amp;
+(  ISPICKVAL(Status__c, &apos;Won&apos;) || ISPICKVAL(Status__c, &apos;Renewed&apos;))</errorConditionFormula>
+        <errorDisplayField>No_of_Deals__c</errorDisplayField>
+        <errorMessage>No. of Deals required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_No_of_Meetings</fullName>
+        <active>true</active>
+        <errorConditionFormula>Product2.No_of_Meetings__c = TRUE &amp;&amp; ISBLANK( No_of_Meetings__c ) &amp;&amp;
+(  ISPICKVAL(Status__c, &apos;Won&apos;) || ISPICKVAL(Status__c, &apos;Renewed&apos;))</errorConditionFormula>
+        <errorDisplayField>No_of_Meetings__c</errorDisplayField>
+        <errorMessage>No. of Meetings required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_No_of_Questions</fullName>
+        <active>true</active>
+        <errorConditionFormula>Product2.No_of_Questions__c = TRUE &amp;&amp;  ISBLANK(No_of_Questions__c ) &amp;&amp;
+(  ISPICKVAL(Status__c, &apos;Won&apos;) || ISPICKVAL(Status__c, &apos;Renewed&apos;))</errorConditionFormula>
+        <errorDisplayField>No_of_Questions__c</errorDisplayField>
+        <errorMessage>No. of Questions required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_No_of_Reports</fullName>
+        <active>true</active>
+        <errorConditionFormula>Product2.No_of_Reports__c = TRUE &amp;&amp;  ISBLANK(No_of_Reports__c) &amp;&amp;
+(  ISPICKVAL(Status__c, &apos;Won&apos;) || ISPICKVAL(Status__c, &apos;Renewed&apos;))</errorConditionFormula>
+        <errorDisplayField>No_of_Reports__c</errorDisplayField>
+        <errorMessage>No. of Reports required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_No_of_Users</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( No_of_Users__c ) &amp;&amp;
+ PricebookEntry.Product2.Seat_Fee_No_of_Users__c &amp;&amp;
+(ISPICKVAL( Status__c , &apos;Won&apos;) || 
+ ISPICKVAL( Status__c , &apos;Renewed&apos; ))</errorConditionFormula>
+        <errorDisplayField>No_of_Users__c</errorDisplayField>
+        <errorMessage>No. of Users required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Region_When_Won_or_Renewed</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL( Status__c , &apos;Won&apos;) ||  ISPICKVAL( Status__c , &apos;Renewed&apos;)) &amp;&amp;  ISBLANK(Text( Product_Region__c ))</errorConditionFormula>
+        <errorDisplayField>Product_Region__c</errorDisplayField>
+        <errorMessage>Product Region is required when you close this opportunity product.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Revenue_Type</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED(Product_Revenue_Type__c) &amp;&amp;  ISPICKVAL(Product_Revenue_Type__c,&apos;&apos;)</errorConditionFormula>
+        <errorDisplayField>Product_Revenue_Type__c</errorDisplayField>
+        <errorMessage>You must enter a value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Site_License</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Site_License__c ) &amp;&amp;
+ PricebookEntry.Product2.Site_License_Per_Region__c &amp;&amp;
+(ISPICKVAL( Status__c , &apos;Won&apos;) || 
+ISPICKVAL( Status__c, &apos;Renewed&apos;))</errorConditionFormula>
+        <errorDisplayField>Site_License__c</errorDisplayField>
+        <errorMessage>Site License required for this type of product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Subscription_End_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Subscription_End_Date__c ) &amp;&amp; (NOT(ISBLANK( Subscription_Start_Date__c )) || NOT(ISBLANK( Term_Months__c ))) &amp;&amp; (ISPICKVAL( Status__c , &quot;Won&quot;) || ISPICKVAL( Status__c, &quot;Renewed&quot;))</errorConditionFormula>
+        <errorDisplayField>Subscription_End_Date__c</errorDisplayField>
+        <errorMessage>Subscription End Date required when Subscription Start Date or Term entered</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Subscription_Start_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Subscription_Start_Date__c ) &amp;&amp; (NOT(ISBLANK( Subscription_End_Date__c )) || NOT(ISBLANK( Term_Months__c ))) &amp;&amp; (ISPICKVAL( Status__c , &quot;Won&quot;) || ISPICKVAL( Status__c, &quot;Renewed&quot;))</errorConditionFormula>
+        <errorDisplayField>Subscription_Start_Date__c</errorDisplayField>
+        <errorMessage>Subscription Start Date required when Subscription End Date or Term entered</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Term_for_Subscription_Period</fullName>
+        <active>true</active>
+        <errorConditionFormula>(NOT(ISBLANK( Subscription_Start_Date__c )) || NOT(ISBLANK( Subscription_End_Date__c ))) &amp;&amp; ISBLANK( Term_Months__c ) &amp;&amp; NOT(ISPICKVAL(Product_Transaction_Type__c, &apos;Renewal&apos;) &amp;&amp; (ISPICKVAL(Status__c, &apos;Cancelled&apos;) || ISBLANK(Text(Status__c))))</errorConditionFormula>
+        <errorDisplayField>Term_Months__c</errorDisplayField>
+        <errorMessage>Term required when Subscription Start and End Dates entered</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Value_Requires_Implementation_UAT</fullName>
+        <active>true</active>
+        <description>Requires Implementation (UAT)  is required at Status Won or Status Renewed if the checkbox on the product setup is checked.</description>
+        <errorConditionFormula>(Product2.Requires_Implementation_UAT__c = true) &amp;&amp; ISPICKVAL(Status__c  , &apos;Won&apos;) &amp;&amp; ISPICKVAL(Requires_Implementation_UAT__c , &apos;&apos;)</errorConditionFormula>
+        <errorDisplayField>Requires_Implementation_UAT__c</errorDisplayField>
+        <errorMessage>Requires Implementation (UAT)  is required</errorMessage>
+    </validationRules>
+</CustomObject>

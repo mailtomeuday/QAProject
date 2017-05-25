@@ -1,0 +1,13 @@
+*** NEW WORK ORDER ASSIGNMENT NOTIFICATION ***  
+
+The following work order has been assigned to {!Work_Order__c.OwnerFullName}:
+
+Click on the link to access the work order:  {!Work_Order__c.Link}
+
+Company: {!Work_Order__c.Account__c}      
+Sales Rep: {!Work_Order__c.Sales_Rep__c}    
+Product Transaction Type: {!Work_Order__c.Product_Transaction_Type__c}  
+Product: {!Work_Order__c.Product__c}  
+Name: {!Work_Order__c.Name}       
+Product Comments:  
+{!Work_Order__c.Product_Comments__c}

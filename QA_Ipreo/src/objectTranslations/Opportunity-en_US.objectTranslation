@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>TCV</value>
+        </caseValues>
+        <name>amount_opportunity</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Opportunity Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Opportunity Types</value>
+        </caseValues>
+        <name>opportunity_record_type</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <help><!-- Annual Contracted Value - Roll up of ACpV (Annual Contract Product Value) from Opportunity Product(s). --></help>
+        <label><!-- ACV --></label>
+        <name>ACV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Billing City --></label>
+        <name>Account_Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Billing Country --></label>
+        <name>Account_Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Billing State --></label>
+        <name>Account_Billing_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name on Contract --></label>
+        <name>Account_Name_on_Contract__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked when the Deal Announcement (email) should be sent at Closed Won Verified or unchecked for confidential deals.  Defaults to checked for new Opportunity and resets to unchecked AFTER announcement is sent. --></help>
+        <label><!-- Announce Deal --></label>
+        <name>Announce_Deal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll up of Annual Pass Through from Opportunity Product(s). --></help>
+        <label><!-- Annual Pass Through --></label>
+        <name>Annual_Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- At Risk --></label>
+        <name>At_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base URL --></label>
+        <name>Base_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Account --></label>
+        <name>Billing_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact --></label>
+        <name>Billing_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency - Other Please Specify --></label>
+        <name>Billing_Frequency_Other_Please_Specify__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency --></label>
+        <name>Billing_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Start Date - Other Pls Specify --></label>
+        <name>Billing_Start_Date_Other_Pls_Specify__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Start Date --></label>
+        <name>Billing_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing State/Province --></label>
+        <name>Billing_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Zip/Postal Code --></label>
+        <name>Billing_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundled With --></label>
+        <lookupFilter>
+            <errorMessage><!-- The Opportunity does not exist or does not match an opportunity on the current Account. --></errorMessage>
+        </lookupFilter>
+        <name>Bundled_With__c</name>
+        <relationshipLabel><!-- Opportunities (Bundled With) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cancel Reason --></label>
+        <name>Cancel_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Relief --></label>
+        <name>Cancel_Relief__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date is &gt;= Current Month --></label>
+        <name>Close_Date_is_Current_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commit --></label>
+        <name>Commit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked when the Confidential Deal Announcement (email) should be sent at Closed Won Verified.  Defaults to unchecked for new Opportunity. --></help>
+        <label><!-- Confidential Announcement --></label>
+        <name>Confidential_Announcement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Status --></label>
+        <name>Contract_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to the Contract with which Opportunity is associated.  Populated when user clicks Add Contract on Opportunity or when user selects an existing Contract with which to associate Opportunity. --></help>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deal Announcement Kudos --></label>
+        <name>Deal_Announcement_Kudos__c</name>
+    </fields>
+    <fields>
+        <help><!-- Most recent date on which Deal Announcement was sent.  Set by system on sending of announcement. --></help>
+        <label><!-- Deal Announcement Sent --></label>
+        <name>Deal_Announcement_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detailed Billing --></label>
+        <name>Detailed_Billing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll up of Estimated Annual Transaction Fees from Opportunity Product(s). --></help>
+        <label><!-- Est. Annual Transaction Fees --></label>
+        <name>Estimated_Annual_Transaction_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Est. Completion Date --></label>
+        <name>Estimated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evergreen Date --></label>
+        <name>Evergreen_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evergreen Period --></label>
+        <name>Evergreen_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evergreen --></label>
+        <name>Evergreen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Account ID Bak --></label>
+        <name>Finance_Account_ID_Bak__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Account ID --></label>
+        <name>Finance_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Adjustment --></label>
+        <name>Finance_Adjustment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Comments --></label>
+        <name>Finance_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Budget --></label>
+        <name>In_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Unpaid --></label>
+        <name>Invoice_Unpaid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Close Date In Current Year --></label>
+        <name>Is_Close_Date_In_Current_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- indicate if Opportunity is a Key Win --></help>
+        <label><!-- Key Win --></label>
+        <name>Key_Win__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn Company Id --></label>
+        <name>LID__LinkedIn_Company_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Line of Business.  Defaults from Account when Opportunity is saved.  Can be updated.  Selection of Vertical filters the list of values for LOB.  Required at Closed Won Sales, Closed Won Verified. --></help>
+        <label><!-- LOB --></label>
+        <name>LOB__c</name>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance*</masterLabel>
+            <translation><!-- Compliance* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Access</masterLabel>
+            <translation><!-- Corporate Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Secretary/Legal</masterLabel>
+            <translation><!-- Corporate Secretary/Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Capital Markets</masterLabel>
+            <translation><!-- Debt Capital Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity Capital Markets</masterLabel>
+            <translation><!-- Equity Capital Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity Sales*</masterLabel>
+            <translation><!-- Equity Sales* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity Trading*</masterLabel>
+            <translation><!-- Equity Trading* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FI Sales*</masterLabel>
+            <translation><!-- FI Sales* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FI Trading*</masterLabel>
+            <translation><!-- FI Trading* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Resources</masterLabel>
+            <translation><!-- Human Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR</masterLabel>
+            <translation><!-- IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Banking</masterLabel>
+            <translation><!-- Investment Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Syndication</masterLabel>
+            <translation><!-- Loan Syndication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Trading</masterLabel>
+            <translation><!-- Loan Trading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loans Agency</masterLabel>
+            <translation><!-- Loans Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing/Bus. Dev.</masterLabel>
+            <translation><!-- Marketing/Bus. Dev. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipals</masterLabel>
+            <translation><!-- Municipals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations/IT</masterLabel>
+            <translation><!-- Operations/IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portfolio Management</masterLabel>
+            <translation><!-- Portfolio Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prime Broker</masterLabel>
+            <translation><!-- Prime Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Company Services</masterLabel>
+            <translation><!-- Private Company Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research-Independent</masterLabel>
+            <translation><!-- Research-Independent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research-Industry/Market</masterLabel>
+            <translation><!-- Research-Industry/Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Management*</masterLabel>
+            <translation><!-- Risk Management* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales*</masterLabel>
+            <translation><!-- Sales* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategy</masterLabel>
+            <translation><!-- Strategy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trading</masterLabel>
+            <translation><!-- Trading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury</masterLabel>
+            <translation><!-- Treasury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Management</masterLabel>
+            <translation><!-- Wealth Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Created By --></label>
+        <name>Lead_Created_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rollup of Product Lost Amount (Annual) from Lost Products. --></help>
+        <label><!-- Lost Amount (Annual) --></label>
+        <name>Lost_Amount_Annual__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rollup of Product Lost Amount (Total) from Lost Products. --></help>
+        <label><!-- Lost Amount (Total) --></label>
+        <name>Lost_Amount_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates that the Opportunity is associated with a NYSE Program (NYSE is subsidizing at least one Opportunity Product on the Opportunity).  Defaults from Account.  If selected, &quot;Non-Subsidized Contracted Value&quot; must also be populated. --></help>
+        <label><!-- NYSE Program Tier --></label>
+        <name>NYSE_Program_Tier__c</name>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier A</masterLabel>
+            <translation><!-- Tier A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier B</masterLabel>
+            <translation><!-- Tier B --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is a formula field that calculates ACV - Annual Pass Through --></help>
+        <label><!-- Net ACV --></label>
+        <name>Net_ACV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll up of Net New Business from Opportunity Product(s).  Also (ACV - Annual Pass Through) - (Prior Year ACV - Prior Year Pass Through). --></help>
+        <label><!-- Net New Business --></label>
+        <name>Net_New_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of GMG Opportunity Products --></label>
+        <name>No_of_GMG_Opportunity_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Opp Products with One Year --></label>
+        <name>No_of_Opp_Products_with_One_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Opp Products without Status --></label>
+        <name>No_of_Opp_Products_without_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Opp Products without Subsidy --></label>
+        <name>No_of_Opp_Products_without_Subsidy__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Opportunity Products --></label>
+        <name>No_of_Opportunity_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Opportunity Products with PROJ --></label>
+        <name>No_of_Opportunity_Products_with_PROJ__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Product Add Ons --></label>
+        <name>No_of_Product_Add_Ons__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Renewed Opp Products --></label>
+        <name>No_of_Renewed_Opp_Products__c</name>
+    </fields>
+    <fields>
+        <help><!-- Amount the customer would pay for the Opportunity Products on this Opportunity if subsidies did not apply (if customer came off subsidy). --></help>
+        <label><!-- NYSE Non-subsidized Contract Value --></label>
+        <name>Non_Subsidized_Contracted_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- OppUniqueKey --></label>
+        <name>OppUniqueKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Identifier --></label>
+        <name>Opportunity_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Number --></label>
+        <name>Opportunity_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Opportunity --></label>
+        <name>Original_Opportunity__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Owner - Closed Date --></label>
+        <name>Owner_Closed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a &quot;system&quot; field used to prevent Opportunity creation upon Lead conversion.  Do not use for any other purpose. --></help>
+        <label><!-- Prevent Opp Creation on Convert (System) --></label>
+        <name>Prevent_Opp_Creation_on_Convert_System__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll up of Prior Year ACpV from Opportunity Product(s). --></help>
+        <label><!-- Prior Year ACV --></label>
+        <name>Prior_Year_ACV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll up of Prior Year Pass Through from Opportunity Product(s). --></help>
+        <label><!-- Prior Year Pass Through --></label>
+        <name>Prior_Year_Pass_Through__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Bundle --></label>
+        <name>Product_Bundle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order Number --></label>
+        <name>Purchase_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order Required --></label>
+        <name>Purchase_Order_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Name --></label>
+        <name>Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Date --></label>
+        <name>Renewal_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Freq of renewals after initial delivery of proj or initial subscrip term.  For projects, Close Date on Renewal Opp is Close Date on original Opp+Renewal Incr.  For subscrips, Subscription End Date on Renewal is  Subscription End Date on orig+Renewal Incr. --></help>
+        <label><!-- Renewal Increment --></label>
+        <name>Renewal_Increment__c</name>
+        <picklistValues>
+            <masterLabel>1 year</masterLabel>
+            <translation><!-- 1 year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 years</masterLabel>
+            <translation><!-- 2 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 years</masterLabel>
+            <translation><!-- 3 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 years</masterLabel>
+            <translation><!-- 4 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 years</masterLabel>
+            <translation><!-- 5 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 months</masterLabel>
+            <translation><!-- 6 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 years</masterLabel>
+            <translation><!-- 6 years --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Renewal Notice Period --></label>
+        <name>Renewal_Notice_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Notice Required --></label>
+        <name>Renewal_Notice_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Status --></label>
+        <name>Renewal_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial</masterLabel>
+            <translation><!-- Partial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provisional Cancel</masterLabel>
+            <translation><!-- Provisional Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal Pending</masterLabel>
+            <translation><!-- Renewal Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revenue Delta Type --></label>
+        <name>Revenue_Delta_Type__c</name>
+        <picklistValues>
+            <masterLabel>Downtick</masterLabel>
+            <translation><!-- Downtick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flat</masterLabel>
+            <translation><!-- Flat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uptick</masterLabel>
+            <translation><!-- Uptick --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Either Subscription (ACV and ACV/TRANS) or Project (PROJ).  Required to save the Opportunity. --></help>
+        <label><!-- Revenue Type --></label>
+        <name>Revenue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Project</masterLabel>
+            <translation><!-- Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation><!-- Subscription --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sales Ops team member responsible for verification of the Closed Opportunity.  Only editable by Sales Ops.  Required at Opportunity Stage &quot;Closed Won Verified&quot;. --></help>
+        <label><!-- Sales Ops Owner --></label>
+        <name>Sales_Ops_Owner__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sold To Account --></label>
+        <name>Sold_To_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Billing Period --></label>
+        <name>Special_Billing_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- TSX Tier --></label>
+        <name>TSX_Tier__c</name>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venture</masterLabel>
+            <translation><!-- Venture --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- This Year ACV --></label>
+        <name>This_Year_ACV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Stores the date when the Opportunity Stage was changed to &quot;Closed Won Verified&quot; or &quot;Closed Cancelled Verified&quot; --></help>
+        <label><!-- Verified Date --></label>
+        <name>Verified_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ipreo Vertical with which Opportunity is associated (ex GMG, Corporate).  Defaults from Account when Opportunity is saved.  Can be updated.  Selection of Vertical filters the list of values for LOB.  Required at Closed Won Sales, Closed Won Verified. --></help>
+        <label><!-- Vertical --></label>
+        <name>Vertical__c</name>
+        <picklistValues>
+            <masterLabel>Buyside</masterLabel>
+            <translation><!-- Buyside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sellside</masterLabel>
+            <translation><!-- Sellside --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Opportunity New Business Layout</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Exchange Program Information --></label>
+            <section>Exchange Program Information</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Include Opportunity in a Bundle --></label>
+            <section>Include Opportunity in a Bundle</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity New Business Layout - Sales Ops</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Exchange Program Information --></label>
+            <section>Exchange Program Information</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Include Opportunity in a Bundle --></label>
+            <section>Include Opportunity in a Bundle</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity New Business Layout - Service</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Exchange Program Information --></label>
+            <section>Exchange Program Information</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Include Opportunity in a Bundle --></label>
+            <section>Include Opportunity in a Bundle</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Renewal Layout</layout>
+        <sections>
+            <label><!-- Contracts Information --></label>
+            <section>Contracts Information</section>
+        </sections>
+        <sections>
+            <label><!-- Exchange Program Information --></label>
+            <section>Exchange Program Information</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Include Opportunity in a Bundle --></label>
+            <section>Include Opportunity in a Bundle</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Information --></label>
+            <section>Renewal Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Renewal Layout - Sales Ops</layout>
+        <sections>
+            <label><!-- Contracts Information --></label>
+            <section>Contracts Information</section>
+        </sections>
+        <sections>
+            <label><!-- Exchange Program Information --></label>
+            <section>Exchange Program Information</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Include Opportunity in a Bundle --></label>
+            <section>Include Opportunity in a Bundle</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Information --></label>
+            <section>Renewal Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Renewal Layout - Service</layout>
+        <sections>
+            <label><!-- Contracts Information --></label>
+            <section>Contracts Information</section>
+        </sections>
+        <sections>
+            <label><!-- Exchange Program Information --></label>
+            <section>Exchange Program Information</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Include Opportunity in a Bundle --></label>
+            <section>Include Opportunity in a Bundle</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Information --></label>
+            <section>Renewal Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Opportunity Product --></label>
+        <name>Add_Product</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Budget --></label>
+        <name>Budget</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Business --></label>
+        <name>New_Business</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Renewal --></label>
+        <name>Renewal</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Region on the related Account is blank. Please select a region on the related Account or contact Operations User or system Administrator in order to continue. --></errorMessage>
+        <name>Account_Region_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot add or remove products from a renewal opportunity --></errorMessage>
+        <name>Cannot_Add_or_Remove_Renewal_Opp_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Close Won Verify Opportunity Since Invoice is Unpaid --></errorMessage>
+        <name>Cannot_CWV_Opp_Invoice_Unpaid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can not close cancel this opportunity with renewed opportunity product. Please check the opportunity products. --></errorMessage>
+        <name>Cannot_Cancel_Opp_with_Renewed_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot close win opportunity without a contract in Customer Executed or Fully Executed status --></errorMessage>
+        <name>Cannot_Close_Opp_Without_Contract</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot close opportunity with products that do not have a status --></errorMessage>
+        <name>Cannot_Close_Opp_Without_Opp_Prod_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not eligible to renew, prior year invoice unpaid. Please consult Finance and Sales Manager --></errorMessage>
+        <name>Cannot_Cls_Opty_if_InvoiceUnpaid_Checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Creating an Opportunity upon Lead conversion is currently not allowed.  Please select the &apos;Do not create a new opportunity upon conversion&apos; checkbox to continue. --></errorMessage>
+        <name>Cannot_Create_Opp_On_Lead_Conversion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit closed opportunities.  Please ask Sales Operations to make any necessary changes. --></errorMessage>
+        <name>Cannot_Edit_Closed_Opportunities</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot modify the Close Date on a closed Opportunity --></errorMessage>
+        <name>Cannot_Modify_Close_Date_On_Closed_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot modify the Close Date on a Renewal Opportunity --></errorMessage>
+        <name>Cannot_Modify_Close_Date_on_Renewal_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit closed verified opportunities. Please ask System Administrator to make any necessary changes. --></errorMessage>
+        <name>Cannot_Modify_Closed_Verified_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Operations users can change to Closed Won Verified.  Please ask Sales Operations to advance this stage. --></errorMessage>
+        <name>Cannot_Set_Stage_to_Closed_Won_Verified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunities with one or more Add On opportunity products must only contain Add On opportunity products --></errorMessage>
+        <name>Check_All_Products_Are_Add_Ons_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Apply NYSE Subsidy? is required on all products when NYSE Program Tier provided --></errorMessage>
+        <name>Check_Oppty_Products_without_Subsidy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Operations users can change to Closed Cancelled Verified. Please ask Sales Operations to advance this stage. --></errorMessage>
+        <name>Check_Opt_When_Closed_Cancel_Verified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Net New Business must be &lt; 0 when Stage is Provisional Cancel. --></errorMessage>
+        <name>NNB_negative_when_Provisional_Cancel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Ops can only set Cancel Relief at Closed Cancelled (Or Closed Cancelled Verified) stages. --></errorMessage>
+        <name>Ops_can_only_set_cancel_rel_at_closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contracted Value required when NYSE Program Tier has a value --></errorMessage>
+        <name>Req_Contracted_Value_When_NYSE_Valued</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- LOB required to close win this opportunity --></errorMessage>
+        <name>Req_LOB_When_Close_Win</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NYSE Program Tier required when Contracted Value entered --></errorMessage>
+        <name>Req_NYSE_Program_Tier</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Renewal Increment required to close win this opportunity --></errorMessage>
+        <name>Req_Renewal_Increment_to_Close_Win</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Ops Owner required when stage is Closed Won Verified --></errorMessage>
+        <name>Req_Sales_Ops_Owner_Close_Won_Verified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At least one opportunity product required to close win this opportunity --></errorMessage>
+        <name>Req_at_Least_One_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- GMG Opportunities require a Description to be entered. --></errorMessage>
+        <name>Require_Description</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- GMG Opportunities require the &quot;Next Step&quot; to be entered and it must be different from the previous value when changing the stage. --></errorMessage>
+        <name>Require_Next_Step</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot choose Subscription. Opportunity has/have Product(s) with Product Revenue Type PROJ --></errorMessage>
+        <name>Revenue_Type_Validation_For_Subscription</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot choose Project. Opportunity has/have Product(s) with Product Revenue Type ACV, ACV/TRANS --></errorMessage>
+        <name>Revenue_Type_Validation_Project</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select either Announce Deal or Confidential Announcement --></errorMessage>
+        <name>Validate_AnnounceDeal_ConfidentialDeal</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Add_Contract --></label>
+        <name>Add_Contract</name>
+    </webLinks>
+</CustomObjectTranslation>

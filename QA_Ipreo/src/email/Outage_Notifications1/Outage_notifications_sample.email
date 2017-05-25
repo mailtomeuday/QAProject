@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Outage advisory</title>
+    <style type="text/css">
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+        }
+
+        a img {
+            border: 0;
+            outline: none;
+        }
+
+        a {
+             color: #000;
+             text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+        
+        table, tr, td {
+             border-collapse: collapse;
+             mso-table-lspace: 0pt; 
+             mso-table-rspace: 0pt;
+        }
+    </style>
+</head>
+ 
+<body style="margin: 0; padding: 0; background-color: #e6e6e6; text-align: center;">
+<table width="600" cellpadding="0" cellspacing="0" style="padding: 0; margin: 0 auto; background-color: #fff;" align="center">
+    <tr style="background-color: #f7bf1f; color: #fff; font: 18px/15px 'Source Sans Pro', 'open-sans-light', 'Segoe UI', sans-serif;">
+        <th style="padding: 25px 20px; vertical-align: middle; font-weight: normal; text-transform: uppercase; text-align: left;">
+            <img src="https://c.na16.content.force.com/servlet/servlet.FileDownload?file=015j0000000Puh0" alt="alert" />
+            <span style="font: 18px/15px 'Source Sans Pro', 'open-sans-light', 'Segoe UI', sans-serif;">Outage Advisory </span>
+        </th>
+        <th style="text-align: right; padding-right: 20px;">
+            <img src="https://c.na16.content.force.com/servlet/servlet.FileDownload?file=015j0000000Puh5" alt="Ipreo-logotype" />
+        </th>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding-top: 40px; padding-bottom: 15px; text-align: center;">
+            <p style="padding-bottom: 20px;">
+                <strong style="font: 28px/30px 'Source Sans Pro', 'open-sans-light', 'Segoe UI', sans-serif;">Ipreo Products not available</strong>
+            </p>
+            <span style="color:  #444; font: 16px/20px 'Source Sans Pro', 'open-sans-light', 'Segoe UI', sans-serif;">Event Date &amp Time:</span>
+            <strong style="color:  #444; font: 16px/20px 'Source Sans Pro', 'open-sans-semibold', 'Segoe UI', sans-serif; font-weight: bolder;">19-Jan-15 9:00am - ET ongoing</strong><br />
+            <span style="color:  #444; font: 16px/20px 'Source Sans Pro', 'open-sans-light', 'Segoe UI', sans-serif;">Next Update expected:</span>
+            <strong style="color:  #444; font: 16px/20px 'Source Sans Pro', 'open-sans-semibold', 'Segoe UI', sans-serif; font-weight: bolder;">10:30am ET</strong><br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 20px; text-align: justify;">
+            <p style="color: #444; font: 16px/24px 'Source Sans Pro', 'open-sans-light', 'Segoe UI', sans-serif;">
+                Dear Client,<br /><br />
+            </p>
+            <p style="color:  #444; font: 16px/24px 'Source Sans Pro', 'open-sans-light', 'Segoe UI', sans-serif;">
+                <strong style="color: #444; font-weight: bolder;">Please be advised that we are currently experiencing  unexpected network issuee resulting in possible slowness and connectivity problems.</strong>
+                We are actively investigating the issue and working to address it as soon as possible.<br /><br />
+                We apologize for any inconvenience this is causing, thank you for patience. We will keep you updated regularly.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 10px 20px 0 20px;">
+            <table style="width: 100%;">
+                <tr style="border-top: 1px solid #ddddde; border-bottom: 1px solid #ddddde;">
+                    <td style="padding: 25px 30px; background-color: #e6e6e5; text-align: center;">
+                        <span style="font: 15px/20px 'Source Sans Pro', 'open-sans-light', 'Segoe UI', sans-serif;">
+                            Please don’t hesitate to email or call 24/7 support team  for questions or assistance:<a href="mailto:callmenowIR@ipreo.com" style="color: #0c61b2; font-weight: 700;">callmenowIR@ipreo.com</a><br />
+                            <span>
+                                +1 (800) 305-0819 or (212) 849-5424 (Americas)<br>
+                                +44 20 7665 9822 (Europe)<br>
+                                +852 58082616 (Asia Pacific)<br>
+                                +81 3 4579 5698 (Japan)
+                            </span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 20px;"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

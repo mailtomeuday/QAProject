@@ -1,0 +1,4202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Mobile_Account</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Mobile_Account</fullName>
+        <fields>Name</fields>
+        <fields>Vertical__c</fields>
+        <fields>Account_Type__c</fields>
+        <fields>Status__c</fields>
+        <label>Mobile Account</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AGM_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>AGM Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>AM_Intel__c</fullName>
+        <description>for data migration from BDV</description>
+        <externalId>false</externalId>
+        <label>AM Intel</label>
+        <length>2000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Callmenow Line</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EDD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ipreo Sales Line</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ipreo Website</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Health_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Health Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Account_Health_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Health Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Health__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Health</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Green</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yellow</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Red</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_ID__c</fullName>
+        <displayFormat>ACCT-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Account ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Type</label>
+        <picklist>
+            <controllingField>Vertical__c</controllingField>
+            <picklistValues>
+                <fullName>Bank</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bank-Central Bank</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bank-Private Bank</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Credit Union</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CTA</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Endowment/Foundation-Government</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Endowment/Foundation-Private</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Endowment/Foundation-School</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Family Office</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hedge Fund</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hedge Fund-Fund of Funds</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investment Advisor</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investment Advisor-Fund of Funds</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investment Advisor-Manager of Managers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investment Advisor-Mutual Fund</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investment Bank-Proprietary Trading</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Law Firm</fullName>
+                <default>false</default>
+                <controllingFieldValues>Other</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Municipality</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pension Fund-Corporate/Private</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pension Fund-State/Government</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pension Fund-Union</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Equity</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Proprietary</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research-Independent</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research-Industry/Market</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recruiter</fullName>
+                <default>false</default>
+                <controllingFieldValues>Other</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sovereign Wealth Fund</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>University</fullName>
+                <default>false</default>
+                <controllingFieldValues>Other</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <controllingFieldValues>Other</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Venture Capital</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <controllingFieldValues>Other</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>All_Closed_Won_Verifed_Sales__c</fullName>
+        <description>All Closed Won Verifed Sales - a roll up of all ACV on Opp (has no filter)</description>
+        <externalId>false</externalId>
+        <label>All Closed Won Verifed Sales</label>
+        <summarizedField>Opportunity.ACV__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won Sales, Closed Won Verified</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>All_Managers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically updated if this Account was created from a converted EDD Lead</inlineHelpText>
+        <label>All Managers</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>BDFax__c</fullName>
+        <externalId>false</externalId>
+        <label>BDFax</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BDIsBuySide__c</fullName>
+        <externalId>false</externalId>
+        <label>BDIsBuySide</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BDIsSellSide__c</fullName>
+        <externalId>false</externalId>
+        <label>BDIsSellSide</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BDLastModifiedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>BDLastModifiedDate</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BDPhone__c</fullName>
+        <externalId>false</externalId>
+        <label>BDPhone</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BDTypeName__c</fullName>
+        <externalId>false</externalId>
+        <label>BDTypeName</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_Vision_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>BD Vision ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Bookrunners__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically updated if this Account was created from a converted EDD Lead</inlineHelpText>
+        <label>Bookrunners</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Broker_DR_Bank__c</fullName>
+        <externalId>false</externalId>
+        <label>Broker/DR Bank</label>
+        <picklist>
+            <picklistValues>
+                <fullName>BNY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Capita</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DB Corp Broking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Citi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deutsche DR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JPM Cazenove</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JPM DR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CUSIP__c</fullName>
+        <description>Data migration - from Ian file</description>
+        <externalId>false</externalId>
+        <label>CUSIP</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Churn_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Churn Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>At Risk – Budget</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>At Risk – Usage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>At Risk – Data</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>At Risk – Functionality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Touch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Win</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Churn__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Churn</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Closed_Won_Verifed_Sales_Year_To_Date__c</fullName>
+        <description>Closed Won Verifed Sales To Date - a roll up of all ACV on Opp but just for Closed Date=This Year.</description>
+        <externalId>false</externalId>
+        <label>Closed Won Verifed Sales YTD</label>
+        <summarizedField>Opportunity.ACV__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.This_Year_ACV__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Company_Overview__c</fullName>
+        <description>for data migration from BDV</description>
+        <externalId>false</externalId>
+        <label>Company Overview</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Competitor_Products_in_Use_CORP__c</fullName>
+        <description>for data migration from BDV</description>
+        <externalId>false</externalId>
+        <label>Competitor Products in Use (CORP)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Alternate CRM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blender - Webhosting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bloomberg</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Businesswire - Distribution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Businesswire - Webhosting/Webcasting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Canadian Newswire Service</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Capital IQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Capital Precision</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chorus Call - Webcasting/Call hosting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Global Crossing - Earnings Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IR Consultant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MZ Ilios - IR Navigator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nasdaq - Factset E&amp;T</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nasdaq - Factset R&amp;E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nasdaq - Real-time Quotes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nasdaq - Shareholder.com</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nasdaq - Surveillance/Bloom Partners</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nasdaq - Webhosting/Webcasting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PR Newswire - Distribution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PR Newswire - Webhosting/Webcasting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Q4 - Webhosting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rivel - Perception</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rivel - Targeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SNL - E&amp;T</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SNL - Limted R&amp;E (for covered comp.)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SNL - Quotes &amp; News</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SNL - Webhosting/Webcasting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stock Watch - News &amp; Quotes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Talk Point - Webhosting/Webcasting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TF - Analytical Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TF - Conf. Call Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TF - First Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TF - Notice &amp; Access for distibution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TF - Quotes &amp; News w/Fund. Data &amp; Excel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TF - Smart Targets</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TF - Street Events</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TF - Surveillance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TF - thomson</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TF - Webhosting/Webcasting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TSX Infosuite</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Competitor_Products_in_Use_GMG__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Products in Use (GMG)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Analec</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bloomberg</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BlueMatrix</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Capital IQ (McGraw Hill)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cvent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dealogic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eurekahedge</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Factset</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intralinks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Morningstar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NetRoadShow</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NexJ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Singletrack</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Syndtrak</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Thomson Reuters</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Corporate_Client_Tier__c</fullName>
+        <description>Corporate Client Tier</description>
+        <externalId>false</externalId>
+        <label>Corporate Client Tier</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DM_Name__c</fullName>
+        <description>Log for dm action</description>
+        <externalId>false</externalId>
+        <label>DM Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DM_Time__c</fullName>
+        <description>data migration time</description>
+        <externalId>false</externalId>
+        <label>DM Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Data_Feed_User_Name__c</fullName>
+        <description>for data migration from BDV</description>
+        <externalId>false</externalId>
+        <label>Data Feed User Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deal_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically updated if this Account was created from a converted EDD Lead</inlineHelpText>
+        <label>Deal Status</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debtdomain_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Identifier from the Debtdomain system</description>
+        <externalId>true</externalId>
+        <label>Debtdomain ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Earnings_Release_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Earnings Release Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Entitlements__c</fullName>
+        <externalId>false</externalId>
+        <label># Entitlements</label>
+        <summaryForeignKey>Entitlement.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically updated if this Account was created from a converted EDD Lead</inlineHelpText>
+        <label>Expected Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Finance_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Account ID</label>
+        <length>11</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Float_mm__c</fullName>
+        <description>Data migration - from Ian file</description>
+        <externalId>false</externalId>
+        <label>Float (mm)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ISIN__c</fullName>
+        <description>Data migration - from Ian file</description>
+        <externalId>false</externalId>
+        <label>ISIN</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Basic Materials</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Financials</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrials</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Initial_File_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically updated if this Account was created from a converted EDD Lead</inlineHelpText>
+        <label>Initial File Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ipreo_BDSF_1_10__AccountType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>BD Account Type</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ipreo_BDSF_1_10__BDWarehouseId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>BD Warehouse Id</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ipreo_BDSF_1_10__BD_SyncHistory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains values (or hashes) for all fields that have ever been synchronized.</description>
+        <externalId>false</externalId>
+        <label>BD Synchronization History</label>
+        <length>32000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ipreo_BDSF_1_10__bd_lastsynctime__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>BD Last synchronization time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Ipreo_Reference_CORP__c</fullName>
+        <description>for data migration from BDV</description>
+        <externalId>false</externalId>
+        <label>Ipreo Reference (CORP)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>BD Corporate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FS Workstation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GMI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Perception Analytics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Anaytics/Targeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BSIQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Capital IQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed Income</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IDC MarketQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FS Integrated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ipreo_Reference_GMG__c</fullName>
+        <externalId>false</externalId>
+        <label>Ipreo Reference (GMG)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Debt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Equity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loans</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Muni</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CRM – RS&amp;T</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD FI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD EQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compliance Suite</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Issuer_Name_Diff_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Issuer Name Diff Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Issuer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Issuer Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Key_Account_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Account Detail</label>
+        <length>512</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LID__LinkedIn_Company_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>LinkedIn Id of the company/Account</description>
+        <externalId>false</externalId>
+        <label>LinkedIn Company Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOB__c</fullName>
+        <externalId>false</externalId>
+        <label>LOB</label>
+        <picklist>
+            <controllingField>Vertical__c</controllingField>
+            <picklistValues>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compliance*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Access</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Secretary/Legal</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debt Capital Markets</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Equity Capital Markets</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Equity Sales*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Equity Trading*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FI Sales*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FI Trading*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investment Banking</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IR</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loans Agency</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loan Syndication</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loan Trading</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing/Bus. Dev.</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Municipals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Operations/IT</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Portfolio Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prime Broker</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Company Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research-Independent</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research-Industry/Market</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Risk Management*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales*</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Strategy</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trading</fullName>
+                <default>false</default>
+                <controllingFieldValues>Buyside</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Treasury</fullName>
+                <default>false</default>
+                <controllingFieldValues>Corporate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wealth Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sellside</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Market_Cap__c</fullName>
+        <externalId>false</externalId>
+        <label>Issuer_Market Cap (mm)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Micro_Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>Micro Industry</label>
+        <picklist>
+            <controllingField>Mid_Industry__c</controllingField>
+            <picklistValues>
+                <fullName>Agricultural Chemicals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Chemicals</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Commodity Chemicals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Chemicals</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diversified Chemicals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Chemicals</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialty Chemicals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Chemicals</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aluminum</fullName>
+                <default>false</default>
+                <controllingFieldValues>Metals and Mining</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ferrous Metals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Metals and Mining</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gold, Silver, and Precious Stones</fullName>
+                <default>false</default>
+                <controllingFieldValues>Metals and Mining</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Non-Ferrous Metals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Metals and Mining</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Car, Truck, and other Vehicle Manufacturers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Automotive</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Car, Truck, and other Vehicle Parts</fullName>
+                <default>false</default>
+                <controllingFieldValues>Automotive</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rubber and Plastics</fullName>
+                <default>false</default>
+                <controllingFieldValues>Automotive</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Electronic Equipment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Durable Household Goods and Equipment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Home Furnishings and Fixtures</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Photographic Equipment and Supplies</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recreational Products</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sporting Goods</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Toys and Games</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Clothing and Accessories</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Non-Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Footwear</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Non-Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Durable Household Products</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Non-Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Personal Products</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Non-Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Textile Manufacturers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Non-Durables</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Breweries</fullName>
+                <default>false</default>
+                <controllingFieldValues>Food, Beverage, and Tobacco</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cigarettes and Other Tobacco Products</fullName>
+                <default>false</default>
+                <controllingFieldValues>Food, Beverage, and Tobacco</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Distillers and Wineries</fullName>
+                <default>false</default>
+                <controllingFieldValues>Food, Beverage, and Tobacco</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Farm, Meat, and Dairy Products</fullName>
+                <default>false</default>
+                <controllingFieldValues>Food, Beverage, and Tobacco</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Processed and Packaged Foods</fullName>
+                <default>false</default>
+                <controllingFieldValues>Food, Beverage, and Tobacco</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Soft Drinks Manufacturers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Food, Beverage, and Tobacco</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Residential Construction</fullName>
+                <default>false</default>
+                <controllingFieldValues>Homebuilding</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cable Television Systems</fullName>
+                <default>false</default>
+                <controllingFieldValues>Media</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diversified Entertainment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Media</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Film Production and Theaters</fullName>
+                <default>false</default>
+                <controllingFieldValues>Media</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing Services and Advertising Agencies</fullName>
+                <default>false</default>
+                <controllingFieldValues>Media</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Publishing</fullName>
+                <default>false</default>
+                <controllingFieldValues>Media</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Radio Broadcasting</fullName>
+                <default>false</default>
+                <controllingFieldValues>Media</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Television Broadcasting</fullName>
+                <default>false</default>
+                <controllingFieldValues>Media</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Personal Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education and Training Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Personal Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rental and Leasing Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Personal Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Security and Protection Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Personal Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Car, Truck, and other Vehicle Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Catalog and Online Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Clothing and Accessories Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Electronics Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Department Store Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Discount Store Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Drug Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Groceries and Food Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Home Furnishings and Home Improvement Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jewelry Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialty Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Retail</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Passenger Airlines</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transportation Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Railroads Passengers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transportation Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Travel Services and Leisure</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gaming Activities</fullName>
+                <default>false</default>
+                <controllingFieldValues>Travel Services and Leisure</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hotels, Resorts and Cruise Lines</fullName>
+                <default>false</default>
+                <controllingFieldValues>Travel Services and Leisure</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Restaurants and Eateries</fullName>
+                <default>false</default>
+                <controllingFieldValues>Travel Services and Leisure</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Travel and Tourism</fullName>
+                <default>false</default>
+                <controllingFieldValues>Travel Services and Leisure</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wholesale</fullName>
+                <default>false</default>
+                <controllingFieldValues>Wholesale</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Coal</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oil, Gas and Coal</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diversified Oil and Gas</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oil, Gas and Coal</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oil and Gas Drilling</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oil, Gas and Coal</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oil and Gas Equipment and Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oil, Gas and Coal</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oil and Gas Exploration and Production</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oil, Gas and Coal</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oil and Gas Refining and Marketing</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oil, Gas and Coal</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oil and Gas Storage and Transportation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oil, Gas and Coal</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewable Energy Equipment and Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Renewable Energy Equipment and Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banks</fullName>
+                <default>false</default>
+                <controllingFieldValues>Banking</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Savings and Loans</fullName>
+                <default>false</default>
+                <controllingFieldValues>Banking</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Asset Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Financial Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Credit Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Financial Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diversified Financial Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Financial Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Financials - Specialty</fullName>
+                <default>false</default>
+                <controllingFieldValues>Financial Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Regional Brokerage and Investment Banking Companies</fullName>
+                <default>false</default>
+                <controllingFieldValues>Financial Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accident, Life, and Health Insurance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Insurance</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diversified Insurance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Insurance</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance Brokers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Insurance</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Property and Casualty Insurance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Insurance</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reinsurance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Insurance</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Property Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Real Estate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Real Estate Development</fullName>
+                <default>false</default>
+                <controllingFieldValues>Real Estate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Real Estate Investment Trusts</fullName>
+                <default>false</default>
+                <controllingFieldValues>Real Estate</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+                <controllingFieldValues>Biotechnology and Pharmaceuticals</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmaceuticals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Biotechnology and Pharmaceuticals</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health Care Plans</fullName>
+                <default>false</default>
+                <controllingFieldValues>Health Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare Information Technology</fullName>
+                <default>false</default>
+                <controllingFieldValues>Health Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospitals and Other Healthcare Facilities and Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Health Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare and Supplies Wholesale</fullName>
+                <default>false</default>
+                <controllingFieldValues>Healthcare and Supplies Wholesale</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Appliances and Equipment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Medical Equipment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Instruments and Supplies</fullName>
+                <default>false</default>
+                <controllingFieldValues>Medical Equipment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+                <controllingFieldValues>Aerospace and Defense</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conglomerates</fullName>
+                <default>false</default>
+                <controllingFieldValues>Conglomerates</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diversified Industrial Machinery and Tools</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrial Equipment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electrical Equipment and Components</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrial Equipment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Farming and Construction Equipment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrial Equipment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Support Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrial Goods and Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Office Furniture and Supplies</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrial Goods and Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pollution Control Equipment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrial Goods and Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Staffing Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrial Goods and Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Building Materials</fullName>
+                <default>false</default>
+                <controllingFieldValues>Materials and Construction</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Containers and Packaging</fullName>
+                <default>false</default>
+                <controllingFieldValues>Materials and Construction</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Heavy Construction</fullName>
+                <default>false</default>
+                <controllingFieldValues>Materials and Construction</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paper Goods</fullName>
+                <default>false</default>
+                <controllingFieldValues>Materials and Construction</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waste Management</fullName>
+                <default>false</default>
+                <controllingFieldValues>Materials and Construction</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Air Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transportation  </controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Commercial Vehicles and Trucks</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transportation  </controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delivery Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transportation  </controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dock Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transportation  </controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marine Shipping</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transportation  </controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Railroads Freight</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transportation  </controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation Infrastructure</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transportation  </controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trucking</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transportation  </controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Software and Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Computer Software and Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internet Software and Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Computer Software and Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <controllingFieldValues>Computer Software and Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Systems and Technical Software</fullName>
+                <default>false</default>
+                <controllingFieldValues>Computer Software and Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Computer Software and Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Semiconductor Equipment and Testing</fullName>
+                <default>false</default>
+                <controllingFieldValues>Semiconductors</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Semiconductors - Processors</fullName>
+                <default>false</default>
+                <controllingFieldValues>Semiconductors</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Computers and Computer-Based Systems</fullName>
+                <default>false</default>
+                <controllingFieldValues>Technology Hardware and Equipment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Storage and Peripherals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Technology Hardware and Equipment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronic Office Equipment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Technology Hardware and Equipment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Communications Equipment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Telecommunications</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecommunication Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Telecommunications</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wireless Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Telecommunications</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diversified Utilities</fullName>
+                <default>false</default>
+                <controllingFieldValues>Utilities</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electric Utilities</fullName>
+                <default>false</default>
+                <controllingFieldValues>Utilities</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gas Utilities</fullName>
+                <default>false</default>
+                <controllingFieldValues>Utilities</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Independent Power Producers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Utilities</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Water Utilities</fullName>
+                <default>false</default>
+                <controllingFieldValues>Utilities</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Mid_Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>Mid Industry</label>
+        <picklist>
+            <controllingField>Industry</controllingField>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Basic Materials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Metals and Mining</fullName>
+                <default>false</default>
+                <controllingFieldValues>Basic Materials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Goods</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Durables</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Goods</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Non-Durables</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Goods</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food, Beverage, and Tobacco</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Goods</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Homebuilding</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Personal Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Travel Services and Leisure</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wholesale</fullName>
+                <default>false</default>
+                <controllingFieldValues>Consumer Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oil, Gas and Coal</fullName>
+                <default>false</default>
+                <controllingFieldValues>Energy</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewable Energy Equipment and Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Energy</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking</fullName>
+                <default>false</default>
+                <controllingFieldValues>Financials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Financials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Financials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+                <controllingFieldValues>Financials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Biotechnology and Pharmaceuticals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Healthcare</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Healthcare</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare and Supplies Wholesale</fullName>
+                <default>false</default>
+                <controllingFieldValues>Healthcare</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Equipment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Healthcare</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conglomerates</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial Equipment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial Goods and Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Materials and Construction</fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation  </fullName>
+                <default>false</default>
+                <controllingFieldValues>Industrials</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Computer Software and Services</fullName>
+                <default>false</default>
+                <controllingFieldValues>Technology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Semiconductors</fullName>
+                <default>false</default>
+                <controllingFieldValues>Technology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology Hardware and Equipment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Technology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <controllingFieldValues>Technology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <controllingFieldValues>Utilities</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Migration_Reference__c</fullName>
+        <description>for data migration from BDV</description>
+        <externalId>false</externalId>
+        <label>Migration Reference</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>NYSE_Program_Tier__c</fullName>
+        <externalId>false</externalId>
+        <label>NYSE Program Tier</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>NYSE_Ticker_Symbol__c</fullName>
+        <externalId>false</externalId>
+        <label>NYSE Ticker Symbol</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>No_of_Active_Assets__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The number of Active Assets is used to determine the Account &quot;Status&quot; value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of Active Assets is used to determine the Account &quot;Status&quot; value.</inlineHelpText>
+        <label>No. of Active Assets</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Active_Sponsored_Assets__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Active Sponsored Assets</label>
+        <summaryFilterItems>
+            <field>Sponsored_Asset__c.Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Sponsored_Asset__c.Account_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Active_Work_Orders__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>No. of Active Work Orders</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_All_Assets__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>No. of All Assets</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_All_Work_Orders__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>No. of All Work Orders</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Open_Opportunities__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Open Opportunities</label>
+        <summaryFilterItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Sponsored_Assets__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Sponsored Assets</label>
+        <summaryForeignKey>Sponsored_Asset__c.Account_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Number_of_Institutional_Equity_Holders__c</fullName>
+        <description>data migration - from Ian file</description>
+        <externalId>false</externalId>
+        <label>Number of Institutional Equity Holders</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name__c</fullName>
+        <description>Use to show on email template</description>
+        <externalId>false</externalId>
+        <label>Opportunity Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <inlineHelpText>This field is not currently in use. It will be used at a later time.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Products_in_Use_GMG__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Products in Use (GMG)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Algomi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blue Curve</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BlueMatrix</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OneAccess (API)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Price_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically updated if this Account was created from a converted EDD Lead</inlineHelpText>
+        <label>Price Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Account_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Account Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Exchange_Country__c</fullName>
+        <description>Data migration - from Ian file</description>
+        <externalId>false</externalId>
+        <label>Primary Exchange Country</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Exchange__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Exchange</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Sales_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Sales Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Use__c</fullName>
+        <description>for data migration from BDV</description>
+        <externalId>false</externalId>
+        <label>Primary Use</label>
+        <picklist>
+            <picklistValues>
+                <fullName>CRM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ownership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Targeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Look up Tool</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tracking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Prior_System__c</fullName>
+        <description>for data migration from BDV</description>
+        <externalId>false</externalId>
+        <label>Prior System</label>
+        <picklist>
+            <picklistValues>
+                <fullName>SalesForce</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IPO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NASDAQ - FSWS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NASDAQ - Insight</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IR Soft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Zacks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Thomson 1 (Thomson)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Richard Davies IR (RD:IR)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Excel (Internal System)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pinpoint (Nasdaq)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Prior System</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IR Navigator (Ilios)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product_Bundle__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Bundle</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RAG_Status_Summary_Description_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>RAG Status Summary Description Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RAG_Status_Summary_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>RAG Status Summary Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RAG_Status_Summary__c</fullName>
+        <externalId>false</externalId>
+        <label>RAG Status Summary</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Red</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Red-Amber</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Red-Amber-Green</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Red-Green</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amber</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amber-Green</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Green</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Reason_for_Cancellation__c</fullName>
+        <description>for data migration from BDV</description>
+        <externalId>false</externalId>
+        <label>Reason for Cancellation</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Using</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitive Loss</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Overlap</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lower Pricing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Dissatisfaction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Budget/Downsize</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BSIQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>M&amp;A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BONY Client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delisted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bundled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GMI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BD Corporate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>N/A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <picklist>
+            <picklistValues>
+                <fullName>North America</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C. America/Caribbean</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>South America</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Europe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Middle East</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Africa</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Asia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pacific</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep_Email__c</fullName>
+        <description>use to show on email template, copy from work order while order&apos;s status was changed to closed.</description>
+        <externalId>false</externalId>
+        <label>Sales Rep Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Account_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary Account Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Exchange__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Exchange</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Sales_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary Sales Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Security_Type__c</fullName>
+        <description>Data migration - from Ian file</description>
+        <externalId>false</externalId>
+        <label>Security Type</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shares_Outstanding_mm__c</fullName>
+        <description>Data migration - from Ian file</description>
+        <externalId>false</externalId>
+        <label>Shares Outstanding (mm)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sponsored_Issuer_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Sponsored Issuer Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>BNY DR Insight</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Capita</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Citi T1(CRM)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Citi T2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deutsche DR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JPM Cazenove- CBS Direct</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JPM DR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Market Eye</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NRI/Takara</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wonderful Sky- BDC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wonderful Sky- BSIQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically updated if this Account was created from a converted EDD Lead</inlineHelpText>
+        <label>Status Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Prospect: no current or previous products
+Customer: has data or software with active term or project with completion date in past 12 months or future estimated completion date
+Former Customer: had data or software but term exp or had proj over 12 mo ago</inlineHelpText>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Former Client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prospect</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sum_ACV_of_Open_New_Business__c</fullName>
+        <externalId>false</externalId>
+        <label>Sum (ACV) of Open New Business</label>
+        <summarizedField>Opportunity.ACV__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New Business</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Sum_ACV_of_Open_Opportunities__c</fullName>
+        <externalId>false</externalId>
+        <label>Sum (ACV) of Open Opportunities</label>
+        <summarizedField>Opportunity.ACV__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Sum_ACV_of_Open_Renewal_Current_Year__c</fullName>
+        <description>Sum of Open Renewals with Closed Date in current year</description>
+        <externalId>false</externalId>
+        <label>Sum (ACV) of Open Renewals Current Year</label>
+        <summarizedField>Opportunity.Prior_Year_ACV__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.Is_Close_Date_In_Current_Year__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Renewal</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Sum_ACV_of_Open_Renewals__c</fullName>
+        <externalId>false</externalId>
+        <label>Sum (ACV) of Open Renewals</label>
+        <summarizedField>Opportunity.ACV__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Renewal</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TSX_Tier__c</fullName>
+        <externalId>false</externalId>
+        <label>TSX Tier</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Venture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Testimonial_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Testimonial Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Testimonial__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Testimonial</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Tier__c</fullName>
+        <description>GMG Client Tier</description>
+        <externalId>false</externalId>
+        <label>GMG Client Tier</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Total_Business_Supported_CY__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sum_ACV_of_Open_Renewal_Current_Year__c +  Closed_Won_Verifed_Sales_Year_To_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Business Supported (CY)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tracking_Number__c</fullName>
+        <description>This field use to track work order status, it will increase when work order&apos;s status was change to closed.</description>
+        <externalId>false</externalId>
+        <label>Tracking Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Press</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Vertical__c</fullName>
+        <externalId>false</externalId>
+        <label>Vertical</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Buyside</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sellside</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Withdrawn_Postponed_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically updated if this Account was created from a converted EDD Lead</inlineHelpText>
+        <label>Withdrawn/Postponed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Wonderful_Sky_Restricted__c</fullName>
+        <description>for data migration from BDV</description>
+        <externalId>false</externalId>
+        <label>Wonderful Sky Restricted</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Detail_Link__c</fullName>
+        <description>use to show on email template, copy from work order while order&apos;s status was changed to closed.</description>
+        <externalId>false</externalId>
+        <label>Work Order Detail Link</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Name__c</fullName>
+        <description>use to show on email template, copy from work order while order&apos;s status was changed to closed.</description>
+        <externalId>false</externalId>
+        <label>Work Order Name</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Number__c</fullName>
+        <description>use to show on email template, copy from work order while order&apos;s status was changed to closed.</description>
+        <externalId>false</externalId>
+        <label>Work Order Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Work Order Status</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Workday_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Identifier from Workday</description>
+        <externalId>true</externalId>
+        <label>Workday ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>of_Institutional_Ownership__c</fullName>
+        <description>data migration - from Ian file</description>
+        <externalId>false</externalId>
+        <label>% of Institutional Ownership</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <listViews>
+        <fullName>AllAccountsWAcctNumbers</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Account_ID__c</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Accounts w Acct Numbers</label>
+    </listViews>
+    <listViews>
+        <fullName>Corp_AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Market_Cap__c</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Vertical__c</field>
+            <operation>equals</operation>
+            <value>Corporate</value>
+        </filters>
+        <label>Corp - All Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Corp_AllAccounts_Clients</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NYSE_Program_Tier__c</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Vertical__c</field>
+            <operation>equals</operation>
+            <value>Corporate</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Client</value>
+        </filters>
+        <label>Corp - All Accounts - Clients</label>
+    </listViews>
+    <listViews>
+        <fullName>Corp_AllAccounts_FormerClients</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Vertical__c</field>
+            <operation>equals</operation>
+            <value>Corporate</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Former Client</value>
+        </filters>
+        <label>Corp - All Accounts - Former Clients</label>
+    </listViews>
+    <listViews>
+        <fullName>Corp_AllAccounts_Prospects</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Vertical__c</field>
+            <operation>equals</operation>
+            <value>Corporate</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Prospect</value>
+        </filters>
+        <label>Corp - All Accounts - Prospects</label>
+    </listViews>
+    <listViews>
+        <fullName>DD_AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Debtdomain_ID__c</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Debtdomain_ID__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Accounts with Debtdomain ID</label>
+    </listViews>
+    <listViews>
+        <fullName>Data_Quality_Issue_Missing_FinanceID</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Finance_Account_ID__c</columns>
+        <columns>Vertical__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>Status__c</columns>
+        <columns>No_of_Open_Opportunities__c</columns>
+        <columns>No_of_Active_Assets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Finance_Account_ID__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Client</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Former Client</value>
+        </filters>
+        <label>Data Quality Issue - Missing Finance ID</label>
+        <sharedTo>
+            <group>SFDC_Admin_Team</group>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Data_Quality_Issue_Missing_Verticals</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Vertical__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>Status__c</columns>
+        <columns>No_of_Open_Opportunities__c</columns>
+        <columns>No_of_Active_Assets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Vertical__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Client</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Former Client</value>
+        </filters>
+        <label>Data Quality Issue - Missing Verticals</label>
+        <sharedTo>
+            <group>SFDC_Admin_Team</group>
+            <group>Sales_Ops</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>GMG_AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Vertical__c</field>
+            <operation>equals</operation>
+            <value>Buyside,Sellside,Other</value>
+        </filters>
+        <label>GMG - All Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>GMG_AllAccounts_Clients</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Vertical__c</field>
+            <operation>equals</operation>
+            <value>Buyside,Sellside,Other</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Client</value>
+        </filters>
+        <label>GMG - All Accounts - Clients</label>
+    </listViews>
+    <listViews>
+        <fullName>GMG_AllAccounts_FormerClients</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Vertical__c</field>
+            <operation>equals</operation>
+            <value>Buyside,Sellside,Other</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Former Client</value>
+        </filters>
+        <label>GMG - All Accounts - Former Clients</label>
+    </listViews>
+    <listViews>
+        <fullName>GMG_AllAccounts_Prospects</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Vertical__c</field>
+            <operation>equals</operation>
+            <value>Buyside,Sellside,Other</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Prospect</value>
+        </filters>
+        <label>GMG - All Accounts - Prospects</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Account_Teams_Status_Client</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Vertical__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>RAG_Status_Summary__c</columns>
+        <columns>ACCOUNT.LAST_ACTIVITY</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Client</value>
+        </filters>
+        <label>My Account Teams - Status Client</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Account_Teams_Status_Former_Client</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Vertical__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>RAG_Status_Summary__c</columns>
+        <columns>ACCOUNT.LAST_ACTIVITY</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Former Client</value>
+        </filters>
+        <label>My Account Teams - Status Former Client</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Account_Teams_Status_Prospect</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Vertical__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>RAG_Status_Summary__c</columns>
+        <columns>ACCOUNT.LAST_ACTIVITY</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Prospect</value>
+        </filters>
+        <label>My Account Teams - Status Prospect</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Account_Teams_With_Active_Assets</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>No_of_All_Assets__c</columns>
+        <columns>No_of_Active_Assets__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>No_of_Active_Assets__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <label>My Account Teams With Active Assets</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Account_Teams_With_Active_Work_Orders</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>No_of_Active_Work_Orders__c</columns>
+        <columns>No_of_All_Work_Orders__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>No_of_Active_Work_Orders__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <label>My Account Teams With Active Work Orders</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Account_Teams_With_Open_Opportunities</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Vertical__c</columns>
+        <columns>Status__c</columns>
+        <columns>No_of_Open_Opportunities__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>No_of_Open_Opportunities__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <label>My Account Teams With Open Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Account_Teams_with_Sponsored_Assets</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Sponsored_Issuer_Status__c</columns>
+        <columns>No_of_Active_Sponsored_Assets__c</columns>
+        <columns>No_of_Sponsored_Assets__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>Sponsored_Issuer_Status__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>My Account Teams with Sponsored Assets</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS2_COUNTRY</columns>
+        <columns>Vertical__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>ACCOUNT.LAST_ACTIVITY</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.INDUSTRY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Vertical__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.INDUSTRY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Vertical__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PARENT_NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>ACCOUNT.INDUSTRY</searchFilterFields>
+        <searchFilterFields>Vertical__c</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchFilterFields>ACCOUNT.ADDRESS1_COUNTRY</searchFilterFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.INDUSTRY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Vertical__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>LID__Check_CompanyId_Value</fullName>
+        <active>true</active>
+        <description>Throws an exception message if the company id contains non-numerics</description>
+        <errorConditionFormula>AND(
+	(LID__LinkedIn_Company_Id__c &lt;&gt; NULL),
+	NOT(ISNUMBER(LID__LinkedIn_Company_Id__c))
+)</errorConditionFormula>
+        <errorDisplayField>LID__LinkedIn_Company_Id__c</errorDisplayField>
+        <errorMessage>CompanyId should be a numeric value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_Account_Name_Changes</fullName>
+        <active>true</active>
+        <description>Only a system administrator or Sales Ops user can change an Account&apos;s name</description>
+        <errorConditionFormula>ISCHANGED( Name ) &amp;&amp; $Profile.Name != &apos;System Administrator&apos; &amp;&amp; $Profile.Name != &apos;Operations User&apos;</errorConditionFormula>
+        <errorMessage>Only a system administrator or Sales Ops user can change an Account&apos;s name</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Region_Reqd_On_Account</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND($Profile.Name != &apos;System Administrator&apos;, 
+$Profile.Name != &apos;Marketo-Salesforce Sync&apos;,
+$Profile.Name != &apos;Operations User&apos;,
+$Profile.Name != &apos;Sales User&apos;, 
+ISPICKVAL(Region__c,&apos;&apos;))</errorConditionFormula>
+        <errorDisplayField>Region__c</errorDisplayField>
+        <errorMessage>Account region is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Account_Health</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Account_Health__c, &apos;&apos;) &amp;&amp; ( NOT(ISBLANK( Account_Health_Date__c )) ||  NOT(ISBLANK( Account_Health_Description__c ))  )</errorConditionFormula>
+        <errorDisplayField>Account_Health__c</errorDisplayField>
+        <errorMessage>Account Health is required when you enter other Account Health information.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Account_Health_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Account_Health_Date__c ) &amp;&amp; ( NOT(ISPICKVAL(Account_Health__c, &apos;&apos;))|| NOT(ISBLANK( Account_Health_Description__c )))</errorConditionFormula>
+        <errorDisplayField>Account_Health_Date__c</errorDisplayField>
+        <errorMessage>Account Health Date is required when you enter other Account Health information.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Account_Health_Description</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Account_Health_Description__c ) &amp;&amp; ( NOT(ISPICKVAL(Account_Health__c, &apos;&apos;))|| NOT(ISBLANK( Account_Health_Date__c )))</errorConditionFormula>
+        <errorDisplayField>Account_Health_Description__c</errorDisplayField>
+        <errorMessage>Account Health Description is required when you enter other Account Health information.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Churn_Checked_on</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(Churn__c) &amp;&amp; NOT(ISPICKVAL(Churn_Reason__c, &apos;&apos;)) &amp;&amp; 
+NOT(ISPICKVAL(Churn_Reason__c, &apos;Win&apos;))</errorConditionFormula>
+        <errorDisplayField>Churn__c</errorDisplayField>
+        <errorMessage>Churn should be checked on when Churn Reason is selected</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Req_Churn_Reason</fullName>
+        <active>true</active>
+        <errorConditionFormula>Churn__c &amp;&amp;   ISPICKVAL(Churn_Reason__c, &apos;&apos;)</errorConditionFormula>
+        <errorDisplayField>Churn_Reason__c</errorDisplayField>
+        <errorMessage>Churn Reason required when Churn checked</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Ipreo_BDSF_1_10__BD_Ad_Profile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>BD Ad. Profile</masterLabel>
+        <openType>sidebar</openType>
+        <page>Ipreo_BDSF_1_10__BDSFAccountProfileExtension</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Ipreo_BDSF_1_10__Open_BD_Account_Profile</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Open BD Profile</masterLabel>
+        <openType>newWindow</openType>
+        <page>Ipreo_BDSF_1_10__BDSFAccountProfileExtension</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,7 @@
+<apex:page >
+    <apex:iframe id="bdaeFrameContainer" frameborder="false" height="1300" width="100%" scrolling="true" />
+    <script type="text/javascript">
+        var iFrame = document.getElementById("bdaeFrameContainer");
+        iFrame.src = "/apex/MasterPageEmbedded" + window.location.search;
+    </script>
+</apex:page>

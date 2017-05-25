@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Update: Ipreo Scheduled Maintenance</name>
+    <style>none</style>
+    <subject>Update: Ipreo Scheduled Maintenance</subject>
+    <textOnly>Next Scheduled Maintenance
+Event Date &amp; Time: June 10 11:00 PM ET
+
+
+Dear Client,
+
+As Ipreo’s infrastructure continues to grow maintenance windows are occasionally required to ensure optimal security, reliability and performance. As we have redundant systems in place, maintenance does not always require an outage.  However, if a disruption in service is needed we endeavor to schedule maintenances during times of historically low usage by our clients to minimize impact.
+
+
+Ipreo’s scheduled maintenances occur on Fridays between 11PM and Midnight Eastern Time. The next planned maintenance is scheduled for June 10 at 11 PM ET, for approx. 15 minutes, and you can expect maintenance every 2 weeks from that date.   Should a different window be required, we will notify you.  In advance of scheduled maintenance, we post a message in the application so that users are aware and can plan accordingly.
+​​​
+As this is routine maintenance we do not anticipate any issues. That said we are here to support you as always should questions or issues arise. Please email our 24/7 Support team at callmenowIR@ipreo.com for assistance.
+
+Regards,
+Ipreo Account Management
+
+(800) 305-0819 Or (212) 849-5424 (Americas)
++44 20 7665 9822 (Europe)
++852 58082616 (Asia Pacific)
++81 3 5207 2912 (Japan)
+
+©2016 Ipreo. All rights reserved.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

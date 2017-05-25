@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>Shift_JIS</encodingKey>
+    <name>DYK Video: Activity Reporting-JP</name>
+    <style>none</style>
+    <subject>Did You Know? 機関投資家との面談の効率!</subject>
+    <textOnly>Did You Know? 機関投資家との面談の効率
+
+御社では機関投資家との面談効率やROIを図る指標はお持ちでしょうか？
+
+
+アイプリオのBD Corporateでは機関投資家の推移をより簡単に
+レポート化することが可能となりました。
+ぜひビデオをご覧ください。
+
+ご意見・ご質問は担当のアカウントマネージャーまでご連絡ください。
+
+TEL: 03-5207-2912
+
+Copyright © 2016. Ipreo. All rights Reserved</textOnly>
+    <type>custom</type>
+</EmailTemplate>

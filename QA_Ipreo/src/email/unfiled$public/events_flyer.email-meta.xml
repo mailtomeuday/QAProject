@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>events flyer</name>
+    <style>none</style>
+    <subject>Events Flyer</subject>
+    <textOnly>ABOUT US
+
+EVENT SOLUTIONS
+
+CONTACT US
+BLOG
+OTHER SELL SIDE SERVICES
+
+
+
+Not all events are created equal
+
+Over the next several releases, the Events team will be upgrading key pages within our
+application to bring you a fresh, intuitive user interface; allow you to connect seamlessly
+with your clients and collaborate with colleagues; and provide you with tools and intelligence
+that increase and demonstrate your value. Our October release will see the launch of
+our new calendar interface.
+
+
+
+
+
+Ipreo Event Solutions
+Connect seamlessly with your clients and collaborate with colleagues; giving you the tools and intelligence that increase and demonstrate your value.
+
+
+
+
+
+
+
+
+
+
+
+
+Privacy Policy
+
+
+
+
+
+
+© 2016 Ipreo. All Rights Reserved.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

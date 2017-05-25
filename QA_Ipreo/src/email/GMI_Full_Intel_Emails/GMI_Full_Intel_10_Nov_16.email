@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif">Dear&nbsp;{!Contact.FirstName},</font><div style="color: rgb(0, 0, 0);"><font face="Arial, sans-serif">Please click this link for full intel: &nbsp;<a href="https://cs4.salesforce.com/sfc/p/P0000000DbyG/a/P00000008W8l/4V16WmPlfa7xmYwIK6dNYSIu4ghm1nh6P_YVZpbfVmU">Click here</a></font></div><div><font color="#cc66cc" face="Arial, sans-serif">Have a wonderful day.</font></div><div style="color: rgb(0, 0, 0);"><font face="Arial, sans-serif">Sarah<br></font></div>]]></td>
+</tr>
+</table>

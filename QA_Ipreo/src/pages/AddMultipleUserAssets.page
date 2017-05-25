@@ -1,0 +1,122 @@
+<apex:page id="uaPage" standardController="User_Asset__c" extensions="AddMultipleUserAssetsExtension">
+    <apex:sectionHeader help="https://help.salesforce.com/apex/htdoor?loc=help&target=creating_tasks.htm&section=CustomObjects&language={!language}" title="{!$ObjectType.User_Asset__c.label}s for {!Asset.Name}"/>
+    <script>
+
+        function checkAllAdd() {
+            chkAdd = document.getElementById('chkAdd');
+            var addChks = document.getElementsByClassName("addUserAssetChk");
+            for ( var i = 0; i < addChks.length; i++){  
+              var checkbox = addChks[i];  
+              if (chkAdd.checked == true){  
+                checkbox.checked = true;  
+              }  
+              else {  
+                checkbox.checked = false;  
+              }  
+            }
+        }
+
+        function checkAllDel() {
+            chkDel = document.getElementById('chkDel');
+            var delChks = document.getElementsByClassName("delUserAssetChk");
+
+            for ( var i = 0; i < delChks.length; i++){  
+              var checkbox = delChks[i];   
+              if ( chkDel.checked == true){  
+                checkbox.checked = true;  
+              }  
+              else{  
+                checkbox.checked = false;  
+              }  
+            }
+        }
+        
+        function noenter(ev)  {
+            if (window.event && window.event.keyCode == 13 || ev.which == 13) {
+                doSearchAF();
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+    <apex:form id="uaForm">
+        <apex:pageMessages />
+        <apex:PageBlock id="searchAccounts">
+            <apex:PageBlockSection title="User Search by Asset Account or Sponsored Account" columns="1" >
+                <apex:PageBlockSectionItem >
+                    <apex:outputPanel layout="block">
+                        <apex:outputText value="Enter Account Name:" style="font-weight: bold;"/><span>&nbsp;&nbsp;</span>
+                        <apex:actionFunction name="doSearchAF" action="{!getSearchResults}" />
+                        <apex:inputText value="{!accountName}" id="accountName" onkeypress="return noenter(event);"/> <span>&nbsp;&nbsp;</span>         
+                        <apex:commandButton action="{!getSearchResults}" value="Get Users" rerender="uaBlock" status="actStatusId" /><span>&nbsp;&nbsp;</span>
+                        <apex:actionStatus id="actStatusId" >
+                            <apex:facet name="start" >
+                              <img src="/img/loading.gif" />                    
+                            </apex:facet>
+                        </apex:actionStatus>
+                    </apex:outputPanel>
+                </apex:PageBlockSectionItem>
+            </apex:PageBlockSection>
+        </apex:PageBlock>
+        <apex:pageBlock id="uaBlock">
+                <apex:pageBlockButtons >
+                   <apex:commandButton action="{!save}" value="Save"/>
+                   <apex:commandButton action="{!cancel}" value="Cancel"/>
+                </apex:pageBlockButtons>
+                <apex:outputPanel layout="block" style="height:20px;" rendered="{!showTop50ThousandMsg}">
+                    <apex:outputText id="txtShowTopThousandMsg"  value="*** Note: Showing only top 50000 records as too many results were returned in the search. Please narrow down your search by entering more characters in the search box." style="font-weight: bold;"/>
+                </apex:outputPanel>
+            <apex:pageBlockTable id="uaTable" value="{!lstSetBindings}" var="ua">
+                <apex:column headerValue="Add" >
+                    <apex:facet name="header">
+                        <span> <input style="vertical-align: -19%;" id="chkAdd" title="Add" type="checkbox" onclick="checkAllAdd();" /> Add</span>
+                    </apex:facet>
+                    <apex:inputCheckbox styleClass="addUserAssetChk" value="{!ua.selected}"  rendered="{!ua.hasNewPermission && !ua.existing}"/>
+                </apex:column>
+                <apex:column headerValue="Del">
+                    <apex:facet name="header">
+                        <span> <input style="vertical-align: -19%;" id="chkDel" title="Add" type="checkbox" onclick="checkAllDel();" /> Del</span>
+                    </apex:facet>
+                    <apex:inputCheckbox styleClass="delUserAssetChk" value="{!ua.deleted}" rendered="{!ua.hasDelPermission && ua.existing}" />
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.User_Asset__c.Fields.User__c.label}" value="{!ua.user.Name}"/>
+                <apex:column headerValue="Account" value="{!ua.user.Account.Name}"/>
+                <apex:column headerValue="{!$ObjectType.User_Asset__c.Fields.Asset__c.label}" value="{!ua.asset.Name}"/>
+                <apex:column headerValue="{!$ObjectType.User_Asset__c.Fields.Role__c.label}" width="10%">
+                    <apex:selectList value="{!ua.role}" label="Role" size="1" rendered="{!ua.userAssetID == NULL}">
+                        <apex:selectOptions value="{!RoleOptions}" />
+                    </apex:selectList>
+                    <apex:outputText value="{!ua.role}" rendered="{!ua.userAssetID != NULL}"/>
+                </apex:column>
+                <apex:column headerValue="{!$ObjectType.User_Asset__c.Fields.System_Outage_Notification_Opt_Out__c.label}" width="15%">
+                    <apex:inputCheckbox value="{!ua.systemOutageNotificationOptOut}" disabled="{!IF(ua.userAssetID == NULL, false, true)}"/>
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:outputPanel >
+               <apex:commandButton value="<< First" action="{!First}" rendered="{!hasFirst}" reRender="uaBlock" status="status-waiting"/>
+               <apex:commandButton value="< Previous"  action="{!previous}" rendered="{!hasPrevious}" reRender="uaBlock" status="status-waiting"/>
+               <apex:commandButton value="Next >"  action="{!next}" rendered="{!hasNext}" reRender="uaBlock" status="status-waiting"/>
+               <apex:commandButton value="Last >>"  action="{!Last}" rendered="{!hasLast}" reRender="uaBlock" status="status-waiting"/>
+            </apex:outputPanel> 
+    <apex:actionstatus id="status-waiting">
+                <apex:facet name="start">
+                    <div class="waitingSearchDiv" id="el_loading" style=" background-color: #dcdcdc ;
+                           height: 100%;opacity:0.80;filter:alpha(opacity=80);width:100%;">
+                        <div class="waitingHolder" style="position: fixed; top: 50%; left: 30%; width: 50%;">
+                            <img class="waitingImage" src="/img/loading32.gif" title="Loading....." />
+                            <span class="waitingDescription" style="font-size:20px;font-weight:bold;color:RED;">
+                                Loading......
+                            </span>
+                        </div>
+                    </div>
+                </apex:facet>
+    </apex:actionstatus>                
+        </apex:pageBlock>
+    </apex:form>
+    <script>
+        var chkAdd = document.getElementById('chkAdd');
+        var chkDel = document.getElementById('chkDel');
+        var block = document.getElementById('{!$Component.uaPage.uaForm.uaBlock.uaTable}');
+    </script>
+</apex:page>

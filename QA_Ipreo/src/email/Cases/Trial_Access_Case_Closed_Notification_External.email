@@ -1,0 +1,19 @@
+*** CLOSE CASE NOTIFICATION ***  
+
+The following trial access case has been closed:
+
+Click on the link to access the case:  {!Case.Link}
+
+Case Number: {!Case.CaseNumber}
+Account: {!Case.Account}
+Opportunity: {!Case.Opportunity__c}
+Product(s):
+{!Case.Product__c}
+
+Trial Start Date: {!Case.Trial_Start_Date__c}
+Trial End Date: {!Case.Trial_End_Date__c}
+
+Subject:  {!Case.Subject} 
+
+Description:
+{!Case.Description}

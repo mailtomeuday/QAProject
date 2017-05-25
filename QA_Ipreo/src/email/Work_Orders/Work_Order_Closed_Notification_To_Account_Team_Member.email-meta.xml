@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send an email to account team member when order&apos;s status was changed to closed.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Work Order Closed Notification To Account Team Member</name>
+    <style>none</style>
+    <subject>Work Order # {!Account.Work_Order_Number__c}  closed: {!Account.Work_Order_Name__c}</subject>
+    <textOnly>*** WORK ORDER NOTIFICATION ***
+
+The following work order has been closed:
+
+Click on the link to access the work order: {!Work_Order__c.Link__c}
+
+Name:  {!Work_Order__c.Name}
+
+Company: {!Account.Name}
+
+Opportunity: {!Account.Opportunity_Name__c}
+
+Status: {!Work_Order__c.Status__c}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

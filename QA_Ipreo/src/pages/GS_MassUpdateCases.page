@@ -1,0 +1,86 @@
+<apex:page standardController="Case"
+    recordSetVar="Cases"
+    extensions="GS_MassUpdateCases"
+    showHeader="true"
+    sidebar="true"
+    id="muopp"
+>
+<script type = "text/javascript">
+    window.onload=function()       
+    {        
+        var selectedRecCount = {!RecordsSize};
+        
+        if(selectedRecCount == null || selectedRecCount == 0)
+        {
+        	alert('Please select records to update.');
+        	window.parent.location.href = document.referrer; 
+        }
+    };
+    
+    function confirmSave()
+    {
+    	return confirm("You have chosen to update " + {!RecordsSize} + " records. Are you sure you want to continue?");
+    }
+</script>
+    <apex:form id="muform" rendered="{!RecordsSize > 0}">
+        <apex:pageBlock title="Case Mass-Update" mode="edit" id="mub1">
+            <apex:pageMessages />
+            <apex:pageBlockSection id="mus1"  Title="Case Information">
+            	<apex:inputField value="{!Case.ParentId}" id="Parent">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>
+            	<apex:inputField value="{!Case.AccountId}" id="Account">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>
+                <apex:inputField value="{!Case.Type}" id="Type">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>
+                <apex:inputField value="{!Case.OwnerId}" id="Owner" required="false">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>
+                <apex:inputField value="{!Case.Sub_Type__c}" id="SubType">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>                
+                <apex:inputField value="{!Case.ContactId}" id="Contact">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>
+                <apex:inputField value="{!Case.Case_Resolution__c}" id="Resolution">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>
+                <apex:inputField value="{!Case.Customer_Sent_Email_After_Case_Closed__c}" id="CustomerSentEmailAfterCaseClosed">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>
+                <apex:inputField value="{!Case.Status}" id="Status">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>
+                <apex:inputField value="{!Case.Effort_Minutes__c}" id="EffortMinutes">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1" Title="Product Information">
+            	<apex:inputField value="{!Case.Product__c}" id="Product">
+                    <apex:actionSupport event="onchange" rerender="muselectedlist"/>
+                </apex:inputField>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons id="mubut">
+                <apex:commandButton onclick="confirmSave();" value="Save" action="{!save}" id="butsav"/>
+                <apex:commandButton value="Cancel" action="{!cancel}" id="butcan"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <apex:pageBlock title="Selected Cases " id="muselectedlist">
+            <apex:pageBlockTable value="{!selected}" var="case" id="mutab">
+                <apex:column value="{!Case.CaseNumber}" id="CaseNumber"/>
+                <apex:column value="{!Case.ParentId}" id="Parent"/>
+                <apex:column value="{!Case.AccountId}" id="Account"/>
+                <apex:column value="{!Case.Product__c}" id="Product"/>
+                <apex:column value="{!Case.Type}" id="Type"/>
+                <apex:column value="{!Case.Sub_Type__c}" id="SubType"/>
+                <apex:column value="{!Case.OwnerId}" id="Owner"/>
+                <apex:column value="{!Case.ContactId}" id="Contact"/>
+                <apex:column value="{!Case.Case_Resolution__c}" id="CaseResolution"/>
+                <apex:column value="{!Case.Customer_Sent_Email_After_Case_Closed__c}" id="CustomerSentEmailAfterCaseClosed"/>
+                <apex:column value="{!Case.Status}" id="Status"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

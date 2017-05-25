@@ -1,0 +1,13 @@
+*** CASE REASSIGNMENT NOTIFICATION ***  
+
+The following case has been reassigned:
+
+Click on the link to access the case:  {!Case.Link}
+
+Case #:  {!Case.CaseNumber} 
+Sub Type:  {!Case.Sub_Type__c} 
+Created By:  {!Case.CreatedBy} 
+New Case Owner: {!Case.OwnerFullName}
+Subject:  {!Case.Subject} 
+Description:
+{!Case.Description}

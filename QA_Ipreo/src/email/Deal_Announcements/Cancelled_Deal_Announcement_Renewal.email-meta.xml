@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ipreo_Standard_Internal</letterhead>
+    <name>Cancelled Deal Announcement Renewal</name>
+    <style>freeForm</style>
+    <subject>Cancelled Deal Announcement:  {!Account.Name}</subject>
+    <textOnly>Account: {!Account.Name}
+Opportunity: {!Opportunity.Name}*
+Stage: {!Opportunity.StageName}
+Revenue Type: {!Opportunity.Revenue_Type__c}
+Opportunity Owner: {!Opportunity.OwnerFullName}
+Products: {!Opportunity.Product_Bundle__c}
+ACV: {!Opportunity.ACV__c}
+Prior Year ACV: {!Opportunity.Prior_Year_ACV__c}
+NNB: {!Opportunity.Net_New_Business__c}
+TCV: {!Opportunity.Amount}
+Renewal Status: {!Opportunity.Renewal_Status__c}
+Renewal Date: {!Opportunity.Renewal_Date__c}
+Primary Exchange: {!Account.Primary_Exchange__c}
+NYSE Program Tier: {!Opportunity.NYSE_Program_Tier__c}
+Location: {!Account.BillingCity}, {!Account.BillingState} {!Account.BillingCountry}
+Deal Announcement Kudos:
+{!Opportunity.Deal_Announcement_Kudos__c}
+
+
+* Requires proper access rights to view in Salesforce.com</textOnly>
+    <type>html</type>
+</EmailTemplate>

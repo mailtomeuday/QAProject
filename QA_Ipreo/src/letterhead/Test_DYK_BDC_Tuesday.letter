@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Letterhead xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <backgroundColor>#F0EEEE</backgroundColor>
+    <bodyColor>#F0EEEE</bodyColor>
+    <bottomLine>
+        <color>#F0EEEE</color>
+        <height>0</height>
+    </bottomLine>
+    <footer>
+        <backgroundColor>#F0EEEE</backgroundColor>
+        <height>0</height>
+        <horizontalAlignment>Left</horizontalAlignment>
+        <logo>Email_Template_Images/dyk_bdc_footer_png.png</logo>
+        <verticalAlignment>Top</verticalAlignment>
+    </footer>
+    <header>
+        <backgroundColor>#F0EEEE</backgroundColor>
+        <height>100</height>
+        <horizontalAlignment>Left</horizontalAlignment>
+        <logo>Email_Template_Images/dyk_bdc_jpg.jpg</logo>
+        <verticalAlignment>Top</verticalAlignment>
+    </header>
+    <middleLine>
+        <color>#F0EEEE</color>
+        <height>0</height>
+    </middleLine>
+    <name>Test DYK BDC Tuesday</name>
+    <topLine>
+        <color>#F0EEEE</color>
+        <height>0</height>
+    </topLine>
+</Letterhead>

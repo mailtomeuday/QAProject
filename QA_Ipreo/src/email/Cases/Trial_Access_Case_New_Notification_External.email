@@ -1,0 +1,13 @@
+*** New CASE NOTIFICATION ***  
+
+The following trial access case has been created:
+
+Click on the link to access the case:  {!Case.Link}
+
+Case Number: {!Case.CaseNumber}
+
+Case Owner: {!Case.OwnerFullName}
+
+Account: {!Case.Account}
+
+Case Reference Id: {!Case.Case_Reference__c}

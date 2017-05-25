@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY_ID</field>
+    </columns>
+    <columns>
+        <field>Opportunity.NYSE_Program_Tier__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Non_Subsidized_Contracted_Value__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Report created in QA for testing 171</description>
+    <filter>
+        <criteriaItems>
+            <column>OPPORTUNITY_ID</column>
+            <operator>equals</operator>
+            <value>006j000000JwBe3,006j000000NJci0,006j000000NDWQl,006j000000JwB0Q,006j000000JwB1g,006j000000JwB4a,006j000000NJPU4,006j000000JwBbN,006j000000JwBAj,006j000000JwBbS,006j000000JwBEZ,006j000000OZhvn,006j000000JwBIJ,006j000000JwBMr,006j000000JwBQf</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>OPty.Non-Sub Contract value is blank</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>OPPORTUNITY_ID</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

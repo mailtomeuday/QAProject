@@ -1,0 +1,20 @@
+<apex:page controller="GS_PermissionSetQueueController" contentType="application/vnd.ms-excel#PermissionSetExport_{!today()}.xls" cache="true">
+<style>
+	table {
+	    border-collapse: collapse;
+	}
+	
+	table, td, th {
+	    border: 1px solid black;
+	    border-width: thin;
+	}
+</style>
+    <apex:pageBlock title="Permission Set Assignment Export Results" >
+       <apex:pageBlockTable value="{!psa}" var="assignment">
+            <apex:column value="{!assignment.Assignee.FirstName}"/>
+            <apex:column value="{!assignment.Assignee.LastName}"/>
+            <apex:column headerValue="Role" value="{!assignment.Assignee.UserRole.name}"/>            
+            <apex:column headerValue="Permissions" value="{!assignment.PermissionSet.Label}"/>
+        </apex:pageBlockTable>     
+     </apex:pageBlock>    
+</apex:page>

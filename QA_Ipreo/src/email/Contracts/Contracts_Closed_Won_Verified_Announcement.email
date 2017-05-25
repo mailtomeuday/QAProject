@@ -1,0 +1,9 @@
+Account:  {!Opportunity.Account}
+Opportunity:  {!Opportunity.Name}
+Opportunity Owner:  {!Opportunity.OwnerFullName}
+Close Date:  {!Opportunity.CloseDate}
+Vertical:  {!Opportunity.Vertical__c}
+Revenue Type: {!Opportunity.Revenue_Type__c}
+Product(s):  {!Opportunity.Product_Bundle__c}
+ACV:  {!Opportunity.ACV__c}
+TCV:  {!Opportunity.Amount}

@@ -1,0 +1,3191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Detailed Notes and Next Steps</value>
+        </caseValues>
+        <name>comments_activity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Detailed Notes and Next Steps</value>
+        </caseValues>
+        <name>description_activity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Action Id --></label>
+        <name>Action_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Month --></label>
+        <name>Activity_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert Coverage Groups --></label>
+        <name>Alert_Coverage_Groups__c</name>
+        <picklistValues>
+            <masterLabel>Account Team</masterLabel>
+            <translation><!-- Account Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - AM Management</masterLabel>
+            <translation><!-- CorpIR - AM Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Acct Mgmt - Global</masterLabel>
+            <translation><!-- CorpIR - Acct Mgmt - Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - BD Suite</masterLabel>
+            <translation><!-- CorpIR - BD Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Corporate Governance</masterLabel>
+            <translation><!-- CorpIR - Corporate Governance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - DebtID</masterLabel>
+            <translation><!-- CorpIR - DebtID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Distribution - BNY</masterLabel>
+            <translation><!-- CorpIR - Distribution - BNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Distribution - CITI</masterLabel>
+            <translation><!-- CorpIR - Distribution - CITI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Distribution - Capita</masterLabel>
+            <translation><!-- CorpIR - Distribution - Capita --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Distribution - JPMC</masterLabel>
+            <translation><!-- CorpIR - Distribution - JPMC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Distribution - NRI</masterLabel>
+            <translation><!-- CorpIR - Distribution - NRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - EQS Referral</masterLabel>
+            <translation><!-- CorpIR - EQS Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Factset</masterLabel>
+            <translation><!-- CorpIR - Factset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - GMI</masterLabel>
+            <translation><!-- CorpIR - GMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - IR360</masterLabel>
+            <translation><!-- CorpIR - IR360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - NASDAQ/TR</masterLabel>
+            <translation><!-- CorpIR - NASDAQ/TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Perception Analytics</masterLabel>
+            <translation><!-- CorpIR - Perception Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Proxy</masterLabel>
+            <translation><!-- CorpIR - Proxy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - SID, SAR</masterLabel>
+            <translation><!-- CorpIR - SID, SAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Sales Team - Global</masterLabel>
+            <translation><!-- CorpIR - Sales Team - Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CorpIR - Targeting</masterLabel>
+            <translation><!-- CorpIR - Targeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG - Buyside</masterLabel>
+            <translation><!-- GMG - Buyside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG - Equities</masterLabel>
+            <translation><!-- GMG - Equities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG - Fixed Income</masterLabel>
+            <translation><!-- GMG - Fixed Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG - Loans</masterLabel>
+            <translation><!-- GMG - Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG - Muni</masterLabel>
+            <translation><!-- GMG - Muni --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG - RS&amp;T / Events</masterLabel>
+            <translation><!-- GMG - RS&amp;T / Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG - Retail</masterLabel>
+            <translation><!-- GMG - Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG - Sales Team - Global</masterLabel>
+            <translation><!-- GMG - Sales Team - Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG - Senior Acct Managers - Global</masterLabel>
+            <translation><!-- GMG - Senior Acct Managers - Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - BD Mobile</masterLabel>
+            <translation><!-- x - BD Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - BD Technical Support</masterLabel>
+            <translation><!-- x - BD Technical Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Buyside Team</masterLabel>
+            <translation><!-- x - Buyside Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Connect | Corporate Access</masterLabel>
+            <translation><!-- x - Connect | Corporate Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Corp IPO Alert</masterLabel>
+            <translation><!-- x - Corp IPO Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Data Feeds &amp; Web Services</masterLabel>
+            <translation><!-- x - Data Feeds &amp; Web Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Data Management</masterLabel>
+            <translation><!-- x - Data Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Finance &amp; Cancel Notices</masterLabel>
+            <translation><!-- x - Finance &amp; Cancel Notices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Implementation Team</masterLabel>
+            <translation><!-- x - Implementation Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - InformationSecurity</masterLabel>
+            <translation><!-- x - InformationSecurity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Marketing</masterLabel>
+            <translation><!-- x - Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Research | Data Issues</masterLabel>
+            <translation><!-- x - Research | Data Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Sales Requests - RST</masterLabel>
+            <translation><!-- x - Sales Requests - RST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - UX Team</masterLabel>
+            <translation><!-- x - UX Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - Violations (Login or Download)</masterLabel>
+            <translation><!-- x - Violations (Login or Download) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>x - test SFDC Proj team</masterLabel>
+            <translation><!-- x - test SFDC Proj team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alert Due Date --></label>
+        <name>Alert_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert Individual Users --></label>
+        <name>Alert_Individual_Users__c</name>
+        <picklistValues>
+            <masterLabel>Aaron Dougherty</masterLabel>
+            <translation><!-- Aaron Dougherty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aaron Sahm</masterLabel>
+            <translation><!-- Aaron Sahm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Abdul Aziz</masterLabel>
+            <translation><!-- Abdul Aziz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adam Johnson</masterLabel>
+            <translation><!-- Adam Johnson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adam Knight</masterLabel>
+            <translation><!-- Adam Knight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adam P. Venanzi</masterLabel>
+            <translation><!-- Adam P. Venanzi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adam Papa</masterLabel>
+            <translation><!-- Adam Papa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agnies Watson</masterLabel>
+            <translation><!-- Agnies Watson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Akeloe Facey</masterLabel>
+            <translation><!-- Akeloe Facey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alawuddien Allie</masterLabel>
+            <translation><!-- Alawuddien Allie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alessandro Belluschi</masterLabel>
+            <translation><!-- Alessandro Belluschi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alex Baccari</masterLabel>
+            <translation><!-- Alex Baccari --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alex Duncan</masterLabel>
+            <translation><!-- Alex Duncan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alex Kaye</masterLabel>
+            <translation><!-- Alex Kaye --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alex Wasilewski</masterLabel>
+            <translation><!-- Alex Wasilewski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alex Wong</masterLabel>
+            <translation><!-- Alex Wong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alexander Carrillo</masterLabel>
+            <translation><!-- Alexander Carrillo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alexander Moody</masterLabel>
+            <translation><!-- Alexander Moody --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alexandra Smith</masterLabel>
+            <translation><!-- Alexandra Smith --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allegra Friedman</masterLabel>
+            <translation><!-- Allegra Friedman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allen Williams</masterLabel>
+            <translation><!-- Allen Williams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allison Walter</masterLabel>
+            <translation><!-- Allison Walter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alois Nyamarebvu</masterLabel>
+            <translation><!-- Alois Nyamarebvu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alper Sungur</masterLabel>
+            <translation><!-- Alper Sungur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amanda Klein</masterLabel>
+            <translation><!-- Amanda Klein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amanda Pursley</masterLabel>
+            <translation><!-- Amanda Pursley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amanda Scholl</masterLabel>
+            <translation><!-- Amanda Scholl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ambadas Morkhandikar</masterLabel>
+            <translation><!-- Ambadas Morkhandikar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amber Seidel</masterLabel>
+            <translation><!-- Amber Seidel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amy Rosario</masterLabel>
+            <translation><!-- Amy Rosario --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andreas Posavac</masterLabel>
+            <translation><!-- Andreas Posavac --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andrew Cohen</masterLabel>
+            <translation><!-- Andrew Cohen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andrew Crockett</masterLabel>
+            <translation><!-- Andrew Crockett --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andrew Downton</masterLabel>
+            <translation><!-- Andrew Downton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andrew Gregory</masterLabel>
+            <translation><!-- Andrew Gregory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andrew Terentyev</masterLabel>
+            <translation><!-- Andrew Terentyev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aneeb Barnes</masterLabel>
+            <translation><!-- Aneeb Barnes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Angela Baker</masterLabel>
+            <translation><!-- Angela Baker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Angelika Horstmeier</masterLabel>
+            <translation><!-- Angelika Horstmeier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anjli Khanna</masterLabel>
+            <translation><!-- Anjli Khanna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ann Marie Bond</masterLabel>
+            <translation><!-- Ann Marie Bond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anna Marino</masterLabel>
+            <translation><!-- Anna Marino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anna Smith</masterLabel>
+            <translation><!-- Anna Smith --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anne Montana</masterLabel>
+            <translation><!-- Anne Montana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anthony Leyden</masterLabel>
+            <translation><!-- Anthony Leyden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anthony Molino</masterLabel>
+            <translation><!-- Anthony Molino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ari Davies</masterLabel>
+            <translation><!-- Ari Davies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asher Eddy</masterLabel>
+            <translation><!-- Asher Eddy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Austin Zuech</masterLabel>
+            <translation><!-- Austin Zuech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autumn Arthurs</masterLabel>
+            <translation><!-- Autumn Arthurs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ayanda Nelanie</masterLabel>
+            <translation><!-- Ayanda Nelanie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ayano Matsumoto</masterLabel>
+            <translation><!-- Ayano Matsumoto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ben Macaskill</masterLabel>
+            <translation><!-- Ben Macaskill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benjamin Burnside</masterLabel>
+            <translation><!-- Benjamin Burnside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benoit Bergua</masterLabel>
+            <translation><!-- Benoit Bergua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benton Wong</masterLabel>
+            <translation><!-- Benton Wong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bernhard Schlenther</masterLabel>
+            <translation><!-- Bernhard Schlenther --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bill Sherman</masterLabel>
+            <translation><!-- Bill Sherman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billy Eckert</masterLabel>
+            <translation><!-- Billy Eckert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birgul Tuzlali</masterLabel>
+            <translation><!-- Birgul Tuzlali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brad Pottberg</masterLabel>
+            <translation><!-- Brad Pottberg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bram Rosenfeld</masterLabel>
+            <translation><!-- Bram Rosenfeld --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandon Mellusi</masterLabel>
+            <translation><!-- Brandon Mellusi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandon Travis</masterLabel>
+            <translation><!-- Brandon Travis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brendan Fitzpatrick</masterLabel>
+            <translation><!-- Brendan Fitzpatrick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent Falcon</masterLabel>
+            <translation><!-- Brent Falcon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brett Cahill</masterLabel>
+            <translation><!-- Brett Cahill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brett Noggle</masterLabel>
+            <translation><!-- Brett Noggle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brian Benson</masterLabel>
+            <translation><!-- Brian Benson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brian Dockray</masterLabel>
+            <translation><!-- Brian Dockray --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brian Graham</masterLabel>
+            <translation><!-- Brian Graham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brian Manalastas</masterLabel>
+            <translation><!-- Brian Manalastas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brian Matt</masterLabel>
+            <translation><!-- Brian Matt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camden Oakes</masterLabel>
+            <translation><!-- Camden Oakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caren Lo</masterLabel>
+            <translation><!-- Caren Lo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carl Aldrich</masterLabel>
+            <translation><!-- Carl Aldrich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cathryn Rich</masterLabel>
+            <translation><!-- Cathryn Rich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Celine Feng</masterLabel>
+            <translation><!-- Celine Feng --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charles Balancia</masterLabel>
+            <translation><!-- Charles Balancia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charles Wohlgemuth</masterLabel>
+            <translation><!-- Charles Wohlgemuth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlie Young</masterLabel>
+            <translation><!-- Charlie Young --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlotte Penrod</masterLabel>
+            <translation><!-- Charlotte Penrod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chris Bauer</masterLabel>
+            <translation><!-- Chris Bauer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chris Cullen</masterLabel>
+            <translation><!-- Chris Cullen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chris Meier</masterLabel>
+            <translation><!-- Chris Meier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christina Yoo</masterLabel>
+            <translation><!-- Christina Yoo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christinah Molefe</masterLabel>
+            <translation><!-- Christinah Molefe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christopher Blake</masterLabel>
+            <translation><!-- Christopher Blake --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christopher Davenport</masterLabel>
+            <translation><!-- Christopher Davenport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christopher Stroh</masterLabel>
+            <translation><!-- Christopher Stroh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christopher Van Gurp</masterLabel>
+            <translation><!-- Christopher Van Gurp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christos Karanicolas</masterLabel>
+            <translation><!-- Christos Karanicolas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claire Momeyer</masterLabel>
+            <translation><!-- Claire Momeyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colby Hagen</masterLabel>
+            <translation><!-- Colby Hagen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cole Barninger</masterLabel>
+            <translation><!-- Cole Barninger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colin Tobias</masterLabel>
+            <translation><!-- Colin Tobias --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colin Williams</masterLabel>
+            <translation><!-- Colin Williams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connor Hartley</masterLabel>
+            <translation><!-- Connor Hartley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connor McPartland</masterLabel>
+            <translation><!-- Connor McPartland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conor Wall</masterLabel>
+            <translation><!-- Conor Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Craig Cunningham</masterLabel>
+            <translation><!-- Craig Cunningham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Craig Helfer</masterLabel>
+            <translation><!-- Craig Helfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cristina Saretti</masterLabel>
+            <translation><!-- Cristina Saretti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cynthia Meza</masterLabel>
+            <translation><!-- Cynthia Meza --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dalen Chow</masterLabel>
+            <translation><!-- Dalen Chow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dalila Abdi</masterLabel>
+            <translation><!-- Dalila Abdi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dan Marvin</masterLabel>
+            <translation><!-- Dan Marvin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dan Mistretta</masterLabel>
+            <translation><!-- Dan Mistretta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dan Sestito</masterLabel>
+            <translation><!-- Dan Sestito --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dan Virgilio</masterLabel>
+            <translation><!-- Dan Virgilio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daniel Bourbia</masterLabel>
+            <translation><!-- Daniel Bourbia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daniel Owens</masterLabel>
+            <translation><!-- Daniel Owens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Darren Lee</masterLabel>
+            <translation><!-- Darren Lee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Bergquist</masterLabel>
+            <translation><!-- David Bergquist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Bullen</masterLabel>
+            <translation><!-- David Bullen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Day</masterLabel>
+            <translation><!-- David Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Farkas</masterLabel>
+            <translation><!-- David Farkas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Guide</masterLabel>
+            <translation><!-- David Guide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David H Kim</masterLabel>
+            <translation><!-- David H Kim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Levy</masterLabel>
+            <translation><!-- David Levy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Shi</masterLabel>
+            <translation><!-- David Shi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Timothy</masterLabel>
+            <translation><!-- David Timothy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denise Conn</masterLabel>
+            <translation><!-- Denise Conn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devin Rainone</masterLabel>
+            <translation><!-- Devin Rainone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devon Theys</masterLabel>
+            <translation><!-- Devon Theys --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diana Siwik</masterLabel>
+            <translation><!-- Diana Siwik --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dina Shin</masterLabel>
+            <translation><!-- Dina Shin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dominic Mattiucci</masterLabel>
+            <translation><!-- Dominic Mattiucci --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donald Kursar</masterLabel>
+            <translation><!-- Donald Kursar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donna Daymude</masterLabel>
+            <translation><!-- Donna Daymude --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dorothy Luk</masterLabel>
+            <translation><!-- Dorothy Luk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drew Beck</masterLabel>
+            <translation><!-- Drew Beck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drew Eccleston</masterLabel>
+            <translation><!-- Drew Eccleston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duane Lapus</masterLabel>
+            <translation><!-- Duane Lapus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duncan Phillips</masterLabel>
+            <translation><!-- Duncan Phillips --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dylan Story</masterLabel>
+            <translation><!-- Dylan Story --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edward Rae</masterLabel>
+            <translation><!-- Edward Rae --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edward Soon</masterLabel>
+            <translation><!-- Edward Soon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eki Lau</masterLabel>
+            <translation><!-- Eki Lau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emily Rubin-Delanchy</masterLabel>
+            <translation><!-- Emily Rubin-Delanchy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eric Gregware</masterLabel>
+            <translation><!-- Eric Gregware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eric Riebesell</masterLabel>
+            <translation><!-- Eric Riebesell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eric Rodriguez</masterLabel>
+            <translation><!-- Eric Rodriguez --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eric Washington</masterLabel>
+            <translation><!-- Eric Washington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eric Wenig</masterLabel>
+            <translation><!-- Eric Wenig --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erica Day</masterLabel>
+            <translation><!-- Erica Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erica Joubert</masterLabel>
+            <translation><!-- Erica Joubert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erica Viken</masterLabel>
+            <translation><!-- Erica Viken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erik Tomins</masterLabel>
+            <translation><!-- Erik Tomins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethan Bartlett</masterLabel>
+            <translation><!-- Ethan Bartlett --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethan Hom</masterLabel>
+            <translation><!-- Ethan Hom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eva Bowles</masterLabel>
+            <translation><!-- Eva Bowles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evan Bernstein</masterLabel>
+            <translation><!-- Evan Bernstein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evan Tabas</masterLabel>
+            <translation><!-- Evan Tabas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ewa Bird</masterLabel>
+            <translation><!-- Ewa Bird --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fateha Uddin</masterLabel>
+            <translation><!-- Fateha Uddin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Felicia Green</masterLabel>
+            <translation><!-- Felicia Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Felita Herring</masterLabel>
+            <translation><!-- Felita Herring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fenix Lam</masterLabel>
+            <translation><!-- Fenix Lam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fernando Carneiro</masterLabel>
+            <translation><!-- Fernando Carneiro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiona Leung</masterLabel>
+            <translation><!-- Fiona Leung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Francesco Nuccio</masterLabel>
+            <translation><!-- Francesco Nuccio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frandy Napoleon</masterLabel>
+            <translation><!-- Frandy Napoleon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frank Cifarelli</masterLabel>
+            <translation><!-- Frank Cifarelli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frederik Frank</masterLabel>
+            <translation><!-- Frederik Frank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gabriela Zgajewska</masterLabel>
+            <translation><!-- Gabriela Zgajewska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gabriella Baron</masterLabel>
+            <translation><!-- Gabriella Baron --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gary Bullard</masterLabel>
+            <translation><!-- Gary Bullard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geoffrey Suen</masterLabel>
+            <translation><!-- Geoffrey Suen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>George Nelson</masterLabel>
+            <translation><!-- George Nelson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gerald Viola</masterLabel>
+            <translation><!-- Gerald Viola --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gesa Gosenheimer</masterLabel>
+            <translation><!-- Gesa Gosenheimer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gibran Augustine</masterLabel>
+            <translation><!-- Gibran Augustine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gina Kashinsky</masterLabel>
+            <translation><!-- Gina Kashinsky --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Given Mawodzeka</masterLabel>
+            <translation><!-- Given Mawodzeka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greg Costa</masterLabel>
+            <translation><!-- Greg Costa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hannah Graham</masterLabel>
+            <translation><!-- Hannah Graham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hannah Walker</masterLabel>
+            <translation><!-- Hannah Walker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harry Paul</masterLabel>
+            <translation><!-- Harry Paul --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harvey Kam Chun Him</masterLabel>
+            <translation><!-- Harvey Kam Chun Him --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Herb Werth</masterLabel>
+            <translation><!-- Herb Werth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hidemi Kawahara</masterLabel>
+            <translation><!-- Hidemi Kawahara --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hidi Yamamoto</masterLabel>
+            <translation><!-- Hidi Yamamoto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hiren Kapadia</masterLabel>
+            <translation><!-- Hiren Kapadia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hiroaki Suzuki</masterLabel>
+            <translation><!-- Hiroaki Suzuki --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hisae Suzuki</masterLabel>
+            <translation><!-- Hisae Suzuki --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iain Kennedy</masterLabel>
+            <translation><!-- Iain Kennedy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ian Graham</masterLabel>
+            <translation><!-- Ian Graham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ilan Leshem</masterLabel>
+            <translation><!-- Ilan Leshem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ilaria Vigano</masterLabel>
+            <translation><!-- Ilaria Vigano --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ilkay Sarpdag</masterLabel>
+            <translation><!-- Ilkay Sarpdag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jack Chen</masterLabel>
+            <translation><!-- Jack Chen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jackie Hua</masterLabel>
+            <translation><!-- Jackie Hua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jacob Goldstein</masterLabel>
+            <translation><!-- Jacob Goldstein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>James Bishop</masterLabel>
+            <translation><!-- James Bishop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>James Cordero</masterLabel>
+            <translation><!-- James Cordero --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>James Kellum</masterLabel>
+            <translation><!-- James Kellum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>James Stanton</masterLabel>
+            <translation><!-- James Stanton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>James Sullivan</masterLabel>
+            <translation><!-- James Sullivan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jamie Donovan</masterLabel>
+            <translation><!-- Jamie Donovan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jamie Malam</masterLabel>
+            <translation><!-- Jamie Malam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason Hahn</masterLabel>
+            <translation><!-- Jason Hahn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason Lee</masterLabel>
+            <translation><!-- Jason Lee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason Oury</masterLabel>
+            <translation><!-- Jason Oury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason Tuthill</masterLabel>
+            <translation><!-- Jason Tuthill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeffrey Pino</masterLabel>
+            <translation><!-- Jeffrey Pino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeffrey Rock</masterLabel>
+            <translation><!-- Jeffrey Rock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jekaterina Vorobjova</masterLabel>
+            <translation><!-- Jekaterina Vorobjova --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jenna DePue</masterLabel>
+            <translation><!-- Jenna DePue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jennifer Cruz</masterLabel>
+            <translation><!-- Jennifer Cruz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jennifer Sun</masterLabel>
+            <translation><!-- Jennifer Sun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeremy Diller</masterLabel>
+            <translation><!-- Jeremy Diller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jessica Maines</masterLabel>
+            <translation><!-- Jessica Maines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jessica Mazurkiewicz</masterLabel>
+            <translation><!-- Jessica Mazurkiewicz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jimmy Xia</masterLabel>
+            <translation><!-- Jimmy Xia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jo Jermyn</masterLabel>
+            <translation><!-- Jo Jermyn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joe Rodriguez</masterLabel>
+            <translation><!-- Joe Rodriguez --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Gallagher</masterLabel>
+            <translation><!-- John Gallagher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Hester</masterLabel>
+            <translation><!-- John Hester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Karageorge</masterLabel>
+            <translation><!-- John Karageorge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Koslow</masterLabel>
+            <translation><!-- John Koslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Maffeo</masterLabel>
+            <translation><!-- John Maffeo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John P Hefferon</masterLabel>
+            <translation><!-- John P Hefferon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jon Keaton</masterLabel>
+            <translation><!-- Jon Keaton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jonathan Greener</masterLabel>
+            <translation><!-- Jonathan Greener --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jonathan Meyer</masterLabel>
+            <translation><!-- Jonathan Meyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jonathan Regnier</masterLabel>
+            <translation><!-- Jonathan Regnier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jonathon Kennedy</masterLabel>
+            <translation><!-- Jonathon Kennedy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jordan Hollis</masterLabel>
+            <translation><!-- Jordan Hollis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jorge Mere</masterLabel>
+            <translation><!-- Jorge Mere --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joseph Holub</masterLabel>
+            <translation><!-- Joseph Holub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joseph O&apos;Hagan</masterLabel>
+            <translation><!-- Joseph O&apos;Hagan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Josh Williams</masterLabel>
+            <translation><!-- Josh Williams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joshua Brister</masterLabel>
+            <translation><!-- Joshua Brister --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joy Cummings</masterLabel>
+            <translation><!-- Joy Cummings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Judy Cruz</masterLabel>
+            <translation><!-- Judy Cruz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Julia Heitzenberger</masterLabel>
+            <translation><!-- Julia Heitzenberger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Julie Acevedo</masterLabel>
+            <translation><!-- Julie Acevedo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Justin Rogers</masterLabel>
+            <translation><!-- Justin Rogers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Justin Vieira</masterLabel>
+            <translation><!-- Justin Vieira --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kailen Zorzi</masterLabel>
+            <translation><!-- Kailen Zorzi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kaitlin Dean</masterLabel>
+            <translation><!-- Kaitlin Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kamar Green</masterLabel>
+            <translation><!-- Kamar Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karen West</masterLabel>
+            <translation><!-- Karen West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karine Deroche</masterLabel>
+            <translation><!-- Karine Deroche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kat Anthony</masterLabel>
+            <translation><!-- Kat Anthony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kate McKay</masterLabel>
+            <translation><!-- Kate McKay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kate Nacci</masterLabel>
+            <translation><!-- Kate Nacci --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kate Ryan</masterLabel>
+            <translation><!-- Kate Ryan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Katelin Swenson</masterLabel>
+            <translation><!-- Katelin Swenson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Katherine Neugebauer</masterLabel>
+            <translation><!-- Katherine Neugebauer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kathy Fung</masterLabel>
+            <translation><!-- Kathy Fung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Katy Thomas</masterLabel>
+            <translation><!-- Katy Thomas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kaze Wong</masterLabel>
+            <translation><!-- Kaze Wong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keagan Jacobs</masterLabel>
+            <translation><!-- Keagan Jacobs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kelly McGeehan</masterLabel>
+            <translation><!-- Kelly McGeehan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ken Watson</masterLabel>
+            <translation><!-- Ken Watson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kenichi Miike</masterLabel>
+            <translation><!-- Kenichi Miike --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kenneth Pieper</masterLabel>
+            <translation><!-- Kenneth Pieper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kevin Goodman</masterLabel>
+            <translation><!-- Kevin Goodman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kevin Herraiz</masterLabel>
+            <translation><!-- Kevin Herraiz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kevin Lui</masterLabel>
+            <translation><!-- Kevin Lui --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kevin Marcus</masterLabel>
+            <translation><!-- Kevin Marcus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kevin Roy</masterLabel>
+            <translation><!-- Kevin Roy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kieran Kelly</masterLabel>
+            <translation><!-- Kieran Kelly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kim Brubacher</masterLabel>
+            <translation><!-- Kim Brubacher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Konstantin Vtorov</masterLabel>
+            <translation><!-- Konstantin Vtorov --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kristen La Valle</masterLabel>
+            <translation><!-- Kristen La Valle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kuno Kobori</masterLabel>
+            <translation><!-- Kuno Kobori --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyle Benedict</masterLabel>
+            <translation><!-- Kyle Benedict --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyli Ly</masterLabel>
+            <translation><!-- Kyli Ly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lansing Gatrell</masterLabel>
+            <translation><!-- Lansing Gatrell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Larry Goldberg</masterLabel>
+            <translation><!-- Larry Goldberg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laura Dodge</masterLabel>
+            <translation><!-- Laura Dodge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lauren Puleo</masterLabel>
+            <translation><!-- Lauren Puleo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lauren Sutcliffe</masterLabel>
+            <translation><!-- Lauren Sutcliffe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lesley Snoxell</masterLabel>
+            <translation><!-- Lesley Snoxell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linda Dennis</masterLabel>
+            <translation><!-- Linda Dennis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lyle Jacobs</masterLabel>
+            <translation><!-- Lyle Jacobs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manish Patel</masterLabel>
+            <translation><!-- Manish Patel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marc Greene</masterLabel>
+            <translation><!-- Marc Greene --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Margaret Daniels</masterLabel>
+            <translation><!-- Margaret Daniels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maria Gabra</masterLabel>
+            <translation><!-- Maria Gabra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mariam Kakar</masterLabel>
+            <translation><!-- Mariam Kakar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marianne Baik</masterLabel>
+            <translation><!-- Marianne Baik --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marie Cuevas</masterLabel>
+            <translation><!-- Marie Cuevas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marissa Stuart</masterLabel>
+            <translation><!-- Marissa Stuart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mariusz Tybinski</masterLabel>
+            <translation><!-- Mariusz Tybinski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mark Beldowicz</masterLabel>
+            <translation><!-- Mark Beldowicz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mark Eckstein</masterLabel>
+            <translation><!-- Mark Eckstein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mark Thompson</masterLabel>
+            <translation><!-- Mark Thompson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marta Lindner</masterLabel>
+            <translation><!-- Marta Lindner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Martha Luna</masterLabel>
+            <translation><!-- Martha Luna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Martin Railton</masterLabel>
+            <translation><!-- Martin Railton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mary Gordon</masterLabel>
+            <translation><!-- Mary Gordon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mary Thorn</masterLabel>
+            <translation><!-- Mary Thorn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maryia Serheyenkava</masterLabel>
+            <translation><!-- Maryia Serheyenkava --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maselyn Chirimuuta</masterLabel>
+            <translation><!-- Maselyn Chirimuuta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matt Esposito</masterLabel>
+            <translation><!-- Matt Esposito --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew Acquavella</masterLabel>
+            <translation><!-- Matthew Acquavella --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew Alter</masterLabel>
+            <translation><!-- Matthew Alter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew Davis</masterLabel>
+            <translation><!-- Matthew Davis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew Derwin</masterLabel>
+            <translation><!-- Matthew Derwin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew Frater</masterLabel>
+            <translation><!-- Matthew Frater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew Hubbard</masterLabel>
+            <translation><!-- Matthew Hubbard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew Kirincic</masterLabel>
+            <translation><!-- Matthew Kirincic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew McKay</masterLabel>
+            <translation><!-- Matthew McKay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max Albrecht</masterLabel>
+            <translation><!-- Max Albrecht --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max Bauer</masterLabel>
+            <translation><!-- Max Bauer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>McEvans Francois</masterLabel>
+            <translation><!-- McEvans Francois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Megan Stewart</masterLabel>
+            <translation><!-- Megan Stewart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meghan Donohue</masterLabel>
+            <translation><!-- Meghan Donohue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Megumi Ishiyama</masterLabel>
+            <translation><!-- Megumi Ishiyama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Melissa Licul</masterLabel>
+            <translation><!-- Melissa Licul --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Fraser</masterLabel>
+            <translation><!-- Michael Fraser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Grieci</masterLabel>
+            <translation><!-- Michael Grieci --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Haggerty</masterLabel>
+            <translation><!-- Michael Haggerty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Luciano</masterLabel>
+            <translation><!-- Michael Luciano --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Lynch</masterLabel>
+            <translation><!-- Michael Lynch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Palacios</masterLabel>
+            <translation><!-- Michael Palacios --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Romagnoli</masterLabel>
+            <translation><!-- Michael Romagnoli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Schpero</masterLabel>
+            <translation><!-- Michael Schpero --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Terilli</masterLabel>
+            <translation><!-- Michael Terilli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Travers</masterLabel>
+            <translation><!-- Michael Travers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michelle Cheung</masterLabel>
+            <translation><!-- Michelle Cheung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mike Patella</masterLabel>
+            <translation><!-- Mike Patella --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mina Shimada</masterLabel>
+            <translation><!-- Mina Shimada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monique Popli</masterLabel>
+            <translation><!-- Monique Popli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mostafa Bouhendjeur</masterLabel>
+            <translation><!-- Mostafa Bouhendjeur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muslim Manie</masterLabel>
+            <translation><!-- Muslim Manie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Najy Nahkle</masterLabel>
+            <translation><!-- Najy Nahkle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Natalie Agboyibor</masterLabel>
+            <translation><!-- Natalie Agboyibor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nathan Buhr</masterLabel>
+            <translation><!-- Nathan Buhr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neal Nemeroff</masterLabel>
+            <translation><!-- Neal Nemeroff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Ops</masterLabel>
+            <translation><!-- Net Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicholas Taylor</masterLabel>
+            <translation><!-- Nicholas Taylor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicholas Whitaker</masterLabel>
+            <translation><!-- Nicholas Whitaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nick Arbuthnott</masterLabel>
+            <translation><!-- Nick Arbuthnott --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nick Gallagher</masterLabel>
+            <translation><!-- Nick Gallagher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nick Hall</masterLabel>
+            <translation><!-- Nick Hall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicola Butler</masterLabel>
+            <translation><!-- Nicola Butler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicole Earl</masterLabel>
+            <translation><!-- Nicole Earl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicole Kirby</masterLabel>
+            <translation><!-- Nicole Kirby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicole Venter</masterLabel>
+            <translation><!-- Nicole Venter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nina Bari</masterLabel>
+            <translation><!-- Nina Bari --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norichika Nagatani</masterLabel>
+            <translation><!-- Norichika Nagatani --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O&apos;Hara Macken</masterLabel>
+            <translation><!-- O&apos;Hara Macken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oren Goodman</masterLabel>
+            <translation><!-- Oren Goodman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patrick Brown</masterLabel>
+            <translation><!-- Patrick Brown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patrick Tobias</masterLabel>
+            <translation><!-- Patrick Tobias --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paul Hebert</masterLabel>
+            <translation><!-- Paul Hebert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paul Henkel</masterLabel>
+            <translation><!-- Paul Henkel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paul Kisslinger</masterLabel>
+            <translation><!-- Paul Kisslinger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paul Marcus</masterLabel>
+            <translation><!-- Paul Marcus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pete Bentson</masterLabel>
+            <translation><!-- Pete Bentson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peter Hoffmann</masterLabel>
+            <translation><!-- Peter Hoffmann --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peter Morgan</masterLabel>
+            <translation><!-- Peter Morgan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philip Wu</masterLabel>
+            <translation><!-- Philip Wu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philippe Risacher</masterLabel>
+            <translation><!-- Philippe Risacher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phillip Brehl</masterLabel>
+            <translation><!-- Phillip Brehl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phuong-Dan Pham</masterLabel>
+            <translation><!-- Phuong-Dan Pham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preston Gelman</masterLabel>
+            <translation><!-- Preston Gelman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purvi Rana</masterLabel>
+            <translation><!-- Purvi Rana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qian Chen</masterLabel>
+            <translation><!-- Qian Chen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quincy Tse</masterLabel>
+            <translation><!-- Quincy Tse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rachel Glascock</masterLabel>
+            <translation><!-- Rachel Glascock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ravi Ganti</masterLabel>
+            <translation><!-- Ravi Ganti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raymond Wen</masterLabel>
+            <translation><!-- Raymond Wen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rick Edwards</masterLabel>
+            <translation><!-- Rick Edwards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ridwaan Salie</masterLabel>
+            <translation><!-- Ridwaan Salie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rita Wong</masterLabel>
+            <translation><!-- Rita Wong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rob Brandys</masterLabel>
+            <translation><!-- Rob Brandys --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rob Perle</masterLabel>
+            <translation><!-- Rob Perle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Conner</masterLabel>
+            <translation><!-- Robert Conner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Gardner</masterLabel>
+            <translation><!-- Robert Gardner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Graham</masterLabel>
+            <translation><!-- Robert Graham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Herion</masterLabel>
+            <translation><!-- Robert Herion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Jones</masterLabel>
+            <translation><!-- Robert Jones --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Leidl</masterLabel>
+            <translation><!-- Robert Leidl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Weaver</masterLabel>
+            <translation><!-- Robert Weaver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robin Auten</masterLabel>
+            <translation><!-- Robin Auten --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robyn Petersen</masterLabel>
+            <translation><!-- Robyn Petersen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rocky Hong</masterLabel>
+            <translation><!-- Rocky Hong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Romain Madier</masterLabel>
+            <translation><!-- Romain Madier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rudi Koopman</masterLabel>
+            <translation><!-- Rudi Koopman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryan Nagy</masterLabel>
+            <translation><!-- Ryan Nagy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sarah Hodash</masterLabel>
+            <translation><!-- Sarah Hodash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sarah Moughan</masterLabel>
+            <translation><!-- Sarah Moughan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sarah Owens</masterLabel>
+            <translation><!-- Sarah Owens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scott Amling</masterLabel>
+            <translation><!-- Scott Amling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scott Fried</masterLabel>
+            <translation><!-- Scott Fried --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scott Ganeles</masterLabel>
+            <translation><!-- Scott Ganeles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sean Duncan</masterLabel>
+            <translation><!-- Sean Duncan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sean Henderson</masterLabel>
+            <translation><!-- Sean Henderson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sean Tai</masterLabel>
+            <translation><!-- Sean Tai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selene Lau</masterLabel>
+            <translation><!-- Selene Lau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sena Beyli</masterLabel>
+            <translation><!-- Sena Beyli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serge Lomago</masterLabel>
+            <translation><!-- Serge Lomago --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seth Rothman</masterLabel>
+            <translation><!-- Seth Rothman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shadow Yip</masterLabel>
+            <translation><!-- Shadow Yip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shakil Munshi</masterLabel>
+            <translation><!-- Shakil Munshi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shana Crockett</masterLabel>
+            <translation><!-- Shana Crockett --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shane Long</masterLabel>
+            <translation><!-- Shane Long --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shaughn Nechin</masterLabel>
+            <translation><!-- Shaughn Nechin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shirley Matetelane</masterLabel>
+            <translation><!-- Shirley Matetelane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shivon De Lilie</masterLabel>
+            <translation><!-- Shivon De Lilie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simone Ashby</masterLabel>
+            <translation><!-- Simone Ashby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sithembiso Mzondo</masterLabel>
+            <translation><!-- Sithembiso Mzondo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonia Karuthasami</masterLabel>
+            <translation><!-- Sonia Karuthasami --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonika Gill</masterLabel>
+            <translation><!-- Sonika Gill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonya Zell</masterLabel>
+            <translation><!-- Sonya Zell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stephen Burton-Lewis</masterLabel>
+            <translation><!-- Stephen Burton-Lewis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stephen Depietto</masterLabel>
+            <translation><!-- Stephen Depietto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stephen Massey</masterLabel>
+            <translation><!-- Stephen Massey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stephen Tam</masterLabel>
+            <translation><!-- Stephen Tam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steve Baiter</masterLabel>
+            <translation><!-- Steve Baiter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steve Halloran</masterLabel>
+            <translation><!-- Steve Halloran --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steven Esterly</masterLabel>
+            <translation><!-- Steven Esterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steven Friedman</masterLabel>
+            <translation><!-- Steven Friedman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stuart Tait</masterLabel>
+            <translation><!-- Stuart Tait --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sudarshan Setlur</masterLabel>
+            <translation><!-- Sudarshan Setlur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tess Berglund</masterLabel>
+            <translation><!-- Tess Berglund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Theresa Elamparo</masterLabel>
+            <translation><!-- Theresa Elamparo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thomas Bottoms</masterLabel>
+            <translation><!-- Thomas Bottoms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thomas Covington</masterLabel>
+            <translation><!-- Thomas Covington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thomas Dundon</masterLabel>
+            <translation><!-- Thomas Dundon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thomas McNamara</masterLabel>
+            <translation><!-- Thomas McNamara --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tiffany Turner</masterLabel>
+            <translation><!-- Tiffany Turner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timothy Carr</masterLabel>
+            <translation><!-- Timothy Carr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tom Lee-Smith</masterLabel>
+            <translation><!-- Tom Lee-Smith --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tom Schrule</masterLabel>
+            <translation><!-- Tom Schrule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tony Cleverley</masterLabel>
+            <translation><!-- Tony Cleverley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tony Fabrikant</masterLabel>
+            <translation><!-- Tony Fabrikant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trey Poole</masterLabel>
+            <translation><!-- Trey Poole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tszyan Ng</masterLabel>
+            <translation><!-- Tszyan Ng --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uday Bikkumalla</masterLabel>
+            <translation><!-- Uday Bikkumalla --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valerie Hom</masterLabel>
+            <translation><!-- Valerie Hom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valerie Sun</masterLabel>
+            <translation><!-- Valerie Sun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venugopal Kapa</masterLabel>
+            <translation><!-- Venugopal Kapa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vivian Liu</masterLabel>
+            <translation><!-- Vivian Liu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walter Terrell</masterLabel>
+            <translation><!-- Walter Terrell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wendy Palumbo</masterLabel>
+            <translation><!-- Wendy Palumbo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wesley Rodriguez</masterLabel>
+            <translation><!-- Wesley Rodriguez --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>William Campbell</masterLabel>
+            <translation><!-- William Campbell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>William MacPherson</masterLabel>
+            <translation><!-- William MacPherson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>William Moebius</masterLabel>
+            <translation><!-- William Moebius --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wilson Fan</masterLabel>
+            <translation><!-- Wilson Fan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yasmin Hussein</masterLabel>
+            <translation><!-- Yasmin Hussein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yasmine Kacha</masterLabel>
+            <translation><!-- Yasmine Kacha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yuri Tarasenko</masterLabel>
+            <translation><!-- Yuri Tarasenko --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zach Lavasque</masterLabel>
+            <translation><!-- Zach Lavasque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zach Pollack</masterLabel>
+            <translation><!-- Zach Pollack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zach Tang</masterLabel>
+            <translation><!-- Zach Tang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zachary Mitchell</masterLabel>
+            <translation><!-- Zachary Mitchell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zayna Schaffer</masterLabel>
+            <translation><!-- Zayna Schaffer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alert Sent Date --></label>
+        <name>Alert_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Competitive Intel --></label>
+        <name>Applicable_Competitive_Intel__c</name>
+        <picklistValues>
+            <masterLabel>Analec</masterLabel>
+            <translation><!-- Analec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ansarada</masterLabel>
+            <translation><!-- Ansarada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asbet</masterLabel>
+            <translation><!-- Asbet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloomberg</masterLabel>
+            <translation><!-- Bloomberg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BlueMatrix</masterLabel>
+            <translation><!-- BlueMatrix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boudica</masterLabel>
+            <translation><!-- Boudica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEB</masterLabel>
+            <translation><!-- CEB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CapIQ</masterLabel>
+            <translation><!-- CapIQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Citrix</masterLabel>
+            <translation><!-- Citrix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cmi2i</masterLabel>
+            <translation><!-- Cmi2i --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Computershare</masterLabel>
+            <translation><!-- Computershare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DF King</masterLabel>
+            <translation><!-- DF King --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deal RoadShow</masterLabel>
+            <translation><!-- Deal RoadShow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealogic</masterLabel>
+            <translation><!-- Dealogic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DebtX</masterLabel>
+            <translation><!-- DebtX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynamics</masterLabel>
+            <translation><!-- Dynamics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Firmex</masterLabel>
+            <translation><!-- Firmex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPO</masterLabel>
+            <translation><!-- IPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR Japan</masterLabel>
+            <translation><!-- IR Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intralinks</masterLabel>
+            <translation><!-- Intralinks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Networks</masterLabel>
+            <translation><!-- Investor Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J-IRIS</masterLabel>
+            <translation><!-- J-IRIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JSS</masterLabel>
+            <translation><!-- JSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MZ Ilios</masterLabel>
+            <translation><!-- MZ Ilios --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markit®</masterLabel>
+            <translation><!-- Markit® --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merrill Corporation</masterLabel>
+            <translation><!-- Merrill Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modular Finance</masterLabel>
+            <translation><!-- Modular Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MuniHub</masterLabel>
+            <translation><!-- MuniHub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Napa</masterLabel>
+            <translation><!-- Napa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nasdaq</masterLabel>
+            <translation><!-- Nasdaq --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NetRoadShow</masterLabel>
+            <translation><!-- NetRoadShow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NextJ</masterLabel>
+            <translation><!-- NextJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orient Capital</masterLabel>
+            <translation><!-- Orient Capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oxford Intelligence Partners</masterLabel>
+            <translation><!-- Oxford Intelligence Partners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PitchBook</masterLabel>
+            <translation><!-- PitchBook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preqin</masterLabel>
+            <translation><!-- Preqin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q4</masterLabel>
+            <translation><!-- Q4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RD:IR</masterLabel>
+            <translation><!-- RD:IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RR Donnelley - Venue</masterLabel>
+            <translation><!-- RR Donnelley - Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rivel</masterLabel>
+            <translation><!-- Rivel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singletrack</masterLabel>
+            <translation><!-- Singletrack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SyndTrak</masterLabel>
+            <translation><!-- SyndTrak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taylor Rafferty</masterLabel>
+            <translation><!-- Taylor Rafferty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thomson Reuters</masterLabel>
+            <translation><!-- Thomson Reuters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier1</masterLabel>
+            <translation><!-- Tier1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iLevel</masterLabel>
+            <translation><!-- iLevel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attendees (External and Internal) --></label>
+        <name>Attendees_External_and_Internal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base URL --></label>
+        <name>Base_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created from External Source --></label>
+        <name>Created_From_Plugin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Response Gauge --></label>
+        <name>Customer_Response_Gauge__c</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deal Value --></label>
+        <name>Deal_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executive Summary --></label>
+        <name>Executive_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- KPI Related --></label>
+        <name>KPI_Related__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products --></label>
+        <name>Products__c</name>
+        <picklistValues>
+            <masterLabel>Activist Intelligence (Shark Repellent)</masterLabel>
+            <translation><!-- Activist Intelligence (Shark Repellent) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (2111)</masterLabel>
+            <translation><!-- BD Advanced (2111) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (2242)</masterLabel>
+            <translation><!-- BD Advanced (2242) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (5130)</masterLabel>
+            <translation><!-- BD Advanced (5130) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (Alerts Only)</masterLabel>
+            <translation><!-- BD Advanced (Alerts Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (Axe Management)</masterLabel>
+            <translation><!-- BD Advanced (Axe Management) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (Corporate Issuers)</masterLabel>
+            <translation><!-- BD Advanced (Corporate Issuers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (Derivatives)</masterLabel>
+            <translation><!-- BD Advanced (Derivatives) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (Equity)</masterLabel>
+            <translation><!-- BD Advanced (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (Fixed Income)</masterLabel>
+            <translation><!-- BD Advanced (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (QIB)</masterLabel>
+            <translation><!-- BD Advanced (QIB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (Reg S)</masterLabel>
+            <translation><!-- BD Advanced (Reg S) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (Retail)</masterLabel>
+            <translation><!-- BD Advanced (Retail) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (SMMP)</masterLabel>
+            <translation><!-- BD Advanced (SMMP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Advanced (Syndicated Loans)</masterLabel>
+            <translation><!-- BD Advanced (Syndicated Loans) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Axe Management (Add-on Feature)</masterLabel>
+            <translation><!-- BD Axe Management (Add-on Feature) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Corporate (Assist)</masterLabel>
+            <translation><!-- BD Corporate (Assist) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Corporate (Basic)</masterLabel>
+            <translation><!-- BD Corporate (Basic) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Corporate (CRM Add-on)</masterLabel>
+            <translation><!-- BD Corporate (CRM Add-on) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Corporate (Equity)</masterLabel>
+            <translation><!-- BD Corporate (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Corporate (Fixed Income)</masterLabel>
+            <translation><!-- BD Corporate (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Corporate (Retail)</masterLabel>
+            <translation><!-- BD Corporate (Retail) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Corporate Governance</masterLabel>
+            <translation><!-- BD Corporate Governance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Dialer (Add-on Feature)</masterLabel>
+            <translation><!-- BD Dialer (Add-on Feature) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Enterprise (Add-on Feature)</masterLabel>
+            <translation><!-- BD Enterprise (Add-on Feature) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD IR Consultant</masterLabel>
+            <translation><!-- BD IR Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Mail (Add-on Feature)</masterLabel>
+            <translation><!-- BD Mail (Add-on Feature) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Research Distribution (Add-on)</masterLabel>
+            <translation><!-- BD Research Distribution (Add-on) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Salesforce</masterLabel>
+            <translation><!-- BD Salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Trade Management (Add-on Feature)</masterLabel>
+            <translation><!-- BD Trade Management (Add-on Feature) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Vision (Alerts Only)</masterLabel>
+            <translation><!-- BD Vision (Alerts Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Vision (Corporate Issuers)</masterLabel>
+            <translation><!-- BD Vision (Corporate Issuers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Vision (Derivatives)</masterLabel>
+            <translation><!-- BD Vision (Derivatives) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Vision (Equity)</masterLabel>
+            <translation><!-- BD Vision (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Vision (Fixed Income)</masterLabel>
+            <translation><!-- BD Vision (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Vision (Retail)</masterLabel>
+            <translation><!-- BD Vision (Retail) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beneficial Ownership</masterLabel>
+            <translation><!-- Beneficial Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BuysideIQ</masterLabel>
+            <translation><!-- BuysideIQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BuysideIQ (GMG)</masterLabel>
+            <translation><!-- BuysideIQ (GMG) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CBS Direct</masterLabel>
+            <translation><!-- CBS Direct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital Markets Analytics</masterLabel>
+            <translation><!-- Capital Markets Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Workstation (Audit Feed)</masterLabel>
+            <translation><!-- Compliance Workstation (Audit Feed) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DR Insight</masterLabel>
+            <translation><!-- DR Insight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily Market Summaries (Equity)</masterLabel>
+            <translation><!-- Daily Market Summaries (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (2111)</masterLabel>
+            <translation><!-- Data Feed (2111) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (2242)</masterLabel>
+            <translation><!-- Data Feed (2242) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (5130)</masterLabel>
+            <translation><!-- Data Feed (5130) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (Corporate Issuers)</masterLabel>
+            <translation><!-- Data Feed (Corporate Issuers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (Derivatives)</masterLabel>
+            <translation><!-- Data Feed (Derivatives) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (Equity Corporate)</masterLabel>
+            <translation><!-- Data Feed (Equity Corporate) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (Equity)</masterLabel>
+            <translation><!-- Data Feed (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (Fixed Income Corporate)</masterLabel>
+            <translation><!-- Data Feed (Fixed Income Corporate) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (Fixed Income)</masterLabel>
+            <translation><!-- Data Feed (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (Municipal)</masterLabel>
+            <translation><!-- Data Feed (Municipal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (QIB)</masterLabel>
+            <translation><!-- Data Feed (QIB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (Reg S)</masterLabel>
+            <translation><!-- Data Feed (Reg S) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (SMMP)</masterLabel>
+            <translation><!-- Data Feed (SMMP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (Service Providers)</masterLabel>
+            <translation><!-- Data Feed (Service Providers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed (Syndicated Loans)</masterLabel>
+            <translation><!-- Data Feed (Syndicated Loans) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (2111)</masterLabel>
+            <translation><!-- Data Feed - One Time (2111) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (2242)</masterLabel>
+            <translation><!-- Data Feed - One Time (2242) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (5130)</masterLabel>
+            <translation><!-- Data Feed - One Time (5130) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (Corporate Issuers)</masterLabel>
+            <translation><!-- Data Feed - One Time (Corporate Issuers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (Derivatives)</masterLabel>
+            <translation><!-- Data Feed - One Time (Derivatives) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (Equity Corporate)</masterLabel>
+            <translation><!-- Data Feed - One Time (Equity Corporate) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (Equity)</masterLabel>
+            <translation><!-- Data Feed - One Time (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (Fixed Income Corporate)</masterLabel>
+            <translation><!-- Data Feed - One Time (Fixed Income Corporate) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (Fixed Income)</masterLabel>
+            <translation><!-- Data Feed - One Time (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (Municipal)</masterLabel>
+            <translation><!-- Data Feed - One Time (Municipal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (QIB)</masterLabel>
+            <translation><!-- Data Feed - One Time (QIB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (Reg S)</masterLabel>
+            <translation><!-- Data Feed - One Time (Reg S) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (SMMP)</masterLabel>
+            <translation><!-- Data Feed - One Time (SMMP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (Service Providers)</masterLabel>
+            <translation><!-- Data Feed - One Time (Service Providers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Feed - One Time (Syndicated Loans)</masterLabel>
+            <translation><!-- Data Feed - One Time (Syndicated Loans) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deal Monitor</masterLabel>
+            <translation><!-- Deal Monitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deal Services (API)</masterLabel>
+            <translation><!-- Deal Services (API) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debtdomain Agency Sites</masterLabel>
+            <translation><!-- Debtdomain Agency Sites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debtdomain CRM</masterLabel>
+            <translation><!-- Debtdomain CRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debtdomain Compliance</masterLabel>
+            <translation><!-- Debtdomain Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debtdomain Custom Development</masterLabel>
+            <translation><!-- Debtdomain Custom Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debtdomain DLO</masterLabel>
+            <translation><!-- Debtdomain DLO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debtdomain Dataroom</masterLabel>
+            <translation><!-- Debtdomain Dataroom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debtdomain Pipeline Reporting</masterLabel>
+            <translation><!-- Debtdomain Pipeline Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debtdomain Portfolio Valuation</masterLabel>
+            <translation><!-- Debtdomain Portfolio Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debtdomain Primary Sites</masterLabel>
+            <translation><!-- Debtdomain Primary Sites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debtdomain Secondary Sites</masterLabel>
+            <translation><!-- Debtdomain Secondary Sites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directed Share Program</masterLabel>
+            <translation><!-- Directed Share Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESG &amp; SRI Analysis</masterLabel>
+            <translation><!-- ESG &amp; SRI Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entity Data Management</masterLabel>
+            <translation><!-- Entity Data Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity Bookbuild</masterLabel>
+            <translation><!-- Equity Bookbuild --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity Deals Database</masterLabel>
+            <translation><!-- Equity Deals Database --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events &amp; Transcripts (Capital IQ)</masterLabel>
+            <translation><!-- Events &amp; Transcripts (Capital IQ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events &amp; Transcripts (FactSet)</masterLabel>
+            <translation><!-- Events &amp; Transcripts (FactSet) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FactSet Excel Add-in (CD &amp; Strat)</masterLabel>
+            <translation><!-- FactSet Excel Add-in (CD &amp; Strat) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FactSet Excel Add-in (IR)</masterLabel>
+            <translation><!-- FactSet Excel Add-in (IR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FactSet Excel Add-in (Other)</masterLabel>
+            <translation><!-- FactSet Excel Add-in (Other) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FactSet Excel Add-in (Treasury)</masterLabel>
+            <translation><!-- FactSet Excel Add-in (Treasury) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FactSet Workstation (CD &amp; Strat)</masterLabel>
+            <translation><!-- FactSet Workstation (CD &amp; Strat) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FactSet Workstation (IR)</masterLabel>
+            <translation><!-- FactSet Workstation (IR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FactSet Workstation (IRC)</masterLabel>
+            <translation><!-- FactSet Workstation (IRC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FactSet Workstation (Other)</masterLabel>
+            <translation><!-- FactSet Workstation (Other) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FactSet Workstation (Treasury)</masterLabel>
+            <translation><!-- FactSet Workstation (Treasury) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Income ID (Success Fee)</masterLabel>
+            <translation><!-- Fixed Income ID (Success Fee) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Income ID (project)</masterLabel>
+            <translation><!-- Fixed Income ID (project) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Income ID (retainer)</masterLabel>
+            <translation><!-- Fixed Income ID (retainer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Markets Intelligence (+)</masterLabel>
+            <translation><!-- Global Markets Intelligence (+) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Markets Intelligence (Activist Surveillance - Retainer)</masterLabel>
+            <translation><!-- Global Markets Intelligence (Activist Surveillance - Retainer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Markets Intelligence (Activist Surveillance Project)</masterLabel>
+            <translation><!-- Global Markets Intelligence (Activist Surveillance Project) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Markets Intelligence (Block Tracker)</masterLabel>
+            <translation><!-- Global Markets Intelligence (Block Tracker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Markets Intelligence (Deal Surveillance)</masterLabel>
+            <translation><!-- Global Markets Intelligence (Deal Surveillance) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Markets Intelligence (project)</masterLabel>
+            <translation><!-- Global Markets Intelligence (project) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Markets Intelligence (retainer)</masterLabel>
+            <translation><!-- Global Markets Intelligence (retainer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Governance Benchmarking</masterLabel>
+            <translation><!-- Governance Benchmarking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Governance Risk Service</masterLabel>
+            <translation><!-- Governance Risk Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Governance Roadshow</masterLabel>
+            <translation><!-- Governance Roadshow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Agent (project)</masterLabel>
+            <translation><!-- Information Agent (project) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Access - EQ</masterLabel>
+            <translation><!-- Investor Access - EQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Access - FI</masterLabel>
+            <translation><!-- Investor Access - FI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Access Workstation</masterLabel>
+            <translation><!-- Investor Access Workstation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Profiles (Equity)</masterLabel>
+            <translation><!-- Investor Profiles (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Profiles (Fixed Income)</masterLabel>
+            <translation><!-- Investor Profiles (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IssueBook</masterLabel>
+            <translation><!-- IssueBook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IssueBook (Phoenix)</masterLabel>
+            <translation><!-- IssueBook (Phoenix) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IssueBook Wires</masterLabel>
+            <translation><!-- IssueBook Wires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IssueLaunch</masterLabel>
+            <translation><!-- IssueLaunch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IssueNet</masterLabel>
+            <translation><!-- IssueNet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issuenet (Equity)</masterLabel>
+            <translation><!-- Issuenet (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issuer View</masterLabel>
+            <translation><!-- Issuer View --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M&amp;A Analysis</masterLabel>
+            <translation><!-- M&amp;A Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muni Analytics</masterLabel>
+            <translation><!-- Muni Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muni Bidcomp</masterLabel>
+            <translation><!-- Muni Bidcomp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muni Bookrunning</masterLabel>
+            <translation><!-- Muni Bookrunning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muni Data (BRS)</masterLabel>
+            <translation><!-- Muni Data (BRS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muni Deal Track</masterLabel>
+            <translation><!-- Muni Deal Track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muni Electronic Order Entry</masterLabel>
+            <translation><!-- Muni Electronic Order Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muni Gameday</masterLabel>
+            <translation><!-- Muni Gameday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muni Non-Managed Deals</masterLabel>
+            <translation><!-- Muni Non-Managed Deals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muni Wires</masterLabel>
+            <translation><!-- Muni Wires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MuniCalendar</masterLabel>
+            <translation><!-- MuniCalendar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MuniIC (Information Center)</masterLabel>
+            <translation><!-- MuniIC (Information Center) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MuniWatch</masterLabel>
+            <translation><!-- MuniWatch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NDR Optimization Program</masterLabel>
+            <translation><!-- NDR Optimization Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OneAccess (API)</masterLabel>
+            <translation><!-- OneAccess (API) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Exchange Virtual Meetings (Corp)</masterLabel>
+            <translation><!-- Open Exchange Virtual Meetings (Corp) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OpenExchange Virtual Meetings (RST)</masterLabel>
+            <translation><!-- OpenExchange Virtual Meetings (RST) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perception Studies (project)</masterLabel>
+            <translation><!-- Perception Studies (project) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perception Studies (retainer)</masterLabel>
+            <translation><!-- Perception Studies (retainer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pitch Builder (Equity)</masterLabel>
+            <translation><!-- Pitch Builder (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pitch Builder (Fixed Income)</masterLabel>
+            <translation><!-- Pitch Builder (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Order Management</masterLabel>
+            <translation><!-- Primary Order Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prism Virtual Data Room</masterLabel>
+            <translation><!-- Prism Virtual Data Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile Builder (Equity)</masterLabel>
+            <translation><!-- Profile Builder (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile Builder (Fixed Income)</masterLabel>
+            <translation><!-- Profile Builder (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proxy (Success Fee)</masterLabel>
+            <translation><!-- Proxy (Success Fee) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proxy Negative Vote Recommendation Fee</masterLabel>
+            <translation><!-- Proxy Negative Vote Recommendation Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proxy Solicitation</masterLabel>
+            <translation><!-- Proxy Solicitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quotes &amp; News</masterLabel>
+            <translation><!-- Quotes &amp; News --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research &amp; Estimates (Capital IQ)</masterLabel>
+            <translation><!-- Research &amp; Estimates (Capital IQ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research &amp; Estimates (FactSet)</masterLabel>
+            <translation><!-- Research &amp; Estimates (FactSet) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Bookbuild (Equity)</masterLabel>
+            <translation><!-- Retail Bookbuild (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Bookbuild (Fixed Income)</masterLabel>
+            <translation><!-- Retail Bookbuild (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Bookbuild (Municipals)</masterLabel>
+            <translation><!-- Retail Bookbuild (Municipals) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadshow Access (Equity)</masterLabel>
+            <translation><!-- Roadshow Access (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadshow Access (Fixed Income)</masterLabel>
+            <translation><!-- Roadshow Access (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadshow Access (Loan)</masterLabel>
+            <translation><!-- Roadshow Access (Loan) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadshow Access (Municipals)</masterLabel>
+            <translation><!-- Roadshow Access (Municipals) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Share Register Analysis (project)</masterLabel>
+            <translation><!-- Share Register Analysis (project) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Share Register Analysis (retainer)</masterLabel>
+            <translation><!-- Share Register Analysis (retainer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder ID (project)</masterLabel>
+            <translation><!-- Shareholder ID (project) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder ID (retainer)</masterLabel>
+            <translation><!-- Shareholder ID (retainer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder ID - Non-domestic (project)</masterLabel>
+            <translation><!-- Shareholder ID - Non-domestic (project) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder ID - Non-domestic (retainer)</masterLabel>
+            <translation><!-- Shareholder ID - Non-domestic (retainer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder ID - Partial (project)</masterLabel>
+            <translation><!-- Shareholder ID - Partial (project) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder ID - Partial (retainer)</masterLabel>
+            <translation><!-- Shareholder ID - Partial (retainer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder Meeting Agenda Analysis</masterLabel>
+            <translation><!-- Shareholder Meeting Agenda Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder Meeting Management</masterLabel>
+            <translation><!-- Shareholder Meeting Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder Optimization Report</masterLabel>
+            <translation><!-- Shareholder Optimization Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sustainability Perception Studies</masterLabel>
+            <translation><!-- Sustainability Perception Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Targeting (project)</masterLabel>
+            <translation><!-- Targeting (project) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Targeting (retainer)</masterLabel>
+            <translation><!-- Targeting (retainer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable Rate Trading</masterLabel>
+            <translation><!-- Variable Rate Trading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WebIR+</masterLabel>
+            <translation><!-- WebIR+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webcasting services (resale)</masterLabel>
+            <translation><!-- Webcasting services (resale) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>etouches Conference Registration</masterLabel>
+            <translation><!-- etouches Conference Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCompliance (2111)</masterLabel>
+            <translation><!-- iCompliance (2111) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCompliance (2242)</masterLabel>
+            <translation><!-- iCompliance (2242) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCompliance (5130)</masterLabel>
+            <translation><!-- iCompliance (5130) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCompliance (Equity)</masterLabel>
+            <translation><!-- iCompliance (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCompliance (Fixed Income)</masterLabel>
+            <translation><!-- iCompliance (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCompliance (QIB)</masterLabel>
+            <translation><!-- iCompliance (QIB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCompliance (Reg S)</masterLabel>
+            <translation><!-- iCompliance (Reg S) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCompliance (SMMP)</masterLabel>
+            <translation><!-- iCompliance (SMMP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iConference (Equity)</masterLabel>
+            <translation><!-- iConference (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iConference (Fixed Income)</masterLabel>
+            <translation><!-- iConference (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPlanner (Equity)</masterLabel>
+            <translation><!-- iPlanner (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPlanner (Fixed Income)</masterLabel>
+            <translation><!-- iPlanner (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iProspectus (Equity)</masterLabel>
+            <translation><!-- iProspectus (Equity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iProspectus (Fixed Income)</masterLabel>
+            <translation><!-- iProspectus (Fixed Income) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iProspectus (Municipals)</masterLabel>
+            <translation><!-- iProspectus (Municipals) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related To Link --></label>
+        <name>Related_To_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Alert --></label>
+        <name>Send_Alert__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Type --></label>
+        <name>Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Account Management – Data Alert</masterLabel>
+            <translation><!-- Account Management – Data Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After Hours Client Action</masterLabel>
+            <translation><!-- After Hours Client Action --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BD Mobile Outreach</masterLabel>
+            <translation><!-- BD Mobile Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Education Touch Point</masterLabel>
+            <translation><!-- Client Education Touch Point --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Call</masterLabel>
+            <translation><!-- Cold Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proactive Outreach</masterLabel>
+            <translation><!-- Proactive Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proactive Touch Point</masterLabel>
+            <translation><!-- Proactive Touch Point --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RADAR</masterLabel>
+            <translation><!-- RADAR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Relationship --></label>
+        <name>User_Relationship__c</name>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow</masterLabel>
+            <translation><!-- Yellow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vertical --></label>
+        <name>Vertical__c</name>
+        <picklistValues>
+            <masterLabel>All Products</masterLabel>
+            <translation><!-- All Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMG</masterLabel>
+            <translation><!-- GMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCS</masterLabel>
+            <translation><!-- PCS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What Id --></label>
+        <name>WhatId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Id --></label>
+        <name>WhoId__c</name>
+    </fields>
+</CustomObjectTranslation>

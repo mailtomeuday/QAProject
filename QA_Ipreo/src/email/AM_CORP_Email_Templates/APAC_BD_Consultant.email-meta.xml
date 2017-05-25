@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Welcome email to active BD consultant clients</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ipreo_Standard_Internal</letterhead>
+    <name>APAC- BD Consultant</name>
+    <style>freeForm</style>
+    <subject>Welcome to Ipreo&apos;s BD Consultant platform</subject>
+    <textOnly>Dear {!Contact.FirstName} ,
+
+
+Welcome to Ipreo&apos;s BD Consultant platform. BD Consultant  is the leading source of comprehensive profiles of institutional money managers and their cross-asset class holdings information, including equity and fixed income. BD Consultant caters specifically to the IR workflow and acts as an integral resource for investor relations professionals to search and target.
+
+
+Key areas of differentiation for BD Consultant  are:
+
+
+·        Clean and intuitive search functionality
+
+
+·        Highly flexible targeting functionality and reporting
+
+
+·        Global, multi-asset class institutional contacts, profiles and holdings data
+
+
+·        Over 146,000 equity and fixed income contacts at more than 57,900 buy-side and sell-side financial institutions globally
+
+
+·        The hedge fund database alone provides nearly 25,000 investment professionals at over 6,400 hedge fund institutions managing over 26,000 funds
+
+
+·        Award winning 24 hour follow the sun customer service
+
+
+Your unique user login information for https://bdconsultant.ipreo.com is below:
+
+Username:
+Password: Password1 (case sensitive)
+
+
+To change your password, click on the dropdown next to your name which is on the top right hand corner on the screen .  You can also default a landing page, security, peer list, industry, and choose rows per screen under Admin &gt; You preference.
+
+
+
+Besides, the web-based version,  you can download our BD mobile app to your Ipad /Android Tablet and Smartphones from App store / Play Store . The BD Mobile app provides all the essentials you need to access investor information, input meeting notes, and manage your schedule on the road.
+
+
+You can access the BD Mobile app with the following credentials:
+
+Login ID:
+
+Password:
+
+Please visit Settings  in the global navigation bar to change your password.
+
+
+
+My name is Rita Wong and I will be your dedicated account manager, my contact details can be found in the top left corner of your screen when you log into the application. You can also access 24/7 help, detailed in the top right-hand corner of your screen once you log in. Callmenow will respond to your query within 10 minutes at any time of the day or night regardless of your global location.
+
+Please let me know a convenient time when you can sit down via webex and explore the BD Consultant Application further. We are happy to help, and we look forward to your feedback on BD Consultant.
+
+
+
+
+Thanks,
+
+
+Rita Wong
+Associate, Account Management /Team Lead APAC
+Ipreo
+
+New Direct line:  +852 3742 1057
+New address: Units 1405-6, 14/F, FWD Financial Centre, 308 Des Voeux Road Central, Hong Kong
+
+Rita.wong@ipreo.com
+24/7 Client Service - callmenowIR@ipreo.com</textOnly>
+    <type>html</type>
+</EmailTemplate>

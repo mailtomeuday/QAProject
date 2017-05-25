@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Service_alert_scheduled_maintenance</letterhead>
+    <name>GCR - EQ;FI;RST;Events Planned Downtime Notice</name>
+    <style>freeForm</style>
+    <subject>Service Alert Notification</subject>
+    <textOnly>Dear Client,
+
+Please be advised that this evening, Monday December 19th, from 8PM ET to 1:30AM ET we will be completing emergency hardware maintenance.  We are enacting this maintenance due to a hardware failure that was experienced today and will be immediately replaced.  During the maintenance there may be multiple short outages of the Retail application. For any clients initiating FIX sessions please notify your FIX teams to alert them so they can take any needed action.
+
+We apologize for any inconvenience this may cause.
+
+As this is routine maintenance we do not anticipate any issues. That said, as always, we are here to support you. Should questions or issues arise please contact via the below support channel.
+ 
+Regards,
+The Ipreo Client Success Team
+
+
+
+
+
+
+
+Equity Clients
+
+866.708.4357 (Americas)
+44.845.680.1194 (EMEA)
+852.2180.6350 (Asia Pacific)
+
+Fixed Income Clients
+
+800.217.4299 (Americas)
+44.845.680.1192 (EMEA)
+852.5808.2615 (Asia Pacific)
+
+
+RS&amp;T and Events Clients
+
+800.254.1005 (Americas)
+44.20.7665.9820 (EMEA)
+852.5808.2615 (Asia Pacific)
+
+
+
+
+©2016 Ipreo. All rights reserved.</textOnly>
+    <type>html</type>
+</EmailTemplate>

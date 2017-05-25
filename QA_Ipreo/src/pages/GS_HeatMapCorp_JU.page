@@ -1,0 +1,42 @@
+<apex:page controller="GS_HeatmapAccountFilterController" >
+<apex:form >
+    <apex:pageMessages id="pgBlockMsg" escape="false" />
+    <apex:pageBlock title="Heat map report" mode="edit" id="pgBlock">
+       <apex:pageBlockSection title="Account filter" >
+        <c:MultiselectPicklist leftLabel="Available Roles"
+                leftOption="{!RoleOptions}"
+                rightLabel="Selected Roles"
+                rightOption="{!SelectedRoleOptions}"
+                size="10"
+                width="275px"/>
+        <apex:selectList value="{!region}" label="Region" size="1">
+            <apex:selectOptions value="{!RegionOptions}"/>
+        </apex:selectList>        
+        </apex:pageBlockSection>
+        <apex:PageBlockSection columns="2">
+        	<apex:inputText value="{!marketCapValue}" title="Please enter a numeric value greater than zero." label="Issuer Market Cap (mm):" id="theTextInput"/>
+        </apex:PageBlockSection>
+<apex:pageBlockButtons location="bottom">
+        <apex:commandButton value="Get Report" action="{!FilterAccountsByRole}" disabled="{!disableButton}" rerender="pgBlockMsg,pgBlock"   status="status-waiting">
+        	<apex:param name="IsCorp" value="true"/>
+        </apex:commandButton>    
+        <apex:commandButton value="Abort Operation" action="{!AbortOperation}" rerender="pgBlockMsg,pgBlock"  status="status-waiting"/>       
+</apex:pageBlockButtons> 
+<apex:actionstatus id="status-waiting">
+                <apex:facet name="start">
+                    <div class="waitingSearchDiv" id="el_loading" style=" background-color: #dcdcdc ;
+                           height: 100%;opacity:0.80;filter:alpha(opacity=80);width:100%;">
+                        <div class="waitingHolder" style="position: fixed; top: 50%; left: 30%; width: 50%;">
+                            <img class="waitingImage" src="/img/loading32.gif" title="Loading....." />
+                            <span class="waitingDescription" style="font-size:20px;font-weight:bold;color:RED;">
+                                Loading......
+                            </span>
+                        </div>
+                    </div>
+                </apex:facet>
+            </apex:actionstatus>
+</apex:pageBlock>  
+     
+</apex:form>
+
+</apex:page>

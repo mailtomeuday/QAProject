@@ -1,0 +1,29 @@
+<apex:page standardController="Lead" extensions="Ipreo_BDSF_1_10.BDAEMasterController" showHeader="false" sidebar="false">
+    <apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDSFUtility)}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Ipreo_BDSF_1_10__BDAE_Integration, 'js/bdsfutil.js')}"/>
+    <script type="text/javascript">
+        var urlContact = "/apex/BDSFLinkToBD?Type=Lead&Id={!Lead.Id}&EntityType=Contact";
+        var urlAccount = "/apex/BDSFLinkToBD?Type=Lead&Id={!Lead.Id}&EntityType=Account";
+    </script>
+    <apex:outputPanel rendered="{!IsPageValid}">
+        <apex:iframe id="bdaeFrameContainer" frameborder="false" height="600" width="100%" src="/apex/MasterPageEmbedded?target=Profile&IsLead=yes&IsCRMProfile=yes&entityType={!entityType}&profileId={!TEXT(ProfileId)}" scrolling="true" />
+    </apex:outputPanel>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:outputPanel rendered="{!NOT(IsPageValid)}">
+                This CRM profile is not associated with BD profile. &nbsp;&nbsp;
+                <apex:commandButton value="{!ContactButtonCaption}" onclick="OpenWideDialog(urlContact,'{!targetUrl}',true);return false;"/>
+                <apex:commandButton value="Link with other BD Account" onclick="OpenWideDialog(urlAccount,'{!targetUrl}',true);return false;"/>
+            </apex:outputPanel>
+            <apex:outputPanel >
+                <apex:commandButton rendered="{!(IsPageValid && AllowLinking)}" value="{!ContactButtonCaption}" onclick="OpenWideDialog(urlContact,'{!targetUrl}',true);return false;"/>
+                <apex:commandButton rendered="{!(IsPageValid && AllowLinking && NOT(IsContact))}" value="Link with other BD Account" onclick="OpenDialog(urlAccount,'{!targetUrl}',true);return false;"/>
+                <apex:commandButton rendered="{!IsPageValid}" value="Refresh from BD" action="{!SynchronizeLead}" />
+                <apex:outputText value="{!jsrefresh}" escape="false"/> 
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+    <script type="text/javascript">
+        ProfileResize();
+    </script>
+ </apex:page>

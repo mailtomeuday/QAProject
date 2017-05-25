@@ -1,0 +1,3 @@
+<apex:page controller="Ipreo_BDSF_1_10.BDAEControllerBase" title="Data Alerts">
+    <apex:iframe id="bdaeFrameContainer" frameborder="false" height="1705" width="100%" src="/apex/MasterPageEmbedded?target=DataAlerts" scrolling="true" />
+</apex:page>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>4/5 Campaign</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Browser Support- Capita</name>
+    <style>none</style>
+    <subject>Important Update About webIRplus Browser Support</subject>
+    <textOnly>We are retiring support for
+Internet Explorer 8, 9 &amp; 10
+
+Why the Change?
+In January of this year, Microsoft stopped supporting Internet Explorer 8, 9 &amp; 10, some of their more popular older browsers. This means that Microsoft will no longer release security updates for these browser versions, which could put a user’s system at an increased risk of malware and cyber-attacks.
+
+Additionally, last year we launched a more simplified, intuitive, and powerful desktop solution. In June 2016 and throughout the year, you will continue to see additional features added to webIRplus. As we strive to enhance your experience, we are implementing new features using many of the latest web technologies, which are not compatible with older browsers.
+
+What does this mean?
+To ensure sufficient security as well as an optimal experience when accessing the latest webIRplus features, we recommend that you upgrade your browser. webIRplus is optimized for:
+• Chrome 12 or above
+• Firefox 3.6 or above
+• Safari 5.0 – 8.0 and
+• Internet Explorer 11.
+
+Thank you for your understanding
+We apologize for any inconvenience this may cause you and want you to know that we are here to help make this transition easier. Feel free to reach out to your Account Manager for assistance with a browser upgrade.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

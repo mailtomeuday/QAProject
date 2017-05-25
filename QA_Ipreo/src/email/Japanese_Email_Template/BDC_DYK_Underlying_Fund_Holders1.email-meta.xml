@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>BDC DYK- Underlying Fund Holders</name>
+    <style>none</style>
+    <subject>Ipreo- Did You Know?</subject>
+    <textOnly>ファンドの内訳リポート
+
+
+
+日頃よりBD Corporateをご愛顧頂き誠にありがとうございます。
+
+さて、今回はBD Corporate内のファンドの内訳リポートをご紹介致します。
+本機能では、機関投資家の保有状況とファンドの内訳を簡単にダウンロードすることが可能です。
+
+
+検索方法:
+
+本レポートはBD Corporateの保有状況 よりExcelシートにて作成することが可能です。
+
+
+ご紹介ページはこちらをクリック
+
+
+
+
+
+
+
+
+
+ご質問がございましたら、担当アカウントマネージャーまでご連絡ください。
+
+
+Ipreoサポートチーム　島田/ロブ　TEL：03-5207-2912 （平日9：00-17：30）
+
+Copyright © 2016. Ipreo. All rights Reserved</textOnly>
+    <type>custom</type>
+</EmailTemplate>

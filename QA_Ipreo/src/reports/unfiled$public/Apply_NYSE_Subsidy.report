@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY_ID</field>
+    </columns>
+    <columns>
+        <field>Opportunity.NYSE_Program_Tier__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Apply_NYSE_Subsidy__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Testing for 171</description>
+    <filter>
+        <criteriaItems>
+            <column>OPPORTUNITY_ID</column>
+            <operator>equals</operator>
+            <value>006j000000NJgae,006j000000RG4ZJ,006j000000JwBeX,006j000000OYq4H,006j000000NKIe4,006j000000JwB12,006j000000JwB13,006j000000OZ5i9,006j000000NJPSh,006j000000NJd7K,006j000000JwB4I,006j000000OYqNs,006j000000JwB75,006j000000JwB77,006j000000OY0Ur,006j000000NJKdG,006j000000JwBCN,006j000000OYM3x,006j000000PpoQE,006j000000JwBba,006j000000OZC0l,006j000000JwBHf,006j000000NJyme,006j000000JwBJP,006j000000NDWCX,006j000000JwBbf,006j000000JwBMV,006j000000JwBMW,006j000000JwBOD,006j000000JwBOh,006j000000JwBPP,006j000000JwB3e,006j000000JwBPW,006j000000JwBPu,006j000000JwBPt,006j000000NKAmT,006j000000JwBQ7,006j000000JwBRE,006j000000RHzsP,006j000000OZU75,006j000000JwBRQ</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Apply NYSE Subsidy</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>OpportunityLineItem.Apply_NYSE_Subsidy__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,36 @@
+<apex:page controller="GS_CampaignMemberReportController" tabStyle="Campaign" title="Campaign Members Report" contentType="application/vnd.ms-excel#CampaignMemberExport_{!today()}.xls" readOnly="true">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        
+        table, td, th {
+            border: 1px solid black;
+            border-width: thin;
+        }
+    </style>
+    <apex:dataTable id="resultsTable" value="{!obj.innerList}" var="record">
+        <apex:column headerValue="Campaign Name"  width="8%"> 
+             <apex:facet name="header" >Campaign Name</apex:facet>
+             <apex:outputLink value="/{!record.campaignMember.campaign.Id}" target="_blank">{!record.campaignMember.Campaign.Name}</apex:outputLink>
+        </apex:column>
+        <apex:column headerValue="First Name"  width="8%"> 
+             <apex:facet name="header" >First Name</apex:facet>
+             <apex:outputLink value="/{!record.campaignMember.Id}" target="_blank">{!record.Contact.FirstName}</apex:outputLink>
+        </apex:column>
+        <apex:column headerValue="Last Name"  width="8%"> 
+             <apex:facet name="header" >Last Name</apex:facet>
+             <apex:outputLink value="/{!record.campaignMember.Id}" target="_blank">{!record.Contact.LastName}</apex:outputLink>
+        </apex:column>
+        <apex:column headerValue="Company" value="{!record.company}" width="8%"/>
+        <apex:column headerValue="Member Status" value="{!record.campaignMember.Status}" width="5%"/>
+        <apex:column headerValue="Member Status Update Date" value="{!record.campaignMember.LastModifiedDate}" width="7%"/>                    
+        <apex:column headerValue="Responded" value="{!record.campaignMember.HasResponded}" width="3%"/>
+        <apex:column headerValue="Phone" value="{!record.Contact.Phone}" width="5%"/>
+        <apex:column headerValue="Email" value="{!record.Contact.Email}" width="7%"/>
+        <apex:column headerValue="Activity Date" value="{!record.Activity.CreatedDate}" width="7%"/>
+        <apex:column headerValue="Activity Type" value="{!record.Activity.Type}" width="7%"/>
+        <apex:column headerValue="Activity Owner" value="{!record.Activity.CreatedBy.Name}" width="8%"/>
+        <!-- <apex:column headerValue="Activity Description" value="{!record.Activity.Description}"/> -->
+    </apex:dataTable>
+</apex:page>

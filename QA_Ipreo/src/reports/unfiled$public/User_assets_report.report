@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User_Asset__c$Name</field>
+    </columns>
+    <columns>
+        <field>User_Asset__c$User__c</field>
+    </columns>
+    <columns>
+        <field>User_Asset__c$Id</field>
+    </columns>
+    <columns>
+        <field>User_Asset__c$Asset_Active__c</field>
+    </columns>
+    <columns>
+        <field>User_Asset__c$Product_Name__c</field>
+    </columns>
+    <columns>
+        <field>User_Asset__c$Product_Code__c</field>
+    </columns>
+    <columns>
+        <field>User_Asset__c$Product_Vertical__c</field>
+    </columns>
+    <columns>
+        <field>User_Asset__c$CreatedDate</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>User assets report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User_Assets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User_Asset__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

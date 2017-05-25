@@ -1,0 +1,208 @@
+<apex:page controller="GS_CampaignReportController" tabStyle="Campaign" title="Campaign Members Report">
+    <apex:includeScript value="{!$Resource.jQuery}" />
+    <style>
+        .conCss {
+            cursor: pointer;
+        }
+        
+        .labelStyle {
+            vertical-align: top;
+        }
+        .border-top {
+            padding-top: 10px;
+            border-top: 1pt solid #DED3D3 !important;
+        }
+        .txt-align {
+            text-align: right;
+            padding-right: 10px;
+        }
+        .table {
+            width: 100%;border-collapse: collapse;
+        }
+
+        .hrStyle {
+          width: 100%;
+          height: 1px;
+          background: #DFDFDF;
+          display: block;
+          border: none;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2em;
+            right: 0px;
+            text-decoration: none;
+            color: #000000;
+            background-color: rgba(235, 235, 235, 0.80);
+            font-size: 12px;
+            padding: 1em;
+            display: none;
+        }
+
+        .back-to-top:hover {    
+            background-color: rgba(135, 135, 135, 0.50);
+        }
+
+        .go-to-bottom {
+            position: fixed;
+            /** bottom: 2em; **/
+            right: 0px;
+            text-decoration: none;
+            color: #000000;
+            background-color: rgba(235, 235, 235, 0.80);
+            font-size: 12px;
+            padding: 1em;
+            display: block;
+            margin-top: 5%;
+        }
+        
+        .go-to-bottom:hover {   
+            background-color: rgba(135, 135, 135, 0.50);
+        }
+        .inputText {
+            visibility: hidden;
+            width: 50%;
+        }
+    </style>
+    <script>
+        $(function() {
+            var offset = 50;
+            var duration = 500;
+            $(window).scroll(function() {
+                if($(this).scrollTop() > offset) {
+                    $('.back-to-top').fadeIn(duration);
+                } else {
+                    $('.back-to-top').fadeOut(duration);
+                }
+                if($(this).scrollTop() > offset) {
+                    $('.go-to-bottom').fadeOut(duration);
+                } else {
+                    $('.go-to-bottom').fadeIn(duration);
+                }
+            });
+            
+            $('.back-to-top').click(function(event) {
+                event.preventDefault();
+                $('html, body').animate({scrollTop: 0}, duration);
+                return false;
+            });
+            jQuery('.go-to-bottom').click(function(event) {
+                event.preventDefault();
+                jQuery('html, body').animate({scrollTop: $(document).height()}, duration);
+                return false;
+            });
+            //$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+        });
+
+        function selectAllContacts() {
+            var isSelectAll = $("#selectAll").prop("checked");
+            $(".conCss").each(function() {
+                $(this).prop("checked", isSelectAll);
+            });
+        }
+
+        function selectAccount(t) {
+            var v = $(t).val();
+            if(v == 3) {
+                $("[id*='assetAccountRow']").css("visibility", "visible");
+            }else {
+                $("[id*='assetAccountRow']").css("visibility", "hidden");
+            }
+        }
+
+        
+    </script>
+    <div id="content">
+    <a href="#" class="go-to-bottom">Go to Bottom</a>
+    <apex:form id="theForm">
+        <apex:pageMessages id="errorMsg"/>
+        <apex:actionFunction name="doSearch" action="{!doSearch}" reRender="summaryPanel, errorMsg" status="status-waiting" />
+        <apex:actionFunction name="resetFilter" action="{!resetFilter}" reRender="summaryPanel, theOutputPanel, errorMsg" status="status-waiting" />
+        <apex:actionFunction name="dynamicProduct" action="{!dynamicProduct}" reRender="fscope7" status="status-waiting"/>
+        <apex:pageBlock title="Contact through Account team" id="thePageBlock">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton onclick="doSearch();return false;" value="Confirm Filter" />
+                <apex:commandButton onclick="resetFilter();return false;" value="Reset Filter" />
+                <apex:commandButton action="{!cancel}" value="Cancel" />
+            </apex:pageBlockButtons>
+            <apex:outputPanel id="theOutputPanel">
+                <div class="pbSubheader brandTertiaryBgr first tertiaryPalette">
+                    <h3>Specify Filter Criteria(Required)</h3>
+                </div>
+                <table class="table">
+                    <tr>
+                        <td style="width: 30%;" colspan="2">
+                            <apex:selectRadio value="{!accountFilter}" layout="pageDirection" onchange="selectAccount(this);">
+                                <apex:selectOptions value="{!AccountFilterOptions}" />
+                            </apex:selectRadio>
+                        </td>
+                        <td style="width: 7%;" class="txt-align">
+                            Status
+                        </td>
+                        <td>
+                            <apex:selectList value="{!userStatus}" size="1" id="fscope4">
+                                <apex:selectOptions value="{!UserStatusOptions}" />
+                            </apex:selectList>
+                        </td>
+                    </tr>
+                    <tr id="assetAccountRow" style="visibility: hidden;">
+                        <td colspan="5">
+                            <label for="fscope5" id="fscope91">Campaign</label>&nbsp;
+                            <apex:inputField value="{!campMember.Campaign__c}" id="fscope5"/>
+                        </td>
+                    </tr>
+                </table>
+            </apex:outputPanel>
+            <apex:actionstatus id="status-waiting">
+                <apex:facet name="start">
+                    <div class="waitingSearchDiv" id="el_loading" style=" background-color: #dcdcdc ;
+                           height: 100%;opacity:0.80;filter:alpha(opacity=80);width:100%;">
+                        <div class="waitingHolder" style="position: fixed; top: 50%; left: 30%; width: 50%;">
+                            <img class="waitingImage" src="/img/loading32.gif" title="Loading....." />
+                            <span class="waitingDescription" style="font-size:20px;font-weight:bold;color:RED;">
+                                Loading......
+                            </span>
+                        </div>
+                    </div>
+                </apex:facet>
+            </apex:actionstatus>
+        </apex:pageBlock>
+        <apex:outputPanel id="summaryPanel">
+            <apex:pageBlock title="{!blockMessage}" rendered="{!isVisiable}">
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton onclick="viewResult();return false;" value="See Result Set" rendered="{!totalRecord>0}"/>
+                    <apex:commandButton action="{!addToCampaign}" value="Confirm And Add" reRender="errorMsg" rendered="{!totalRecord>0}" status="status-waiting" />
+                </apex:pageBlockButtons>
+                <apex:outputPanel id="innerPanel">
+                    <apex:pageBlockSection title="User Asset Results -  Page #{!pageNumber}" columns="1" collapsible="false" id="resultSection" rendered="{!isVisiable4ResultSection}">
+                        <apex:pageBlockTable value="{!UserAssets}" var="c">
+                            <apex:column headerValue="{!$ObjectType.User_Asset__c.fields.Name.label}" width="8%">
+                                <apex:outputLink value="/{!c.userAsset.Id}" target="_blank">
+                                    {!c.userAsset.Name}
+                                </apex:outputLink>
+                            </apex:column>
+                            <apex:column value="{!c.userAsset.Asset__r.Name}" headerValue="Asset Name" width="25%"/>
+                            <apex:column value="{!c.userAsset.User__r.Name}" headerValue="User Name" width="15%"/>
+                            <apex:column value="{!c.userAsset.Asset_Account__r.Name}" headerValue="Account" width="15%"/>
+                            <apex:column value="{!c.userAsset.User__r.User_Status__c}" headerValue="{!$ObjectType.Contact.fields.User_Status__c.label}" width="7%"/>
+                            <apex:column value="{!c.userAsset.Role__c}" headerValue="{!$ObjectType.User_Asset__c.fields.Role__c.label}" width="7%"/>
+                            <apex:column value="{!c.userAsset.User_Country__c}" headerValue="{!$ObjectType.User_Asset__c.fields.User_Country__c.label}"/>
+                            <apex:column value="{!c.userAsset.Product_Region__c}" headerValue="{!$ObjectType.User_Asset__c.fields.Product_Region__c.label}"/>
+                            <apex:column value="{!c.userAsset.System_Outage_Notification_Opt_Out__c}" headerValue="{!$ObjectType.User_Asset__c.fields.System_Outage_Notification_Opt_Out__c.label}"/>
+                        </apex:pageBlockTable>
+                    </apex:pageBlockSection>
+                    <apex:panelGrid columns="4" rendered="{!isVisiable4ResultSection}">
+                        <apex:commandLink action="{!first}" reRender="summaryPanel" status="status-waiting">First</apex:commandlink>
+                        <apex:commandLink action="{!previous}" reRender="summaryPanel" status="status-waiting">Previous</apex:commandlink>
+                        <apex:commandLink action="{!next}" rendered="{!hasNext}" reRender="summaryPanel" status="status-waiting">Next</apex:commandlink>
+                        <apex:commandLink action="{!last}" rendered="{!hasNext}" reRender="summaryPanel" status="status-waiting">Last</apex:commandlink>
+                    </apex:panelGrid>
+                </apex:outputPanel>
+            </apex:pageBlock>
+        </apex:outputPanel>
+        <apex:actionFunction name="viewResult" action="{!viewResult}" reRender="innerPanel, errorMsg" status="status-waiting" />
+    </apex:form>
+    <a href="#" class="back-to-top">Back to Top</a>
+    </div>
+</apex:page>

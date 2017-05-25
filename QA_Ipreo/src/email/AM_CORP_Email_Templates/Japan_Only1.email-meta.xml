@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Monthly fund info report to Japanese clients</description>
+    <encodingKey>Shift_JIS</encodingKey>
+    <name>ファンド情報 - Japan Only</name>
+    <style>none</style>
+    <subject>Ipreo - ファンド情報 Vol.58</subject>
+    <textOnly>アイプリオ・ファンド情報　Vol. 58
+～ボストンとトロントの投資家の日本株売買動向～
+
+BD Corporateをご利用中のお客様へ
+
+平素よりアイプリオのサービスをご利用いただき、誠にありがとうございます。
+
+今回のファンド情報Vol.58は、「2016年第1四半期 ボストンとトロントの投資家の日本株売買動向」です。
+（ファイルのダウンロードはこちら）
+ファイルがダウンロードできない場合、弊社までご一報いただけましたら幸いです。
+
+また、気になるトピックや取り上げてほしい話題等ありましたら、お気軽にご連絡ください。
+皆様からお寄せいただいた貴重なご意見を今後の参考にさせていただきます。
+
+※ 本メールを配信不要の場合は、大変お手数ではありますがご連絡ください。次号以降の配信を停止いたします。
+
+Ipreoサポートチーム
+島田・ロブ・松本
+Phone：03-5207-2912</textOnly>
+    <type>custom</type>
+</EmailTemplate>
