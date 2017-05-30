@@ -171,6 +171,7 @@ public class GS_OpportunityDMLHandler {
                       ,Product_Revenue_Type__c
                       ,Product_Vertical__c
                       ,Product_Region__c
+                      ,Product_Subregion__c
                       ,Estimated_Annual_Fees__c
                       ,ACpV__c
                       ,Renewal_Increase__c

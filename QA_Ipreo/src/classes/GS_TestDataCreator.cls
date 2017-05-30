@@ -455,6 +455,17 @@ public class GS_TestDataCreator {
         return eve;
     }
     
+    public static Event createEvent(User u , Integer num , Date aDate ,Lead objLead, string products) {
+        Event eve = new Event();
+        eve.OwnerId = u.Id;
+        eve.DurationInMinutes = num;
+        eve.ActivityDateTime = aDate;
+        eve.WhoId = objLead.Id;
+        eve.Products__c = products;
+        insert eve;
+        return eve;
+    }
+    
 	public static Event createEvent(User u , Integer num , Date aDate ,Contact con, String activityType, Opportunity opp, Boolean insertRecord) {
         Event eve = new Event();
         eve.OwnerId = u.Id;
@@ -487,6 +498,16 @@ public class GS_TestDataCreator {
         Task task = new Task();
         task.OwnerId = u.Id;
         task.WhoId = con.Id;
+        task.Type = 'Call (Not Connected)';
+        task.Products__c = products;
+        insert task;
+        return task;
+    }
+    
+    public static Task createTask(User u ,Lead objLead, string products) {
+        Task task = new Task();
+        task.OwnerId = u.Id;
+        task.WhoId = objLead.Id;
         task.Type = 'Call (Not Connected)';
         task.Products__c = products;
         insert task;

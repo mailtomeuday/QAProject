@@ -19,7 +19,7 @@ private class GS_TestPopulateRolesOnAccount {
                 
         Test.stopTest();
     }
-    
+        
     static testMethod void TestMultipleATMScheduler() 
     {
         createdMultipleATMTestData();
@@ -62,6 +62,11 @@ private class GS_TestPopulateRolesOnAccount {
         atm = GS_TestDataCreator.createAccountTeamMember(acc.Id, 'Secondary Sales Rep', 'NA', excludeList);
         insert atm;
         acc.secondary_sales_rep__c = atm.UserId;
+        excludeList.add(atm.UserId);
+        
+        atm = GS_TestDataCreator.createAccountTeamMember(acc.Id, 'Team Lead GMI Analyst', 'NA', excludeList);
+        insert atm;
+        acc.Team_Lead_GMI_Analyst__c = atm.UserId;
         excludeList.add(atm.UserId);
         
         update acc;
@@ -113,6 +118,22 @@ private class GS_TestPopulateRolesOnAccount {
         Test.stopTest();
     }
     
+    static testMethod void TestSingleATMSchedulerForExistingAccount() 
+    {
+        createdSingleATMTestDataForExistingAccount();
+        
+        Test.startTest();
+        
+        Datetime sysTime = System.now().addSeconds(60);
+        String chronExpression = '' + sysTime.second() + ' ' + sysTime.minute() + ' ' + sysTime.hour() + ' ' + sysTime.day() + ' ' + sysTime.month() + ' ? ' + sysTime.year();
+        String strJobName = 'Test_Populate_RolesOn_Account_Job_' + DateTime.Now();
+        
+        GS_PopulateRolesOnAccountScheduler  objPopulateRolesOnAccountScheduler = new GS_PopulateRolesOnAccountScheduler(null);
+        System.schedule(strJobName, chronExpression, objPopulateRolesOnAccountScheduler);
+                
+        Test.stopTest();
+    }
+    
     private static void createdSingleATMTestData()
     {
         list<AccountTeamMember> listAtm = new list<AccountTeamMember>();
@@ -121,7 +142,8 @@ private class GS_TestPopulateRolesOnAccount {
                                             'Primary Account Manager', 
                                             'Secondary Account Manager',
                                             'Primary Sales Rep', 
-                                            'Secondary Sales Rep'
+                                            'Secondary Sales Rep',
+                                            'Team Lead GMI Analyst'
                                           };
         
         for(string role : rolesSet)
@@ -148,7 +170,8 @@ private class GS_TestPopulateRolesOnAccount {
                                             'Primary Account Manager', 
                                             'Secondary Account Manager',
                                             'Primary Sales Rep', 
-                                            'Secondary Sales Rep'
+                                            'Secondary Sales Rep',
+                                            'Team Lead GMI Analyst'
                                           };
                                                   
         Account acc = GS_TestDataCreator.createAccount('Test Acc for 837 - 2');
@@ -241,5 +264,40 @@ private class GS_TestPopulateRolesOnAccount {
         excludeList.add(atmNA.UserId);
         insert atmNA;*/
     }
+    
+    private static void createdSingleATMTestDataForExistingAccount()
+    {
+        list<AccountTeamMember> listAtm = new list<AccountTeamMember>();
+        User tempUser;
+        
+        set<string> rolesSet = new set<string>{
+                                            'Primary Account Manager', 
+                                            'Secondary Account Manager',
+                                            'Primary Sales Rep', 
+                                            'Secondary Sales Rep',
+                                            'Team Lead GMI Analyst'
+                                          };
+        tempUser = GS_TestDataCreator.createUser('Sales User', 'UserRole1289_@dom99.com', 'NA');
+        for(string role : rolesSet)
+        {
+            Integer i = 1;
+            Account acc = GS_TestDataCreator.createAccount('Test Acc for 1289 - ' + i);
+            acc.primary_account_manager__c = tempUser.id;
+            acc.secondary_account_manager__c = tempUser.id;
+            acc.primary_sales_rep__c = tempUser.id;
+            acc.secondary_sales_rep__c = tempUser.id;
+            acc.Team_Lead_GMI_Analyst__c = tempUser.id;
+            update acc;
+            list<Id> excludeList = new list<Id>();
+            excludeList.add(tempUser.Id);
+            AccountTeamMember atm = GS_TestDataCreator.createAccountTeamMember(acc.Id, role, 'NA', excludeList);
+            excludeList.add(atm.UserId);
+            listAtm.add(atm);
+            i++;
+        }
+        system.debug('Size========='+listAtm.size());
+        insert listAtm;
+        
+    } 
     
 }
